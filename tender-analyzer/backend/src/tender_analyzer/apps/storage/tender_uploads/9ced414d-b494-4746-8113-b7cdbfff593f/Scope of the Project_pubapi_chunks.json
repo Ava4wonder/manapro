@@ -1,0 +1,32 @@
+{
+  "chunks": [
+    {
+      "type": "norm",
+      "text": "A&Q Hydro Power Project – Consultant Tender\nRev.no.: 00\nRev. date: 23.09.2025\nScope of the Project\n1 Background\nAasiaat and Qasigiannguit are two cities in Greenland located at the southern part of the\nDisko Bay area in Greenland. Today light, power and heat are supplied with electricity from\ndiesel generators and oil-ﬁred boilers.\nEnergy need for 2019 and expected forecast from 2026-2050 is outlined in table below\nTotal energy need for\nlight/power and heat [MWh]\n2019\n2026\n2050\nIncrease\np.a.\nAasiaat\n39.479\n72.347\n69.581\n-0,16%\nQasigiannguit\n11.746\n21.593\n11.819\n-2,48%\nTotal energy need\n51.225\n93.940\n81.400"
+    },
+    {
+      "type": "norm",
+      "text": "As part of an overall strategy outlined in “Sector Plan for Energy and Water Supply 2017” a goal\nis to widely implement green energy where possible in 2030. Part of that goal is to displace\nfossil fuel from the supply of Qasigiannguit and Aasiaat.\nThe Greenlandic parliament, Inatsisartut, have with Act no. 22 of 1. December 2021\nestablished the framework for construction, ﬁnancing and operation of hydropower stations\nwith necessary facilities to supply of Nuuk and Qasigiannguit and Aasiaat.\n2 Description\nFor a new hydropower station to supply Qasigiannguit and Aasiaat, the following is proposed\nThe hydroelectric power plant utilizes the water resources from the Kuussuup Tasia\ncatchment area and supplies Aasiaat and Qasigiannguit with energy for electricity and\nheating."
+    },
+    {
+      "type": "norm",
+      "text": "The facility uses Qinngap Ilulialeeraa (Lake 3) as the upper reservoir and Kuussuup Tasia (Lake\n2) as the lower reservoir and intake basin. A regulated transfer tunnel will be constructed\nbetween the two lakes. No dam will be built.\nThe inlet tunnel leads to an underground power station located near the fjord to the north. The\nwater is discharged into the fjord through a short tunnel. The power plant also includes an\nabove-ground portal building, from which the access tunnel leads to the power station.\nThe power station is expected to be equipped with three Francis turbines; each rated at 7.0\nMW. All structures must be designed and dimensioned with consideration for the presence of\ncontinuous permafrost in the area."
+    },
+    {
+      "type": "norm",
+      "text": "From the power station, one transmission line will run to a transformer station in\nQasigiannguit and another line to a transformer station in Aasiaat. When constructing the\ntransmission line to Aasiaat, special consideration must be given to crossing the Ramsar site\nNaternaq (the Clay Plain).\nThe hydropower plant’s potential from 2026–2050 can cover the future electricity demand and\nbetween 92.5–94.7% of interruptible heating needs, assuming a heat demand of 18 MWh/year\nper inhabitant, with production at the town gate averaging approximately 84 GWh/year over\nthe period. Interruptible electric heating will be fully covered if the heat demand remains\nbelow 15.5 MWh/year per inhabitant. When the heat demand exceeds this level, oil heating\nwill be required.\nMain data is outlined in table 1."
+    },
+    {
+      "type": "norm",
+      "text": "Table 1 Main Data\nDescripƟon\nUnit\nQty\nCatchment area, ice-free\n\nkm²\n157\nCatchment area, glacier\n\nkm²\n~135\nAverage annual runoﬀ measured 2010–2019\n\nhm³\n310\nAverage annual runoﬀ forecast 2026–2050\n\nhm³\n285\nReservoir capacity, Lake 2\n\nhm³\n86\nReservoir capacity, Lake 3\n\nhm³\n208\nGross head\n\nm\n143\nInlet tunnel\nLength\nm\n6.200\n\nCross-secƟon\nm²\n16\nOutlet tunnel\nLength\nm\n530\nAccess tunnels (intake/adit/power staƟon)\nLength\nm\n1.360\n\nCross-secƟon\nm²\n25\nTransfer tunnel excl. channel\nLength\nm\n2.050\n\nCross-secƟon\nm²\n16\nAccess tunnel\nLength\nm\n300\nTurbines\nFrancis\nMW\n3×7\nTransmission line\nVoltage\nkV\n60\nLength to Qasigiannguit\n60 kV overhead line\nkm\n38\nLength to Aasiaat\n60 kV overhead line\nkm\n117\nMax producƟon at town gate*)\n\nGWh/year\n84"
+    },
+    {
+      "type": "norm",
+      "text": "*) The producƟon is based on the forecast for 2026–2050 and depends on market demand.\n3 Prerequisites for the Construction of the Facility\nLocation\nThe hydroelectric facility is located approximately 20 km east-southeast of Qasigiannguit. The\nfacility utilizes water from the Kuussuaq River, which is intercepted at the outlet of Kuussuup\nTasia. Lakes Kuussuup Tasia and Qinngap Ilulialeeraa are used as reservoirs for the facility.\nThese lakes are hereafter referred to as “Lake 2” and “Lake 3.” “Lake 1” refers to the lake\nimmediately downstream of Lake 2, but it is not included in this construction of the\nhydropower plant. The hydropower plant is situated at the Kangersuneq fjord.\nGeneral Structure of the Facility"
+    },
+    {
+      "type": "norm",
+      "text": "The hydropower facility utilizes the catchment area around Lake 2 and Lake 3. In addition to\nprecipitation, Lake 3 also receives runoƯ from a glacier, and its outﬂow goes to Lake 2.\nBoth lakes are used as reservoirs (see Appendix 3). Lake 3 is the main reservoir, with storage\ncapacity created by lowering the lake level by 32 m from its natural surface elevation at +182\nm. The reservoir is drawn down in proportion to consumption and supplies Lake 2 through a\ntransfer tunnel with a controllable valve.\nThe secondary reservoir is created in Lake 2 by lowering the lake level by 8 m from its natural\nsurface elevation at +143 m. From the intake at Lake 2, water is conveyed through a tunnel to\nthe underground power station near the fjord."
+    }
+  ]
+}

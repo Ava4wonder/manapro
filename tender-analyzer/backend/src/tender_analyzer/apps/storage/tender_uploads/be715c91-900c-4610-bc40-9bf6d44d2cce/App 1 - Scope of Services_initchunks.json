@@ -1,0 +1,697 @@
+{
+  "source_file": "C:\\Users\\YEJI\\manapro\\tender-analyzer\\backend\\src\\tender_analyzer\\apps\\storage\\tender_uploads\\be715c91-900c-4610-bc40-9bf6d44d2cce\\App 1 - Scope of Services.pdf",
+  "total_pages": 4,
+  "pages": [
+    {
+      "page_number": 1,
+      "elements": [
+        {
+          "label": "header",
+          "bbox": [
+            472,
+            35,
+            540,
+            45
+          ],
+          "text": "Indaleeqqap 12, kld.",
+          "reading_order": 0
+        },
+        {
+          "label": "header",
+          "bbox": [
+            502,
+            45,
+            540,
+            55
+          ],
+          "text": "3900 Nuuk",
+          "reading_order": 1
+        },
+        {
+          "label": "header",
+          "bbox": [
+            57,
+            51,
+            541,
+            79
+          ],
+          "text": "Greenland",
+          "reading_order": 2
+        },
+        {
+          "label": "fig",
+          "bbox": [
+            42,
+            35,
+            456,
+            67
+          ],
+          "text": "![Figure]()",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            57,
+            84,
+            273,
+            125
+          ],
+          "text": "A&Q Hydro Power Project – Consultant Tender\nRev.no.: 00\nRev. date: 23.09.2025",
+          "reading_order": 4
+        },
+        {
+          "label": "sec",
+          "bbox": [
+            57,
+            133,
+            257,
+            152
+          ],
+          "text": "Appendix 1 – Scope of Services",
+          "reading_order": 5
+        },
+        {
+          "label": "sub_sec",
+          "bbox": [
+            57,
+            168,
+            184,
+            187
+          ],
+          "text": "1\nProject overview",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            57,
+            191,
+            544,
+            340
+          ],
+          "text": "NunaGreen Construction Disko Bay A/S intends to develop a Hydro Power station to supply the towns of\nAasiaat and Qasigiannguit in the southeast corner of the Disko Bay. The capacity of the Hydro Power\nStation is expected to be around 21MW.\n\nThe Consultant shall assist the Client in preparing all tender documents required for the procurement of\na Design-Build Contractor under the FIDIC Conditions.\n\nThe objective is to ensure that the tender material is complete, compliant with applicable procurement\nlaw, ﬁt for purpose and technically robust, enabling the Client to conduct a competitive and eŬcient\nprocurement process.",
+          "reading_order": 7
+        },
+        {
+          "label": "sub_sec",
+          "bbox": [
+            57,
+            360,
+            212,
+            377
+          ],
+          "text": "2 Consultant’s Services",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            57,
+            384,
+            466,
+            397
+          ],
+          "text": "The Consultant shall perform the following services in accordance with the Agreement:",
+          "reading_order": 9
+        },
+        {
+          "label": "sub_sub_sec",
+          "bbox": [
+            57,
+            407,
+            195,
+            421
+          ],
+          "text": "2.1\nProduction Potential",
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "bbox": [
+            57,
+            428,
+            536,
+            471
+          ],
+          "text": "The Consultant must review and update the production potential of the proposed hydro power station.\nThe updated production potential must be based on the most recent hydrological data provided by the\nClient, see appendix 2.",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            75,
+            481,
+            525,
+            525
+          ],
+          "text": "\nSimulate Production Potential of the hydrological resource and compare to Outline Proposal\n2020 Table 1.\n\nAdvise on potential optimizations related to the consumption in Aasiaat and Qasigiannguit.",
+          "reading_order": 12
+        },
+        {
+          "label": "sub_sub_sec",
+          "bbox": [
+            57,
+            535,
+            359,
+            549
+          ],
+          "text": "2.2 Review update and validate existing Outline Proposal",
+          "reading_order": 13
+        },
+        {
+          "label": "para",
+          "bbox": [
+            57,
+            555,
+            500,
+            584
+          ],
+          "text": " Review existing feasibility and Outline Proposal documents.\n Integrate latest geotechnical, hydrological, and environmental site data into revised Outline",
+          "reading_order": 14
+        },
+        {
+          "label": "para",
+          "bbox": [
+            57,
+            586,
+            523,
+            615
+          ],
+          "text": "Proposal and EPC tender documents.\n Model permafrost in the project area based on data from installed thermistor strings supplied by",
+          "reading_order": 15
+        },
+        {
+          "label": "para",
+          "bbox": [
+            57,
+            616,
+            524,
+            645
+          ],
+          "text": "the Client.\n Advise on any technical or commercial adjustments to the Outline Proposal arising from updated",
+          "reading_order": 16
+        },
+        {
+          "label": "para",
+          "bbox": [
+            57,
+            647,
+            501,
+            691
+          ],
+          "text": "data.\n Identify gaps or risks in the current documentation and propose mitigation measures.\n Prepare a revised Outline Proposal (general layouts, key dimensions, functional criteria, and",
+          "reading_order": 17
+        },
+        {
+          "label": "para",
+          "bbox": [
+            57,
+            692,
+            499,
+            736
+          ],
+          "text": "performance requirements) suŬcient to form part of the Employer’s Requirements for EPC\ntendering, but not extending to detailed design or construction drawings\n Prepare a time schedule and a cost estimate for the A&Q Hydro Power Project.",
+          "reading_order": 18
+        }
+      ]
+    },
+    {
+      "page_number": 2,
+      "elements": [
+        {
+          "label": "header",
+          "bbox": [
+            472,
+            35,
+            540,
+            45
+          ],
+          "text": "Indaleeqqap 12, kld.",
+          "reading_order": 0
+        },
+        {
+          "label": "header",
+          "bbox": [
+            502,
+            45,
+            540,
+            55
+          ],
+          "text": "3900 Nuuk",
+          "reading_order": 1
+        },
+        {
+          "label": "header",
+          "bbox": [
+            57,
+            51,
+            541,
+            79
+          ],
+          "text": "Greenland",
+          "reading_order": 2
+        },
+        {
+          "label": "fig",
+          "bbox": [
+            42,
+            35,
+            456,
+            67
+          ],
+          "text": "![Figure]()",
+          "reading_order": 3
+        },
+        {
+          "label": "sub_sub_sec",
+          "bbox": [
+            57,
+            85,
+            211,
+            100
+          ],
+          "text": "2.3 EPC Tender preparation",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            57,
+            106,
+            539,
+            119
+          ],
+          "text": " Advise on assessment of the practical, commercial, and technical advantages and disadvantages of",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            57,
+            121,
+            524,
+            180
+          ],
+          "text": "using FIDIC Yellow Book versus FIDIC Silver Book in the current market context (e.g. impact on\ntender attractiveness, contract administration, level of pre-tender investigations, evaluation\nworkload, and post-award design review).\n Prepare EPC tender documents (expected to be a tender with prequaliﬁcation and negotiations),",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            71,
+            182,
+            120,
+            195
+          ],
+          "text": "including:",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            57,
+            197,
+            453,
+            362
+          ],
+          "text": "o\nWork Speciﬁcations\no\nTechnical Speciﬁcations\no\nConstruction methods and quality standards\no\nTesting and commissioning requirements\no\nEnvironmental and social obligations\no\nO&M and training requirements\no\nICT Speciﬁcations\no\nSpeciﬁcations for As Built Speciﬁcations\no\nSite Data\no\nAssist legal advisors in drafting Particular Conditions for the FIDIC contract\n Assist in deﬁning selection criteria, evaluation criteria and scoring methodology.",
+          "reading_order": 8
+        },
+        {
+          "label": "sub_sub_sec",
+          "bbox": [
+            57,
+            372,
+            345,
+            386
+          ],
+          "text": "2.4 Pre-qualiﬁcation under tender for EPC Contractor",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            57,
+            392,
+            353,
+            452
+          ],
+          "text": " Respond to technical clariﬁcations (if needed)\n Review and evaluate applications.\n Prepare recommendations to selection.\n A maximum of four (4) EPC contractors will be pre-qualiﬁed.",
+          "reading_order": 10
+        },
+        {
+          "label": "sub_sub_sec",
+          "bbox": [
+            57,
+            461,
+            350,
+            476
+          ],
+          "text": "2.5 Tender Management and EPC Contractor Selection",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            57,
+            482,
+            539,
+            556
+          ],
+          "text": " Respond to technical clariﬁcations and issue addenda (if needed).\n Organize and lead site visits with the pre-qualiﬁed tenderers.\n Review and evaluate tenders (technical and ﬁnancial).\n Support the Client in shortlisting (if needed), negotiation meetings, and selection of winning tender.\n Assist legal advisors on Contract Finalization",
+          "reading_order": 12
+        },
+        {
+          "label": "para",
+          "bbox": [
+            78,
+            558,
+            390,
+            603
+          ],
+          "text": "o\nSupport clariﬁcations and negotiations with preferred bidder.\no\nAdvise on ﬁnal amendments to EPC contract.\no\nPrepare contract award recommendations.",
+          "reading_order": 13
+        },
+        {
+          "label": "sub_sec",
+          "bbox": [
+            57,
+            622,
+            188,
+            639
+          ],
+          "text": "3 Optional Services",
+          "reading_order": 14
+        },
+        {
+          "label": "para",
+          "bbox": [
+            57,
+            645,
+            517,
+            690
+          ],
+          "text": "In addition to the Consulting Services related to the EPC Tender Process as set forth in Section 2\nabove, the following additional services (the “Optional Services”) are included as options under this\nAgreement and shall be presented as such in the Consultant’s bid.",
+          "reading_order": 15
+        },
+        {
+          "label": "para",
+          "bbox": [
+            57,
+            703,
+            537,
+            732
+          ],
+          "text": "The Client shall determine, at its sole discretion, whether to accept the Optional Services no later than\nthree (3) months following the execution of the EPC Contract.",
+          "reading_order": 16
+        }
+      ]
+    },
+    {
+      "page_number": 3,
+      "elements": [
+        {
+          "label": "header",
+          "bbox": [
+            472,
+            35,
+            540,
+            45
+          ],
+          "text": "Indaleeqqap 12, kld.",
+          "reading_order": 0
+        },
+        {
+          "label": "header",
+          "bbox": [
+            502,
+            45,
+            540,
+            55
+          ],
+          "text": "3900 Nuuk",
+          "reading_order": 1
+        },
+        {
+          "label": "header",
+          "bbox": [
+            57,
+            51,
+            541,
+            79
+          ],
+          "text": "Greenland",
+          "reading_order": 2
+        },
+        {
+          "label": "fig",
+          "bbox": [
+            42,
+            35,
+            456,
+            67
+          ],
+          "text": "![Figure]()",
+          "reading_order": 3
+        },
+        {
+          "label": "sub_sub_sec",
+          "bbox": [
+            57,
+            85,
+            381,
+            100
+          ],
+          "text": "3.1\nOption - Client’s Engineer Services During EPC Execution",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            57,
+            106,
+            519,
+            134
+          ],
+          "text": " Ensure the EPC Contractor’s compliance with contractual obligations.\n Review and comment on all design documents prepared by the EPC contractor (civil, structural,",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            57,
+            136,
+            520,
+            195
+          ],
+          "text": "mechanical, electrical, SCADA etc).\n Review EPC Contractor’s equipment speciﬁcations.\n Monitor timelines and logistics.\n Witness Factory Acceptance Tests (FAT) and Site Acceptance Tests (SAT) conducted by the EPC",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            57,
+            197,
+            521,
+            348
+          ],
+          "text": "Contractor, and provide observations and recommendations to the Client regarding compliance\nwith contractual requirements.\n Monitor construction progress vs schedule (physical and ﬁnancial).\n Ensure works are carried out per design.\n Manage design change orders and variation requests.\n Support in resolving disputes and claims.\n Maintain risk register and mitigation plans.\n Participate in HSE audits, toolbox meetings and incident investigations.\n Support commissioning, testing, and ﬁnal acceptance procedures.\n Prepare monthly progress and compliance reports for the Client.",
+          "reading_order": 7
+        },
+        {
+          "label": "sub_sub_sec",
+          "bbox": [
+            57,
+            355,
+            276,
+            372
+          ],
+          "text": "3.2 Option - Post-Construction Services",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            57,
+            378,
+            401,
+            483
+          ],
+          "text": " Assist with ﬁnal inspection and punch list close-out.\n Support review and approval of as-built drawings and O&M manuals.\n Monitor resolution of any outstanding works or non-conformities.\n Supervise testing and commissioning documentation close-out.\n Support the Client during the Defects Notiﬁcation Period.\n Assist in managing claims or warranty issues with the EPC Contractor.\n Prepare ﬁnal project close-out report and lessons learned summary.",
+          "reading_order": 9
+        },
+        {
+          "label": "sub_sec",
+          "bbox": [
+            57,
+            503,
+            133,
+            520
+          ],
+          "text": "4 Timeline",
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "bbox": [
+            57,
+            526,
+            335,
+            539
+          ],
+          "text": "The Consultant shall provide the following key deliverables:",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            62,
+            549,
+            496,
+            638
+          ],
+          "text": "Deliverable\nFormat\nDue Date\nUpdated Production Potential\nPDF/Word\nMarch 31st 2026\nRevised Outline Proposal\nPDF/Word\nMay 31st 2026\nCost Estimate for the A&Q HPP\nPDF/Word\nJune 15th 2026\nEPC Tender Documentation\nPDF/Word\nAugust 1st 2026\nEPC evaluation report and recommendation\nPDF/Word\nMay 1st 2027",
+          "reading_order": 12
+        },
+        {
+          "label": "sub_sec",
+          "bbox": [
+            57,
+            658,
+            318,
+            675
+          ],
+          "text": "5 Interfaces, Coordination and Reporting",
+          "reading_order": 13
+        },
+        {
+          "label": "para",
+          "bbox": [
+            57,
+            681,
+            234,
+            695
+          ],
+          "text": "The Consultant shall coordinate with:",
+          "reading_order": 14
+        },
+        {
+          "label": "para",
+          "bbox": [
+            57,
+            705,
+            420,
+            749
+          ],
+          "text": " Client’s internal team, legal advisors and other technical/ﬁnancial advisors\n Permitting authorities (as needed for technical clariﬁcations)\n Site investigation contractors (if clariﬁcation on data is required)",
+          "reading_order": 15
+        }
+      ]
+    },
+    {
+      "page_number": 4,
+      "elements": [
+        {
+          "label": "header",
+          "bbox": [
+            472,
+            35,
+            540,
+            45
+          ],
+          "text": "Indaleeqqap 12, kld.",
+          "reading_order": 0
+        },
+        {
+          "label": "header",
+          "bbox": [
+            502,
+            45,
+            540,
+            55
+          ],
+          "text": "3900 Nuuk",
+          "reading_order": 1
+        },
+        {
+          "label": "header",
+          "bbox": [
+            57,
+            51,
+            541,
+            79
+          ],
+          "text": "Greenland",
+          "reading_order": 2
+        },
+        {
+          "label": "fig",
+          "bbox": [
+            42,
+            35,
+            456,
+            67
+          ],
+          "text": "![Figure]()",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            57,
+            85,
+            539,
+            99
+          ],
+          "text": " The Consultant shall submit periodic progress reports (e.g. monthly) in a form agreed by the parties,",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            71,
+            100,
+            498,
+            129
+          ],
+          "text": "showing actual progress vs the approved Programme, deviations, delays (and their causes),\nmitigation measures, and revised forward outlooks.",
+          "reading_order": 5
+        },
+        {
+          "label": "sub_sec",
+          "bbox": [
+            57,
+            149,
+            147,
+            166
+          ],
+          "text": "6 Exclusions",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            57,
+            172,
+            364,
+            186
+          ],
+          "text": "The following services are not included unless agreed separately:",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            57,
+            196,
+            419,
+            240
+          ],
+          "text": " Detailed design\n Environmental or social impact assessments\n Legal advisory services for contract drafting beyond standard FIDIC terms",
+          "reading_order": 8
+        }
+      ]
+    }
+  ]
+}

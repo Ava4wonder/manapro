@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "tender-analyzer-backend"
+version = "0.1.0"
+description = "Simple backend for the Tender Analyzer prototype."
+authors = ["tender-analyzer-team <team@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.115.0"
+uvicorn = "^0.24.0"
+pydantic = "^2.6.1"
+python-multipart = "^0.0.7"
+pydantic-settings = "^2.3.2"
+qdrant-client = "^1.10.0"
+
+[tool.poetry.scripts]
+start = "uvicorn tender_analyzer.apps.api_gateway.main:app --reload"

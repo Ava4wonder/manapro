@@ -1,0 +1,2256 @@
+{
+  "source_file": "C:\\Users\\YEJI\\manapro\\tender-analyzer\\backend\\src\\tender_analyzer\\apps\\storage\\tender_uploads\\a08234d1-3044-48ce-a676-b97ab2071359\\Tender Conditions.pdf",
+  "total_pages": 21,
+  "pages": [
+    {
+      "page_number": 1,
+      "elements": [
+        {
+          "label": "sec",
+          "bbox": [
+            99,
+            125,
+            516,
+            235
+          ],
+          "text": "Tender Conditions\n\nfor Consultancy Service Agreement for the construction of a new hydroelectric power plant for\nthe supply of Qasigiannguit and Aasiaat, Greenland",
+          "reading_order": 0
+        },
+        {
+          "label": "footer",
+          "bbox": [
+            206,
+            807,
+            526,
+            813
+          ],
+          "text": "27290372.1",
+          "reading_order": 1
+        }
+      ]
+    },
+    {
+      "page_number": 2,
+      "elements": [
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            128,
+            44,
+            136
+          ],
+          "text": "Page:",
+          "reading_order": 0
+        },
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            139,
+            44,
+            146
+          ],
+          "text": "2 of 21",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            125,
+            527,
+            714
+          ],
+          "text": "Table of contents\n\nfor Consultancy Service Agreement for the construction of a new hydroelectric power plant for\nthe supply of Qasigiannguit and Aasiaat, Greenland ......................................................................... 1\n1\nContracting entity ........................................................................................................................ 4\n1.1\nName and address.................................................................................................................... 4\n1.2\nContact person ......................................................................................................................... 4\n1.3\nConsultants ............................................................................................................................... 4\n2\nGeneral information .................................................................................................................... 4\n3\nProcurement procedure ............................................................................................................... 4\n3.1\nOpen procedure ........................................................................................................................ 4\n3.2\nTendering system ..................................................................................................................... 5\n3.3\nTimetable .................................................................................................................................. 5\n3.4\nProcurement documents ......................................................................................................... 6\n3.5\nQuestions and answers ............................................................................................................ 6\n3.6\nConfidentiality .......................................................................................................................... 7\n4\nSubmission of tenders ................................................................................................................. 7\n4.1\nElectronic submission.............................................................................................................. 7\n4.2\nTime limit ................................................................................................................................. 7\n4.3\nLanguage .................................................................................................................................. 7\n4.4\nContent of tender ..................................................................................................................... 7\n4.5\nReservations ............................................................................................................................. 8\n4.6\nTender validity period ............................................................................................................. 9\n4.7\nOpening of tenders ................................................................................................................... 9\n4.8\nEuropean Single Procurement Document(s) ......................................................................... 9\n4.8.1 Part I: Information concerning the procurement procedure and the contracting authority\nor contracting entity ............................................................................................................................ 9\n4.8.2 Part II: Information concerning the participating candidate ............................................... 9\n4.8.3 Part IV: Selection criteria ...................................................................................................... 12\n4.8.4 Part VI: Concluding statements ............................................................................................ 14\n4.9\nProcessing of personal data ................................................................................................... 14\n4.10\nStatements .............................................................................................................................. 14\n4.10.1 Statement concerning restrictive measures in view of Russia’s actions destabilising the\nsituation in Ukraine .......................................................................................................................... 14\n4.10.2 Participation together with others ......................................................................................... 15\n4.10.3 Participation based on other entities .................................................................................... 15\n5\nChanges in the tenderer´s participating parties ...................................................................... 16\n6\nDocumentation of information in the ESPD ............................................................................ 16\n6.1\nExclusion grounds.................................................................................................................. 16\n6.2\nEconomic and financial standing ........................................................................................... 17\n6.3\nTechnical and professional ability ......................................................................................... 17\n7\nProcedure for evaluation of tenders .......................................................................................... 17\n7.1\nAward criteria .......................................................................................................................... 17\n7.2\nEvaluation of price (15 %) ....................................................................................................... 17\n7.3\nEvaluation of qualitative criteria (85 %) ............................................................................... 18\n7.3.1\nSubcriterion “Organisation” ................................................................................................. 18\n7.3.2 Subcriterion “Qualifications and experience of the personnel” .......................................... 19\n7.3.3 Subcriterion “Technical assistance” ..................................................................................... 20\n8\nNotification of award decision .................................................................................................. 20",
+          "reading_order": 2
+        },
+        {
+          "label": "footer",
+          "bbox": [
+            206,
+            807,
+            526,
+            814
+          ],
+          "text": "27290372.1",
+          "reading_order": 3
+        }
+      ]
+    },
+    {
+      "page_number": 3,
+      "elements": [
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            128,
+            44,
+            136
+          ],
+          "text": "Page:",
+          "reading_order": 0
+        },
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            139,
+            44,
+            146
+          ],
+          "text": "3 of 21",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            123,
+            527,
+            209
+          ],
+          "text": "8.1\nStandstill period ..................................................................................................................... 20\n9\nAdditional information .............................................................................................................. 21\n9.1\nCode of Conduct and Labour Clause ..................................................................................... 21\n9.2\nRemuneration and property .................................................................................................. 21\n9.3\nCancellation of the procurement procedure ......................................................................... 21",
+          "reading_order": 2
+        },
+        {
+          "label": "footer",
+          "bbox": [
+            206,
+            807,
+            526,
+            814
+          ],
+          "text": "27290372.1",
+          "reading_order": 3
+        }
+      ]
+    },
+    {
+      "page_number": 4,
+      "elements": [
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            128,
+            44,
+            136
+          ],
+          "text": "Page:",
+          "reading_order": 0
+        },
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            139,
+            44,
+            146
+          ],
+          "text": "4 of 21",
+          "reading_order": 1
+        },
+        {
+          "label": "sub_sec",
+          "bbox": [
+            99,
+            125,
+            510,
+            323
+          ],
+          "text": "1\nContracting entity\n1.1\nName and address\n\nNunaGreen Construction Disko Bay A/S\nCVR.no: 45296520\nIndaleeqqap Aqqutaa 12, kld.\n3900 Nuuk\nGreenland\n\nFor further information regarding the contracting entity please see the following website:\nhttps://www.nunagreen.gl/\n\n1.2\nContact person\nErlingur J. Leifsson\nE-mail: ejl@nunagreen.gl\n\n1.3\nConsultants",
+          "reading_order": 2
+        },
+        {
+          "label": "fig",
+          "bbox": [
+            360,
+            323,
+            465,
+            334
+          ],
+          "text": "![Figure]()",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            326,
+            527,
+            666
+          ],
+          "text": "Gorrissen Federspiel\n\n\n\nCVR.no. 38 05 24 97\nAxel Towers, Axeltorv 2\n1609 Copenhagen V\nDenmark\n\n\n2\nGeneral information\nNunaGreen Construction Disco Bay A/S (“NunaGreen”) is tendering for a Consultancy Service\nAgreement for the construction of a new hydroelectric power plant for the supply of Qasigiannguit\nand Aasiaat, Greenland (“the Project”).\n\nThe Service Agreement includes consultancy services in connection with the Project. The\nrequirements for the services and contract terms are further detailed in the tender documents.\n\nAn overall description of the Project is to be found in the document ‘Scope of the Project’.\n\nThe Consultancy Service Agreement is based on FIDIC White Book.\n\n\n3\nProcurement procedure\n3.1\nOpen procedure\nThe contracting entity will apply an open procurement procedure, which means that any\neconomic operator that fulfils the minimum requirements in the tender material can submit a\ntender.\n\nDuring the procurement procedure the contracting entity will ensure the equal treatment of all\ntenderers. To that end, the contracting entity will:",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            666,
+            523,
+            715
+          ],
+          "text": "\nnot provide information in a discriminatory manner which may give some participating\ncandidates an advantage over others,\n\ninform all participating candidates in writing of any changes to the technical\nspecifications or other procurement documents.",
+          "reading_order": 5
+        },
+        {
+          "label": "footer",
+          "bbox": [
+            206,
+            807,
+            526,
+            814
+          ],
+          "text": "27290372.1",
+          "reading_order": 6
+        }
+      ]
+    },
+    {
+      "page_number": 5,
+      "elements": [
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            128,
+            44,
+            136
+          ],
+          "text": "Page:",
+          "reading_order": 0
+        },
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            139,
+            44,
+            146
+          ],
+          "text": "5 of 21",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            125,
+            527,
+            305
+          ],
+          "text": "3.2\nTendering system\nThe procurement procedure is carried out electronically via the tendering system ‘Dalux Tender’.\n\nAll correspondence with the contracting entity must take place via Dalux Tender, including any\nquestions regarding the procurement procedure and/or procurement documents.\n\nParticipating candidates shall refrain from contacting the contracting entity in any other way.\n\nFor technical support or information regarding the use of Dalux Tender, please refer to the\ntechnical help desk via the button in the lower left corner in Dalux Tender or contact the technical\nsupport by email (support@dalux.com) or telephone +45 53 72 73 00.\n\n3.3\nTimetable\nThe procurement process is expected to be finalised according to the following schedule:",
+          "reading_order": 2
+        },
+        {
+          "label": "fig",
+          "bbox": [
+            99,
+            311,
+            461,
+            624
+          ],
+          "text": "![Figure]()",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            615,
+            527,
+            696
+          ],
+          "text": "The timetable may be subject to changes, and the contracting entity will notify of any changes via\nDalux Tender.\n\nAll indications of time are according to Central European Time (CET) in Denmark.",
+          "reading_order": 4
+        },
+        {
+          "label": "footer",
+          "bbox": [
+            206,
+            807,
+            526,
+            814
+          ],
+          "text": "27290372.1",
+          "reading_order": 5
+        }
+      ]
+    },
+    {
+      "page_number": 6,
+      "elements": [
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            128,
+            44,
+            136
+          ],
+          "text": "Page:",
+          "reading_order": 0
+        },
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            139,
+            44,
+            146
+          ],
+          "text": "6 of 21",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            125,
+            456,
+            185
+          ],
+          "text": "3.4\nProcurement documents\nThe procurement documents are available at Dalux Tender:\nhttps://build.dalux.com/client/da-dk/public/tender/TID-355695301610186512\nThe procurement documents consist of the following:",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            185,
+            209,
+            197
+          ],
+          "text": "\nTender material",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            198,
+            516,
+            317
+          ],
+          "text": "o\nTender Conditions (this document)\no\nScope of the Project\no\nTemplate for European Single Procurement Document (ESPD)\no\nNotification of processing of personal data\no\nStatement regarding Article 5k of Council Regulation (EU) No 833/2014 of 31\nJuly 2014 concerning restrictive measures in view of Russia’s actions\ndestabilising the situation in Ukraine (template)\no\nStatement of joint participation (template)\no\nStatement of support (template)\n\nTechnical/other tender material",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            318,
+            331,
+            341
+          ],
+          "text": "o\nSee 01.1_Document list\n\nConsultancy Services Agreement, including,",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            342,
+            527,
+            676
+          ],
+          "text": "o\nParticular Conditions – Part A\no\nParticular Conditions – Bart B\no\nSchedule A – Confidentiality and Non-Disclosure Agreement\no\nGeneral Conditions\no\nAppendix 1 – Scope of Services\no\nAppendix 2 – Personnel, Equipment, Facilities and Services of Others to be\nprovided by the Client\no\nAppendix 3 – Remuneration and Payment\no\nAppendix 4 – Programme\no\nAppendix 5 – Tender Form Sheet\no\nClient´s Code of Conduct\no\nClient´s Labour Clause\n\n3.5\nQuestions and answers\nIf a participating candidate requires any clarification in relation to the tender procedure or the\nprocurement documents, the participating candidate is asked to submit written questions in\nEnglish via Dalux Tender.\n\nThe participating candidates are encouraged to submit all questions as soon as possible and before\nthe deadline for submission of questions.\n\nThe contracting entity will only answer questions submitted later than the deadline for\nsubmission of questions if it is possible to answer no later than 6 calendar days before the time\nlimit for receipt of tenders.\n\nThe contracting entity will publish the questions and answers in anonymous form and any\namendments to the procurement documents, if considered relevant, in Dalux Tender.",
+          "reading_order": 6
+        },
+        {
+          "label": "footer",
+          "bbox": [
+            206,
+            807,
+            526,
+            814
+          ],
+          "text": "27290372.1",
+          "reading_order": 7
+        }
+      ]
+    },
+    {
+      "page_number": 7,
+      "elements": [
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            128,
+            44,
+            136
+          ],
+          "text": "Page:",
+          "reading_order": 0
+        },
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            139,
+            44,
+            146
+          ],
+          "text": "7 of 21",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            125,
+            527,
+            473
+          ],
+          "text": "3.6\nConfidentiality\nThe participating candidates shall observe unconditional confidentiality regarding any\ninformation of a confidential nature that may come to their knowledge in connection with the\nprocurement procedure, including, but notwithstanding, the procurements documents.\n\nTherefore, the participating candidates must withhold all such confidential information from\nunauthorized persons regarding matters which may arise from their knowledge of this\nprocurement procedure.\n\n4\nSubmission of tenders\n4.1\nElectronic submission\nAny tender must be submitted electronically via Dalux Tender and cannot be submitted by any\nother means.\n\nParticipating candidates are encouraged to test the submission process in Dalux Tender well in\nadvance of the time limit for receipt of tenders.\n\nThe contracting entity will only have access to the tenders after the time limit for tenders.\n\n4.2\nTime limit\nThe tender must be submitted no later than 28 October 2025 at 12:00 UTC+1.\n\nA tender cannot be submitted after the expiry of the time limit.\n\n4.3\nLanguage\nThe tender must be submitted in English.\n\n4.4\nContent of tender\nTenders must contain the following:",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            485,
+            504,
+            509
+          ],
+          "text": "\nEuropean Single Procurement Document(s) (ESPD), cf. clause 4.9, below including\ndocumentation on the information given in the ESPD, cf. clause 6 below.",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            521,
+            420,
+            533
+          ],
+          "text": "\nNotification of processing of personal data, cf. clause 4.10 below",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            545,
+            525,
+            581
+          ],
+          "text": "\nStatement regarding Article 5k of Council Regulation (EU) No 833/2014 of 31 July 2014\nconcerning restrictive measures in view of Russia’s actions destabilising the situation in\nUkraine, cf. clause 4.11.1 below",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            593,
+            433,
+            606
+          ],
+          "text": "\nStatement of joint participation (if relevant), cf. clause 4.11.2 below",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            618,
+            399,
+            630
+          ],
+          "text": "\nStatement(s) of support (if relevant), cf. clause 4.11.3 below",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            642,
+            326,
+            654
+          ],
+          "text": "\nCompleted Tender Form Sheet Appendix 5",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            666,
+            423,
+            678
+          ],
+          "text": "\nDescription of the tenderer´s project organisation for the Project",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            691,
+            341,
+            703
+          ],
+          "text": "\nCVs for the tenderer´s following key personal:",
+          "reading_order": 10
+        },
+        {
+          "label": "footer",
+          "bbox": [
+            206,
+            807,
+            526,
+            814
+          ],
+          "text": "27290372.1",
+          "reading_order": 11
+        }
+      ]
+    },
+    {
+      "page_number": 8,
+      "elements": [
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            128,
+            44,
+            136
+          ],
+          "text": "Page:",
+          "reading_order": 0
+        },
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            139,
+            45,
+            146
+          ],
+          "text": "8 of 21",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            153,
+            125,
+            486,
+            138
+          ],
+          "text": "o Project manager, minimum 10 years' experience in infrastructure project",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            171,
+            137,
+            514,
+            161
+          ],
+          "text": "management- Proven leadership in similar EPC tender processes. Familiarity\nwith FIDIC Yellow Book contracts",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            153,
+            173,
+            519,
+            186
+          ],
+          "text": "o Electrical design manager, degree in Electrical or Power Engineering. At least 10",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            171,
+            185,
+            498,
+            209
+          ],
+          "text": "years experience with hydropower electrical systems and grid integration.\nFamiliarity with EPC and FAT/SAT processes",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            153,
+            221,
+            499,
+            234
+          ],
+          "text": "o Mechanical design managers, degree in Mechanical Engineering. At least 10",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            171,
+            233,
+            524,
+            269
+          ],
+          "text": "years’ experience in hydropower or large-scale infrastructure projects. Proven\nexpertise in design of hydro-mechanical systems such as turbines, gates, valves,\npenstocks, hoists, and steel liners.",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            153,
+            281,
+            517,
+            294
+          ],
+          "text": "o Civil design manager, degree in Civil or Hydraulic Engineering- At least 8 years’",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            171,
+            293,
+            513,
+            317
+          ],
+          "text": "experience in hydropower projects- Knowledge of dam, intake, and waterway\nstructures",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            153,
+            329,
+            487,
+            342
+          ],
+          "text": "o Quality manager, degree in Engineering, Quality Management, or related",
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "bbox": [
+            171,
+            341,
+            516,
+            389
+          ],
+          "text": "discipline. Minimum 10 years’ professional experience, with at least 5 years in\nquality management on hydropower or energy infrastructure projects. Proven\nrecord in implementing and maintaining ISO 9001-compliant Quality\nManagement Systems.",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            153,
+            401,
+            514,
+            414
+          ],
+          "text": "o ICT manager, Degree in Information Technology, Computer Science, or related",
+          "reading_order": 12
+        },
+        {
+          "label": "para",
+          "bbox": [
+            171,
+            413,
+            511,
+            461
+          ],
+          "text": "field. At least 8–10 years of ICT management experience, preferably in\nengineering or infrastructure projects. Demonstrated ability to establish and\nmaintain project ICT systems including data management, communications,\nand cyber-security.",
+          "reading_order": 13
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            473,
+            428,
+            485
+          ],
+          "text": "\nDescription of quality assurance processes, resources and systems",
+          "reading_order": 14
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            498,
+            272,
+            509
+          ],
+          "text": "Alternative or subsidiary tenders",
+          "reading_order": 15
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            522,
+            320,
+            533
+          ],
+          "text": "No alternative or subsidiary tenders are accepted.",
+          "reading_order": 16
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            546,
+            531,
+            701
+          ],
+          "text": "A tenderer may only submit one tender. If a tenderer submits more than one tender, the\ncontracting entity will only take the latest submitted tender into consideration.\n\nHowever, individual entities may participate as part of different consortia or groups of Tenderers,\nprovided that the entity itself does not submit more than one tender as a Tenderer.\n\nIf the tender contains more than one version of the same document, the contracting entity will\nonly take the latest uploaded version (according to the time-log in Dalux Tender) into\nconsideration.\n\n4.5\nReservations\nTenderers are encouraged not to include reservations, prerequisites or standard terms and\nconditions (unless specifically requested) in tenders. Instead, tenderers are encouraged to",
+          "reading_order": 17
+        },
+        {
+          "label": "footer",
+          "bbox": [
+            206,
+            807,
+            526,
+            814
+          ],
+          "text": "27290372.1",
+          "reading_order": 18
+        }
+      ]
+    },
+    {
+      "page_number": 9,
+      "elements": [
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            128,
+            44,
+            136
+          ],
+          "text": "Page:",
+          "reading_order": 0
+        },
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            139,
+            44,
+            146
+          ],
+          "text": "9 of 21",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            125,
+            521,
+            149
+          ],
+          "text": "submit questions if they identify provisions in the procurement documents which prevent them\nfrom submitting tenders without reservations or prerequisites.",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            161,
+            495,
+            185
+          ],
+          "text": "The contracting entity may not award the contract to any tenderer based on a tender with\nreservations relating to the following:",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            197,
+            334,
+            209
+          ],
+          "text": "\nessential elements of the tender material, or",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            221,
+            506,
+            245
+          ],
+          "text": "\nnon-essential elements of the tender material if the contracting entity cannot fix the\nprice of the reservations without sufficient certainty",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            258,
+            219,
+            269
+          ],
+          "text": "Tender validity period",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            282,
+            523,
+            305
+          ],
+          "text": "Tenders must remain valid and open for acceptance by the contracting entity for 3 months from\nthe time limit for receipt of the tender.",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            318,
+            361,
+            329
+          ],
+          "text": "Tenderers are released from their tenders at the following:",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            341,
+            312,
+            353
+          ],
+          "text": "\nthe expiry of the tender validity period,",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            365,
+            359,
+            378
+          ],
+          "text": "\nthe cancellation of the procurement procedure, or",
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            390,
+            528,
+            402
+          ],
+          "text": "\nthe publication of a contract award notice (but not at the notification of award decision).",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            415,
+            203,
+            426
+          ],
+          "text": "Opening of tenders",
+          "reading_order": 12
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            439,
+            343,
+            450
+          ],
+          "text": "Tenders will be opened after the time limit for tenders.",
+          "reading_order": 13
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            463,
+            333,
+            474
+          ],
+          "text": "Tenderers will not be entitled to attend the opening.",
+          "reading_order": 14
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            487,
+            509,
+            522
+          ],
+          "text": "4.6\nEuropean Single Procurement Document(s)\nEvery tenderer must fill out the ESPD as part of their tender. If the tenderer consists of more\nthan one legal entity a separate ESPD must be filled out by each legal entity of the tenderer.",
+          "reading_order": 15
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            535,
+            493,
+            558
+          ],
+          "text": "The following explains how the different parts of the ESPD form must be filled out by the\ncandidate requesting to participate in the tender procedure.",
+          "reading_order": 16
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            571,
+            515,
+            690
+          ],
+          "text": "4.6.1\nPart I: Information concerning the procurement procedure and the\ncontracting authority or contracting entity\nIn Part I the tenderer is not required to fill in any information.\n\n4.6.2\nPart II: Information concerning the participating candidate\nIn Part II.A the tenderer must fill in all parts concerning the identification of the legal entity.\n\nThe tenderer must answer whether it is a Micro, a Small or a Medium-Sized Enterprise.\n\nThe tenderer is not required to answer whether it:",
+          "reading_order": 17
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            690,
+            521,
+            714
+          ],
+          "text": "\nis a sheltered workshop, a social business or if it will provide for the performance of the\ncontract in the context of sheltered employment programmes,",
+          "reading_order": 18
+        },
+        {
+          "label": "footer",
+          "bbox": [
+            206,
+            807,
+            526,
+            814
+          ],
+          "text": "27290372.1",
+          "reading_order": 19
+        }
+      ]
+    },
+    {
+      "page_number": 10,
+      "elements": [
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            128,
+            44,
+            136
+          ],
+          "text": "Page:",
+          "reading_order": 0
+        },
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            139,
+            48,
+            146
+          ],
+          "text": "10 of 21",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            125,
+            527,
+            244
+          ],
+          "text": "\nis registered on an official list of approved participating candidates or has an equivalent\ncertificate (e.g. under a national (pre)qualification system), and\n\nwill be able to provide a certificate regarding the payment of social security\ncontributions and taxes or provide information enabling the contracting authority or\ncontracting entity to obtain it directly by accessing a national database in any Member\nState that is available free of charge.\n\nThe tenderer must answer whether it is participating in the procurement procedure together with\nothers (e.g., in consortia or joint venture). When the entity is participating together with others,\nthe following shall apply:",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            244,
+            527,
+            533
+          ],
+          "text": "\nall entities participating in the procurement procedure together must submit a separate\nESPD form,\n\neach entity must indicate its role in the group,\n\neach entity must identify the other entities participating in the procurement procedure\ntogether,\n\nthe participating candidates may state the name of the participating group,\n\nthe participating candidates must altogether meet the selection criteria, as described in\nPart IV: Selection criteria,\n\nthe participating candidates are subject to joint and several liability for the performance\nof the contract,\n\nthe specific parts of the contract must be performed by the participating candidates with\nthe required technical and professional abilities (i.e., the participating candidates shall\nperform the specific parts of the contract that correspond to their documented technical\nand professional abilities in Part IV.C, Technical and professional ability),\n\nA separate statement of joint participation must be filled out and submitted with the\ntender.\n\nIn Part II.B the tenderer must fill in all parts concerning the identification of the person(s)\nempowered to represent the tenderer for this procurement procedure.\n\nIn Part II.C the tenderer must answer whether it relies on the capacities of other entities to meet\nthe selection criteria of the contract notice. When the tenderer relies on the capacities of other\nentities, the following shall apply:",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            533,
+            525,
+            702
+          ],
+          "text": "\nall supporting entities must submit a separate ESPD form,\n\neach supporting entity must only provide information in Part IV: Selection criteria\nconcerning the specific capacities that the supporting entity will make available for the\ntenderer (e.g., if the participating candidate relies only on an entity’s technical and\nprofessional ability, the entity must not provide information regarding its economic and\nfinancial standing),\n\nthe tenderer and the supporting entities must altogether meet the selection criteria, as\ndescribed in Part IV: Selection criteria,\n\nthe tenderer and the supporting entity are subject to joint and several liabilities for the\nperformance of the contract when the tenderer relies on the economic and financial\nstanding of the supporting entity, and\n\nthe specific parts of the contract must be performed by the supporting entities with the\nrequired technical and professional abilities when the tenderer relies on the technical\nand professional abilities of other entities (i.e., the supporting entities shall perform the",
+          "reading_order": 4
+        },
+        {
+          "label": "footer",
+          "bbox": [
+            206,
+            807,
+            526,
+            814
+          ],
+          "text": "27290372.1",
+          "reading_order": 5
+        }
+      ]
+    },
+    {
+      "page_number": 11,
+      "elements": [
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            128,
+            44,
+            136
+          ],
+          "text": "Page:",
+          "reading_order": 0
+        },
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            139,
+            46,
+            146
+          ],
+          "text": "11 of 21",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            125,
+            527,
+            256
+          ],
+          "text": "specific parts of the contract which correspond to their documented technical and\nprofessional abilities in Part IV.C, Technical and professional ability)\n\nSeparate statement(s) of support must be filled out and submitted with the tender.\n\nIn Part II.D, Information concerning subconsultants on whose capacity the tenderer does not\nrely is not required.\n\nPart III: Exclusion grounds\nIf the tenderer is not subject to an exclusion ground, it should answer “No” in the ESPD.\n\nIf the tenderer is subject to an exclusion ground, it:",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            256,
+            527,
+            424
+          ],
+          "text": "\nmust answer “Yes”,\n\nmust provide information regarding the exclusion,\n\nmust answer whether it has taken measures to demonstrate its reliability (\"Self-\nCleaning\"), and\n\nmay describe the measures taken (if any).\n\nThe tenderer is not required to answer whether the information regarding an exclusion ground is\navailable at no cost to the authorities from an EU Member State database.\n\nIn Part III.A, Grounds relating to criminal convictions, the tenderer must answer whether the\ntenderer itself (the legal entity) or any person who is a member of its administrative, management\nor supervisory body or has powers of representation, decision or control therein has been the\nsubject of a conviction by final judgment rendered in the past five years or in which an exclusion\nperiod set out directly in the conviction continues to be applicable for:",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            424,
+            527,
+            712
+          ],
+          "text": "\nparticipation in a criminal organisation, as defined in Article 2 of Council Framework\nDecision 2008/841/JHA of 24 October 2008 on the fight against organised crime,\n\ncorruption, as defined in Article 3 of the Convention on the fight against corruption\ninvolving officials of the European Communities or officials of Member States of the\nEuropean Union, in Article 2(1) of Council Framework Decision 2003/568/JHA of 22\nJuly 2003 on combating corruption in the private sector, in the laws of Greenland, or in\nthe national law of the participating candidate,\n\nfraud, within the meaning of Article 1 of the Convention on the protection of the\nEuropean Communities' financial interests,\n\nterrorist offences or offences linked to terrorist activities, as defined in Articles 1 and 3\nof Council Framework Decision of 13 June 2002 on combating terrorism, including\ninciting or aiding or abetting or attempting to commit an offence, as referred to in\nArticle 4 of that Framework Decision,\n\nmoney laundering or terrorist financing, as defined in Article 1 of Directive 2005/60/EC\nof the European Parliament and of the Council of 26 October 2005 on the prevention of\nthe use of the financial system for the purpose of money laundering and terrorist\nfinancing, or\n\nchild labour and other forms of trafficking in human beings, as defined in Article 2 of\nDirective 2011/36/EU of the European Parliament and of the Council of 5 April 2011 on\npreventing and combating trafficking in human beings and protecting its victims and\nreplacing Council Framework Decision 2002/629/JHA.\n\nIn Part III.B, Grounds relating to the payment of taxes or social security contributions, the\ntenderer must answer whether it has breached its obligations relating to:",
+          "reading_order": 4
+        },
+        {
+          "label": "footer",
+          "bbox": [
+            206,
+            807,
+            526,
+            814
+          ],
+          "text": "27290372.1",
+          "reading_order": 5
+        }
+      ]
+    },
+    {
+      "page_number": 12,
+      "elements": [
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            128,
+            44,
+            136
+          ],
+          "text": "Page:",
+          "reading_order": 0
+        },
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            139,
+            47,
+            146
+          ],
+          "text": "12 of 21",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            125,
+            527,
+            208
+          ],
+          "text": "\nthe payment of taxes, both in the country in which the tenderer is established and in\nGreenland, or\n\nthe payment of social security contributions, both in the country in which the tenderer is\nestablished and in Greenland.\n\nIn Part III.C, Grounds relating to insolvency, conflicts of interests or professional misconduct,\nthe tenderer must answer whether it in the past three years:",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            208,
+            527,
+            643
+          ],
+          "text": "\nhas breached its obligations in the field of environmental law,\n\nhas breached its obligations in the field of social law,\n\nhas breached its obligations in the field of labour law,\n\nhas been bankrupt,\n\nhas been the subject of insolvency or winding-up,\n\nhas been in arrangements with creditors,\n\nhas been in any analogous situation like bankruptcy arising from a similar procedure\nunder national laws and regulations,\n\nhas had assets being administered by a liquidator or by the court,\n\nhas suspended its business activities,\n\nhas entered into agreements with other participating candidates aimed at distorting\ncompetition,\n\nhas been guilty of grave professional misconduct, which renders its integrity\nquestionable,\n\nis aware of any conflict of interest, as indicated in national law, the relevant notice or\nthe procurement documents due to its participation in the procurement procedure,\n\nhas experienced that a prior public contract, a prior contract with a contracting entity or\na prior concession contract was terminated early, or that damages or other comparable\nsanctions were imposed in connection with that prior contract,\n\nhas been guilty of serious misrepresentation in supplying the information required for\nthe verification of the absence of grounds for exclusion or the fulfilment of the selection\ncriteria, has withheld such information or is not able to submit the required supporting\ndocuments,\n\nhas undertaken to unduly influence the decision-making process of the contracting\nentity, to obtain confidential information that may confer upon it undue advantages in\nthe procurement procedure or to negligently provide misleading information that may\nhave a material influence on decisions concerning exclusion, selection or award.\n\nThe tenderer is excluded from the procurement procedure if it is subject to any of the exclusion\ngrounds above unless it has provided sufficient documentation to the effect that measures taken\nby the participating candidate are sufficient to demonstrate its reliability despite the existence of\na relevant ground for exclusion. If such documentation is considered as sufficient, the tenderer\nconcerned shall not be excluded from the procurement procedure.\n\n4.6.3\nPart IV: Selection criteria\nIn Part IV.B the tenderer must state the following information:",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            643,
+            403,
+            715
+          ],
+          "text": "\nIts average yearly turnover for the past three financial years,\n\nits equity for the past financial year,\n\nits assets for the past financial year,\n\nits current assets for the past financial year, and\n\nits current liabilities for the past financial year.",
+          "reading_order": 4
+        },
+        {
+          "label": "footer",
+          "bbox": [
+            206,
+            807,
+            526,
+            814
+          ],
+          "text": "27290372.1",
+          "reading_order": 5
+        }
+      ]
+    },
+    {
+      "page_number": 13,
+      "elements": [
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            128,
+            44,
+            136
+          ],
+          "text": "Page:",
+          "reading_order": 0
+        },
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            139,
+            47,
+            146
+          ],
+          "text": "13 of 21",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            125,
+            293,
+            137
+          ],
+          "text": "The tenderer is required to have minimum:",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            137,
+            525,
+            244
+          ],
+          "text": "\nan average yearly turnover of DKK 40,000,000.00 in the past two financial years,\n\na solvency ratio (equity / assets) of 20 % in the past financial year, and\n\na liquidity ratio (current assets / current liabilities) of 100% in the past financial year.\n\nWhen the tenderer participates together with others, cf. Part II.A, or relies on the economic and\nfinancial capacities of other entities, cf. Part II.C, the contracting entity will calculate the total\namounts of the involved entities which must fulfil the minimum requirements (e.g., the\ncontracting entity will calculate the solvency ratio based on the total equity and total assets of all\nrelevant entities).",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            257,
+            527,
+            448
+          ],
+          "text": "In Part IV.C the tenderer must state maximum 5 performed consultancy service agreements\ncomparable with the tendered Consultancy Service Agreement where the performed services must\nhave been completed within the past 10 years.\n\nThe description of the services can be made in separate document to the ESPD, where every\ndescription must not exceed two A4 pages.\n\nWhen the tenderer participates together with others, cf. Part II.A, or relies on the technical and\nprofessional capacities of other entities, cf. Part II.C, the number of consultancy service\nagreements is calculated based on the total number from all relevant entities.\n\nIf a tenderer has listed more than 5 consultancy service agreements, the contracting entity will\nonly read and assess the 5 most recent service agreements (first based on end date, and then based\non start date).\n\nEach listed consultancy service agreement must include the following information:",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            448,
+            529,
+            629
+          ],
+          "text": "\n‘Description’, the tenderer must specify the performed services, including whether\nspecific parts were performed by subconsultants engaged by the tenderer,\n\n’Amount’, the tenderer must state the contract sum that the tenderer has received for\nthe performance of the services,\n\n‘Start date’, the tenderer must state when the consultancy service agreement was\nentered into,\n\n‘End date’, the tenderer must state when the consultancy service agreement was\ncompleted, and\n\n‘Recipient’, the tenderer must state the name of the client and contact information for\nthe client’s project manager or contact person.\n\nThe tenderer is encouraged to describe the performed consultancy service agreements with as\nmuch detail as possible and how they are relevant in relation to the minimum requirements below.\n\nThe tenderer is required to have performed minimum the following (minimum requirements):",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            629,
+            527,
+            713
+          ],
+          "text": "\none consultancy agreement regarding consultancy in connection with construction and\ncivil engineering works for the establishment of a hydroelectric power plant within the\nlast 10 years, and\n\none consultancy service agreement regarding consultancy in connection with\nconstruction and civil engineering works in Greenland or in the Arctic (e.g., in Iceland,\nFinland (Northern Ostrobothnia, Kainuu and Lappi), Sweden (Västerbotten, Norrbotten\nand Lappland), Norway (Nordland, Troms, Finnmark, Svalbard and Jan Mayen),",
+          "reading_order": 6
+        },
+        {
+          "label": "footer",
+          "bbox": [
+            206,
+            807,
+            526,
+            814
+          ],
+          "text": "27290372.1",
+          "reading_order": 7
+        }
+      ]
+    },
+    {
+      "page_number": 14,
+      "elements": [
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            128,
+            44,
+            136
+          ],
+          "text": "Page:",
+          "reading_order": 0
+        },
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            139,
+            47,
+            146
+          ],
+          "text": "14 of 21",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            125,
+            527,
+            268
+          ],
+          "text": "Canada (Yukon, Northwest Territories, Nunavut), and the United States (Alaska))\nwithin the past 10 years.\n\nThe minimum requirements can be fulfilled in one consultancy service agreement or in separate\nconsultancy service agreements.\n\nThe tenderer is not required to answer whether the information regarding any of the selection\ncriteria is available at no cost to the authorities from an EU Member State database.\n\n4.6.4\nPart VI: Concluding statements\nIn Part IV the tenderer must provide the date and place of the completion of the European Single\nProcurement Document, by which the tenderer:",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            268,
+            527,
+            555
+          ],
+          "text": "\nformally declares that the information stated under Parts II-IV is accurate and correct\nand that it has been set out in full awareness of the consequences of serious\nmisrepresentation,\n\nformally declares to be able, upon request and without delay, to provide documentary\nevidence of the information that has been provided in Part III and Part IV, and\n\nformally consents to the contracting entity, gaining access to documents supporting the\ninformation, which has been provided in Part III and Part IV for this procurement\nprocedure.\n\n4.7\nProcessing of personal data\nThe contracting entity will ensure that processing of personal data provided by a participating\ncandidate during the pre-qualification phase will be carried out in accordance with the EU\nGeneral Data Protection Regulation (GDPR) and the Greenlandic Personal Data Act (decree no.\n1238 of 14 October 2016).\n\nIn connection with the submission of tender, personal data will be collected and processed within\nthe meaning of the personal data legislation, as the tender will contain information about the\ntenderer’s contact persons as well as contact persons listed in the references submitted in the\ntender.\n\nTo ensure that persons, who are subject to the contracting entity’s processing of information, are\nnotified thereof, the tenderer are obliged to provide all persons, whose personal data are\nincluded in a tender, with the information stated in the notification of processing of personal\ndata.",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            568,
+            418,
+            579
+          ],
+          "text": "The tenderer must include a signed version of the notification in tender.",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            592,
+            527,
+            711
+          ],
+          "text": "4.8\nStatements\n4.8.1\nStatement concerning restrictive measures in view of Russia’s actions\ndestabilising the situation in Ukraine\nThe tenderer must submit a statement to declare that there is no Russian involvement, cf. Article\n5k(1) of Council Regulation (EU) No 833/2014 of 31 July 2014 concerning restrictive measures in\nview of Russia’s actions destabilising the situation in Ukraine, in relation to a tender from the\nparticipating candidate.\n\nThe tenderer is encouraged to use the template in the procurement documents.",
+          "reading_order": 5
+        },
+        {
+          "label": "footer",
+          "bbox": [
+            206,
+            807,
+            526,
+            814
+          ],
+          "text": "27290372.1",
+          "reading_order": 6
+        }
+      ]
+    },
+    {
+      "page_number": 15,
+      "elements": [
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            128,
+            44,
+            136
+          ],
+          "text": "Page:",
+          "reading_order": 0
+        },
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            139,
+            47,
+            146
+          ],
+          "text": "15 of 21",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            125,
+            507,
+            185
+          ],
+          "text": "4.8.2\nParticipation together with others\nWhen a tenderer is participating in the procurement procedure together with others (e.g., in\nconsortia or joint venture), cf. Part II.A of the European Single Procurement Document, the\ntenderer must with the tender submit a statement of joint participation which:",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            185,
+            527,
+            497
+          ],
+          "text": "\nIdentifies the name of the legal entity that is empowered to act as an agent on behalf of\nthe participating candidates participating together with mandate to establish a legal\nobligation in relation to the contracting entity,\n\nproves that the group of participating candidates is entitled to rely on the capacity of\neach other for the performance of the contract,\n\nestablishes a legal obligation for each participating candidate to make available their\neconomic and financial standing for the other entities,\n\nestablishes that the group of participating candidates are subject to joint and several\nliability for the performance of the contract,\n\nestablishes a legal obligation for each participating candidate to make available their\ntechnical and professional ability for the other entities, and\n\nestablishes that the specific parts of the contract will be performed by the participating\ncandidates with the required technical and professional abilities (i.e., the participating\ncandidates shall perform the specific parts of the contract which correspond to their\ndocumented technical and professional abilities in Part IV.C, Technical and professional\nability).\n\nThe statement must be signed by all participating candidates participating in the procurement\nprocedure together.\n\nThe tenderer is encouraged to use the template in the procurement documents.\n\n4.8.3\nParticipation based on other entities\nWhen the tenderer relies on the capacity of other entities, cf. Part II.C of the European Single\nProcurement Document, the tenderer must submit statement(s) of support which:",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            497,
+            526,
+            713
+          ],
+          "text": "\nProves that the tenderer is entitled to rely on the capacity of the supporting entity for\nthe performance of the contract,\n\nestablishes a legal obligation for the supporting entity to make available their economic\nand financial standing for the tenderer and that the supporting entity is subject to joint\nand several liability for the performance of the contract (only if the participating\ncandidate relies on the supporting entity’s economic and financial capacities), and\n\nestablishes a legal obligation for the supporting entity to make available their technical\nand professional ability for the tenderer and that the supporting entity will perform the\nstated, specific parts of the contract (i.e., the supporting entity shall perform the specific\nparts of the contract which correspond to their documented technical and professional\nabilities in Part IV.C, Technical and professional ability, only if the tenderer relies on the\nsupporting entity’s technical and professional capacities).\n\nEach statement must be signed by the relevant supporting entity.\n\nThe tenderer is encouraged to use the template in the procurement documents.",
+          "reading_order": 4
+        },
+        {
+          "label": "footer",
+          "bbox": [
+            206,
+            807,
+            526,
+            814
+          ],
+          "text": "27290372.1",
+          "reading_order": 5
+        }
+      ]
+    },
+    {
+      "page_number": 16,
+      "elements": [
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            128,
+            44,
+            136
+          ],
+          "text": "Page:",
+          "reading_order": 0
+        },
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            139,
+            47,
+            146
+          ],
+          "text": "16 of 21",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            125,
+            511,
+            161
+          ],
+          "text": "5\nChanges in the tenderer´s participating parties\nThe contracting entity can only accept changes to a tenderer if the changes are not deemed to\nhave had a decisive impact on the tenderer.",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            173,
+            526,
+            221
+          ],
+          "text": "Regarding the composition of consortium or joint ventures, it is only acceptable for a participant\nto withdraw from the consortium or joint venture if the withdrawing participant has not had a\ndecisive impact on the assessment in relation to the fulfilment of the minimum eligibility\nrequirements.",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            233,
+            519,
+            281
+          ],
+          "text": "A participant in a consortium can only be replaced due to circumstances that are demonstrably\nbeyond the control of the other participants. A participant cannot be replaced when the\nparticipant has had a decisive influence on the assessment in relation to the fulfilment of the\nminimum requirements for participation.",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            293,
+            517,
+            365
+          ],
+          "text": "A tenderer may only replace a company on which the participating candidate has based its\neconomic and financial capacity or technical and professional ability when this is due to\ncircumstances that are demonstrably beyond the participating candidate's control. A\nparticipating candidate may not replace a company on which the participating candidate relies\nwhen the company has played a decisive role in the assessment in relation to the fulfilment of\nthe minimum requirements for participation.",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            377,
+            527,
+            641
+          ],
+          "text": "6\nDocumentation of information in the ESPD\nWithin the deadline for submission of tenders, the contracting entity requests any tenderer that\nfulfil the minimum requirements for participation to present documentation of the information\nprovided in the European Single Procurement Document.\n\nWhen the tenderer is participating in the procurement procedure together with others (e.g., in a\nconsortia or joint venture), and/or when the tenderer relies on the capacity of other entities (e.g.,\nsubconsultants), each involved entity must present documentation of the information provided\nin their European Single Procurement Document.\n\nThe contracting entity will accept documentation in the language of the country where the\ntenderer is established. However, the tenderer must also present (unofficial) translations into\nEnglish of the documentation.\n\nIf a tenderer cannot provide the sufficient documentation the contracting authority may exclude\nthe tenderer from the further tender process and disregard the submitted tender.\n\n6.1\nExclusion grounds\nThe contracting entity will accept the following documentation in relation to the exclusion\ngrounds (in order of priority):",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            641,
+            521,
+            653
+          ],
+          "text": "1) Extracts from the relevant register or similar documents issued by a competent judicial",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            653,
+            510,
+            677
+          ],
+          "text": "or administrative authority or certificates issued by the competent authority.\n2) A declaration on oath (only if such extracts, certificates or similar documents are not",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            135,
+            677,
+            508,
+            701
+          ],
+          "text": "issued in the country where the tenderer is established, or where the documentation\ndoes not cover all the grounds for exclusion entirely).",
+          "reading_order": 9
+        },
+        {
+          "label": "footer",
+          "bbox": [
+            206,
+            807,
+            526,
+            814
+          ],
+          "text": "27290372.1",
+          "reading_order": 10
+        }
+      ]
+    },
+    {
+      "page_number": 17,
+      "elements": [
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            128,
+            44,
+            136
+          ],
+          "text": "Page:",
+          "reading_order": 0
+        },
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            139,
+            47,
+            146
+          ],
+          "text": "17 of 21",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            125,
+            503,
+            137
+          ],
+          "text": "3) A solemn declaration made by the person concerned before a competent judicial or",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            137,
+            527,
+            400
+          ],
+          "text": "administrative authority, a notary or a competent professional or trade body (only if\nthere is no provision for declarations on oath in the country where the tenderer is\nestablished).\n\nThe tenderers can identify the relevant documentation using the online platform e-Certis.\n\nThe contracting authority will not accept documentation issued more than 3 months prior to the\ndeadline for submission of tenders.\n\n6.2\nEconomic and financial standing\nThe contracting entity will accept either official audited annual reports or excerpts hereof or\nrelevant statements from a bank or certified accountant as documentation of the economic and\nfinancial standing stated in Part IV.B of the European Single Procurement Document.\n\n6.3\nTechnical and professional ability\nThe tenderers are not required to present additional documentation of the performed service\nagreements stated in Part IV.C of the European Single Procurement Document.\n\nInstead, the contracting entity reserves the right to contact the recipients of the services or require\nstatements from the recipients confirming that the tenderer has performed the stated service\nagreements.",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            400,
+            523,
+            448
+          ],
+          "text": "7\nProcedure for evaluation of tenders\nThe contracting entity will award the contract based on the weigthed evaluation of the tender as\noutlined below.",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            460,
+            523,
+            508
+          ],
+          "text": "7.1\nAward criteria\nThe contracting entity will award the Consultancy Services Agreement to the most economically\nadvantageous tender, identified based on the best price-quality ratio, which will be assessed\nbased on the following criteria and sub-criteria:",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            520,
+            183,
+            532
+          ],
+          "text": "\nPrice 15 %",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            544,
+            194,
+            556
+          ],
+          "text": "\nQuality 85 %",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            153,
+            569,
+            248,
+            581
+          ],
+          "text": "o Organisation 40 %",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            153,
+            593,
+            395,
+            605
+          ],
+          "text": "o Qualifications and experience of the personnel 40 %",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            153,
+            617,
+            280,
+            629
+          ],
+          "text": "o Technical assistance 20 %",
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            640,
+            512,
+            688
+          ],
+          "text": "7.2\nEvaluation of price (15 %)\nThe contracting entity will evaluate the criterion “Price” based on the technical price stated in\nthe tenderer’s completed Tender Form Sheet (Appendix 5).",
+          "reading_order": 11
+        },
+        {
+          "label": "footer",
+          "bbox": [
+            206,
+            807,
+            526,
+            814
+          ],
+          "text": "27290372.1",
+          "reading_order": 12
+        }
+      ]
+    },
+    {
+      "page_number": 18,
+      "elements": [
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            128,
+            44,
+            136
+          ],
+          "text": "Page:",
+          "reading_order": 0
+        },
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            139,
+            48,
+            146
+          ],
+          "text": "18 of 21",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            125,
+            522,
+            149
+          ],
+          "text": "The tender prices received are awarded points on a scale from 1 to 10 (with two decimals) based\non the following point model.",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            161,
+            372,
+            173
+          ],
+          "text": "The tender with the lowest tender price will receive 10 points.",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            185,
+            391,
+            197
+          ],
+          "text": "Incoming prices plus 50% of the lowest price are awarded 1 point.",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            209,
+            490,
+            233
+          ],
+          "text": "If the incoming prices cannot be accommodated within the price range, the range will be\nincreased by 5% at a time until all prices can be accommodated within the range.",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            245,
+            505,
+            269
+          ],
+          "text": "Other prices are converted to points in between these specified extremes on a linear basis in\nproportion to deviations from the lowest price.",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            281,
+            521,
+            341
+          ],
+          "text": "7.3\nEvaluation of qualitative criteria (85 %)\nThe contracting entity will evaluate the qualitative criteria “Organisation”, “Qualifications and\nexperience of the personnel” and “Technical assistance” and award a numerical score on a scale\nfrom 1 to 10 to each criterion depending on the assessed level of performance using the\nfollowing scores:",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            354,
+            459,
+            527
+          ],
+          "text": "Score\nDescription\n10\nExceptional (i.e. a tender with the best possible performance\nwith no or a few insignificant exceptions)\n9\nExcellent\n8\nVery good\n7\nGood\n6\nAbove expectations\n5\nSatisfactory\n4\nBelow expectations\n3\nPoor\n2\nVery poor\n1\nInadequate (i.e. a tender which only meets the minimum\nrequirements)",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            539,
+            520,
+            563
+          ],
+          "text": "The points will be awarded individually. Therefore, it is possible that no tender will be awarded\nmaximum points, just as two or more tenders may be awarded the same number of points.",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            575,
+            525,
+            635
+          ],
+          "text": "The contracting entity will evaluate the qualitative criteria “Organisation”, “Qualifications and\nexperience of the personnel” and “Technical assistance” as set out below. However, the factors\nmentioned as important by the contracting entity are not the only ones to be considered in the\nevaluation (i.e. the listed factors are not exhaustive). Other factors, that are generally recognized\nas relevant to the specific criterion may also be considered.",
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            647,
+            505,
+            671
+          ],
+          "text": "The point given for a sub-criterion will be multiplied with the specified weighting of the sub-\ncriterion in question and will be given a final point score with two decimals.",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            683,
+            523,
+            719
+          ],
+          "text": "7.3.1\nSubcriterion “Organisation”\nThe evaluation will be based on the tenderer’s description of its project organisation throughout\nthe assignment, including the following:",
+          "reading_order": 12
+        },
+        {
+          "label": "footer",
+          "bbox": [
+            206,
+            807,
+            526,
+            814
+          ],
+          "text": "27290372.1",
+          "reading_order": 13
+        }
+      ]
+    },
+    {
+      "page_number": 19,
+      "elements": [
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            128,
+            44,
+            136
+          ],
+          "text": "Page:",
+          "reading_order": 0
+        },
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            139,
+            47,
+            146
+          ],
+          "text": "19 of 21",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            125,
+            497,
+            149
+          ],
+          "text": "\nAn organisational chart indicating the tenderer’s core organisation, the tenderer’s\noverall project organisation, and links to the contracting entity",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            161,
+            363,
+            173
+          ],
+          "text": "\nThe tenderer’s core organisation and key personnel",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            185,
+            504,
+            209
+          ],
+          "text": "\nHow and how often the tenderer’s key personnel will be available to the contracting\nentity",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            221,
+            325,
+            234
+          ],
+          "text": "\nThe tenderer’s overall project organisation",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            246,
+            408,
+            258
+          ],
+          "text": "In the evaluation, the contracting entity will attach positive weight to:",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            270,
+            520,
+            294
+          ],
+          "text": "\nThe core organisation being effective and functional, with the number of key personnel\nadapted to the scope of services in the individual phases",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            306,
+            364,
+            318
+          ],
+          "text": "\nThe use of consistent key personnel by the tenderer",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            330,
+            497,
+            342
+          ],
+          "text": "\nThe key personnel of the tenderer being easily accessible to the contracting entity",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            355,
+            516,
+            403
+          ],
+          "text": "\nThe overall project organisation of the tenderer being robust and including multiple\nemployees with relevant qualifications, including the ability to handle peak workloads\nand access to staff with relevant specialist knowledge not possessed by the key\npersonnel",
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            415,
+            512,
+            463
+          ],
+          "text": "7.3.2\nSubcriterion “Qualifications and experience of the personnel”\nThe evaluation will be carried out based on the CVs of the tenderer's project manager,\nelectrical/mechanical design managers, civil design manager, quality manager, ICT manager.\nSee section 4.4.",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            475,
+            526,
+            511
+          ],
+          "text": "When preparing CVs, the tenderer is encouraged to clearly and explicitly describe the key\nperson’s role on the executed projects and the specific tasks which the key person has performed\nand/or has been responsible for.",
+          "reading_order": 12
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            523,
+            512,
+            547
+          ],
+          "text": "The tenderer is encouraged to limit the length of each completed CV to a maximum of five A4\npages.",
+          "reading_order": 13
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            559,
+            408,
+            571
+          ],
+          "text": "In the evaluation, the contracting entity will attach positive weight to:",
+          "reading_order": 14
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            583,
+            499,
+            636
+          ],
+          "text": "\nthe key personnel having qualifications and experience within the roles they are to\nperform in the tenderer’s project organisation.\n\nthe key personnel having previously performed corresponding roles.\n\nthe key personnel collectively have documented experience with the following:",
+          "reading_order": 15
+        },
+        {
+          "label": "para",
+          "bbox": [
+            153,
+            638,
+            505,
+            702
+          ],
+          "text": "o\nconsulting on hydropower plants (preferably with bored penstocks in lakes,\nthen with tunnel works in rock, then other hydropower types)\no\nclient consultancy on major construction and civil engineering works\n(preferably with a client responsible for the subsequent operation of an\nelectrical facility, then with a public client)",
+          "reading_order": 16
+        },
+        {
+          "label": "footer",
+          "bbox": [
+            206,
+            807,
+            526,
+            814
+          ],
+          "text": "27290372.1",
+          "reading_order": 17
+        }
+      ]
+    },
+    {
+      "page_number": 20,
+      "elements": [
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            128,
+            44,
+            136
+          ],
+          "text": "Page:",
+          "reading_order": 0
+        },
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            139,
+            49,
+            146
+          ],
+          "text": "20 of 21",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            125,
+            523,
+            255
+          ],
+          "text": "o\npreparation of tender documents and conducting tenders based on FIDIC\ncontract models\no\nhandling disputes between client and turnkey contractor on major construction\nand civil engineering works under FIDIC based contracts\no\nregulatory processing (preferably in Greenland, then in Denmark, then in\nNordic countries and the EU)\no\ndesign of major construction and civil engineering works under equivalent\nconditions (preferably in Greenland, then in Arctic regions, then in remote\nareas)\n\nlanguage requirements:",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            153,
+            257,
+            525,
+            334
+          ],
+          "text": "o\nOne (or more) of the key personnel speak Danish (preferably minimum at C1\nlevel)\no\nOne (or more) of the key personnel speaks English (preferably minimum at C1\nlevel)\no\nOne (or more) of the key personnel speaks Greenlandic (preferably minimum at\nB2 level)",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            345,
+            429,
+            368
+          ],
+          "text": "7.3.3\nSubcriterion “Technical assistance”\nThe evaluation will be conducted on the basis of the following documents:",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            380,
+            431,
+            392
+          ],
+          "text": "\nDescription of quality assurance processes, resources, and systems",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            405,
+            408,
+            416
+          ],
+          "text": "In the evaluation, the contracting entity will attach positive weight to:",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            117,
+            428,
+            518,
+            453
+          ],
+          "text": "\nthe tenderer has well-defined and effective quality assurance processes, resources, and\nsystems to ensure high quality in the services",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            465,
+            515,
+            513
+          ],
+          "text": "8\nNotification of award decision\nThe tenderers will be notified simultaneously via Dalux Tender of the award decision made by\nthe contracting entity. The contracting entity will subsequently publish the award decision on\nthe contracting entities homepage.",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            525,
+            521,
+            537
+          ],
+          "text": "Notification of the award decision does not mean that a contract has been or will be concluded.",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            549,
+            190,
+            561
+          ],
+          "text": "Standstill period",
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            573,
+            507,
+            597
+          ],
+          "text": "After the notification of the award decision, a standstill period of 10 calendar days will apply\nduring which the contracting entity cannot enter into a contract.",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            609,
+            494,
+            633
+          ],
+          "text": "The date of expiry of the standstill period will be specified in the notification of the award\ndecision.",
+          "reading_order": 12
+        },
+        {
+          "label": "footer",
+          "bbox": [
+            206,
+            807,
+            526,
+            814
+          ],
+          "text": "27290372.1",
+          "reading_order": 13
+        }
+      ]
+    },
+    {
+      "page_number": 21,
+      "elements": [
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            128,
+            44,
+            136
+          ],
+          "text": "Page:",
+          "reading_order": 0
+        },
+        {
+          "label": "sideinfo",
+          "bbox": [
+            23,
+            139,
+            47,
+            146
+          ],
+          "text": "21 of 21",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            99,
+            125,
+            527,
+            641
+          ],
+          "text": "9\nAdditional information\n\n9.1\nCode of Conduct and Labour Clause\nThe contracting entity notes that any consultant and any sub-consultants are obliged to show\nsocial responsibility as stipulated in the conventions that form the basis of the UN’s 10 Global\nCompact-principles.\n\nIn addition, the consultant and any sub-consultants must comply with the Danish and\nGreenlandic acts in force at the time in question, as well as relevant municipal regulations and\nguidelines regarding human rights, labour rights, working environment, environment, and\nbusiness ethics. Any consultants outside Denmark’s borders must follow the guidelines of ILO.\n\n\nThe consultant must ensure that employees employed with the consultant and any subconsultants\nand the subconsultants’ subconsultants, and throughout a chain, if any, who contribute to the\nperformance of the service agreement in Greenland are ensured pay (including special\npayments/benefits), working hours and other employment conditions which are not less\nfavourable than those applicable to work of the same nature under a collective agreement entered\ninto by the most representative labour market parties in Greenland within the industrial area in\nquestion, and which applies to the entire Greenlandic area. In addition, the consultant must\nensure the employees’ terms, which are no less favourable than those determined by arbitration,\nnational laws or administrative regulations in Greenland. The consultant must also ensure that\nemployees employed with the consultant and any subconsultants, and the subconsultants’\nsubconsultants, and throughout a chain, if any, are informed about the applicable employment\nconditions.\n\nThe consultant must also ensure employment of trainees during the performance of the contract.\n\nReference is made to the Client´s Labour Clause and Code of Conduct, which are annexes to the\nConsultant Service Agreement.\n\n9.2\nRemuneration and property\nThe tenderers shall bear all costs incurred in relation to the tender procedure.\n\nThe submitted tender will be deemed to be the property of the contracting entity and will not be\nreturned to the tenderers.\n\n9.3\nCancellation of the procurement procedure\nWhile observing the principles of equal treatment, transparency, and proportionality, the\ncontracting entity reserves the right to cancel the procurement procedure, without incurring\nliability towards any tenderer and without the tenderers being entitled to claim any\ncompensation.",
+          "reading_order": 2
+        },
+        {
+          "label": "footer",
+          "bbox": [
+            206,
+            807,
+            526,
+            814
+          ],
+          "text": "27290372.1",
+          "reading_order": 3
+        }
+      ]
+    }
+  ]
+}

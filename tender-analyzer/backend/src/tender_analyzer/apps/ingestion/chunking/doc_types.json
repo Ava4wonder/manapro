@@ -1,0 +1,32 @@
+{
+  "allowed_types": ["brochure", "cv", "norm", "rfp"],
+  "default_type": "rfp",
+  "synonyms": {
+    "brochure": [],
+    "norm": ["standard"],
+    "rfp": ["proposal", "tender"]
+  },
+  "function_candidates_default": ["build_chunks"],
+  "types": {
+    "brochure": {
+      "module_candidates": ["generate_chunks_brochure"],
+      "function_candidates": ["build_chunks"],
+      "fallback_builtin": "default_norm"
+    },
+    "cv": {
+      "module_candidates": ["generate_chunks_cv"],
+      "function_candidates": ["build_chunks"],
+      "fallback_builtin": "default_norm"
+    },
+    "norm": {
+      "module_candidates": ["generate_chunks_norm"],
+      "function_candidates": ["build_chunks"],
+      "fallback_builtin": "default_norm"
+    },
+    "rfp": {
+      "module_candidates": ["generate_chunks_rfp"],
+      "function_candidates": ["build_chunks"],
+      "fallback_builtin": "default_norm"
+    }
+  }
+}
