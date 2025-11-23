@@ -1,177 +1,221 @@
-# answer_pipeline.py
-from typing import List, Dict, Any, Optional
-import logging
-import json
-from dataclasses import dataclass
+from pathlib import Path
 
-# Reuse existing components from the original file
+#!/usr/bin/env python3
+"""
+Loop over prebid_questions, process each through agent.run_once(), 
+save answers and metadata to JSONL with timing logs.
+"""
+
+import json
+import logging
+import os
+import sys
+import time
+from datetime import datetime
+from typing import Dict, List, Any
+
+# 临时文件存储目录
+TEMP_DIR = Path(__file__).parent.parent / "storage" / "tender_summary"
+TEMP_DIR.mkdir(exist_ok=True, parents=True)
+
+# Import agent components from existing module
 from tender_analyzer.apps.qa_analysis.demo_cv_search_llm import (
     OllamaProvider,
     QdrantClient,
     Agent,
-    COLL_PROJECT_KK,
-    INITIAL_TOP_K,
-    TOOL_BASE_TOP_K,
-    TOP_K_BOOST,
-    MAX_TRIES,
-    EVAL_PASS_THRESHOLD,
-    ToolPlan,
-    ToolCallRecord,
-    GoalState,
-    MemoryRecord,
 )
 
-logger = logging.getLogger("answer_pipeline")
+# Import questions directly from source module
+from tender_analyzer.apps.qa_analysis.prebid_questions_1113 import QUESTIONS
 
-@dataclass
-class SummaryAnalysisResult:
-    question: str
-    final_answer: str
-    used_tools: bool
-    tool_calls: List[Dict[str, Any]]
-    initial_rag_chunks: List[Dict[str, Any]]
-    best_score: float
+# ==========================
+# Configuration
+# ==========================
 
-def run_summary_analysis(
-    question: str,
-    ollama_base_url: str = "http://localhost:11434",
-    qdrant_host: str = "localhost",
-    qdrant_port: int = 6333,
-    chat_model: str = "qwen3:32b",
-    embed_model: str = "qwen3-embedding:8b",
-    max_tries: int = MAX_TRIES,
-    eval_threshold: float = EVAL_PASS_THRESHOLD,
-) -> SummaryAnalysisResult:
-    """
-    Automatically choose between pure LLM answer or tool-augmented RAG based on question complexity.
-    
-    Returns:
-        SummaryAnalysisResult with answer, metadata, and tool usage info.
-    """
-    # Initialize providers
-    provider = OllamaProvider(
-        base_url=ollama_base_url,
-        chat_model=chat_model,
-        embed_model=embed_model
-    )
-    qdrant = QdrantClient(host=qdrant_host, port=qdrant_port, prefer_grpc=False)
-    agent = Agent(provider, qdrant)
-    
-    logger.info(f"Starting analysis for question: {question}")
-    
-    # Step 1: Initial RAG from project_kk
-    rag_result = agent.search_tool.search(
-        collection=COLL_PROJECT_KK,
-        query=question,
-        top_k=INITIAL_TOP_K
-    )
-    initial_docs = rag_result["results"]
-    
-    # Generate initial answer
-    docs_json = json.dumps(initial_docs, ensure_ascii=False)
-    initial_prompt = f"""
-You are a domain expert answering tender questions.
 
-Question:
-{question}
 
-Retrieved context:
-{docs_json}
+# Agent configuration (matching File B defaults)
+OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
+QDRANT_HOST = os.getenv("QDRANT_HOST", "localhost")
+QDRANT_PORT = int(os.getenv("QDRANT_PORT", "6333"))
 
-Provide a concise, factual answer. If the context lacks key details, say so explicitly.
-Do NOT mention tools or retrieval systems.
-"""
-    initial_answer = provider.chat([{"role": "user", "content": initial_prompt}], temperature=0.2)
-    
-    # Step 2: Judge if tools are necessary
-    judge_prompt = f"""
-Question: {question}
-Initial Answer: {initial_answer}
 
-Available tools:
-- search_gruner_cv: Expert CVs and experience
-- search_gruner_strategy: Company strategy
-- search_gruner_pastproject: Past project references
 
-Is the initial answer sufficient? Return ONLY "True" if NO additional tools are needed, else "False".
-"""
-    judge_system = "You are a strict evaluator. Return ONLY 'True' or 'False'."
-    judgment = provider.chat(
-        [{"role": "user", "content": judge_prompt}],
-        system_prompt=judge_system,
-        temperature=0.0
-    ).strip().lower()
-    
-    used_tools = (judgment != "true")
-    final_answer = initial_answer
-    all_tool_calls = []
-    best_score = 0.0
-    
-    if used_tools:
-        logger.info("Tools deemed necessary. Executing full pipeline...")
-        # Create minimal goal state
-        gs = GoalState(
-            goal_id="auto-" + question[:20].replace(" ", "_"),
-            question=question,
-            created_at=0.0
-        )
-        
-        # Plan tools
-        plan = agent.plan_tools(question, initial_answer, initial_docs)
-        gs.plan_goal = plan.goal
-        
-        # Execute tool calls across retries
-        all_rag_answers = []
-        all_tool_data = []
-        
-        for attempt in range(max_tries):
-            tool_data, rag_answers = agent.execute_tool_calls(plan, attempt_index=attempt)
-            all_tool_data.extend(tool_data)
-            all_rag_answers.extend(rag_answers)
-            
-            # Build extended answer
-            extended = initial_answer + "\n\n" + "\n\n".join(rag_answers) if rag_answers else initial_answer
-            
-            # Evaluate (optional but recommended)
-            # TODO: Uncomment if evaluation is desired
-            # report = agent.evaluate(question, extended, initial_docs + tool_data, plan)
-            # if report.score >= eval_threshold:
-            #     final_answer = extended
-            #     best_score = report.score
-            #     break
-            
-            final_answer = extended  # Use latest result
-        
-        # Final refinement if tools were used
-        if all_rag_answers:
-            final_answer = agent.refine_final_answer(question, final_answer)
-        
-        # Capture tool call records
-        all_tool_calls = [record.model_dump() for record in agent.tool_call_records]
-    else:
-        logger.info("Initial answer sufficient. Skipping tools.")
-    
-    return SummaryAnalysisResult(
-        question=question,
-        final_answer=final_answer,
-        used_tools=used_tools,
-        tool_calls=all_tool_calls,
-        initial_rag_chunks=[
-            {
-                "rank": i + 1,
-                "id": item.get("id", ""),
-                "score": float(item.get("score", 0.0)),
-                "text": item.get("text", "")
-            }
-            for i, item in enumerate(initial_docs)
+# ==========================
+# Helper Functions
+# ==========================
+
+def iterate_questions(qmap: Dict[str, Dict[str, List[str]]]):
+    """Generator to iterate through nested question structure."""
+    for cat, subcats in qmap.items():
+        for subcat, questions in subcats.items():
+            for q in questions:
+                yield cat, subcat, q
+
+# ==========================
+# Main Processing
+# ==========================
+
+def run_summary_analysis(tender_id: str = "") -> Dict[str, Any]:
+    # File paths
+    OUTPUT_JSONL = TEMP_DIR / f"{tender_id}_qanswers.jsonl"
+    LOG_FILE = TEMP_DIR / f"{tender_id}_pipeline_run_time.log"
+
+    # Logging configuration
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s [%(levelname)s] %(message)s",
+        handlers=[
+            logging.FileHandler(LOG_FILE, mode="a", encoding="utf-8"),
+            logging.StreamHandler(sys.stdout),
         ],
-        best_score=best_score
     )
 
-# Example usage
+    logger = logging.getLogger("answer_pipeline")
+
+    """
+    Process all questions using agent.run_once() and save results to JSONL.
+    """
+    logger.info("🚀 Starting Question Processing Pipeline")
+    logger.info(f"Output file: {OUTPUT_JSONL}")
+    logger.info(f"Log file: {LOG_FILE}")
+    
+    # Initialize agent
+    logger.info("Initializing Agent...")
+    try:
+        provider = OllamaProvider(base_url=OLLAMA_BASE_URL)
+        qdrant = QdrantClient(host=QDRANT_HOST, port=QDRANT_PORT, prefer_grpc=False)
+        agent = Agent(provider, qdrant)
+        logger.info("✅ Agent initialized successfully")
+    except Exception as e:
+        logger.exception(f"❌ Failed to initialize agent: {e}")
+        sys.exit(1)
+    
+    query_logs = []
+    start_global = time.perf_counter()
+    total_questions = 0
+    successful_questions = 0
+    
+    # Process questions and write to JSONL
+    with open(OUTPUT_JSONL, "w", encoding="utf-8") as outf:
+        for cat, subcat, q in iterate_questions(QUESTIONS):
+            total_questions += 1
+            logger.info(f"[{total_questions}] Processing: {cat} > {subcat}")
+            logger.debug(f"Full question: {q}")
+            
+            t0 = time.perf_counter()
+            
+            try:
+                # Process question through agent
+                answer = agent.run_once(q)
+                elapsed = time.perf_counter() - t0
+                successful_questions += 1
+                
+                # Create output record
+                rec = {
+                    "category": cat,
+                    "subcategory": subcat,
+                    "question": q,
+                    "answer": answer,
+                    "processing_time_sec": round(elapsed, 3),
+                    "status": "success"
+                }
+                outf.write(json.dumps(rec, ensure_ascii=False) + "\n")
+                
+                # Log timing
+                query_logs.append({
+                    "question": q,
+                    "category": cat,
+                    "subcategory": subcat,
+                    "elapsed_sec": round(elapsed, 3),
+                    "status": "success"
+                })
+                
+                logger.info(f"✅ Completed in {elapsed:.2f}s")
+                
+            except Exception as e:
+                elapsed = time.perf_counter() - t0
+                logger.exception(f"❌ Error processing question (after {elapsed:.2f}s)")
+                
+                # Write error record
+                rec = {
+                    "category": cat,
+                    "subcategory": subcat,
+                    "question": q,
+                    "answer": f"ERROR: {str(e)}",
+                    "processing_time_sec": round(elapsed, 3),
+                    "status": "error",
+                    "error_message": str(e)
+                }
+                outf.write(json.dumps(rec, ensure_ascii=False) + "\n")
+                
+                query_logs.append({
+                    "question": q,
+                    "category": cat,
+                    "subcategory": subcat,
+                    "elapsed_sec": round(elapsed, 3),
+                    "status": "error",
+                    "error": str(e)
+                })
+    
+    # Save summary timing log
+    total_time = time.perf_counter() - start_global
+    log_entry = {
+        "timestamp": datetime.now().isoformat(),
+        "total_questions": total_questions,
+        "successful_questions": successful_questions,
+        "failed_questions": total_questions - successful_questions,
+        "total_sec": round(total_time, 3),
+        "avg_sec_per_question": round(total_time / total_questions, 3) if total_questions > 0 else 0,
+        "queries": query_logs
+    }
+    
+    try:
+        with open(LOG_FILE, "a", encoding="utf-8") as lf:
+            lf.write(json.dumps(log_entry, ensure_ascii=False) + "\n")
+        logger.info(f"✅ Timing log saved to: {LOG_FILE}")
+    except Exception as e:
+        logger.error(f"Failed to save timing log: {e}")
+    
+    # Final summary
+    logger.info("=" * 50)
+    logger.info("📊 PIPELINE SUMMARY")
+    logger.info("=" * 50)
+    logger.info(f"Total questions: {total_questions}")
+    logger.info(f"Successful: {successful_questions}")
+    logger.info(f"Failed: {total_questions - successful_questions}")
+    logger.info(f"Total time: {total_time:.2f}s")
+    logger.info(f"Average time: {total_time/total_questions:.2f}s/question")
+    logger.info(f"Answers saved to: {os.path.abspath(OUTPUT_JSONL)}")
+    logger.info("=" * 50)
+    
+    return {
+        "output_file": os.path.abspath(OUTPUT_JSONL),
+        "log_file": LOG_FILE,
+        "total_questions": total_questions,
+        "successful_questions": successful_questions,
+        "total_time": total_time
+    }
+
+# ==========================
+# Entry Point
+# ==========================
+
 if __name__ == "__main__":
-    logging.basicConfig(level=logging.INFO)
-    question = "Does Gruner have at least 10 years of experience in sustainable infrastructure?"
-    result = run_summary_analysis(question)
-    print(f"Answer:\n{result.final_answer}\n")
-    print(f"Used tools: {result.used_tools}")
+    print("🚀 Starting Question Processing Pipeline")
+    print("=" * 60)
+    
+    try:
+        results = run_summary_analysis()
+        print("\n✨ Pipeline finished successfully!")
+        print(f"📄 Output: {results['output_file']}")
+        print(f"📊 Processed {results['successful_questions']}/{results['total_questions']} questions")
+        print(f"⏱️  Total time: {results['total_time']:.2f}s")
+    except KeyboardInterrupt:
+        print("\n\n⚠️  Pipeline interrupted by user")
+        sys.exit(1)
+    except Exception as e:
+        print(f"\n\n❌ Pipeline failed: {e}")
+        logger.exception("Unhandled exception in main")
+        sys.exit(1)
+

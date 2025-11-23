@@ -56,7 +56,7 @@ COLL_GRUNER_PASTPROJECT = "brochure_qwen"
 INITIAL_TOP_K = 12
 TOOL_BASE_TOP_K = 10       # Base top_k for tool searches
 TOP_K_BOOST = 2           # How much to increase K per retry
-MAX_TRIES = 3
+MAX_TRIES = 0
 EVAL_PASS_THRESHOLD = 0.70
 
 

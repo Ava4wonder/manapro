@@ -1,159 +1,23 @@
-# from typing import Iterable, List
-
-# from fastapi import APIRouter, Depends, File, Form, HTTPException, UploadFile
-
-# from tender_analyzer.apps.evaluation.service import EvaluationService
-# from tender_analyzer.apps.ingestion.service import ProcessingService
-# from tender_analyzer.apps.orchestration.service import OrchestrationService
-# from tender_analyzer.apps.qa_engine.service import AnalysisService
-# from tender_analyzer.common.auth.middleware import get_current_user
-# from tender_analyzer.common.auth.models import AuthenticatedUser
-# from tender_analyzer.common.state.enums import TenderState
-# from tender_analyzer.domain.models import QuestionAnswer
-# from tender_analyzer.domain.repositories import tender_repo
-
-# router = APIRouter()
-
-# processing_service = ProcessingService(tender_repo)
-# analysis_service = AnalysisService()
-# evaluation_service = EvaluationService()
-# orchestration_service = OrchestrationService(
-#     repository=tender_repo,
-#     analysis_service=analysis_service,
-#     evaluation_service=evaluation_service,
-# )
-
-# STATE_PROGRESS = {
-#     TenderState.INGESTING: 5,
-#     TenderState.INGESTED: 20,
-#     TenderState.SUMMARY_RUNNING: 40,
-#     TenderState.SUMMARY_READY: 60,
-#     TenderState.FULL_RUNNING: 70,
-#     TenderState.FULL_READY: 85,
-#     TenderState.EVAL_RUNNING: 90,
-#     TenderState.EVAL_READY: 100,
-#     TenderState.FAILED: 0,
-# }
-
-
-# def _answers_to_payload(answers: Iterable[QuestionAnswer]) -> List[dict]:
-#     return [{"question": answer.question, "answer": answer.answer} for answer in answers]
-
-
-# def _must_get(tender_id: str, user: AuthenticatedUser):
-#     tender = tender_repo.get(tender_id)
-#     if not tender or tender.tenant_id != user.tenant_id:
-#         raise HTTPException(status_code=404, detail="tender not found")
-#     return tender
-
-
-# def _status_payload(tender):
-#     state = tender.state
-#     return {
-#         "id": tender.id,
-#         "state": state.value,
-#         "progress": STATE_PROGRESS.get(state, 0),
-#         "summary_ready": state in {
-#             TenderState.SUMMARY_READY,
-#             TenderState.FULL_RUNNING,
-#             TenderState.FULL_READY,
-#             TenderState.EVAL_RUNNING,
-#             TenderState.EVAL_READY,
-#         },
-#         "full_ready": state in {
-#             TenderState.FULL_READY,
-#             TenderState.EVAL_RUNNING,
-#             TenderState.EVAL_READY,
-#         },
-#         "eval_ready": state == TenderState.EVAL_READY,
-#         "documents": [document.name for document in tender.documents],
-#         "created_at": tender.created_at,
-#     }
-
-
-# @router.post("/tenders")
-# async def create_tender(
-#     name: str = Form(...),
-#     files: List[UploadFile] | None = File(None),
-#     user: AuthenticatedUser = Depends(get_current_user),
-# ):
-#     tender = await processing_service.upload_package(name, user.tenant_id, files)
-#     return {"id": tender.id}
-
-
-# @router.get("/tenders/{tender_id}/status")
-# async def get_status(tender_id: str, user: AuthenticatedUser = Depends(get_current_user)):
-#     tender = _must_get(tender_id, user)
-#     return _status_payload(tender)
-
-
-# @router.post("/tenders/{tender_id}/start-analysis")
-# async def start_analysis(tender_id: str, user: AuthenticatedUser = Depends(get_current_user)):
-#     _must_get(tender_id, user)
-#     try:
-#         orchestration_service.start_analysis(tender_id)
-#     except ValueError as exc:
-#         raise HTTPException(status_code=400, detail=str(exc))
-#     tender = _must_get(tender_id, user)
-#     return _status_payload(tender)
-
-
-# @router.get("/tenders/{tender_id}/summary")
-# async def get_summary(tender_id: str, user: AuthenticatedUser = Depends(get_current_user)):
-#     tender = _must_get(tender_id, user)
-#     return {
-#         "id": tender.id,
-#         "ready": tender.state in {
-#             TenderState.SUMMARY_READY,
-#             TenderState.FULL_RUNNING,
-#             TenderState.FULL_READY,
-#             TenderState.EVAL_RUNNING,
-#             TenderState.EVAL_READY,
-#         },
-#         "questions": _answers_to_payload(tender.highlight_answers),
-#     }
-
-
-# @router.get("/tenders/{tender_id}/details")
-# async def get_details(tender_id: str, user: AuthenticatedUser = Depends(get_current_user)):
-#     tender = _must_get(tender_id, user)
-#     return {
-#         "id": tender.id,
-#         "ready": tender.state in {
-#             TenderState.FULL_READY,
-#             TenderState.EVAL_RUNNING,
-#             TenderState.EVAL_READY,
-#         },
-#         "questions": _answers_to_payload(tender.full_answers),
-#     }
-
-
-# @router.get("/tenders/{tender_id}/evaluation")
-# async def get_evaluation(tender_id: str, user: AuthenticatedUser = Depends(get_current_user)):
-#     tender = _must_get(tender_id, user)
-#     return {
-#         "id": tender.id,
-#         "ready": tender.state == TenderState.EVAL_READY,
-#         "evaluation": tender.evaluation.dict() if tender.evaluation else None,
-#     }
-
-
 # backend/src/tender_analyzer/apps/api_gateway/routes/tenders.py
-from fastapi import APIRouter, UploadFile, File, Form, BackgroundTasks, HTTPException
-from typing import List
+import logging
 import uuid
-from pathlib import Path
 from datetime import datetime
+from pathlib import Path
+from typing import List
+
+from fastapi import APIRouter, UploadFile, File, Form, BackgroundTasks, HTTPException
 
 from tender_analyzer.apps.ingestion.workers.ingestion_worker import process_tender_and_store_in_qdrant
+from tender_analyzer.domain.dto import QuestionAnswerDTO, SummaryResponse as SummaryResponseDTO
+from tender_analyzer.domain.models import QuestionAnswer, StoredDocument, Tender
 from tender_analyzer.domain.repositories import tender_repo
-from tender_analyzer.domain.models import Tender, StoredDocument
 from tender_analyzer.common.state.enums import TenderState
 
 from tender_analyzer.apps.qa_analysis.answer_pipeline import run_summary_analysis
 
 
 router = APIRouter()
+LOG = logging.getLogger(__name__)
 
 # 临时文件存储目录
 TEMP_DIR = Path(__file__).parent.parent.parent / "storage" / "tender_uploads"
@@ -172,6 +36,14 @@ STATE_PROGRESS = {
     TenderState.FAILED: 0,
 }
 
+SUMMARY_READY_STATES = {
+    TenderState.SUMMARY_READY,
+    TenderState.FULL_RUNNING,
+    TenderState.FULL_READY,
+    TenderState.EVAL_RUNNING,
+    TenderState.EVAL_READY,
+}
+
 def _status_payload(tender: Tender):
     """Convert tender object to API response"""
     state = tender.state
@@ -179,13 +51,7 @@ def _status_payload(tender: Tender):
         "id": tender.id,
         "state": state.value,
         "progress": STATE_PROGRESS.get(state, 0),
-        "summary_ready": state in {
-            TenderState.SUMMARY_READY,
-            TenderState.FULL_RUNNING,
-            TenderState.FULL_READY,
-            TenderState.EVAL_RUNNING,
-            TenderState.EVAL_READY,
-        },
+        "summary_ready": state in SUMMARY_READY_STATES,
         "full_ready": state in {
             TenderState.FULL_READY,
             TenderState.EVAL_RUNNING,
@@ -195,6 +61,27 @@ def _status_payload(tender: Tender):
         "documents": [doc.name for doc in tender.documents],
         "created_at": tender.created_at,
     }
+
+SUMMARY_PROMPT = (
+    "Summarize the key requirements, risks, and deliverables described in the uploaded tender. "
+    "Highlight timeline expectations, mandatory qualifications, and anything that would help a reviewer understand the scope."
+)
+
+
+def _run_summary_pipeline_task(tender_id: str) -> None:
+    LOG.info("[analysis] Running summary pipeline for tender %r", tender_id)
+    try:
+        result = run_summary_analysis(tender_id)
+        answer_text = (result.final_answer or "").strip()
+        tender_repo.update_highlight_answers(
+            tender_id,
+            [QuestionAnswer(question=result.question, answer=answer_text)],
+        )
+        tender_repo.set_state(tender_id, TenderState.SUMMARY_READY)
+        LOG.info("[analysis] Tender %r summary ready", tender_id)
+    except Exception:
+        LOG.exception("[analysis] Summary pipeline failed for tender %r", tender_id)
+        tender_repo.set_state(tender_id, TenderState.FAILED)
 
 @router.post("/tenders")
 async def upload_tender(
@@ -245,8 +132,28 @@ async def get_status(tender_id: str):
         raise HTTPException(status_code=404, detail="tender not found")
     return _status_payload(tender)
 
+
+@router.get("/tenders/{tender_id}/summary")
+async def get_summary(tender_id: str):
+    """Return stored highlight answers for a tender"""
+    tender = tender_repo.get(tender_id)
+    if not tender:
+        raise HTTPException(status_code=404, detail="tender not found")
+
+    questions = [
+        QuestionAnswerDTO(question=answer.question, answer=answer.answer)
+        for answer in tender.highlight_answers
+    ]
+
+    return SummaryResponseDTO(
+        id=tender.id,
+        questions=questions,
+        ready=tender.state in SUMMARY_READY_STATES,
+    )
+
+
 @router.post("/tenders/{tender_id}/start-analysis")
-async def start_analysis(tender_id: str):
+async def start_analysis(tender_id: str, background_tasks: BackgroundTasks):
     """Start analysis for a tender"""
     tender = tender_repo.get(tender_id)
     if not tender:
@@ -254,5 +161,7 @@ async def start_analysis(tender_id: str):
     
     # Update state to indicate analysis is running
     tender_repo.set_state(tender_id, TenderState.SUMMARY_RUNNING)
+
+    background_tasks.add_task(_run_summary_pipeline_task, tender_id)
     
     return _status_payload(tender)
