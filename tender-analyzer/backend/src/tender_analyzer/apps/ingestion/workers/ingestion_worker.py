@@ -449,7 +449,7 @@ def process_tender_and_store_in_qdrant(
             tender_dir,
         )
         # still try to clean up tender_dir
-        os.system(f"rm -rf {tender_dir}")
+        # os.system(f"rm -rf {tender_dir}")
         return 0
 
     # 2. Use QdrantVectorStore for consistent upsert behavior
@@ -475,12 +475,13 @@ def process_tender_and_store_in_qdrant(
             e,
         )
         # cleanup and signal failure
-        os.system(f"rm -rf {tender_dir}")
+        # os.system(f"rm -rf {tender_dir}")
         return 0
 
     # 3. Cleanup temporary tender directory
     try:
-        os.system(f"rm -rf {tender_dir}")
+        pass
+        # os.system(f"rm -rf {tender_dir}")
     except Exception as e:
         LOG.warning(
             "[tender-ingest] Failed to cleanup tender_dir=%r: %s",

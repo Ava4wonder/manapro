@@ -41,6 +41,34 @@
       "created_at": 1763946457.2282047,
       "plan_goal": "Determine if the client requires previous experience with them or in specific regions (Greenland/Denmark) and verify whether Gruner has past projects in Greenland/Denmark or with the same client.",
       "history": []
+    },
+    "e1f699f0-24c6-4254-8cc0-c05dc6025a58": {
+      "goal_id": "e1f699f0-24c6-4254-8cc0-c05dc6025a58",
+      "question": "What are the required key experts or engineer or personnels to meet the criteria? Does Gruner has key experts meeting these criterias?",
+      "created_at": 1763980889.2002213,
+      "plan_goal": "Verify Gruner's key experts for required roles and specific experiences such as FIDIC Yellow Book, hydropower projects, and ISO 9001 compliance.",
+      "history": []
+    },
+    "04eba785-64f8-4b2a-b627-ee64bec4518e": {
+      "goal_id": "04eba785-64f8-4b2a-b627-ee64bec4518e",
+      "question": "Does the client require previous experience with them or in a specific country/region? Does Gruner have such experience?",
+      "created_at": 1763980997.4449933,
+      "plan_goal": "Determine if the client requires previous experience with them or in specific regions (Greenland/Denmark) and verify if Gruner has relevant past experience in those regions or with the client.",
+      "history": []
+    },
+    "98e61b6b-467c-47c8-988f-b580decbb7f9": {
+      "goal_id": "98e61b6b-467c-47c8-988f-b580decbb7f9",
+      "question": "What are the required key experts or engineer or personnels to meet the criteria? Does Gruner has key experts meeting these criterias?",
+      "created_at": 1763981452.576618,
+      "plan_goal": "Identify Gruner's personnel meeting specific qualifications for key expert roles and verify their experience, education, and expertise.",
+      "history": []
+    },
+    "ebd7e6f4-ea70-44f0-aea5-07099c77850f": {
+      "goal_id": "ebd7e6f4-ea70-44f0-aea5-07099c77850f",
+      "question": "Does the client require previous experience with them or in a specific country/region? Does Gruner have such experience?",
+      "created_at": 1763981555.1889772,
+      "plan_goal": "Identify if the client explicitly requires previous experience with them or in a specific country/region and verify whether Gruner has relevant past experience (with the client or in the specified region/country).",
+      "history": []
     }
   }
 }
