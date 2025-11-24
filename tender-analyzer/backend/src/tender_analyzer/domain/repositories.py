@@ -1,4 +1,5 @@
 from typing import Dict, Iterable, List, Optional
+import json
 
 from tender_analyzer.common.state.enums import TenderState
 from tender_analyzer.domain.models import Evaluation, QuestionAnswer, Tender
@@ -21,13 +22,17 @@ class TenderRepository:
             return
         tender.state = state
 
-    def update_highlight_answers(
-        self, tender_id: str, answers: Iterable[QuestionAnswer]
-    ) -> None:
+    def update_highlight_answers(self, tender_id: str, jsonl_content: str) -> None:
+        """
+        更新指定 Tender 的高亮答案。
+        现在接受一个 JSONL (JSON Lines) 格式的字符串作为输入。
+        """
         tender = self.get(tender_id)
         if not tender:
-            return
-        tender.highlight_answers = list(answers)
+            raise ValueError(f"Tender with ID {tender_id} not found.")
+        
+        # 直接将 JSONL 字符串赋值给 highlight_answers 字段
+        tender.highlight_answers = jsonl_content
 
     def update_full_answers(self, tender_id: str, answers: Iterable[QuestionAnswer]) -> None:
         tender = self.get(tender_id)

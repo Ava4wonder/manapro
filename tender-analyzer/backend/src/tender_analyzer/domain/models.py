@@ -97,7 +97,7 @@ class Tender(BaseModel):
     created_at: str
     state: TenderState
     documents: List[StoredDocument] = Field(default_factory=list)
-    highlight_answers: List[QuestionAnswer] = Field(default_factory=list)
+    highlight_answers: str = ""  # str for storing JSONL
     full_answers: List[QuestionAnswer] = Field(default_factory=list)
     evaluation: Optional[Evaluation] = None
     analysis_corpus: str = ""
