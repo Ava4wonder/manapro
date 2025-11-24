@@ -8,6 +8,11 @@ from tender_analyzer.domain.models import Evaluation, QuestionAnswer
 class QuestionAnswerDTO(BaseModel):
     question: str
     answer: str
+    category: Optional[str] = None
+    subcategory: Optional[str] = None
+    status: Optional[str] = None
+    processing_time_sec: Optional[float] = None
+    error_message: Optional[str] = None
 
 
 class SummaryResponse(BaseModel):

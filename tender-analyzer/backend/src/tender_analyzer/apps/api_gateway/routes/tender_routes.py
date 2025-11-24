@@ -1,17 +1,19 @@
 # backend/src/tender_analyzer/apps/api_gateway/routes/tenders.py
+import json
 import logging
 import uuid
 from datetime import datetime
 from pathlib import Path
-from typing import List
+from typing import Any, List, Optional
 
 from fastapi import APIRouter, UploadFile, File, Form, BackgroundTasks, HTTPException
 
 from tender_analyzer.apps.ingestion.workers.ingestion_worker import process_tender_and_store_in_qdrant
-from tender_analyzer.domain.dto import QuestionAnswerDTO, SummaryResponse as SummaryResponseDTO
-from tender_analyzer.domain.models import QuestionAnswer, StoredDocument, Tender
-from tender_analyzer.domain.repositories import tender_repo
 from tender_analyzer.common.state.enums import TenderState
+from tender_analyzer.common.state.state_machine import TenderStateMachine
+from tender_analyzer.domain.dto import QuestionAnswerDTO, SummaryResponse as SummaryResponseDTO
+from tender_analyzer.domain.models import QuestionAnswer, Tender
+from tender_analyzer.domain.repositories import tender_repo
 
 from tender_analyzer.apps.qa_analysis.answer_pipeline import run_summary_analysis
 
@@ -66,23 +68,8 @@ SUMMARY_PROMPT = (
     "Summarize the key requirements, risks, and deliverables described in the uploaded tender. "
     "Highlight timeline expectations, mandatory qualifications, and anything that would help a reviewer understand the scope."
 )
-
-
-import json
-import logging
-from pathlib import Path
-from typing import List
-
-from tender_analyzer.apps.qa_analysis.answer_pipeline import run_summary_analysis
-from tender_analyzer.common.state.state_machine import TenderStateMachine
-from tender_analyzer.common.state.enums import TenderState
-from tender_analyzer.domain.repositories import tender_repo
-
-# 假设 QuestionAnswer 实体仍用于其他部分，此处仅为展示
-# from tender_analyzer.domain.entities import QuestionAnswer
-
-LOG = logging.getLogger(__name__)
-
+
+
 def _run_summary_pipeline_task(tender_id: str) -> None:
     """
     执行摘要分析流程，并将结果以 JSONL 字符串格式存储。
@@ -154,6 +141,76 @@ def _run_summary_pipeline_task(tender_id: str) -> None:
         except Exception:
             LOG.critical("[analysis] Failed to set tender %r state to FAILED.", tender_id)
 
+
+def _build_question_answer_dto(record: Any) -> Optional[QuestionAnswerDTO]:
+    if isinstance(record, QuestionAnswer):
+        payload = record.dict()
+    elif isinstance(record, dict):
+        payload = record
+    else:
+        return None
+
+    return QuestionAnswerDTO(
+        question=str(payload.get("question") or ""),
+        answer=str(payload.get("answer") or ""),
+        category=payload.get("category"),
+        subcategory=payload.get("subcategory"),
+        status=payload.get("status"),
+        processing_time_sec=payload.get("processing_time_sec"),
+        error_message=payload.get("error_message"),
+    )
+
+
+def _parse_highlight_answers(value: Any) -> List[QuestionAnswerDTO]:
+    records: List[QuestionAnswerDTO] = []
+
+    def push(item: Any) -> None:
+        dto = _build_question_answer_dto(item)
+        if dto:
+            records.append(dto)
+
+    if isinstance(value, (list, tuple)):
+        for item in value:
+            push(item)
+        return records
+
+    if isinstance(value, bytes):
+        text = value.decode("utf-8", errors="ignore")
+    else:
+        text = str(value or "")
+
+    text = text.strip()
+    if not text:
+        return records
+
+    parsed: Any | None = None
+    try:
+        parsed = json.loads(text)
+    except json.JSONDecodeError:
+        parsed = None
+
+    if isinstance(parsed, list):
+        for item in parsed:
+            push(item)
+        if records:
+            return records
+    elif isinstance(parsed, dict):
+        push(parsed)
+        if records:
+            return records
+
+    for line in text.splitlines():
+        trimmed = line.strip()
+        if not trimmed:
+            continue
+        try:
+            candidate = json.loads(trimmed)
+        except json.JSONDecodeError:
+            continue
+        push(candidate)
+
+    return records
+
 @router.post("/tenders")
 async def upload_tender(
     background_tasks: BackgroundTasks,
@@ -211,10 +268,7 @@ async def get_summary(tender_id: str):
     if not tender:
         raise HTTPException(status_code=404, detail="tender not found")
 
-    questions = [
-        QuestionAnswerDTO(question=answer.question, answer=answer.answer)
-        for answer in tender.highlight_answers
-    ]
+    questions = _parse_highlight_answers(tender.highlight_answers)
 
     return SummaryResponseDTO(
         id=tender.id,
