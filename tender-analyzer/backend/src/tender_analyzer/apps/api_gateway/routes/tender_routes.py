@@ -68,8 +68,10 @@ SUMMARY_PROMPT = (
     "Summarize the key requirements, risks, and deliverables described in the uploaded tender. "
     "Highlight timeline expectations, mandatory qualifications, and anything that would help a reviewer understand the scope."
 )
-
-
+
+
+
+
 def _run_summary_pipeline_task(tender_id: str) -> None:
     """
     执行摘要分析流程，并将结果以 JSONL 字符串格式存储。
@@ -285,6 +287,17 @@ async def start_analysis(tender_id: str, background_tasks: BackgroundTasks):
         raise HTTPException(status_code=404, detail="tender not found")
     
     # Update state to indicate analysis is running
+    # Validate state transition using the state machine
+    state_machine = TenderStateMachine()
+    current_state = tender.state
+    if not state_machine.can_transition(current_state, TenderState.SUMMARY_RUNNING):
+        raise HTTPException(
+            status_code=400,
+            detail=f"Cannot start analysis from state '{current_state.value}'. "
+                  f"Valid state: {TenderState.INGESTED.value}"
+        )
+    
+    # Proceed only if transition is valid
     tender_repo.set_state(tender_id, TenderState.SUMMARY_RUNNING)
 
     background_tasks.add_task(_run_summary_pipeline_task, tender_id)

@@ -111,6 +111,34 @@
       "created_at": 1763990412.5760732,
       "plan_goal": "Determine if the client requires prior experience with them or in specific regions like Greenland/Denmark and verify Gruner's relevant past experience.",
       "history": []
+    },
+    "bb3b42d1-682e-4cdc-9695-eeee2faca140": {
+      "goal_id": "bb3b42d1-682e-4cdc-9695-eeee2faca140",
+      "question": "What are the required key experts or engineer or personnels to meet the criteria? Does Gruner has key experts meeting these criterias?",
+      "created_at": 1764001120.3691716,
+      "plan_goal": "Verify Gruner's personnel qualifications, availability, and relevant degrees for key expert roles in hydropower projects.",
+      "history": []
+    },
+    "5a4284db-369d-498d-92d1-ed0af128da04": {
+      "goal_id": "5a4284db-369d-498d-92d1-ed0af128da04",
+      "question": "Does the client require previous experience with them or in a specific country/region? Does Gruner have such experience?",
+      "created_at": 1764001192.455618,
+      "plan_goal": "Determine if the client requires previous experience with them or in a specific country/region and verify whether Gruner has relevant past experience with the client or in the specified region.",
+      "history": []
+    },
+    "8288f333-fe8e-4493-ab2d-64374091e702": {
+      "goal_id": "8288f333-fe8e-4493-ab2d-64374091e702",
+      "question": "What are the required key experts or engineer or personnels to meet the criteria? Does Gruner has key experts meeting these criterias?",
+      "created_at": 1764001381.1844416,
+      "plan_goal": "Identify qualified professionals with expertise in hydropower and infrastructure project management.",
+      "history": []
+    },
+    "67ef24ad-94e6-4a4f-a5fa-5b4897b72e43": {
+      "goal_id": "67ef24ad-94e6-4a4f-a5fa-5b4897b72e43",
+      "question": "Does the client require previous experience with them or in a specific country/region? Does Gruner have such experience?",
+      "created_at": 1764001484.8831272,
+      "plan_goal": "Determine if the client's tender requires prior experience with them or in a specific region/country and verify whether Gruner has relevant past experience in the specified region/country or with the client.",
+      "history": []
     }
   }
 }
