@@ -4,6 +4,9 @@ import PdfPreviewWithHighlights from "../components/PdfPreviewWithHighlights"
 import TenderList from "../components/TenderList"
 import { QuestionAnswer, SummaryResponse } from "../api/tenders"
 
+import ReactMarkdown from "react-markdown"
+
+
 type Props = {
   summary: SummaryResponse | null
   documents: string[]
@@ -86,7 +89,7 @@ const SummaryPage = ({ summary, documents }: Props) => {
       return
     }
     document.querySelectorAll(".summary-page details").forEach((el) => {
-      el.open = open
+      (el as HTMLDetailsElement).open = open
     })
   }, [])
 
@@ -139,7 +142,15 @@ const SummaryPage = ({ summary, documents }: Props) => {
                                   {badge}
                                 </span>
                               </div>
-                              <p>{answer.answer}</p>
+                              <div className="summary-card__answer">
+                                <ReactMarkdown
+                                  components={{
+                                    a: ({ node, ...props }) => <a {...props} target="_blank" rel="noopener noreferrer" />,
+                                  }}
+                                >
+                                  {answer.answer ?? ""}
+                                </ReactMarkdown>
+                              </div>
                               <div className="summary-card__meta">
                                 {answer.processing_time_sec ? (
                                   <span>Processed in {answer.processing_time_sec.toFixed(2)}s</span>
