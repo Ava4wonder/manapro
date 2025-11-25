@@ -12,7 +12,7 @@ from tender_analyzer.apps.ingestion.workers.ingestion_worker import process_tend
 from tender_analyzer.common.state.enums import TenderState
 from tender_analyzer.common.state.state_machine import TenderStateMachine
 from tender_analyzer.domain.dto import QuestionAnswerDTO, SummaryResponse as SummaryResponseDTO
-from tender_analyzer.domain.models import QuestionAnswer, Tender
+from tender_analyzer.domain.models import QuestionAnswer, StoredDocument, Tender
 from tender_analyzer.domain.repositories import tender_repo
 
 from tender_analyzer.apps.qa_analysis.answer_pipeline import run_summary_analysis
@@ -242,6 +242,14 @@ async def upload_tender(
         file_path = tender_dir / file.filename
         with open(file_path, "wb") as f:
             f.write(await file.read())
+        tender.documents.append(
+            StoredDocument(
+                id=str(uuid.uuid4()),
+                name=file.filename,
+                storage_path=str(file_path),
+                uploaded_at=datetime.utcnow().isoformat(),
+            )
+        )
     
     # 触发异步任务：分块 + Qdrant 存储
     background_tasks.add_task(

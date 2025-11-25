@@ -195,6 +195,20 @@
       "created_at": 1764027811.2331462,
       "plan_goal": "Provide the best possible answer from available information.",
       "history": []
+    },
+    "50de24f4-397b-4afa-b663-0e52741143fd": {
+      "goal_id": "50de24f4-397b-4afa-b663-0e52741143fd",
+      "question": "What are the required key experts or engineer or personnels to meet the criteria? Does Gruner has key experts meeting these criterias?",
+      "created_at": 1764064527.774864,
+      "plan_goal": "Verify if Gruner has personnel matching the specified roles (Project Manager, Electrical/Mechanical/Civil Design Managers, Quality Manager, ICT Manager) with the required qualifications, experience, and expertise and confirm whether Gruner's experts meet the criteria outlined in the initial answer (e.g., 10+ years in EPC, FIDIC Yellow Book familiarity, hydropower experience, etc.).",
+      "history": []
+    },
+    "bff47cf0-6735-4938-a6c6-6e28e7668092": {
+      "goal_id": "bff47cf0-6735-4938-a6c6-6e28e7668092",
+      "question": "Does the client require previous experience with them or in a specific country/region? Does Gruner have such experience?",
+      "created_at": 1764064608.4492757,
+      "plan_goal": "Provide the best possible answer from available information.",
+      "history": []
     }
   }
 }
