@@ -1,6 +1,6 @@
 import uuid
 from datetime import datetime
-from typing import List, Optional
+from typing import Dict, List, Optional
 
 try:
     from pydantic import BaseModel, Field
@@ -101,6 +101,7 @@ class Tender(BaseModel):
     full_answers: List[QuestionAnswer] = Field(default_factory=list)
     evaluation: Optional[Evaluation] = None
     analysis_corpus: str = ""
+    project_card_fields: Dict[str, str] = Field(default_factory=dict)
 
     class Config:
         validate_assignment = True

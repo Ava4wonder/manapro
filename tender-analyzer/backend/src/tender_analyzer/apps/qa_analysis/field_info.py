@@ -1,5 +1,5 @@
-import json
 import logging
+import os
 from typing import Dict, Any, List, Optional
 from qdrant_client import QdrantClient
 from qdrant_client.models import Filter, FieldCondition, MatchValue
@@ -8,7 +8,8 @@ from qdrant_client.models import Filter, FieldCondition, MatchValue
 OLLAMA_BASE_URL = "http://localhost:11434"
 OLLAMA_CHAT_MODEL = "qwen3:32b"
 OLLAMA_EMBED_MODEL = "qwen3-embedding:8b"
-COLL_PROJECT_KK = "nunagreen_noheading"
+QDRANT_URL = os.getenv("QDRANT_URL", "http://localhost:6333")
+QDRANT_API_KEY = os.getenv("QDRANT_API_KEY")
 
 # --- Field Definitions ---
 HIGHLIGHT_QUESTIONS_BY_FIELD = {
@@ -96,7 +97,7 @@ class QdrantSearchTool:
                 {
                     "id": str(getattr(h, "id", "")),
                     "score": float(getattr(h, "score", 0.0)),
-                    "text": payload.get("text") or payload.get("content") or "",
+                    "text": payload.get("text") or payload.get("content") or payload.get("snippet") or "",
                     "meta": payload,
                 }
             )
@@ -130,12 +131,12 @@ def extract_field_value(
 
 
 def extract_fields_from_qdrant(
-    output_path: str = "extracted_project_fields.json",
+    collection_name: str,
     top_k: int = 8,
     must_tags: Optional[List[str]] = None,
-    qdrant_host: str = "localhost",
-    qdrant_port: int = 6333,
-) -> Dict[str, Any]:
+    qdrant_url: Optional[str] = None,
+    qdrant_api_key: Optional[str] = None,
+) -> Dict[str, str]:
     """
     For each field in HIGHLIGHT_QUESTIONS_BY_FIELD:
       - Use the field_description/question as the Qdrant search query
@@ -143,20 +144,17 @@ def extract_fields_from_qdrant(
       - Extract the field value from that context with Ollama
     """
     logging.info("Initializing Qdrant client and embedder...")
-    client = QdrantClient(host=qdrant_host, port=qdrant_port)
+    client = QdrantClient(url=qdrant_url or QDRANT_URL, api_key=qdrant_api_key or QDRANT_API_KEY)
     embedder = OllamaProvider()
     search_tool = QdrantSearchTool(client=client, embedder=embedder)
 
     provider = OllamaProvider()
-    result: Dict[str, Any] = {}
+    result: Dict[str, str] = {}
 
     for field_name, question in HIGHLIGHT_QUESTIONS_BY_FIELD.items():
-        logging.info(
-            f"Searching Qdrant collection '{COLL_PROJECT_KK}' for field '{field_name}' "
-            f"using description as query: {question!r}"
-        )
+        logging.info("Searching Qdrant collection %r for field %r", collection_name, field_name)
         chunks_result = search_tool.search(
-            collection=COLL_PROJECT_KK,
+            collection=collection_name,
             query=question,      # <-- field_description used as the query
             top_k=top_k,
             must_tags=must_tags,
@@ -188,25 +186,41 @@ def extract_fields_from_qdrant(
             field_name=field_name,
         )
 
-    # Save to JSON
-    with open(output_path, "w", encoding="utf-8") as f:
-        json.dump(result, f, indent=2, ensure_ascii=False)
-
-    logging.info(f"✅ Extraction complete. Results saved to {output_path}")
     return result
+
+
+def build_project_card_fields(
+    tender_id: str,
+    tenant_id: str,
+    *,
+    top_k: int = 8,
+    qdrant_url: Optional[str] = None,
+    qdrant_api_key: Optional[str] = None,
+) -> Dict[str, str]:
+    """
+    Convenience wrapper to derive project card fields using the tender's collection.
+    """
+    from tender_analyzer.common.vectorstore.qdrant_client import build_tender_collection_name
+
+    collection_name = build_tender_collection_name(tenant_id, tender_id)
+    return extract_fields_from_qdrant(
+        collection_name=collection_name,
+        top_k=top_k,
+        must_tags=None,
+        qdrant_url=qdrant_url,
+        qdrant_api_key=qdrant_api_key,
+    )
 
 
 # --- Example Usage ---
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
-
     try:
-        json_result = extract_fields_from_qdrant(
-            output_path="project_metadata.json",
+        sample_fields = extract_fields_from_qdrant(
+            collection_name="sample_collection",
             top_k=5,
-            # must_tags=["rfp", "infrastructure"]  # optional filter
         )
-        # Now you can access: json_result["deadline"], etc.
+        logging.info("Extracted fields: %s", sample_fields)
     except Exception as e:
-        logging.error(f"Extraction failed: {e}")
+        logging.error("Extraction failed: %s", e)
         raise SystemExit(1)

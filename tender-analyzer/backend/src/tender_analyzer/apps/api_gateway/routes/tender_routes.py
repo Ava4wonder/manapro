@@ -62,6 +62,7 @@ def _status_payload(tender: Tender):
         "eval_ready": state == TenderState.EVAL_READY,
         "documents": [doc.name for doc in tender.documents],
         "created_at": tender.created_at,
+        "project_fields": getattr(tender, "project_card_fields", {}),
     }
 
 SUMMARY_PROMPT = (
@@ -256,7 +257,8 @@ async def upload_tender(
         process_tender_and_store_in_qdrant,
         tender_id=tender_id,
         tender_dir=str(tender_dir),
-        name=name
+        name=name,
+        tenant_id=tender.tenant_id,
     )
     
     # 返回 tender ID 给前端

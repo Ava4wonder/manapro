@@ -10,6 +10,7 @@ from qdrant_client.models import Distance, VectorParams, PointStruct
 
 from tender_analyzer.apps.ingestion.chunking.coarse_to_fine import create_chunks_coarsetofine
 from tender_analyzer.apps.ingestion.embedding.embedder import Embedder
+from tender_analyzer.apps.qa_analysis.field_info import build_project_card_fields
 from tender_analyzer.domain.repositories import tender_repo
 from tender_analyzer.common.state.enums import TenderState
 
@@ -280,7 +281,7 @@ class QdrantVectorStore:
                 "source": sanitized_source,
                 "chunk_type": chunk.get("type"),
                 "chunk_index": idx,
-                "snippet": text[:512],
+                "snippet": text,
             }
             payload.update({k: v for k, v in chunk.items() if k != "text"})  # Add other chunk fields
             payloads.append(payload)
@@ -393,7 +394,7 @@ def process_tender_and_store_in_qdrant(
     *,
     collection_name: str = DEFAULT_COLLECTION,
     embedding_model: str = DEFAULT_EMBED_MODEL,
-    tenant_id: str = "default_tenant",  # Added tenant_id parameter for consistency
+    tenant_id: str = "default-tenant",  # Added tenant_id parameter for consistency
 ) -> int:
     """
     Walk a tender directory, run coarse-to-fine chunking on all files,
@@ -489,7 +490,38 @@ def process_tender_and_store_in_qdrant(
             e,
         )
 
-    # 4. Update tender state to INGESTED after successful upsert
+    
+
+    # 4. Build project card fields so the frontend can render metadata before summary runs
+    try:
+        tender = tender_repo.get(tender_id)
+        if tender is None:
+            LOG.warning("[tender-ingest] Tender %r not found when building project card fields", tender_id)
+        else:
+            tenant_id = getattr(tender, "tenant_id", "") or tenant_id  # fall back to worker arg
+            fields = build_project_card_fields(
+                tender_id=tender_id,
+                tenant_id=tenant_id,
+                qdrant_url=QDRANT_URL,
+                qdrant_api_key=QDRANT_API_KEY,
+            )
+            tender_repo.update_project_card_fields(tender_id, fields)
+            LOG.info("[tender-ingest] Project card fields populated for %r", tender_id)
+    except Exception as e:
+        LOG.exception(
+            "[tender-ingest] Failed to build project card fields for %r: %s",
+            tender_id,
+            e,
+        )
+
+    LOG.info(
+        "[tender-ingest] Successfully processed tender %r: %d chunks stored in Qdrant (collection=%r)",
+        tender_id,
+        upserted,
+        collection_name,
+    )
+
+    # 5. Update tender state to INGESTED after successful upsert
     try:
         tender_repo.set_state(tender_id, TenderState.INGESTED)
         LOG.info(
@@ -503,12 +535,6 @@ def process_tender_and_store_in_qdrant(
             e,
         )
 
-    LOG.info(
-        "[tender-ingest] Successfully processed tender %r: %d chunks stored in Qdrant (collection=%r)",
-        tender_id,
-        upserted,
-        collection_name,
-    )
     return upserted
 
     LOG.info(

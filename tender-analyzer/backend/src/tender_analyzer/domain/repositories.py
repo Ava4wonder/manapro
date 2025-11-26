@@ -1,5 +1,4 @@
 from typing import Dict, Iterable, List, Optional
-import json
 
 from tender_analyzer.common.state.enums import TenderState
 from tender_analyzer.domain.models import Evaluation, QuestionAnswer, Tender
@@ -33,6 +32,12 @@ class TenderRepository:
         
         # 直接将 JSONL 字符串赋值给 highlight_answers 字段
         tender.highlight_answers = jsonl_content
+
+    def update_project_card_fields(self, tender_id: str, fields: Dict[str, str]) -> None:
+        tender = self.get(tender_id)
+        if not tender:
+            return
+        tender.project_card_fields = dict(fields)
 
     def update_full_answers(self, tender_id: str, answers: Iterable[QuestionAnswer]) -> None:
         tender = self.get(tender_id)

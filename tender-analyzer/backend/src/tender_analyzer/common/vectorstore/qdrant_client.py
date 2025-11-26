@@ -28,6 +28,13 @@ def _slug(value: str) -> str:
     return sanitized[:32] or "unknown"
 
 
+def build_tender_collection_name(tenant_id: str, tender_id: str) -> str:
+    """Public helper for computing the canonical tender collection name."""
+    slug_tenant = _slug(tenant_id)
+    slug_tender = _slug(tender_id)
+    return f"tender_{slug_tenant}_{slug_tender}"
+
+
 def text_to_vector(text: str, dimension: int = DEFAULT_VECTOR_DIM) -> List[float]:
     """Deterministic fallback embedding that hashes the text into a float vector."""
     if not text:
@@ -69,9 +76,7 @@ class QdrantVectorStore:
             LOG.warning("Failed to initialize Qdrant client at %s: %s", self.url, exc)
 
     def _collection_name(self, tenant_id: str, tender_id: str) -> str:
-        slug_tenant = _slug(tenant_id)
-        slug_tender = _slug(tender_id)
-        return f"tender_{slug_tenant}_{slug_tender}"
+        return build_tender_collection_name(tenant_id, tender_id)
 
     def _ensure_collection(self, collection_name: str) -> None:
         if not self.enabled or not self.client or not rest:
@@ -125,7 +130,7 @@ class QdrantVectorStore:
                 "source": sanitized_source,
                 "chunk_type": chunk.get("type"),
                 "chunk_index": idx,
-                "snippet": text[:512],
+                "snippet": text,
             }
             point_id = f"{tenant_id}-{tender_id}-{sanitized_source}-{idx}"
             points.append(PointStruct(id=str(point_id), vector=vector, payload=payload))
@@ -147,4 +152,4 @@ class QdrantVectorStore:
 
 
 
-__all__ = ["QdrantVectorStore", "text_to_vector"]
+__all__ = ["QdrantVectorStore", "text_to_vector", "build_tender_collection_name"]
