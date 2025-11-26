@@ -279,6 +279,20 @@
       "created_at": 1764111029.6921003,
       "plan_goal": "Determine if the client requires previous experience with them or in a specific country/region and verify whether Gruner has relevant experience in the required regions or with the client.",
       "history": []
+    },
+    "c016c31e-54b9-440e-8450-9cf5858ac2db": {
+      "goal_id": "c016c31e-54b9-440e-8450-9cf5858ac2db",
+      "question": "What are the required key experts or engineer or personnels to meet the criteria? Does Gruner has key experts meeting these criterias?",
+      "created_at": 1764150885.7008362,
+      "plan_goal": "Verify Gruner's personnel qualifications and availability for specified roles including Project Manager, Electrical/Mechanical/Civil Design Managers, Quality Manager, and ICT Manager with required experience in FIDIC Yellow Book, hydropower systems, ISO 9001, and ICT management.",
+      "history": []
+    },
+    "9c3a4ffa-68ae-4f01-bd4b-6fd17c5d1995": {
+      "goal_id": "9c3a4ffa-68ae-4f01-bd4b-6fd17c5d1995",
+      "question": "Does the client require previous experience with them or in a specific country/region? Does Gruner have such experience?",
+      "created_at": 1764150964.4848397,
+      "plan_goal": "Determine if the client requires previous experience with them or in a specific country/region and verify whether Gruner has relevant past experience in the specified region or with the client.",
+      "history": []
     }
   }
 }

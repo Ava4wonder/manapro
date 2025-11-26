@@ -13,9 +13,11 @@ QDRANT_API_KEY = os.getenv("QDRANT_API_KEY")
 
 # --- Field Definitions ---
 HIGHLIGHT_QUESTIONS_BY_FIELD = {
-    "projectType": "What is the scope of the project (Prospect, EOI, Offer, Contract, or Addendum)?",
-    "projectScope": "What is the scope of the project (e.g., new construction, rehabilitation, study, supervision)?",
-    "location": "Where is the project located (continent, jurisdiction entity:The overarching legal entity under whose laws the country (and thus the project location) primarily falls, the country it belongs to, region name, city name)?",
+    "projectprocurementType": "What is the phase of the procurement (Prospect, EOI, Offer, Contract, or Addendum)?",
+    "ProjectRole": "What role is being requested (e.g., Owner's engineer, EPC designer, Lender's engineer)?",
+    "ProjectType": "What type of project is this (e.g., new construction, rehabilitation, study, supervision)?",
+    "projectScope": "What is the phase and scope of the project (e.g., feasibility study, detailed design, construction supervision)?",
+    "location": "Where is the project located (continent, jurisdiction entity:The overarching legal entity under whose laws the region (and thus the project location) primarily falls, the sovereign state it belongs to, region name, city name)?",
     "deadline": "the date of the submission deadline?",
     "submission_format": "What is the required submission format (physical, electronic, or both)?",
     "budgetRange": "Is there an indication of the budget range, and does it match our expectations?",
