@@ -293,6 +293,48 @@
       "created_at": 1764150964.4848397,
       "plan_goal": "Determine if the client requires previous experience with them or in a specific country/region and verify whether Gruner has relevant past experience in the specified region or with the client.",
       "history": []
+    },
+    "939b2dba-dcc8-40ae-800b-8e0a8f1711cf": {
+      "goal_id": "939b2dba-dcc8-40ae-800b-8e0a8f1711cf",
+      "question": "What are the required key experts or engineer or personnels to meet the criteria? Does Gruner has key experts meeting these criterias?",
+      "created_at": 1764166575.1005673,
+      "plan_goal": "Verify Gruner's personnel qualifications against specified criteria for required roles",
+      "history": []
+    },
+    "b04d57ce-9204-4ef0-9bac-6fc34a49dfbf": {
+      "goal_id": "b04d57ce-9204-4ef0-9bac-6fc34a49dfbf",
+      "question": "Does the client require previous experience with them or in a specific country/region? Does Gruner have such experience?",
+      "created_at": 1764166652.710985,
+      "plan_goal": "Determine if the client requires prior experience with them or in a specific country/region and verify whether Gruner has relevant past experience (with the client or in the specified region/country).",
+      "history": []
+    },
+    "897402a7-c2ce-4d89-8d13-e049abd27847": {
+      "goal_id": "897402a7-c2ce-4d89-8d13-e049abd27847",
+      "question": "What are the required key experts or engineer or personnels to meet the criteria? Does Gruner has key experts meeting these criterias?",
+      "created_at": 1764168588.8577487,
+      "plan_goal": "Verify if Gruner has personnel matching the specified criteria for each key expert role and confirm their qualifications, experience, and expertise against the tender requirements.",
+      "history": []
+    },
+    "27feb387-655a-481b-be5c-647b44c7109b": {
+      "goal_id": "27feb387-655a-481b-be5c-647b44c7109b",
+      "question": "Does the client require previous experience with them or in a specific country/region? Does Gruner have such experience?",
+      "created_at": 1764168685.2831306,
+      "plan_goal": "Provide the best possible answer from available information.",
+      "history": []
+    },
+    "c5cadf9b-5a0c-4e67-b593-f6d1a413e089": {
+      "goal_id": "c5cadf9b-5a0c-4e67-b593-f6d1a413e089",
+      "question": "What are the required key experts or engineer or personnels to meet the criteria? Does Gruner has key experts meeting these criterias?",
+      "created_at": 1764172414.1387045,
+      "plan_goal": "Verify Gruner's personnel meet tender criteria for key roles and identify experts with relevant qualifications and experience.",
+      "history": []
+    },
+    "2ab96a32-c876-4d8b-8694-9ac0d5c2e3c2": {
+      "goal_id": "2ab96a32-c876-4d8b-8694-9ac0d5c2e3c2",
+      "question": "Does the client require previous experience with them or in a specific country/region? Does Gruner have such experience?",
+      "created_at": 1764172490.6277118,
+      "plan_goal": "Determine if the client's tender requires prior experience with them or in a specific country/region and verify Gruner's relevant past experience in the required country/region or with the client.",
+      "history": []
     }
   }
 }

@@ -11,6 +11,7 @@ import logging
 import os
 import sys
 import time
+from dataclasses import asdict, is_dataclass
 from datetime import datetime
 from typing import Dict, List, Any
 
@@ -107,7 +108,31 @@ def run_summary_analysis(tender_id: str = "") -> Dict[str, Any]:
             
             try:
                 # Process question through agent
-                answer = agent.run_once(q)
+                answer_result = agent.run_once(q)
+                references_raw: List[Any] = []
+                if isinstance(answer_result, dict):
+                    answer_text = str(answer_result.get("answer", ""))
+                    references_raw = answer_result.get("references") or []
+                else:
+                    answer_text = getattr(answer_result, "answer", None)
+                    if answer_text is None:
+                        answer_text = str(answer_result)
+                    references_raw = getattr(answer_result, "references", []) or []
+
+                references_serialized: List[Dict[str, Any]] = []
+                for ref in references_raw:
+                    if ref is None:
+                        continue
+                    if hasattr(ref, "as_dict"):
+                        references_serialized.append(ref.as_dict())  # type: ignore[attr-defined]
+                    elif is_dataclass(ref):
+                        references_serialized.append(asdict(ref))
+                    elif isinstance(ref, dict):
+                        references_serialized.append(ref)
+                    else:
+                        # Best-effort fallback
+                        references_serialized.append({"value": str(ref)})
+
                 elapsed = time.perf_counter() - t0
                 successful_questions += 1
                 
@@ -116,7 +141,8 @@ def run_summary_analysis(tender_id: str = "") -> Dict[str, Any]:
                     "category": cat,
                     "subcategory": subcat,
                     "question": q,
-                    "answer": answer,
+                    "answer": answer_text,
+                    "references": references_serialized,
                     "processing_time_sec": round(elapsed, 3),
                     "status": "success"
                 }

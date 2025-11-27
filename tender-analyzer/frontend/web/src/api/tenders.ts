@@ -1,8 +1,27 @@
 import { apiRequest } from "./client"
 
+export interface QuestionAnswerReference {
+  chunk_id?: string
+  file_name: string
+  page?: number
+  bbox: number[]
+  snippet?: string
+  score?: number
+  source_collection?: string
+  source_tool?: string
+  orig_size?: number[]
+  tender_id?: string
+}
+
 export interface QuestionAnswer {
   question: string
   answer: string
+  category?: string
+  subcategory?: string
+  status?: string
+  processing_time_sec?: number
+  error_message?: string
+  references?: QuestionAnswerReference[]
 }
 
 export interface TenderStatusResponse {
@@ -14,6 +33,7 @@ export interface TenderStatusResponse {
   eval_ready: boolean
   documents: string[]
   created_at: string
+  project_fields?: Record<string, string>
 }
 
 export interface SummaryResponse {

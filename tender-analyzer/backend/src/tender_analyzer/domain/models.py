@@ -79,9 +79,22 @@ class StoredDocument(BaseModel):
     uploaded_at: str
 
 
+class ReferenceChunk(BaseModel):
+    chunk_id: Optional[str] = None
+    file_name: str
+    page: Optional[int] = None
+    bbox: List[float] = Field(default_factory=list)
+    snippet: Optional[str] = None
+    score: Optional[float] = None
+    source_collection: Optional[str] = None
+    source_tool: Optional[str] = None
+    orig_size: Optional[List[float]] = Field([527.0, 814.0], description="[width, height]")
+
+
 class QuestionAnswer(BaseModel):
     question: str
     answer: str
+    references: List[ReferenceChunk] = Field(default_factory=list)
 
 
 class Evaluation(BaseModel):

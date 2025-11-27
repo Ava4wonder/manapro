@@ -1,4 +1,6 @@
 import { QuestionAnswer } from "../api/tenders"
+import ReactMarkdown from 'react-markdown';
+
 
 type Props = {
   questions?: QuestionAnswer[]
@@ -15,7 +17,7 @@ const QuestionAnswersTable = ({ questions = [], emptyMessage = "No answers yet."
         {questions.map((item) => (
           <article key={item.question}>
             <h4>{item.question}</h4>
-            <p>{item.answer}</p>
+            <ReactMarkdown>{item.answer}</ReactMarkdown>
           </article>
         ))}
       </div>

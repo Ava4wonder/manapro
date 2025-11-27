@@ -121,6 +121,46 @@ class ToolCallRecord(BaseModel):
     rag_answer: str = ""  # RAG answer generated from chunks
 
 
+@dataclass
+class AnswerReference:
+    chunk_id: Optional[str]
+    file_name: str
+    page: Optional[int]
+    bbox: List[float]
+    snippet: str
+    score: Optional[float] = None
+    source_collection: Optional[str] = None
+    source_tool: Optional[str] = None
+    orig_size: Optional[List[float]] = None
+    tender_id: Optional[str] = None
+
+    def as_dict(self) -> Dict[str, Any]:
+        return {
+            "chunk_id": self.chunk_id,
+            "file_name": self.file_name,
+            "page": self.page,
+            "bbox": self.bbox,
+            "snippet": self.snippet,
+            "score": self.score,
+            "source_collection": self.source_collection,
+            "source_tool": self.source_tool,
+            "orig_size": self.orig_size,
+            "tender_id": self.tender_id,
+        }
+
+
+@dataclass
+class AnswerResult:
+    answer: str
+    references: List[AnswerReference]
+
+    def as_dict(self) -> Dict[str, Any]:
+        return {
+            "answer": self.answer,
+            "references": [ref.as_dict() for ref in self.references],
+        }
+
+
 # ==========================
 # Ollama provider (chat + embeddings)
 # ==========================
@@ -260,6 +300,66 @@ class Agent:
             logger.info(f"[TOOL LOG] Saved {len(records)} tool call records to {TOOL_CALL_LOG_FILE}")
         except Exception as e:
             logger.error(f"[TOOL LOG] Failed to save tool call records: {e}")
+
+    def _extract_reference_from_chunk(self, chunk: Dict[str, Any]) -> Optional[AnswerReference]:
+        meta = chunk.get("meta") or {}
+        chunk_id = meta.get("chunk_id") or chunk.get("id")
+        file_name = meta.get("file_name") or meta.get("source_file_name") or meta.get("source")
+        bbox = meta.get("bbox") or meta.get("bounding_box") or []
+        page = meta.get("page") or meta.get("page_number")
+        snippet = chunk.get("text") or meta.get("snippet") or meta.get("text") or ""
+        if not file_name or not bbox or len(bbox) < 4:
+            return None
+
+        bbox_values: List[float] = []
+        try:
+            bbox_values = [float(v) for v in bbox[:4]]
+        except Exception:
+            return None
+
+        orig_size = meta.get("orig_size") or meta.get("page_size")
+        if isinstance(orig_size, dict):
+            width = orig_size.get("width") or orig_size.get("w")
+            height = orig_size.get("height") or orig_size.get("h")
+            if width and height:
+                orig_size = [float(width), float(height)]
+            else:
+                orig_size = None
+        elif isinstance(orig_size, (list, tuple)) and len(orig_size) >= 2:
+            orig_size = [float(orig_size[0]), float(orig_size[1])]
+        else:
+            orig_size = None
+
+        return AnswerReference(
+            chunk_id=chunk_id,
+            file_name=str(file_name),
+            page=int(page) if page is not None else None,
+            bbox=bbox_values,
+            snippet=snippet,
+            score=chunk.get("score"),
+            source_collection=chunk.get("source_collection"),
+            source_tool=chunk.get("source_tool"),
+            orig_size=orig_size,
+            tender_id=meta.get("tender_id"),
+        )
+
+    def _collect_references(self, docs: List[Dict[str, Any]], limit: int = 5) -> List[AnswerReference]:
+        """Pick top-N unique references from retrieved docs."""
+        references: List[AnswerReference] = []
+        seen: set[tuple] = set()
+        sorted_docs = sorted(docs, key=lambda item: float(item.get("score") or 0.0), reverse=True)
+        for doc in sorted_docs:
+            ref = self._extract_reference_from_chunk(doc)
+            if not ref:
+                continue
+            key = (ref.chunk_id, ref.file_name, ref.page, tuple(ref.bbox))
+            if key in seen:
+                continue
+            references.append(ref)
+            seen.add(key)
+            if len(references) >= limit:
+                break
+        return references
 
     def _generate_rag_from_chunks(self, query: str, plan_goal: str, chunks: List[Dict[str, Any]]) -> str:
         """Generate RAG answer from retrieved chunks using Ollama"""
@@ -531,6 +631,8 @@ class Agent:
         rag_result = self.search_tool.search(
             collection=COLL_PROJECT_KK, query=question, top_k=top_k
         )
+        for item in rag_result.get("results", []):
+            item["source_collection"] = COLL_PROJECT_KK
 
         # Save topK chunk texts to retrieval_temp.json
         try:
@@ -702,7 +804,7 @@ class Agent:
     # MAIN per-question pipeline
     # ------------------------
 
-    def run_once(self, question: str) -> str:
+    def run_once(self, question: str) -> AnswerResult:
         logger.info(f"=== Start new question ===\nQ: {question}")
         gs = self.create_goal(question)
 
@@ -729,10 +831,12 @@ class Agent:
             tool_data, rag_answers = self.execute_tool_calls(plan, attempt_index=attempt)
             all_rag_answers.extend(rag_answers)
 
+            if tool_data:
+                all_docs = list(rag_docs) + tool_data
+
             # Append RAG answers to initial answer
             if rag_answers:
                 extended_answer = initial_answer + "\n\n" + "\n\n".join(rag_answers)
-                all_docs = list(rag_docs) + tool_data
 
             # Evaluate current answer
             current_answer = extended_answer if rag_answers else initial_answer
@@ -767,10 +871,11 @@ class Agent:
         # )
         # self.update_goal(gs)
 
+        references = self._collect_references(all_docs)
         logger.info(
             f"=== End of question === best_score={best_score:.2f}, answer_len={len(final_answer)}\n"
         )
-        return final_answer
+        return AnswerResult(answer=final_answer, references=references)
 
     # ------------------------
     # Evaluation method
@@ -856,7 +961,14 @@ def main():
         print(f"\nQ: {q}")
         try:
             ans = agent.run_once(q)
-            print(f"\nA:\n{ans}\n")
+            if isinstance(ans, AnswerResult):
+                print(f"\nA:\n{ans.answer}\n")
+                if ans.references:
+                    print("References:")
+                    for ref in ans.references:
+                        print(f" - {ref.file_name} (page {ref.page})")
+            else:
+                print(f"\nA:\n{ans}\n")
         except Exception as e:
             logger.exception(f"Error during question '{q}': {e}")
 

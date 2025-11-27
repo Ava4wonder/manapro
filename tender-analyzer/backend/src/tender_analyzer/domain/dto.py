@@ -1,8 +1,8 @@
 from typing import List, Optional
 
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
-from tender_analyzer.domain.models import Evaluation, QuestionAnswer
+from tender_analyzer.domain.models import Evaluation, QuestionAnswer, ReferenceChunk
 
 
 class QuestionAnswerDTO(BaseModel):
@@ -13,6 +13,7 @@ class QuestionAnswerDTO(BaseModel):
     status: Optional[str] = None
     processing_time_sec: Optional[float] = None
     error_message: Optional[str] = None
+    references: List[ReferenceChunk] = Field(default_factory=list)
 
 
 class SummaryResponse(BaseModel):

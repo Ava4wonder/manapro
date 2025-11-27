@@ -1,8 +1,11 @@
 // frontend/web/src/pages/ProjectCardsPage.tsx
-import { FC, useMemo, useState } from "react"
+import { FC, useEffect, useMemo, useState } from "react"
 import { ProjectCardInfo } from "../types/project"
-import { SummaryResponse, DetailsResponse } from "../api/tenders"
+import { SummaryResponse, DetailsResponse, QuestionAnswerReference } from "../api/tenders"
 import ProjectCard from "../components/ProjectCard"
+import ReactMarkdown from "react-markdown"
+import PdfPreviewWithHighlights from "../components/PdfPreviewWithHighlights"
+
 
 type ProjectCardsPageProps = {
   projects: ProjectCardInfo[]
@@ -11,6 +14,8 @@ type ProjectCardsPageProps = {
   onClearSelection: () => void
   summary: SummaryResponse | null
   details: DetailsResponse | null
+  documents: string[]
+  tenderId: string | null
 }
 
 type DetailTab = "summary" | "details"
@@ -22,13 +27,21 @@ const ProjectCardsPage: FC<ProjectCardsPageProps> = ({
   onClearSelection,
   summary,
   details,
+  documents,
+  tenderId,
 }) => {
   const [activeTab, setActiveTab] = useState<DetailTab>("summary")
+  const [activeReference, setActiveReference] = useState<QuestionAnswerReference | null>(null)
+  const [isPdfPanelOpen, setIsPdfPanelOpen] = useState(true)
 
   const selectedProject = useMemo(
     () => projects.find((p) => p.id === selectedProjectId) ?? null,
     [projects, selectedProjectId],
   )
+
+  useEffect(() => {
+    setActiveReference(null)
+  }, [summary?.id])
 
   const handleCardClick = (id: string) => {
     if (id === selectedProjectId) return
@@ -36,11 +49,16 @@ const ProjectCardsPage: FC<ProjectCardsPageProps> = ({
     onSelectProject(id)
   }
 
+  const handleReferenceSelect = (reference: QuestionAnswerReference) => {
+    setActiveReference(reference)
+    setIsPdfPanelOpen(true)
+  }
+
   return (
     <div className="project-cards-page">
       <header>
         <h2>Project cards</h2>
-        <p>Browse all uploaded tenders and jump into their Q&amp;A views.</p>
+        <p>Browse all uploaded tenders and jump into their Q&A views.</p>
       </header>
 
       {projects.length === 0 ? (
@@ -73,11 +91,7 @@ const ProjectCardsPage: FC<ProjectCardsPageProps> = ({
                   {selectedProject.documents} document(s) · analysis {selectedProject.analysisStatus.label}
                 </p>
               </div>
-              <button
-                type="button"
-                className="project-detail__close"
-                onClick={onClearSelection}
-              >
+              <button type="button" className="project-detail__close" onClick={onClearSelection}>
                 Close
               </button>
             </header>
@@ -101,13 +115,66 @@ const ProjectCardsPage: FC<ProjectCardsPageProps> = ({
 
             {activeTab === "summary" ? (
               summary && summary.ready ? (
-                <div className="question-grid">
-                  {summary.questions.map((item, idx) => (
-                    <article key={idx}>
-                      <h4>{item.question}</h4>
-                      <p>{item.answer}</p>
-                    </article>
-                  ))}
+                <div className="project-detail__content">
+                  <div className="project-detail__summary">
+                    <div className="question-grid">
+                      {summary.questions.map((item, idx) => (
+                        <article key={idx}>
+                          <h4>{item.question}</h4>
+                          <div className="markdown-answer">
+                            <ReactMarkdown
+                              components={{
+                                a: ({ node, ...props }) => (
+                                  <a {...props} target="_blank" rel="noopener noreferrer" />
+                                ),
+                              }}
+                            >
+                              {item.answer}
+                            </ReactMarkdown>
+                          </div>
+                          {item.references && item.references.length > 0 && (
+                            <div className="reference-links">
+                              {item.references.map((reference, referenceIdx) => (
+                                <button
+                                  key={`${item.question}-${reference.chunk_id ?? referenceIdx}`}
+                                  type="button"
+                                  className="reference-link"
+                                  onClick={() => handleReferenceSelect(reference)}
+                                >
+                                  Source {referenceIdx + 1}: {reference.file_name}
+                                  {reference.page ? ` · p.${reference.page}` : ""}
+                                </button>
+                              ))}
+                            </div>
+                          )}
+                        </article>
+                      ))}
+                    </div>
+                  </div>
+                  <aside className={`pdf-panel ${isPdfPanelOpen ? "is-open" : "is-collapsed"}`}>
+                    <header className="pdf-panel__header">
+                      <div>
+                        <h3>PDF panel</h3>
+                        <p>Inspect the source documents and highlighted references.</p>
+                      </div>
+                      <button
+                        type="button"
+                        className="pdf-panel__toggle"
+                        onClick={() => setIsPdfPanelOpen((prev) => !prev)}
+                        aria-expanded={isPdfPanelOpen}
+                      >
+                        {isPdfPanelOpen ? "Collapse" : "Expand"}
+                      </button>
+                    </header>
+                    <div className="pdf-panel__body" aria-hidden={!isPdfPanelOpen}>
+                      <PdfPreviewWithHighlights
+                        documents={documents}
+                        tenderId={tenderId}
+                        activeReference={activeReference}
+                        onClearReference={() => setActiveReference(null)}
+                      />
+                    </div>
+                  </aside>
                 </div>
               ) : (
                 <p className="project-detail-placeholder">
@@ -125,7 +192,7 @@ const ProjectCardsPage: FC<ProjectCardsPageProps> = ({
               </div>
             ) : (
               <p className="project-detail-placeholder">
-                Detailed Q&amp;A not ready yet. Start or re-run analysis from the Upload page.
+                Detailed Q&A not ready yet. Start or re-run analysis from the Upload page.
               </p>
             )}
           </>

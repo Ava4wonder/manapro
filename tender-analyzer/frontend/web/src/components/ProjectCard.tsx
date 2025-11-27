@@ -1,6 +1,6 @@
 import { FC } from "react"
-import { ProjectCardInfo } from "../types/project"
-import { formatProjectDate } from "../utils/projects"
+import { ProjectCardInfo, PROJECT_CARD_FIELD_KEYS } from "../types/project"
+import { formatProjectDate, PROJECT_CARD_FIELD_LABELS } from "../utils/projects"
 
 type ProjectCardProps = {
   project: ProjectCardInfo
@@ -10,21 +10,11 @@ type ProjectCardProps = {
 
 const ProjectCard: FC<ProjectCardProps> = ({ project, isActive = false, onClick }) => {
   const { name, createdAt, documents, summaryPreview, cardFields, analysisStatus } = project
-  const {
-    type,
-    location,
-    logisticsVariant,
-    deadline,
-    submission,
-    budget,
-    budgetTag,
-    evaluation,
-    eligibilityChips,
-    riskChips,
-  } = cardFields
-
-  const logisticsLabel =
-    logisticsVariant === "challenging" ? "Challenging" : logisticsVariant === "ok" ? "OK" : "Unknown"
+  const fieldRows = PROJECT_CARD_FIELD_KEYS.map((key) => ({
+    key,
+    label: PROJECT_CARD_FIELD_LABELS[key],
+    value: cardFields[key],
+  }))
 
   return (
     <article
@@ -47,59 +37,12 @@ const ProjectCard: FC<ProjectCardProps> = ({ project, isActive = false, onClick 
       </header>
 
       <div className="project-card__body">
-        <div className="project-card__line">
-          <span className="project-card__label">Type</span>
-          <strong>{type}</strong>
-        </div>
-        <div className="project-card__line project-card__line--location">
-          <span className="project-card__label">Location</span>
-          <div>
-            <strong>{location}</strong>
-            <span className={`project-card__logistics project-card__logistics--${logisticsVariant}`}>
-              Logistics: {logisticsLabel}
-            </span>
+        {fieldRows.map(({ key, label, value }) => (
+          <div key={key} className="project-card__line">
+            <span className="project-card__label">{label}</span>
+            <strong>{value}</strong>
           </div>
-        </div>
-        <div className="project-card__line">
-          <span className="project-card__label">Deadline</span>
-          <span>{deadline}</span>
-        </div>
-        <div className="project-card__line">
-          <span className="project-card__label">Submission</span>
-          <span>{submission}</span>
-        </div>
-        <div className="project-card__line">
-          <span className="project-card__label">Budget</span>
-          <div className="project-card__budget-row">
-            <strong>{budget}</strong>
-            <span className="project-card__budget-tag">{budgetTag}</span>
-          </div>
-        </div>
-        <div className="project-card__line">
-          <span className="project-card__label">Evaluation</span>
-          <span>{evaluation}</span>
-        </div>
-      </div>
-
-      <div className="project-card__chips">
-        {eligibilityChips.length > 0 && (
-          <div className="project-card__chip-group">
-            {eligibilityChips.map((chip) => (
-              <span key={chip} className="project-card__chip project-card__chip--eligibility">
-                {chip}
-              </span>
-            ))}
-          </div>
-        )}
-        {riskChips.length > 0 && (
-          <div className="project-card__chip-group">
-            {riskChips.map((chip) => (
-              <span key={chip} className="project-card__chip project-card__chip--risk">
-                {chip}
-              </span>
-            ))}
-          </div>
-        )}
+        ))}
       </div>
 
       <div className="project-card__tooltip">

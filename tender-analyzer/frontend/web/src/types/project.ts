@@ -1,15 +1,17 @@
-export type ProjectCardFields = {
-  type: string
-  location: string
-  logisticsVariant: "ok" | "challenging" | "unknown"
-  deadline: string
-  submission: string
-  budget: string
-  budgetTag: string
-  evaluation: string
-  eligibilityChips: string[]
-  riskChips: string[]
-}
+export const PROJECT_CARD_FIELD_KEYS = [
+  "projectType",
+  "projectScope",
+  "location",
+  "deadline",
+  "submission_format",
+  "budgetRange",
+  "evaluationMethod",
+  "weighting",
+] as const
+
+export type ProjectCardFieldKey = typeof PROJECT_CARD_FIELD_KEYS[number]
+
+export type ProjectCardFields = Record<ProjectCardFieldKey, string>
 
 export type ProjectCardAnalysisStatus = {
   state: "in-process" | "completed"

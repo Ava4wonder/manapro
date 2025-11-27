@@ -1,12 +1,14 @@
 # backend/src/tender_analyzer/apps/api_gateway/routes/tenders.py
 import json
 import logging
+import mimetypes
 import uuid
 from datetime import datetime
 from pathlib import Path
 from typing import Any, List, Optional
 
 from fastapi import APIRouter, UploadFile, File, Form, BackgroundTasks, HTTPException
+from fastapi.responses import FileResponse
 
 from tender_analyzer.apps.ingestion.workers.ingestion_worker import process_tender_and_store_in_qdrant
 from tender_analyzer.common.state.enums import TenderState
@@ -161,6 +163,7 @@ def _build_question_answer_dto(record: Any) -> Optional[QuestionAnswerDTO]:
         status=payload.get("status"),
         processing_time_sec=payload.get("processing_time_sec"),
         error_message=payload.get("error_message"),
+        references=payload.get("references") or [],
     )
 
 
@@ -287,6 +290,28 @@ async def get_summary(tender_id: str):
         questions=questions,
         ready=tender.state in SUMMARY_READY_STATES,
     )
+
+
+@router.get("/tenders/{tender_id}/documents/{document_name:path}")
+async def download_tender_document(tender_id: str, document_name: str):
+    """Stream back the requested tender document so the UI can render PDF previews."""
+    tender = tender_repo.get(tender_id)
+    if not tender:
+        raise HTTPException(status_code=404, detail="tender not found")
+
+    for doc in tender.documents:
+        if doc.name == document_name:
+            storage_path = Path(doc.storage_path)
+            if not storage_path.exists():
+                raise HTTPException(status_code=404, detail="document file missing on server")
+            media_type, _ = mimetypes.guess_type(doc.name)
+            return FileResponse(
+                path=str(storage_path),
+                media_type=media_type or "application/octet-stream",
+                filename=doc.name,
+            )
+
+    raise HTTPException(status_code=404, detail="document not found for this tender")
 
 
 @router.post("/tenders/{tender_id}/start-analysis")
