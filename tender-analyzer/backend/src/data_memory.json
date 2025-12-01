@@ -335,6 +335,76 @@
       "created_at": 1764172490.6277118,
       "plan_goal": "Determine if the client's tender requires prior experience with them or in a specific country/region and verify Gruner's relevant past experience in the required country/region or with the client.",
       "history": []
+    },
+    "e0ebee69-710b-457d-b7e6-44abb152f62b": {
+      "goal_id": "e0ebee69-710b-457d-b7e6-44abb152f62b",
+      "question": "What are the required key experts or engineer or personnels to meet the criteria? Does Gruner has key experts meeting these criterias?",
+      "created_at": 1764239075.8082373,
+      "plan_goal": "Verify the availability of qualified personnel in specific roles at Gruner.",
+      "history": []
+    },
+    "2eeee609-112c-4a6e-81ec-08498945215b": {
+      "goal_id": "2eeee609-112c-4a6e-81ec-08498945215b",
+      "question": "Does the client require previous experience with them or in a specific country/region? Does Gruner have such experience?",
+      "created_at": 1764239175.0940082,
+      "plan_goal": "Determine if the client's tender requires prior experience with them or in a specific region (e.g., Greenland/Denmark) and verify whether Gruner has relevant past experience in the specified region or with the client.",
+      "history": []
+    },
+    "b2bf6e73-5a2f-4b77-b3b6-4f0026a60ea0": {
+      "goal_id": "b2bf6e73-5a2f-4b77-b3b6-4f0026a60ea0",
+      "question": "What are the required key experts or engineer or personnels to meet the criteria? Does Gruner has key experts meeting these criterias?",
+      "created_at": 1764521752.0486474,
+      "plan_goal": "Verify Gruner's personnel for Nunagreen Hydropower Project roles (Project Manager, Electrical/Mechanical/Civil Design Managers, Quality Manager, ICT Manager) with specific qualifications (FIDIC Yellow Book, hydropower expertise, ISO 9001 QMS) and 8–10+ years in hydropower, EPC, and related fields.",
+      "history": []
+    },
+    "7c66a1f1-88ee-41c1-b9e7-0531d249e186": {
+      "goal_id": "7c66a1f1-88ee-41c1-b9e7-0531d249e186",
+      "question": "Does the client require previous experience with them or in a specific country/region? Does Gruner have such experience?",
+      "created_at": 1764521830.3261168,
+      "plan_goal": "Determine if the client requires prior experience with them or in specific regions (e.g., Greenland/Denmark) and verify Gruner's relevant past experience in those regions or with the client.",
+      "history": []
+    },
+    "3b506e02-2482-4b98-9345-62f3b16285ee": {
+      "goal_id": "3b506e02-2482-4b98-9345-62f3b16285ee",
+      "question": "What are the required key experts or engineer or personnels to meet the criteria? Does Gruner has key experts meeting these criterias?",
+      "created_at": 1764528167.8978565,
+      "plan_goal": "Provide the best possible answer from available information.",
+      "history": []
+    },
+    "ce06c4eb-bb9b-413d-a0d1-6ee113164bf8": {
+      "goal_id": "ce06c4eb-bb9b-413d-a0d1-6ee113164bf8",
+      "question": "Does the client require previous experience with them or in a specific country/region? Does Gruner have such experience?",
+      "created_at": 1764528393.9529598,
+      "plan_goal": "Determine if the client's tender requires prior experience with them or in a specific region/country and verify whether Gruner has relevant past experience in the specified region/country or with similar clients.",
+      "history": []
+    },
+    "5937a60e-bac1-4c34-a8d8-f431b1b0e7dc": {
+      "goal_id": "5937a60e-bac1-4c34-a8d8-f431b1b0e7dc",
+      "question": "What are the required key experts or engineer or personnels to meet the criteria? Does Gruner has key experts meeting these criterias?",
+      "created_at": 1764529852.057403,
+      "plan_goal": "Verify Gruner's personnel qualifications for specified roles and hydropower expertise.",
+      "history": []
+    },
+    "27c9bff2-c25e-4975-814d-e52b2c6188b4": {
+      "goal_id": "27c9bff2-c25e-4975-814d-e52b2c6188b4",
+      "question": "Does the client require previous experience with them or in a specific country/region? Does Gruner have such experience?",
+      "created_at": 1764530051.3330357,
+      "plan_goal": "Determine if the client requires previous experience with them or in Greenland/Denmark and verify Gruner's relevant past projects, regions, or client experience.",
+      "history": []
+    },
+    "6306be2c-8e61-44e3-8b29-91ad368c19ff": {
+      "goal_id": "6306be2c-8e61-44e3-8b29-91ad368c19ff",
+      "question": "What are the required key experts or engineer or personnels to meet the criteria? Does Gruner has key experts meeting these criterias?",
+      "created_at": 1764531232.3963327,
+      "plan_goal": "Identify Gruner's current key experts matching the specified roles (Project Manager, Electrical/Mechanical/Civil Design Managers, Quality Manager, ICT Manager) and their qualifications, and verify if Gruner has executed similar hydropower/EPC projects requiring these personnel as evidence of capability.",
+      "history": []
+    },
+    "71c9336a-2cbb-42bb-b9e6-30f80a1d6d64": {
+      "goal_id": "71c9336a-2cbb-42bb-b9e6-30f80a1d6d64",
+      "question": "Does the client require previous experience with them or in a specific country/region? Does Gruner have such experience?",
+      "created_at": 1764531341.572996,
+      "plan_goal": "Determine if the client requires previous experience with them or in specific regions (Greenland/Denmark) and verify Gruner's relevant past experience in those regions or with similar clients.",
+      "history": []
     }
   }
 }

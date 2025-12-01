@@ -1,9 +1,9 @@
 # backend/src/tender_analyzer/apps/ingestion/workers/ingestion_worker.py
 
 import os
-import json
+import uuid
 import logging
-from typing import Any, Dict, List, Iterable, Optional
+from typing import Any, Dict, List, Tuple, Iterable, Optional
 
 from qdrant_client import QdrantClient
 from qdrant_client.models import Distance, VectorParams, PointStruct
@@ -13,12 +13,6 @@ from tender_analyzer.apps.ingestion.embedding.embedder import Embedder
 from tender_analyzer.apps.qa_analysis.field_info import build_project_card_fields
 from tender_analyzer.domain.repositories import tender_repo
 from tender_analyzer.common.state.enums import TenderState
-
-# 🔧 adjust this import path to where your label code lives
-from tender_analyzer.apps.ingestion.workers.generate_chunk_labels import (
-    generate_chunk_label,
-    SYSTEM_MSG,
-)
 
 LOG = logging.getLogger(__name__)
 
@@ -131,63 +125,71 @@ def ensure_collection_exact(name: str, vector_dim: int) -> None:
             f"Use a different collection or recreate this one for the selected embedding model."
         )
 
+
+def upsert_to_qdrant(
+    collection: str,
+    texts: List[str],
+    payloads: List[Dict[str, Any]],
+    embedding_model: str,
+) -> int:
+    """
+    Upsert helper mirroring main.py:
+
+    - embeds texts with Embedder instance
+    - enforces consistent vector dimension
+    - creates collection if missing (with cosine distance)
+    - uses random UUIDs as point IDs
+    """
+    if not texts:
+        LOG.warning("[qdrant][upsert] No texts provided; skipping.")
+        return 0
+
+    LOG.info("[qdrant][upsert] Embedding %d texts with model=%r", len(texts), embedding_model)
+    
+    # Create an embedder instance with the specified model
+    embedder = Embedder(model_name=embedding_model)
+    vectors = embedder.embed_texts(texts)
+
+    if not vectors:
+        raise RuntimeError("No vectors produced by the embedding backend.")
+
+    dim = len(vectors[0])
+    LOG.info("[qdrant][upsert] Inferred vector dimension: %d", dim)
+
+    # Validate + cast vectors
+    for i, v in enumerate(vectors):
+        if len(v) != dim:
+            raise RuntimeError(
+                f"Inconsistent vector length at index {i}: {len(v)} != {dim}"
+            )
+        vectors[i] = [float(x) for x in v]
+
+    # Ensure collection exists with matching dim
+    ensure_collection_exact(collection, dim)
+
+    qc = get_qdrant()
+    points: List[PointStruct] = []
+    for vec, pl in zip(vectors, payloads):
+        pid = str(pl.get("chunk_id") or uuid.uuid4())
+        points.append(PointStruct(id=pid, vector=vec, payload=pl))
+
+    LOG.info(
+        "[qdrant][upsert] Sending %d points → collection %r (Qdrant at %s)",
+        len(points),
+        collection,
+        QDRANT_URL,
+    )
+    qc.upsert(collection_name=collection, points=points)
+    LOG.info("[qdrant][upsert] Done.")
+    return len(points)
+
+
 def _slug(value: str) -> str:
     """Normalize string for safe use as collection name or identifier."""
     if not value:
         return "unknown"
     sanitized = "".join(c if c.isalnum() or c in "-_" else "_" for c in value)
     return sanitized[:32] or "unknown"
-
-def _normalize_bbox_relative(bbox: Any, orig_size: Any) -> Any:
-    """
-    Convert absolute bbox [x1, y1, x2, y2] into relative coordinates
-    by dividing by (width, height) from orig_size.
-
-    If anything is missing / malformed, returns bbox unchanged.
-    """
-    if not bbox or orig_size is None:
-        return bbox
-
-    # Extract width / height from orig_size in a robust way
-    width = height = None
-
-    if isinstance(orig_size, (list, tuple)) and len(orig_size) >= 2:
-        width, height = orig_size[0], orig_size[1]
-    elif isinstance(orig_size, dict):
-        width = (
-            orig_size.get("width")
-            or orig_size.get("w")
-            or orig_size.get("page_width")
-        )
-        height = (
-            orig_size.get("height")
-            or orig_size.get("h")
-            or orig_size.get("page_height")
-        )
-
-    if not width or not height:
-        return bbox
-
-    if not isinstance(bbox, (list, tuple)) or len(bbox) != 4:
-        return bbox
-
-    try:
-        x1, y1, x2, y2 = bbox
-        width = float(width)
-        height = float(height)
-        if width == 0 or height == 0:
-            return bbox
-
-        return [
-            float(x1) / width,
-            float(y1) / height,
-            float(x2) / width,
-            float(y2) / height,
-        ]
-    except Exception:
-        # If anything blows up (non-numeric, etc.), just keep original
-        return bbox
-
 
 
 class QdrantVectorStore:
@@ -212,11 +214,7 @@ class QdrantVectorStore:
             return
 
         try:
-            self.client = QdrantClient(
-                url=self.url,
-                prefer_grpc=prefer_grpc,
-                api_key=api_key or None,
-            )
+            self.client = QdrantClient(url=self.url, prefer_grpc=prefer_grpc, api_key=api_key or None)
             self.enabled = True
         except Exception as exc:  # pragma: no cover
             LOG.warning("Failed to initialize Qdrant client at %s: %s", self.url, exc)
@@ -257,11 +255,11 @@ class QdrantVectorStore:
     ) -> int:
         """Upsert the provided chunks as vectors into the tenant+tender collection."""
         if not self.enabled or not self.client:
-            LOG.warning("⚠️ [QDRANT] Vector store disabled or unavailable")
+            LOG.warning(f"⚠️ [QDRANT] Vector store disabled or unavailable")
             return 0
 
         collection = self._collection_name(tenant_id, tender_id)
-        LOG.debug("📚 [QDRANT] Using collection: %s", collection)
+        LOG.debug(f"📚 [QDRANT] Using collection: {collection}")
         self._ensure_collection(collection)
 
         sanitized_source = _slug(os.path.basename(source or "")) or "upload"
@@ -270,33 +268,26 @@ class QdrantVectorStore:
         texts: List[str] = []
         payloads: List[Dict[str, Any]] = []
         
-        LOG.debug("🔄 [QDRANT] Preparing chunks for embedding...")
+        LOG.debug(f"🔄 [QDRANT] Preparing chunks for embedding...")
         for idx, chunk in enumerate(chunks):
             text = (chunk.get("text") or "").strip()
             if not text:
                 continue
             texts.append(text)
-
-            file_name = chunk.get("file_name") or "doc"
-            doc_id = int(chunk.get("doc_id") or (idx + 1))
-            chunk_id = int(chunk.get("chunk_id") or (idx + 1))
-
-            payload: Dict[str, Any] = {
+            
+            payload = {
                 "tenant_id": tenant_id,
                 "tender_id": tender_id,
                 "source": sanitized_source,
-                "doc_id": doc_id,
                 "chunk_type": chunk.get("type"),
                 "chunk_index": idx,
                 "snippet": text,
-                # "doc_chunk_key": f"{doc_id}_{chunk_id}",  # human-readable composite key
             }
-            # Add other chunk fields (including chunk_id, label, etc.), but not text
-            payload.update({k: v for k, v in chunk.items() if k != "text"})
+            payload.update({k: v for k, v in chunk.items() if k != "text"})  # Add other chunk fields
             payloads.append(payload)
 
         if not texts:
-            LOG.warning("⚠️ [QDRANT] No valid texts to upsert for %s", source)
+            LOG.warning(f"⚠️ [QDRANT] No valid texts to upsert for {source}")
             return 0
 
         # Embed the texts
@@ -323,18 +314,16 @@ class QdrantVectorStore:
 
         # Create points with embedded vectors
         points: List[PointStruct] = []
-        # point_id: 1..N, across all documents in this batch
-        for idx, (vec, pl) in enumerate(zip(vectors, payloads), start=1):
-            point_id = idx
-            pl["point_id"] = point_id  # store point_id in payload for reference
-            points.append(PointStruct(id=point_id, vector=vec, payload=pl))
+        for idx, (vec, pl) in enumerate(zip(vectors, payloads)):
+            point_id = str(uuid.uuid4())
+            points.append(PointStruct(id=str(point_id), vector=vec, payload=pl))
 
         try:
-            LOG.info("📤 [QDRANT] Upserting %d points to collection: %s", len(points), collection)
+            LOG.info(f"📤 [QDRANT] Upserting {len(points)} points to collection: {collection}")
             self.client.upsert(collection_name=collection, points=points)
-            LOG.info("✅ [QDRANT] Successfully upserted %d vectors to Qdrant", len(points))
+            LOG.info(f"✅ [QDRANT] Successfully upserted {len(points)} vectors to Qdrant")
         except Exception as exc:  # pragma: no cover
-            LOG.error("❌ [QDRANT] Upsert failed for %s: %s", collection, exc)
+            LOG.error(f"❌ [QDRANT] Upsert failed for {collection}: {exc}")
             return 0
 
         LOG.debug("Upserted %d vectors into Qdrant collection %s", len(points), collection)
@@ -342,28 +331,17 @@ class QdrantVectorStore:
 
 
 # -------------------------------------------------------------------
-# Chunking helper – coarse_to_fine + labels + doc_id/chunk_id
+# Chunking helper – force use of your coarse_to_fine strategy
 # -------------------------------------------------------------------
 
-def _chunk_file_with_coarse_to_fine(
-    file_path: str,
-    tender_id: str,
-    file_name: str,
-    doc_id: int,
-) -> List[Dict[str, Any]]:
+def _chunk_file_with_coarse_to_fine(file_path: str, tender_id: str, file_name: str) -> List[Dict[str, Any]]:
     """
-    Thin wrapper to call your customized coarse_to_fine pipeline and normalize fields.
-
-    doc_id:
-        Integer identifier for this document (starting from 1, incremented per document).
+    Thin wrapper to call your customized coarse_to_fine pipeline and normalize fields
+    to something compatible with main.py's payload expectations.
     """
-    LOG.info(
-        "[chunk] Coarse-to-fine chunking file=%r (tender_id=%r, doc_id=%d)",
-        file_name,
-        tender_id,
-        doc_id,
-    )
+    LOG.info("[chunk] Coarse-to-fine chunking file=%r (tender_id=%r)", file_name, tender_id)
 
+    # Keep your existing call signature; adjust if your function changes.
     raw_chunks = create_chunks_coarsetofine(
         pdf_path=file_path,
         backend="pymupdf",
@@ -371,54 +349,36 @@ def _chunk_file_with_coarse_to_fine(
     )
 
     chunks: List[Dict[str, Any]] = []
-    chunk_counter = 1  # per-document chunk_id starting at 1
-
     for ch in raw_chunks:
         text = (ch.get("text") or "").strip()
         if not text:
             continue
 
-        # Generate labels for this chunk
-        try:
-            label_raw = generate_chunk_label(text, SYSTEM_MSG)
-            try:
-                label = json.loads(label_raw)
-            except Exception:
-                label = label_raw
-        except Exception as e:
-            LOG.warning("[chunk] Failed to generate label for chunk (doc_id=%d): %s", doc_id, e)
-            label = None
-
-        # Page / bbox / orig_size – normalize names
+        # Page / bbox / orig_size – we normalize names to match main.py-style payloads
         page = ch.get("page") or ch.get("page_number") or 1
         bbox = ch.get("bbox", [])
         orig_size = ch.get("orig_size") or ch.get("page_size")
 
-        bbox_rel = _normalize_bbox_relative(bbox, orig_size)
-
-        chunk_id = chunk_counter
-        chunk_counter += 1
+        chunk_id = ch.get("id") or str(uuid.uuid4())
+        chunk_id = f"{tender_id}_{chunk_id}"
 
         chunks.append(
             {
-                "doc_id": doc_id,           # int starting at 1 for first document
-                "chunk_id": chunk_id,       # int starting at 1 per document
+                "chunk_id": chunk_id,
                 "text": text,
                 "page": page,
-                "bbox": bbox_rel,
+                "bbox": bbox,
                 "orig_size": orig_size,
                 "tender_id": tender_id,
                 "file_name": file_name,
-                "label": label,             # multi-label classification from LLM
             }
         )
 
     LOG.info(
-        "[chunk] Produced %d chunks from file=%r (tender_id=%r, doc_id=%d)",
+        "[chunk] Produced %d chunks from file=%r (tender_id=%r)",
         len(chunks),
         file_name,
         tender_id,
-        doc_id,
     )
     return chunks
 
@@ -432,13 +392,26 @@ def process_tender_and_store_in_qdrant(
     tender_dir: str,
     name: str,
     *,
-    collection_name: str = DEFAULT_COLLECTION,  # kept for logs; actual collection derived in QdrantVectorStore
+    collection_name: str = DEFAULT_COLLECTION,
     embedding_model: str = DEFAULT_EMBED_MODEL,
-    tenant_id: str = "default-tenant",
+    tenant_id: str = "default-tenant",  # Added tenant_id parameter for consistency
 ) -> int:
     """
     Walk a tender directory, run coarse-to-fine chunking on all files,
     embed chunks, and upsert into a Qdrant collection.
+
+    This mirrors main.py's ingest flow but is tailored for the backend
+    tender ingestion worker.
+
+    Args:
+        tender_id: logical id for this tender
+        tender_dir: directory where tender files live
+        name: human-readable name (currently just logged)
+        collection_name: Qdrant collection (default: 'tender_chunks')
+        embedding_model: embedding model name for Ollama (or your embedder)
+        tenant_id: tenant identifier for multi-tenancy (default: 'default_tenant')
+    Returns:
+        Number of chunks successfully upserted.
     """
     LOG.info(
         "[tender-ingest] Start processing tender_id=%r name=%r dir=%r → collection=%r model=%r",
@@ -452,9 +425,7 @@ def process_tender_and_store_in_qdrant(
     all_chunks: List[Dict[str, Any]] = []
 
     # 1. Walk directory and chunk each file using coarse_to_fine
-    doc_id_counter = 1
     for root, _, files in os.walk(tender_dir):
-        files.sort()  # stable ordering for deterministic doc_ids
         for file in files:
             file_path = os.path.join(root, file)
             try:
@@ -462,10 +433,8 @@ def process_tender_and_store_in_qdrant(
                     file_path=file_path,
                     tender_id=tender_id,
                     file_name=file,
-                    doc_id=doc_id_counter,
                 )
                 all_chunks.extend(file_chunks)
-                doc_id_counter += 1
             except Exception as e:
                 LOG.exception(
                     "[tender-ingest] Failed to chunk file %r for tender %r: %s",
@@ -480,6 +449,8 @@ def process_tender_and_store_in_qdrant(
             tender_id,
             tender_dir,
         )
+        # still try to clean up tender_dir
+        # os.system(f"rm -rf {tender_dir}")
         return 0
 
     # 2. Use QdrantVectorStore for consistent upsert behavior
@@ -504,9 +475,11 @@ def process_tender_and_store_in_qdrant(
             collection_name,
             e,
         )
+        # cleanup and signal failure
+        # os.system(f"rm -rf {tender_dir}")
         return 0
 
-    # 3. (optional) Cleanup temporary tender directory
+    # 3. Cleanup temporary tender directory
     try:
         pass
         # os.system(f"rm -rf {tender_dir}")
@@ -517,13 +490,15 @@ def process_tender_and_store_in_qdrant(
             e,
         )
 
-    # 4. Build project card fields so the frontend can render metadata
+    
+
+    # 4. Build project card fields so the frontend can render metadata before summary runs
     try:
         tender = tender_repo.get(tender_id)
         if tender is None:
             LOG.warning("[tender-ingest] Tender %r not found when building project card fields", tender_id)
         else:
-            tenant_id = getattr(tender, "tenant_id", "") or tenant_id
+            tenant_id = getattr(tender, "tenant_id", "") or tenant_id  # fall back to worker arg
             fields = build_project_card_fields(
                 tender_id=tender_id,
                 tenant_id=tenant_id,
@@ -549,7 +524,10 @@ def process_tender_and_store_in_qdrant(
     # 5. Update tender state to INGESTED after successful upsert
     try:
         tender_repo.set_state(tender_id, TenderState.INGESTED)
-        LOG.info("[tender-ingest] Updated tender %r state to INGESTED", tender_id)
+        LOG.info(
+            "[tender-ingest] Updated tender %r state to INGESTED",
+            tender_id,
+        )
     except Exception as e:
         LOG.warning(
             "[tender-ingest] Failed to update tender state for %r: %s",
@@ -557,4 +535,12 @@ def process_tender_and_store_in_qdrant(
             e,
         )
 
+    return upserted
+
+    LOG.info(
+        "[tender-ingest] Successfully processed tender %r: %d chunks stored in Qdrant (collection=%r)",
+        tender_id,
+        upserted,
+        collection_name,
+    )
     return upserted

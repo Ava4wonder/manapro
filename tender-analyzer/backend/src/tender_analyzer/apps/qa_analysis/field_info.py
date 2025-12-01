@@ -113,9 +113,13 @@ def extract_field_value(
     question: str,
     field_name: str
 ) -> str:
+    # system_prompt = (
+    #     "You are an expert in extracting precise information from project documents. "
+    #     "Answer ONLY with the requested value and short key word ONLY without format styles. If the information is not present, respond exactly with 'N/A'."
+    # )
     system_prompt = (
-        "You are an expert in extracting precise information from project documents. "
-        "Answer ONLY with the requested value and short key word ONLY without format styles. If the information is not present, respond exactly with 'N/A'."
+        "You are an expert at extracting precise information from project documents. "
+        " Respond ONLY with the requested value in short keywords, with no explanations or formatting. If the information is missing, reply exactly: N/A."
     )
     # print('field_nanem', field_name, '<<<', context)
     user_message = f"Context:\n{context}\n\nQuestion: {question}"
