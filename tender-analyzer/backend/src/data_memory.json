@@ -405,6 +405,188 @@
       "created_at": 1764531341.572996,
       "plan_goal": "Determine if the client requires previous experience with them or in specific regions (Greenland/Denmark) and verify Gruner's relevant past experience in those regions or with similar clients.",
       "history": []
+    },
+    "039783c0-e65c-4353-9934-9b0612001236": {
+      "goal_id": "039783c0-e65c-4353-9934-9b0612001236",
+      "question": "What are the required key experts or engineer or personnels to meet the criteria? Does Gruner has key experts meeting these criterias?",
+      "created_at": 1764590534.081704,
+      "plan_goal": "Identify Gruner's Arctic hydroelectric project expertise and language capabilities, verify past project staffing.",
+      "history": []
+    },
+    "0d87783f-9a27-4882-aa6f-028806fbddcc": {
+      "goal_id": "0d87783f-9a27-4882-aa6f-028806fbddcc",
+      "question": "Does the client require previous experience with them or in a specific country/region? Does Gruner have such experience?",
+      "created_at": 1764590636.7683806,
+      "plan_goal": "Provide the best possible answer from available information.",
+      "history": []
+    },
+    "66a469c2-7d1f-487c-9807-468600ac2b46": {
+      "goal_id": "66a469c2-7d1f-487c-9807-468600ac2b46",
+      "question": "What are the required key experts or engineer or personnels to meet the criteria? Does Gruner has key experts meeting these criterias?",
+      "created_at": 1764591652.359982,
+      "plan_goal": "Identify Gruner's expertise in hydroelectric projects, verify relevant qualifications, and confirm past Arctic project deployments.",
+      "history": []
+    },
+    "575071fc-d563-4c74-86f5-0919ee9a573e": {
+      "goal_id": "575071fc-d563-4c74-86f5-0919ee9a573e",
+      "question": "Does the client require previous experience with them or in a specific country/region? Does Gruner have such experience?",
+      "created_at": 1764591725.3332224,
+      "plan_goal": "Provide the best possible answer from available information.",
+      "history": []
+    },
+    "44cd2c6c-6db2-4071-9c9b-7c88be75bcb4": {
+      "goal_id": "44cd2c6c-6db2-4071-9c9b-7c88be75bcb4",
+      "question": "What are the required key experts or engineer or personnels to meet the criteria? Does Gruner has key experts meeting these criterias?",
+      "created_at": 1764623079.7256086,
+      "plan_goal": "Identify Gruner personnel and projects with Arctic and FIDIC expertise",
+      "history": []
+    },
+    "fe5fd7cc-bb95-4e80-8215-f6c1b4e43814": {
+      "goal_id": "fe5fd7cc-bb95-4e80-8215-f6c1b4e43814",
+      "question": "Does the client require previous experience with them or in a specific country/region? Does Gruner have such experience?",
+      "created_at": 1764623185.1982553,
+      "plan_goal": "Verify Gruner's past experience in Greenland/Arctic hydropower projects, confirm language proficiency in Greenlandic, English (C1), and Danish, assess compliance with local labor laws, ILO guidelines, environmental standards, and identify experience with FIDIC Yellow Book and ISO 9001.",
+      "history": []
+    },
+    "c4c07d6c-83ac-412f-ae58-0a12cd1b9bc0": {
+      "goal_id": "c4c07d6c-83ac-412f-ae58-0a12cd1b9bc0",
+      "question": "What are the required key experts or engineer or personnels to meet the criteria? Does Gruner has key experts meeting these criterias?",
+      "created_at": 1764625320.2482455,
+      "plan_goal": "Verify Gruner's personnel language proficiency (C1 Danish/English, B2 Greenlandic), confirm Arctic/hydroelectric project experience in required regions, validate FIDIC-based contract and regulatory expertise, and retrieve references for past consultancy services",
+      "history": []
+    },
+    "eae998b2-2b22-4dae-837a-6907c6185706": {
+      "goal_id": "eae998b2-2b22-4dae-837a-6907c6185706",
+      "question": "Does the client require previous experience with them or in a specific country/region? Does Gruner have such experience?",
+      "created_at": 1764625406.4149244,
+      "plan_goal": "Verify Gruner's past hydropower projects in Arctic/Greenlandic regions, confirm experience with FIDIC Yellow Book contracts and Arctic infrastructure, and assess compliance with Greenlandic/Danish labor laws and language requirements (B2 Greenlandic, C1 English).",
+      "history": []
+    },
+    "30c8233a-62e4-4d76-975b-2984f4b23267": {
+      "goal_id": "30c8233a-62e4-4d76-975b-2984f4b23267",
+      "question": "What are the required key experts or engineer or personnels to meet the criteria? Does Gruner has key experts meeting these criterias?",
+      "created_at": 1764630112.024691,
+      "plan_goal": null,
+      "history": []
+    },
+    "efc311ce-82b4-42d9-9378-a4c6f3963277": {
+      "goal_id": "efc311ce-82b4-42d9-9378-a4c6f3963277",
+      "question": "Does the client require previous experience with them or in a specific country/region? Does Gruner have such experience?",
+      "created_at": 1764630152.026059,
+      "plan_goal": null,
+      "history": []
+    },
+    "714ac0f9-c672-4617-9b4d-a5af9fc59f1a": {
+      "goal_id": "714ac0f9-c672-4617-9b4d-a5af9fc59f1a",
+      "question": "What are the required key experts or engineer or personnels to meet the criteria? Does Gruner has key experts meeting these criterias?",
+      "created_at": 1764637299.6131446,
+      "plan_goal": null,
+      "history": []
+    },
+    "06c30b24-bd2e-4826-b174-f2fd37708be5": {
+      "goal_id": "06c30b24-bd2e-4826-b174-f2fd37708be5",
+      "question": "Does the client require previous experience with them or in a specific country/region? Does Gruner have such experience?",
+      "created_at": 1764637330.682579,
+      "plan_goal": null,
+      "history": []
+    },
+    "1b0fafe8-4560-4e93-b0e2-ac21a6f325e0": {
+      "goal_id": "1b0fafe8-4560-4e93-b0e2-ac21a6f325e0",
+      "question": "What are the required key experts or engineer or personnels to meet the criteria? Does Gruner has key experts meeting these criterias?",
+      "created_at": 1764637652.3708289,
+      "plan_goal": "Verify Gruner's personnel language proficiency, technical expertise in Arctic construction and FIDIC contracts, project experience in remote regions, and quality assurance compliance for the A&Q Hydro Power Project.",
+      "history": []
+    },
+    "25ed9bd4-a53a-4bc6-a482-fba81090539c": {
+      "goal_id": "25ed9bd4-a53a-4bc6-a482-fba81090539c",
+      "question": "Does the client require previous experience with them or in a specific country/region? Does Gruner have such experience?",
+      "created_at": 1764637761.0784369,
+      "plan_goal": "Verify Gruner's past hydropower projects under FIDIC Yellow Book, compliance with Danish/Greenlandic laws and ILO guidelines, staff qualifications for key roles, and experience in Arctic or similar regulatory environments.",
+      "history": []
+    },
+    "fb14facd-5f2d-4e7c-b627-bf84abea0cb8": {
+      "goal_id": "fb14facd-5f2d-4e7c-b627-bf84abea0cb8",
+      "question": "What are the required key experts or engineer or personnels to meet the criteria? Does Gruner has key experts meeting these criterias?",
+      "created_at": 1764683539.0285397,
+      "plan_goal": "Identify if Gruner has personnel matching the required key expert roles (Project Manager, Electrical Design Manager, Mechanical Design Manager, Civil Design Manager, Quality Manager, ICT Manager) and their specific experience/qualification criteria.",
+      "history": []
+    },
+    "552d417a-c5c3-45f3-910f-e4832c23ce63": {
+      "goal_id": "552d417a-c5c3-45f3-910f-e4832c23ce63",
+      "question": "Does the client require previous experience with them or in a specific country/region? Does Gruner have such experience?",
+      "created_at": 1764686124.8163676,
+      "plan_goal": "Verify if Gruner has consultancy experience in hydro-electric power plant projects within the last 10 years and in Greenland or Arctic regions (e.g., Iceland, northern Finland, Sweden, Norway).",
+      "history": []
+    },
+    "3db47aeb-f77f-48ef-8ae1-d134b6d4a0fe": {
+      "goal_id": "3db47aeb-f77f-48ef-8ae1-d134b6d4a0fe",
+      "question": "What are the required key experts or engineer or personnels to meet the criteria? Does Gruner has key experts meeting these criterias?",
+      "created_at": 1764690053.8264325,
+      "plan_goal": "Identify Gruner's personnel with qualifications matching tender criteria and verify documented evidence of similar roles in past hydropower or infrastructure projects.",
+      "history": []
+    },
+    "937cf2f0-3924-4339-ad4b-ab0cf56939d8": {
+      "goal_id": "937cf2f0-3924-4339-ad4b-ab0cf56939d8",
+      "question": "Does the client require previous experience with them or in a specific country/region? Does Gruner have such experience?",
+      "created_at": 1764690350.2062068,
+      "plan_goal": "Identify if Gruner has consultancy agreements related to construction/civil works for hydro-electric power plants in the last 10 years and verify if Gruner has experience in Greenland or Arctic regions.",
+      "history": []
+    },
+    "b059be40-7105-4668-8616-5e43110b69d9": {
+      "goal_id": "b059be40-7105-4668-8616-5e43110b69d9",
+      "question": "What are the required key experts or engineer or personnels to meet the criteria? Does Gruner has key experts meeting these criterias?",
+      "created_at": 1764697727.8131711,
+      "plan_goal": "Identify if Gruner has personnel matching required key expert roles and verify if they meet tender criteria for education, experience, and domain expertise.",
+      "history": []
+    },
+    "3423ef16-a830-444c-a7c2-04c6bb2c1ce1": {
+      "goal_id": "3423ef16-a830-444c-a7c2-04c6bb2c1ce1",
+      "question": "Does the client require previous experience with them or in a specific country/region? Does Gruner have such experience?",
+      "created_at": 1764698934.3910975,
+      "plan_goal": "Identify if Gruner has past projects involving consultancy for construction/civil-engineering works in hydro-electric power plants within the last 10 years and verify if Gruner has executed consultancy agreements for such works specifically in Greenland or the Arctic region.",
+      "history": []
+    },
+    "3c76ed28-bbab-41b1-91b5-dfe809461ee3": {
+      "goal_id": "3c76ed28-bbab-41b1-91b5-dfe809461ee3",
+      "question": "What are the required key experts or engineer or personnels to meet the criteria? Does Gruner has key experts meeting these criterias?",
+      "created_at": 1764700490.1899996,
+      "plan_goal": null,
+      "history": []
+    },
+    "098962cf-df65-4fce-bd9e-c0d43a208a4a": {
+      "goal_id": "098962cf-df65-4fce-bd9e-c0d43a208a4a",
+      "question": "Does the client require previous experience with them or in a specific country/region? Does Gruner have such experience?",
+      "created_at": 1764700680.2307913,
+      "plan_goal": null,
+      "history": []
+    },
+    "cba63d7a-b95a-4622-a63b-9712dc234f4f": {
+      "goal_id": "cba63d7a-b95a-4622-a63b-9712dc234f4f",
+      "question": "What are the required key experts or engineer or personnels to meet the criteria? Does Gruner has key experts meeting these criterias?",
+      "created_at": 1764702412.028657,
+      "plan_goal": null,
+      "history": []
+    },
+    "84b3b669-c580-4a41-bd1b-706f41f9b86f": {
+      "goal_id": "84b3b669-c580-4a41-bd1b-706f41f9b86f",
+      "question": "Does the client require previous experience with them or in a specific country/region? Does Gruner have such experience?",
+      "created_at": 1764702646.4139168,
+      "plan_goal": null,
+      "history": []
+    },
+    "1984030c-8531-4c2a-a1bc-c56e7bd284b5": {
+      "goal_id": "1984030c-8531-4c2a-a1bc-c56e7bd284b5",
+      "question": "What are the required key experts or engineer or personnels to meet the criteria? Does Gruner has key experts meeting these criterias?",
+      "created_at": 1764704914.9175444,
+      "plan_goal": null,
+      "history": []
+    },
+    "575d99ad-9d67-4103-9c5b-4ebb68e3a98c": {
+      "goal_id": "575d99ad-9d67-4103-9c5b-4ebb68e3a98c",
+      "question": "Does the client require previous experience with them or in a specific country/region? Does Gruner have such experience?",
+      "created_at": 1764705098.9409497,
+      "plan_goal": null,
+      "history": []
     }
   }
 }

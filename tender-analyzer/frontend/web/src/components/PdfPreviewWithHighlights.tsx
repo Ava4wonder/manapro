@@ -24,9 +24,11 @@ const PdfPreviewWithHighlights = ({ documents, tenderId, activeReference, onClea
   const [numPages, setNumPages] = useState(0)
   const [viewerWidth, setViewerWidth] = useState(MAX_VIEWER_WIDTH)
   const [pageHeight, setPageHeight] = useState<number | null>(null)
+  const [renderedPages, setRenderedPages] = useState<Set<number>>(new Set())
   const cacheRef = useRef<Map<string, string>>(new Map())
   const viewerRef = useRef<HTMLDivElement | null>(null)
   const pageRef = useRef<HTMLDivElement | null>(null)
+  const scrollTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   useEffect(() => {
     return () => {
@@ -131,16 +133,38 @@ const PdfPreviewWithHighlights = ({ documents, tenderId, activeReference, onClea
       return
     }
 
-    const target = viewerRef.current.querySelector(`#pdf-page-${activeReference.page}`)
-    if (target) {
-      // Calculate the height of the current page container
-      const rect = target.getBoundingClientRect()
-      setPageHeight(rect.height)
-      
-      // Scroll to the specific page
-      target.scrollIntoView({ behavior: "smooth", block: "start" })
+    // Clear any pending scroll timeouts
+    if (scrollTimeoutRef.current) {
+      clearTimeout(scrollTimeoutRef.current)
     }
-  }, [activeReference, numPages])
+
+    const attemptScroll = () => {
+      const target = viewerRef.current?.querySelector(`#pdf-page-${activeReference.page}`)
+      if (target) {
+        // Calculate the height of the current page container
+        const rect = target.getBoundingClientRect()
+        setPageHeight(rect.height)
+        
+        // Scroll to the specific page
+        target.scrollIntoView({ behavior: "smooth", block: "start" })
+      } else {
+        // If target not found, retry after 100ms (page might still be rendering)
+        if (scrollTimeoutRef.current) {
+          clearTimeout(scrollTimeoutRef.current)
+        }
+        scrollTimeoutRef.current = setTimeout(attemptScroll, 100)
+      }
+    }
+
+    // Start scrolling after a small delay to ensure pages are rendered
+    scrollTimeoutRef.current = setTimeout(attemptScroll, 50)
+
+    return () => {
+      if (scrollTimeoutRef.current) {
+        clearTimeout(scrollTimeoutRef.current)
+      }
+    }
+  }, [activeReference?.page, renderedPages, numPages])
 
   const pageNumbers = useMemo(() => Array.from({ length: numPages }, (_, idx) => idx + 1), [numPages])
 
@@ -151,25 +175,59 @@ const PdfPreviewWithHighlights = ({ documents, tenderId, activeReference, onClea
     if (activeReference.page !== pageNumber) {
       return null
     }
+    
     const bbox = activeReference.bbox
     if (!bbox || bbox.length < 4) {
       return null
     }
-    const origSize = activeReference.orig_size
-    if (!origSize || origSize.length < 2) {
+
+    // bbox now contains RELATIVE coordinates (0 to 1)
+    const [relX0, relY0, relX1, relY1] = bbox
+
+    // Validate relative coordinates are between 0 and 1
+    if (relX0 < 0 || relY0 < 0 || relX1 > 1 || relY1 > 1 || relX0 >= relX1 || relY0 >= relY1) {
+      console.warn("Invalid relative bbox coordinates:", bbox)
       return null
     }
-    const [origWidth, origHeight] = origSize
-    if (!origWidth || !origHeight) {
+
+    // Get the actual rendered page element (the canvas)
+    const pageElement = pageRef.current?.querySelector("canvas")
+    if (!pageElement) {
       return null
     }
-    const scale = viewerWidth / origWidth
-    const [x0, y0, x1, y1] = bbox
+
+    // Use clientWidth and clientHeight (CSS display size) instead of width/height
+    // This accounts for device pixel ratio and canvas scaling
+    const displayWidth = pageElement.clientWidth
+    const displayHeight = pageElement.clientHeight
+
+    if (!displayWidth || !displayHeight) {
+      return null
+    }
+
+    // Define margin as percentage of page size (0.02 = 2%)
+    const marginPercent = 0.04
+    const marginX = marginPercent
+    const marginY = marginPercent
+
+    // Apply margins to relative coordinates
+    const expandedRelX0 = Math.max(0, relX0 - marginX)
+    const expandedRelY0 = Math.max(0, relY0 - marginY)
+    const expandedRelX1 = Math.min(1, relX1 + marginX)
+    const expandedRelY1 = Math.min(1, relY1 + marginY)
+
+    // Convert relative coordinates (0-1) back to absolute pixel coordinates
+    // by multiplying by the displayed dimensions (not internal canvas resolution)
+    const absoluteX0 = expandedRelX0 * displayWidth
+    const absoluteY0 = expandedRelY0 * displayHeight
+    const absoluteX1 = expandedRelX1 * displayWidth
+    const absoluteY1 = expandedRelY1 * displayHeight
+
     return {
-      left: x0 * scale,
-      top: y0 * scale,
-      width: (x1 - x0) * scale,
-      height: (y1 - y0) * scale,
+      left: absoluteX0,
+      top: absoluteY0,
+      width: absoluteX1 - absoluteX0,
+      height: absoluteY1 - absoluteY0,
     }
   }
 
@@ -178,6 +236,9 @@ const PdfPreviewWithHighlights = ({ documents, tenderId, activeReference, onClea
   }
 
   const handlePageRenderSuccess = (pageProxy: PDFPageProxy) => {
+    // Track which pages have been rendered
+    setRenderedPages((prev) => new Set(prev).add(pageProxy.pageNumber))
+
     if (pageProxy.pageNumber === activeReference?.page) {
       // Calculate actual rendered page height
       const viewport = pageProxy.getViewport({ scale: viewerWidth / (activeReference.orig_size?.[0] || 1) })

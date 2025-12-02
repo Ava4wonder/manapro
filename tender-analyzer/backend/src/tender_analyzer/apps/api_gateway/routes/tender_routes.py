@@ -75,7 +75,7 @@ SUMMARY_PROMPT = (
 
 
 
-def _run_summary_pipeline_task(tender_id: str) -> None:
+def _run_summary_pipeline_task(tender_id: str, tenant_id: str) -> None:
     """
     执行摘要分析流程，并将结果以 JSONL 字符串格式存储。
     """
@@ -87,7 +87,7 @@ def _run_summary_pipeline_task(tender_id: str) -> None:
     try:
         # 1. 运行摘要分析 pipeline
         # 假设 run_summary_analysis 返回一个字典，其中包含 'output_file' 键，其值为生成的 JSONL 文件路径
-        pipeline_result = run_summary_analysis(tender_id)
+        pipeline_result = run_summary_analysis(tender_id, tenant_id)
         
         # 2. 验证并获取输出文件路径
         output_file_path = pipeline_result.get("output_file")
@@ -335,6 +335,6 @@ async def start_analysis(tender_id: str, background_tasks: BackgroundTasks):
     # Proceed only if transition is valid
     tender_repo.set_state(tender_id, TenderState.SUMMARY_RUNNING)
 
-    background_tasks.add_task(_run_summary_pipeline_task, tender_id)
+    background_tasks.add_task(_run_summary_pipeline_task, tender_id, tender.tenant_id)
     
     return _status_payload(tender)

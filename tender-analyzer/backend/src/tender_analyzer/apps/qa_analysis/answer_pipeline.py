@@ -15,6 +15,19 @@ from dataclasses import asdict, is_dataclass
 from datetime import datetime
 from typing import Dict, List, Any
 
+def _slug(value: str) -> str:
+    if not value:
+        return "unknown"
+    sanitized = "".join(c if c.isalnum() or c in "-_" else "_" for c in value)
+    return sanitized[:32] or "unknown"
+
+
+def build_tender_collection_name(tenant_id: str, tender_id: str) -> str:
+    """Public helper for computing the canonical tender collection name."""
+    slug_tenant = _slug(tenant_id)
+    slug_tender = _slug(tender_id)
+    return f"tender_{slug_tenant}_{slug_tender}"
+
 # 临时文件存储目录
 TEMP_DIR = Path(__file__).parent.parent / "storage" / "tender_summary"
 TEMP_DIR.mkdir(exist_ok=True, parents=True)
@@ -57,10 +70,11 @@ def iterate_questions(qmap: Dict[str, Dict[str, List[str]]]):
 # Main Processing
 # ==========================
 
-def run_summary_analysis(tender_id: str = "") -> Dict[str, Any]:
+def run_summary_analysis(tender_id: str = "", tenant_id: str = "default-tenant") -> Dict[str, Any]:
     # File paths
-    OUTPUT_JSONL = TEMP_DIR / f"{tender_id}_qanswers.jsonl"
-    LOG_FILE = TEMP_DIR / f"{tender_id}_pipeline_run_time.log"
+    OUTPUT_JSONL = TEMP_DIR / f"{tenant_id}_{tender_id}_qanswers.jsonl"
+    LOG_FILE = TEMP_DIR / f"{tenant_id}_{tender_id}_pipeline_run_time.log"
+    COLLECTION_NAME = build_tender_collection_name(tenant_id, tender_id)
 
     # Logging configuration
     logging.basicConfig(
@@ -108,7 +122,7 @@ def run_summary_analysis(tender_id: str = "") -> Dict[str, Any]:
             
             try:
                 # Process question through agent
-                answer_result = agent.run_once(q)
+                answer_result = agent.run_once(q, COLLECTION_NAME)
                 references_raw: List[Any] = []
                 if isinstance(answer_result, dict):
                     answer_text = str(answer_result.get("answer", ""))
@@ -226,6 +240,8 @@ def run_summary_analysis(tender_id: str = "") -> Dict[str, Any]:
 # ==========================
 # Entry Point
 # ==========================
+# from tender_analyzer.apps.qa_analysis.prebid_questions_1113 import QUESTIONS
+
 
 if __name__ == "__main__":
     print("🚀 Starting Question Processing Pipeline")

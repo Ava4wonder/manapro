@@ -3,8 +3,10 @@ import { FC, useEffect, useMemo, useState } from "react"
 import { ProjectCardInfo } from "../types/project"
 import { SummaryResponse, DetailsResponse, QuestionAnswerReference } from "../api/tenders"
 import ProjectCard from "../components/ProjectCard"
-import ReactMarkdown from "react-markdown"
-import PdfPreviewWithHighlights from "../components/PdfPreviewWithHighlights"
+import ReactMarkdown, { defaultUrlTransform } from "react-markdown"
+import { usePdfViewerStore } from "../store/pdfViewerStore"
+
+const CHUNKREF_PREFIX = "chunkref://"
 
 
 type ProjectCardsPageProps = {
@@ -31,8 +33,7 @@ const ProjectCardsPage: FC<ProjectCardsPageProps> = ({
   tenderId,
 }) => {
   const [activeTab, setActiveTab] = useState<DetailTab>("summary")
-  const [activeReference, setActiveReference] = useState<QuestionAnswerReference | null>(null)
-  const [isPdfPanelOpen, setIsPdfPanelOpen] = useState(true)
+  const { show, clearActiveReference } = usePdfViewerStore()
 
   const selectedProject = useMemo(
     () => projects.find((p) => p.id === selectedProjectId) ?? null,
@@ -40,8 +41,8 @@ const ProjectCardsPage: FC<ProjectCardsPageProps> = ({
   )
 
   useEffect(() => {
-    setActiveReference(null)
-  }, [summary?.id])
+    clearActiveReference()
+  }, [summary?.id, clearActiveReference])
 
   const handleCardClick = (id: string) => {
     if (id === selectedProjectId) return
@@ -50,8 +51,7 @@ const ProjectCardsPage: FC<ProjectCardsPageProps> = ({
   }
 
   const handleReferenceSelect = (reference: QuestionAnswerReference) => {
-    setActiveReference(reference)
-    setIsPdfPanelOpen(true)
+    show(reference, tenderId)
   }
 
   return (
@@ -117,64 +117,93 @@ const ProjectCardsPage: FC<ProjectCardsPageProps> = ({
               summary && summary.ready ? (
                 <div className="project-detail__content">
                   <div className="project-detail__summary">
+                    <p className="project-detail__hint">
+                      {documents.length > 0
+                        ? `${documents.length} document(s) available.`
+                        : "No documents have finished uploading yet."}{" "}
+                      Use the floating PDF viewer (bottom-right) to inspect highlighted references.
+                    </p>
                     <div className="question-grid">
-                      {summary.questions.map((item, idx) => (
-                        <article key={idx}>
-                          <h4>{item.question}</h4>
-                          <div className="markdown-answer">
-                            <ReactMarkdown
-                              components={{
-                                a: ({ node, ...props }) => (
-                                  <a {...props} target="_blank" rel="noopener noreferrer" />
-                                ),
-                              }}
-                            >
-                              {item.answer}
-                            </ReactMarkdown>
-                          </div>
-                          {item.references && item.references.length > 0 && (
-                            <div className="reference-links">
-                              {item.references.map((reference, referenceIdx) => (
-                                <button
-                                  key={`${item.question}-${reference.chunk_id ?? referenceIdx}`}
-                                  type="button"
-                                  className="reference-link"
-                                  onClick={() => handleReferenceSelect(reference)}
-                                >
-                                  Source {referenceIdx + 1}: {reference.file_name}
-                                  {reference.page ? ` · p.${reference.page}` : ""}
-                                </button>
-                              ))}
+                      {summary.questions.map((item, idx) => {
+                        const referenceMap = new Map<string, QuestionAnswerReference>()
+                        item.references?.forEach((reference) => {
+                          if (reference.chunk_id) {
+                            referenceMap.set(String(reference.chunk_id), reference)
+                          }
+                        })
+
+                        return (
+                          <article key={idx}>
+                            <h4>{item.question}</h4>
+                            <div className="markdown-answer">
+                              <ReactMarkdown
+                                urlTransform={(url) => {
+                                  // 对我们自定义的协议，直接放行，不做安全裁剪
+                                  if (url.startsWith(CHUNKREF_PREFIX)) {
+                                    return url
+                                  }
+                                  // 其它的还是走官方的默认 transform，保持安全性
+                                  return defaultUrlTransform(url)
+                                }}
+                                components={{
+                                  a: ({ href, children, node, ...linkProps }: any) => {
+                                    console.log("Markdown link href = ", JSON.stringify(href))
+                                    if (href?.startsWith(CHUNKREF_PREFIX)) {
+                                      const chunkId = href.slice(CHUNKREF_PREFIX.length)
+                                      console.log("ChunkId = ", JSON.stringify(chunkId))
+                                      const reference = referenceMap.get(chunkId)
+                                      console.log("Found reference? ", !!reference, reference)
+                                      if (reference) {
+                                        return (
+                                          <button
+                                            type="button"
+                                            className="reference-inline-link"
+                                            onClick={() => handleReferenceSelect(reference)}
+                                          >
+                                            {children}
+                                          </button>
+                                        )
+                                      } else {
+                                        // 异常处理：找不到引用时，渲染为不可点击文本（避免无效交互）
+                                        return <span className="reference-inline-link--invalid">{children}</span>
+                                      }
+                                    }
+                                    return (
+                                      <a
+                                        {...linkProps}
+                                        href={href}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        {children}
+                                      </a>
+                                    )
+                                  },
+                                }}
+                              >
+                                {item.answer}
+                              </ReactMarkdown>
                             </div>
-                          )}
-                        </article>
-                      ))}
+                            {item.references && item.references.length > 0 && (
+                              <div className="reference-links">
+                                {item.references.map((reference, referenceIdx) => (
+                                  <button
+                                    key={`${item.question}-${reference.chunk_id ?? referenceIdx}`}
+                                    type="button"
+                                    className="reference-link"
+                                    onClick={() => handleReferenceSelect(reference)}
+                                  >
+                                    Source {referenceIdx + 1}: {reference.file_name}
+                                    {reference.page ? ` • p.${reference.page}` : ""}
+                                  </button>
+                                ))}
+                              </div>
+                            )}
+                          </article>
+                        )
+                      })}
                     </div>
                   </div>
-                  <aside className={`pdf-panel ${isPdfPanelOpen ? "is-open" : "is-collapsed"}`}>
-                    <header className="pdf-panel__header">
-                      <div>
-                        <h3>PDF panel</h3>
-                        <p>Inspect the source documents and highlighted references.</p>
-                      </div>
-                      <button
-                        type="button"
-                        className="pdf-panel__toggle"
-                        onClick={() => setIsPdfPanelOpen((prev) => !prev)}
-                        aria-expanded={isPdfPanelOpen}
-                      >
-                        {isPdfPanelOpen ? "Collapse" : "Expand"}
-                      </button>
-                    </header>
-                    <div className="pdf-panel__body" aria-hidden={!isPdfPanelOpen}>
-                      <PdfPreviewWithHighlights
-                        documents={documents}
-                        tenderId={tenderId}
-                        activeReference={activeReference}
-                        onClearReference={() => setActiveReference(null)}
-                      />
-                    </div>
-                  </aside>
                 </div>
               ) : (
                 <p className="project-detail-placeholder">

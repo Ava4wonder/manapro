@@ -288,7 +288,7 @@ class QdrantVectorStore:
                 "doc_id": doc_id,
                 "chunk_type": chunk.get("type"),
                 "chunk_index": idx,
-                "snippet": text,
+                "text": text,
                 # "doc_chunk_key": f"{doc_id}_{chunk_id}",  # human-readable composite key
             }
             # Add other chunk fields (including chunk_id, label, etc.), but not text
@@ -379,15 +379,17 @@ def _chunk_file_with_coarse_to_fine(
             continue
 
         # Generate labels for this chunk
-        try:
-            label_raw = generate_chunk_label(text, SYSTEM_MSG)
-            try:
-                label = json.loads(label_raw)
-            except Exception:
-                label = label_raw
-        except Exception as e:
-            LOG.warning("[chunk] Failed to generate label for chunk (doc_id=%d): %s", doc_id, e)
-            label = None
+        # try:
+        #     label_raw = generate_chunk_label(text, SYSTEM_MSG)
+        #     try:
+        #         label = json.loads(label_raw)
+        #     except Exception:
+        #         label = label_raw
+        # except Exception as e:
+        #     LOG.warning("[chunk] Failed to generate label for chunk (doc_id=%d): %s", doc_id, e)
+        #     label = None
+        
+        label = None  # Skip labeling for now to save time/costs
 
         # Page / bbox / orig_size – normalize names
         page = ch.get("page") or ch.get("page_number") or 1

@@ -6,10 +6,12 @@ import SummaryPage from "./pages/SummaryPage"
 import DetailsPage from "./pages/DetailsPage"
 import EvaluationPage from "./pages/EvaluationPage"
 import ProjectCardsPage from "./pages/ProjectCardsPage"
+import FloatingPdfViewer from "./components/FloatingPdfViewer"
 import TenderStatusIndicator from "./components/TenderStatusIndicator"
 import LoadingBar from "./components/LoadingBar"
 import LoginPanel from "./components/LoginPanel"
 import Sidebar from "./components/Sidebar"
+import { PdfViewerProvider } from "./store/pdfViewerStore"
 import {
   SummaryResponse,
   DetailsResponse,
@@ -341,7 +343,10 @@ const Dashboard = () => {
 
 const App = () => (
   <AuthProvider>
-    <Dashboard />
+    <PdfViewerProvider>
+      <Dashboard />
+      <FloatingPdfViewer />
+    </PdfViewerProvider>
   </AuthProvider>
 )
 

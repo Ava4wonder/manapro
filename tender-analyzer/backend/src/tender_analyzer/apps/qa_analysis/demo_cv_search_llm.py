@@ -7,11 +7,12 @@ from __future__ import annotations
 import json
 import logging
 import os
+import re
 import sys
 import time
 import uuid
 from dataclasses import dataclass
-from typing import Any, Dict, List, Optional, Literal
+from typing import Any, Dict, List, Optional, Literal, Tuple, Union
 
 import requests
 from pydantic import BaseModel, Field
@@ -39,7 +40,10 @@ logger = logging.getLogger("agent")
 # CONFIG
 # ==========================
 
-OLLAMA_CHAT_MODEL = os.getenv("OLLAMA_CHAT_MODEL", "qwen3:32b")      # e.g. gpt-oss / qwen3
+# OLLAMA_CHAT_MODEL_QWEN = os.getenv("OLLAMA_CHAT_MODEL", "qwen3:30b") 
+OLLAMA_CHAT_MODEL_QWEN = os.getenv("OLLAMA_CHAT_MODEL", "gpt-oss:20b")      # e.g. gpt-oss / qwen3
+OLLAMA_CHAT_MODEL_QWEN_2 = os.getenv("OLLAMA_CHAT_MODEL", "qwen3:32b") 
+OLLAMA_CHAT_MODEL_GPT = os.getenv("OLLAMA_CHAT_MODEL", "gpt-oss:120b")      # e.g. gpt-oss / qwen3
 OLLAMA_EMBED_MODEL = os.getenv("OLLAMA_EMBED_MODEL", "qwen3-embedding:8b")  # e.g. qwen3-embedding
 OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
 
@@ -53,7 +57,7 @@ COLL_GRUNER_STRATEGY = "brochure_qwen"
 COLL_GRUNER_PASTPROJECT = "brochure_qwen"
 
 # RAG + tools search parameters
-INITIAL_TOP_K = 12
+INITIAL_TOP_K = 5
 TOOL_BASE_TOP_K = 10       # Base top_k for tool searches
 TOP_K_BOOST = 2           # How much to increase K per retry
 MAX_TRIES = 0
@@ -65,11 +69,18 @@ TOOL_CALL_LOG_FILE = "tool_calls_log.json"
 
 # Predefined questions
 from tender_analyzer.apps.qa_analysis.prebid_questions_1113 import QUESTIONS
+
 PREDEFINED_QUESTIONS = []
 for key_cat, subcats in QUESTIONS.items():
     for subcat, qs in subcats.items():
         PREDEFINED_QUESTIONS.extend(qs)
 print(f"Loaded {len(PREDEFINED_QUESTIONS)} predefined questions.")
+
+# Regex used to parse inline reference tags such as "[ref_id:123]"
+# REF_ID_PATTERN = re.compile(r"\[ref_id:(\d+)\]")
+# REF_ID_PATTERN = re.compile(r"[\[\u3010]ref_id:(\d+)[\]\u3011]")
+REF_ID_PATTERN = re.compile(r"[\[\u3010\u300a]ref_id:(\d+)[\]\u3011\u300b]")
+
 
 
 # ==========================
@@ -168,25 +179,63 @@ class AnswerResult:
 class OllamaProvider:
     def __init__(self,
                  base_url: str = OLLAMA_BASE_URL,
-                 chat_model: str = OLLAMA_CHAT_MODEL,
+                 chat_model_gpt: str = OLLAMA_CHAT_MODEL_GPT,
+                 chat_model_qwen: str = OLLAMA_CHAT_MODEL_QWEN,
+                 chat_model_qwen_2: str = OLLAMA_CHAT_MODEL_QWEN_2, 
                  embed_model: str = OLLAMA_EMBED_MODEL):
         self.base = base_url.rstrip("/")
-        self.chat_model = chat_model
+        self.chat_model_gpt = chat_model_gpt
+        self.chat_model_qwen = chat_model_qwen
+        self.chat_model_qwen_2 = chat_model_qwen_2
         self.embed_model = embed_model
 
-    def chat(self,
+    def chat_gpt(self,
              messages: List[Dict[str, str]],
-             temperature: float = 0.2,
+             temperature: float = 0.05,
              system_prompt: Optional[str] = None) -> str:
         payload = {
-            "model": self.chat_model,
+            "model": self.chat_model_gpt,
             "messages": (
                 [{"role": "system", "content": system_prompt}] if system_prompt else []
             ) + messages,
             "stream": False,
             "options": {"temperature": temperature},
         }
-        r = requests.post(f"{self.base}/api/chat", json=payload, timeout=120)
+        r = requests.post(f"{self.base}/api/chat", json=payload, timeout=12000)
+        r.raise_for_status()
+        data = r.json()
+        return data.get("message", {}).get("content", "")
+    
+    def chat_qwen(self,
+             messages: List[Dict[str, str]],
+             temperature: float = 0.05,
+             system_prompt: Optional[str] = None) -> str:
+        payload = {
+            "model": self.chat_model_qwen,
+            "messages": (
+                [{"role": "system", "content": system_prompt}] if system_prompt else []
+            ) + messages,
+            "stream": False,
+            "options": {"temperature": temperature},
+        }
+        r = requests.post(f"{self.base}/api/chat", json=payload, timeout=12000)
+        r.raise_for_status()
+        data = r.json()
+        return data.get("message", {}).get("content", "")
+    
+    def chat_qwen_2(self,
+             messages: List[Dict[str, str]],
+             temperature: float = 0.05,
+             system_prompt: Optional[str] = None) -> str:
+        payload = {
+            "model": self.chat_model_qwen_2,
+            "messages": (
+                [{"role": "system", "content": system_prompt}] if system_prompt else []
+            ) + messages,
+            "stream": False,
+            "options": {"temperature": temperature},
+        }
+        r = requests.post(f"{self.base}/api/chat", json=payload, timeout=12000)
         r.raise_for_status()
         data = r.json()
         return data.get("message", {}).get("content", "")
@@ -232,6 +281,78 @@ class QdrantSearchTool:
     def __init__(self, client: QdrantClient, embedder: OllamaProvider):
         self.client = client
         self.embedder = embedder
+
+    def get_chunks_by_point_ids(
+            self,
+            collection_name: str,
+            point_ids: list[int],
+        ) -> Dict[int, Dict[str, Any]]:
+        """
+        Batch retrieve chunks by point_ids.
+        Returns a dict: point_id -> normalized payload dict.
+        """
+        if not point_ids:
+            return {}
+
+        points = self.client.retrieve(
+            collection_name=collection_name,
+            ids=point_ids,
+            with_payload=True,
+            with_vectors=False,
+        )
+
+        result: Dict[int, Dict[str, Any]] = {}
+        for p in points:
+            pid = int(p.id)
+            payload = p.payload or {}
+            result[pid] = {
+                "doc_id": payload.get("doc_id"),
+                "chunk_id": payload.get("chunk_id"),
+                "text": payload.get("text"),
+                "page": payload.get("page"),
+                "bbox": payload.get("bbox"),
+                "orig_size": payload.get("orig_size"),
+                "tender_id": payload.get("tender_id"),
+                "file_name": payload.get("file_name"),
+                "label": payload.get("label"),
+                "source_collection": collection_name,
+            }
+        return result
+
+    def search_and_stitch(
+        self,
+        collection: str,
+        query: str,
+        top_k: int = 5,
+        must_tags: Optional[List[str]] = None,
+    ) -> Dict[str, Any]:
+        """Search Qdrant and stitch results into a single text blob."""
+        vec = self.embedder.embed(query)
+        qfilter = None
+        if must_tags:
+            qfilter = Filter(
+                must=[
+                    FieldCondition(key="tags", match=MatchValue(value=tag))
+                    for tag in must_tags
+                ]
+            )
+
+        hits = self.client.search(
+            collection_name=collection,
+            query_vector=vec,
+            query_filter=qfilter,
+            limit=top_k,
+        )
+        stitched_texts = []
+        for h in hits:
+            payload = getattr(h, "payload", {}) or {}
+            text = payload.get("text") 
+            ref_id = str(getattr(h, "id", ""))
+            if text:
+                enriched = f"<c> {text} [ref_id:{ref_id}] </c>"
+                stitched_texts.append(enriched)
+        print(f"[stitch] {stitched_texts}")
+        return stitched_texts
 
     def search(
         self,
@@ -342,7 +463,111 @@ class Agent:
             orig_size=orig_size,
             tender_id=meta.get("tender_id"),
         )
+    
+    def _format_newref_answer(self, raw_answer: str, collection_name: str) -> Tuple[str, List[AnswerReference]]:
+        """
+        Format the initial answer by:
+        1. Extracting all [ref_id:XXX] references from the answer
+        2. Retrieving chunk details from Qdrant using point IDs
+        3. Converting inline references to [file_name, p:page] format
+        4. Returning formatted answer and reference list
+        """
+        # Extract all ref_ids from the answer
+        ref_ids = REF_ID_PATTERN.findall(raw_answer)
+        ref_ids_int = []
+        try:
+            ref_ids_int = [int(rid) for rid in ref_ids]
+        except ValueError as e:
+            logger.warning(f"[FORMAT] Failed to parse ref_ids as integers: {e}")
+            return raw_answer, []
 
+        if not ref_ids_int:
+            logger.info("[FORMAT] No references found in answer")
+            return raw_answer, []
+
+        # Retrieve chunk details from Qdrant
+        try:
+            chunks_by_id = self.search_tool.get_chunks_by_point_ids(
+                collection_name=collection_name,
+                point_ids=ref_ids_int
+            )
+        except Exception as e:
+            logger.error(f"[FORMAT] Failed to retrieve chunks from Qdrant: {e}")
+            return raw_answer, []
+
+        # Build reference list and mapping for reformatting
+        references: List[AnswerReference] = []
+        ref_id_to_display = {}  # Maps ref_id to display text
+
+        for ref_id in ref_ids_int:
+            chunk_info = chunks_by_id.get(ref_id)
+            if not chunk_info:
+                logger.warning(f"[FORMAT] Chunk {ref_id} not found in Qdrant response")
+                continue
+
+            file_name = chunk_info.get("file_name", "Unknown")
+            page = chunk_info.get("page")
+            text = chunk_info.get("text", "")
+            bbox = chunk_info.get("bbox", [])
+            orig_size = chunk_info.get("orig_size")
+            tender_id = chunk_info.get("tender_id")
+            chunk_id = chunk_info.get("chunk_id")
+
+            # Create display text
+            page_text = f"p:{page}" if page is not None else "p:?"
+            display_text = f"[{file_name}, {page_text}](chunkref://{chunk_id})"
+            ref_id_to_display[ref_id] = display_text
+
+            # Create AnswerReference
+            bbox_values = []
+            if bbox and len(bbox) >= 4:
+                try:
+                    bbox_values = [float(v) for v in bbox[:4]]
+                except (ValueError, TypeError):
+                    pass
+
+            ref = AnswerReference(
+                chunk_id=chunk_id,
+                file_name=file_name,
+                page=int(page) if page is not None else None,
+                bbox=bbox_values,
+                snippet=text,
+                score=None,
+                source_collection=collection_name,
+                source_tool=None,
+                orig_size=orig_size,
+                tender_id=tender_id,
+            )
+            references.append(ref)
+
+        # Reformat answer: replace [ref_id:XXX] with [file_name, p:page]
+        formatted_answer = raw_answer
+        for ref_id in ref_ids_int:
+            if ref_id in ref_id_to_display:
+                old_pattern = f"[ref_id:{ref_id}]"
+                new_text = ref_id_to_display[ref_id]
+                formatted_answer = formatted_answer.replace(old_pattern, new_text)
+
+        unique_references: List[AnswerReference] = []
+        seen_chunk_ids = set()
+
+        for ref in references:
+            cid = ref.chunk_id
+            # remove duplicates based on chunk_id
+            if cid is not None:
+                if cid in seen_chunk_ids:
+                    continue
+                seen_chunk_ids.add(cid)
+            unique_references.append(ref)
+
+        references = unique_references
+
+        logger.info(f"[FORMAT] Extracted {len(references)} references from answer")
+        return formatted_answer, references
+
+    
+
+    
     def _collect_references(self, docs: List[Dict[str, Any]], limit: int = 5) -> List[AnswerReference]:
         """Pick top-N unique references from retrieved docs."""
         references: List[AnswerReference] = []
@@ -388,7 +613,7 @@ class Agent:
         3. Only uses information from the provided context
         """
 
-        return self.llm.chat(
+        return self.llm.chat_qwen(
             messages=[{"role": "user", "content": prompt}],
             temperature=0.1
         )
@@ -421,7 +646,7 @@ class Agent:
         Return ONLY the valid JSON object.
         """
         
-        return self.llm.chat(
+        return self.llm.chat_qwen(
             messages=[{"role": "user", "content": f"Convert this to valid ToolPlan JSON: {raw_planner_output}"}],
             system_prompt=system_prompt,
             temperature=0.0
@@ -462,7 +687,7 @@ class Agent:
         
         for attempt in range(max_retries):
             try:
-                return self.llm.chat(
+                return self.llm.chat_qwen(
                     messages=[{"role": "user", "content": f"Convert this to valid ToolPlan JSON: {raw_planner_output}"}],
                     system_prompt=system_prompt,
                     temperature=0.0
@@ -507,7 +732,7 @@ class Agent:
         Return ONLY "True" or "False" (boolean, no explanations).
         """
         
-        judgment = self.llm.chat(
+        judgment = self.llm.chat_qwen(
             messages=[{
                 "role": "user", 
                 "content": f"Question: {question}\nInitial Answer: {initial_answer}\nNeed tools? (True/False)"
@@ -521,7 +746,7 @@ class Agent:
     def plan_tools(
         self, question: str, initial_answer: str, rag_docs: List[Dict[str, Any]]
     ) -> ToolPlan:
-        docs_json = json.dumps(rag_docs[:5], ensure_ascii=False)
+        # docs_json = json.dumps(rag_docs[:5], ensure_ascii=False)
 
         system_prompt = """
         You are an analyst agent. Your job:
@@ -544,7 +769,7 @@ class Agent:
         """
 
         # Get raw planner output
-        raw_planner_output = self.llm.chat(
+        raw_planner_output = self.llm.chat_qwen_2(
             [{"role": "user", "content": user_prompt}],
             temperature=0.1,
             system_prompt=system_prompt,
@@ -574,7 +799,7 @@ class Agent:
         if judge_needs_tools and not plan.should_call_tools:
             logger.info("[GUARD] Judge disagrees - forcing re-plan")
             user_prompt += "\nIMPORTANT: The question requires tool usage. Provide tool calls."
-            raw_replan = self.llm.chat(
+            raw_replan = self.llm.chat_qwen(
                 [{"role": "user", "content": user_prompt}],
                 temperature=0.1,
                 system_prompt=system_prompt,
@@ -626,39 +851,97 @@ class Agent:
     # Step 1: initial RAG on project_kk
     # ------------------------
 
-    def initial_rag(self, question: str, top_k: int = INITIAL_TOP_K) -> Dict[str, Any]:
-        logger.info(f"[RAG] Searching collection={COLL_PROJECT_KK}, top_k={top_k}")
+    def newref_initial_rag(
+        self,
+        question: str,
+        collection_name: str,
+        top_k: int = INITIAL_TOP_K,
+    ) -> Dict[str, Any]:
+        logger.info(f"[RAG] Searching collection={collection_name}, top_k={top_k}")
+
+        stitched_context = self.search_tool.search_and_stitch(
+            collection=collection_name,
+            query=question,
+            top_k=top_k,
+        )
+        
+        SYSTEM_MSG = (
+            "You are a professional and precise Pre-Bid Q&A assistant, very good at reading and reasoning in a surgical way. "
+            "You will receive a QUESTION and a CONTEXT. The CONTEXT is a stitched text composed of multiple chunks, "
+            "each wrapped in the following format: `<c> ... [ref_id:CHUNK_ID] </c>`. "
+            "Each `ref_id` uniquely identifies the source chunk of evidence.\n\n"
+
+            "(Mandatory and required) Answer format:\n"
+            "1) The First line outputs a single word: either 'Mentioned' or 'No mention', indicating whether the answer "
+            "can be derived from the provided CONTEXT only. If only part of the QUESTION can be answered from the CONTEXT, "
+            "still output 'Mentioned' and answer all aspects that can be supported, while clearly explaining any limitations.\n"
+            "2) Then provide a concise but detailed explanation.\n\n"
+            "3) When explaining, you MUST attach each factual statement with evidence from the CONTEXT:\n"
+            "   - At the end of each explanation paragraph or sentence, append one or more evidence references in the format `[ref_id:CHUNK_ID]`.\n"
+            "   - Use the `ref_id` that appears inside the `<c> ... [ref_id:CHUNK_ID] </c>` wrapper in the CONTEXT.\n"
+            "   - If a sentence is supported by multiple chunks, you may list multiple references, for example: '[ref_id:123];[ref_id:456]'.\n"
+            "   - Do NOT paste or quote the original evidence text itself, only the reference(s) `[ref_id:CHUNK_ID]`.\n"
+            "   - Never invent or fabricate `ref_id`s that do not appear in the CONTEXT.\n\n"
+
+            "You must rely ONLY on the given CONTEXT for your answer:\n"
+            "   - Do not introduce external knowledge or assumptions.\n"
+            "   - If the CONTEXT is insufficient to fully answer the QUESTION, clearly state what is missing while still following the rules above.\n"
+        )
+
+        user_prompt = (
+            f"CONTEXT:\n{stitched_context}\n\n"
+            f"QUESTION:\n{question}"
+        )
+
+        messages = [
+            {"role": "system", "content": SYSTEM_MSG},
+            {"role": "user", "content": user_prompt},
+        ]
+        answer = self.llm.chat_gpt(messages, temperature=0.05)
+        formatted_answer, references = self._format_newref_answer(answer, collection_name)
+        logger.info(f"[RAG] Initial answer (first 400 chars): {formatted_answer}...")
+        return {
+            "answer": formatted_answer,
+            # "raw_answer": answer,
+            # "docs": results,
+            "references": references,
+            # "top_k": top_k,
+        }
+
+    def initial_rag(self, question: str, collection_name: str, top_k: int = INITIAL_TOP_K) -> Dict[str, Any]:
+        logger.info(f"[RAG] Searching collection={collection_name}, top_k={top_k}")
         rag_result = self.search_tool.search(
-            collection=COLL_PROJECT_KK, query=question, top_k=top_k
+            collection=collection_name, query=question, top_k=top_k
         )
         for item in rag_result.get("results", []):
-            item["source_collection"] = COLL_PROJECT_KK
+            item["source_collection"] = collection_name
 
         # Save topK chunk texts to retrieval_temp.json
-        try:
-            out_payload = {
-                "question": question,
-                "collection": COLL_PROJECT_KK,
-                "top_k": top_k,
-                "chunks": [
-                    {
-                        "rank": i + 1,
-                        "id": str(item.get("id", "")),
-                        "score": float(item.get("score", 0.0)),
-                        "text": item.get("text", ""),
-                    }
-                    for i, item in enumerate(rag_result.get("results", []))
-                ],
-            }
-            with open("retrieval_temp.json", "w", encoding="utf-8") as f:
-                json.dump(out_payload, f, ensure_ascii=False, indent=2)
-            logger.info(
-                f"[RAG] Saved {len(out_payload['chunks'])} chunks to retrieval_temp.json"
-            )
-        except Exception as e:
-            logger.exception(f"[RAG] Failed to write retrieval_temp.json: {e}")
+        # try:
+        #     out_payload = {
+        #         "question": question,
+        #         "collection": collection_name,
+        #         "top_k": top_k,
+        #         "chunks": [
+        #             {
+        #                 "rank": i + 1,
+        #                 "id": str(item.get("id", "")),
+        #                 "score": float(item.get("score", 0.0)),
+        #                 "text": item.get("text", ""),
+        #             }
+        #             for i, item in enumerate(rag_result.get("results", []))
+        #         ],
+        #     }
+        #     with open("retrieval_temp.json", "w", encoding="utf-8") as f:
+        #         json.dump(out_payload, f, ensure_ascii=False, indent=2)
+        #     logger.info(
+        #         f"[RAG] Saved {len(out_payload['chunks'])} chunks to retrieval_temp.json"
+        #     )
+        # except Exception as e:
+        #     logger.exception(f"[RAG] Failed to write retrieval_temp.json: {e}")
 
         docs_json = json.dumps(rag_result["results"], ensure_ascii=False)
+
         prompt = f"""
             You are a domain expert answering questions for a tender project.
 
@@ -672,9 +955,10 @@ class Agent:
             Write an initial answer ONLY based on the given passages. Be explicit when something is not specified.
             Do NOT mention tools or Qdrant. Keep it structured and concise.
             """
+
         
-        answer = self.llm.chat([{"role": "user", "content": prompt}], temperature=0.2)
-        logger.info(f"[RAG] Initial answer (first 400 chars): {answer[:400]}...")
+        answer = self.llm.chat([{"role": "user", "content": prompt}], temperature=0.05)
+        logger.info(f"[RAG] Initial answer: {answer}...")
         return {"answer": answer, "docs": rag_result["results"], "top_k": top_k}
 
     # ------------------------
@@ -732,7 +1016,7 @@ class Agent:
                         chunks=result["results"]
                     )
                     rag_answers.append(rag_answer)
-                    logger.info(f"[TOOLS] {len(result['results'])} chunks, RAG answer for query '{q}' (first 300 chars): {rag_answer[:3000]}...")
+                    logger.info(f"[TOOLS] {len(result['results'])} chunks, RAG answer for query '{q}' (first 300 chars): {rag_answer[:300]}...")
 
                     # Prepare tool data for further processing
                     for r in result["results"]:
@@ -776,12 +1060,16 @@ class Agent:
         system_prompt = """
         You are a senior editor specializing in technical documentation.
         Your task is to refine and improve the coherence of an extended answer while preserving all key information.
+
+        "(Mandatory and required) Answer format:\n"
+        "1) The First line outputs a single word: either 'Mentioned' or 'No mention', indicating whether the answer "
+        "2) keep all references intact and properly placed at the same locations as in the original answer (as input)."
         
-        Requirements:
+        Other Requirements:
         1. Ensure the answer flows logically and addresses the question directly
         2. Remove redundancies while keeping all important details
         3. Maintain technical accuracy
-        4. Structure the answer for readability
+        4. Structure the answer for readability, but do not remove the first line indicating 'Mentioned' or 'No mention' of the original answer; and keep all references
         5. Do not introduce new information not present in the extended answer
         """
 
@@ -791,10 +1079,10 @@ class Agent:
         Extended Answer to refine:
         {extended_answer}
         
-        Please provide a polished, coherent final answer that addresses the question thoroughly.
+        Please provide a coherent final answer that addresses the question thoroughly.
         """
 
-        return self.llm.chat(
+        return self.llm.chat_qwen_2(
             messages=[{"role": "user", "content": prompt}],
             system_prompt=system_prompt,
             temperature=0.2
@@ -804,24 +1092,26 @@ class Agent:
     # MAIN per-question pipeline
     # ------------------------
 
-    def run_once(self, question: str) -> AnswerResult:
+    def run_once(self, question: str, collection_name: str) -> AnswerResult:
         logger.info(f"=== Start new question ===\nQ: {question}")
         gs = self.create_goal(question)
 
         # 1) Initial RAG from project_kk
-        rag = self.initial_rag(question, top_k=INITIAL_TOP_K)
-        initial_answer = rag["answer"]
-        rag_docs = rag["docs"]
+        rag = self.newref_initial_rag(question, collection_name, top_k=INITIAL_TOP_K)
+        initial_answer = rag.get("answer", "")
+        print(f">>>> Initial Answer:\n{initial_answer}\n")
+        rag_docs = rag.get("docs", []) or []
+        inline_references = rag.get("references", [])
         extended_answer = initial_answer  # Start with initial answer
 
-        # 2–3) Plan tools
-        plan = self.plan_tools(question, initial_answer, rag_docs)
-        gs.plan_goal = plan.goal
-        self.update_goal(gs)
+        # 2-3) Plan tools
+        # plan = self.plan_tools(question, initial_answer, rag_docs)
+        # gs.plan_goal = plan.goal
+        # self.update_goal(gs)
 
         # Initialize tracking variables
         final_answer = initial_answer
-        all_docs = list(rag_docs)
+        # all_docs = list(rag_docs)
         best_score = 0.0
         all_rag_answers = []
 
@@ -831,8 +1121,8 @@ class Agent:
             tool_data, rag_answers = self.execute_tool_calls(plan, attempt_index=attempt)
             all_rag_answers.extend(rag_answers)
 
-            if tool_data:
-                all_docs = list(rag_docs) + tool_data
+            # if tool_data:
+            #     all_docs = list(rag_docs) + tool_data
 
             # Append RAG answers to initial answer
             if rag_answers:
@@ -871,7 +1161,7 @@ class Agent:
         # )
         # self.update_goal(gs)
 
-        references = self._collect_references(all_docs)
+        references = inline_references 
         logger.info(
             f"=== End of question === best_score={best_score:.2f}, answer_len={len(final_answer)}\n"
         )
@@ -923,7 +1213,7 @@ class Agent:
         Evidence (subset JSON):
         {docs_json}
         """
-        raw = self.llm.chat(
+        raw = self.llm.chat_qwen(
             [{"role": "user", "content": user_prompt}],
             temperature=0.0,
             system_prompt=system_prompt,
@@ -948,11 +1238,12 @@ class Agent:
 # ==========================
 # main
 # ==========================
-
+COLL_PROJECT_KK = "tender_default-tenant_f463a9c3-0e52-498a-969e-68130515"
 def main():
     provider = OllamaProvider()
     qdrant = QdrantClient(host=QDRANT_HOST, port=QDRANT_PORT, prefer_grpc=False)
     agent = Agent(provider, qdrant)
+    collection = "project_kk"
 
     logger.info("Agent initialized. Starting predefined QA run.")
     print("== Predefined QA Run ==")
@@ -960,7 +1251,7 @@ def main():
     for q in PREDEFINED_QUESTIONS:
         print(f"\nQ: {q}")
         try:
-            ans = agent.run_once(q)
+            ans = agent.run_once(q, COLL_PROJECT_KK)
             if isinstance(ans, AnswerResult):
                 print(f"\nA:\n{ans.answer}\n")
                 if ans.references:

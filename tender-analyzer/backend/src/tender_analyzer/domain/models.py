@@ -1,6 +1,6 @@
 import uuid
 from datetime import datetime
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Union
 
 try:
     from pydantic import BaseModel, Field
@@ -80,11 +80,11 @@ class StoredDocument(BaseModel):
 
 
 class ReferenceChunk(BaseModel):
-    chunk_id: Optional[str] = None
+    chunk_id: Optional[Union[str, int]] = None
     file_name: str
     page: Optional[int] = None
     bbox: List[float] = Field(default_factory=list)
-    snippet: Optional[str] = None
+    text: Optional[str] = None
     score: Optional[float] = None
     source_collection: Optional[str] = None
     source_tool: Optional[str] = None

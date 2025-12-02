@@ -281,7 +281,7 @@ class QdrantVectorStore:
                 "source": sanitized_source,
                 "chunk_type": chunk.get("type"),
                 "chunk_index": idx,
-                "snippet": text,
+                "text": text,
             }
             payload.update({k: v for k, v in chunk.items() if k != "text"})  # Add other chunk fields
             payloads.append(payload)
