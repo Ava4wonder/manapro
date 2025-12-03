@@ -587,6 +587,27 @@
       "created_at": 1764705098.9409497,
       "plan_goal": null,
       "history": []
+    },
+    "09a1bc58-def2-45e6-bfa3-f7c87204a3fc": {
+      "goal_id": "09a1bc58-def2-45e6-bfa3-f7c87204a3fc",
+      "question": "What are the required key experts or engineer or personnels to meet the criteria? Does Gruner has key experts meeting these criterias?",
+      "created_at": 1764719637.3947396,
+      "plan_goal": null,
+      "history": []
+    },
+    "6d30c74f-0a34-47c1-b2bd-4bed283cffa5": {
+      "goal_id": "6d30c74f-0a34-47c1-b2bd-4bed283cffa5",
+      "question": "Does the client require previous experience with them or in a specific country/region? Does Gruner have such experience?",
+      "created_at": 1764719791.4514263,
+      "plan_goal": null,
+      "history": []
+    },
+    "ad34bce5-3c81-4aa9-890c-3619e5376001": {
+      "goal_id": "ad34bce5-3c81-4aa9-890c-3619e5376001",
+      "question": "What are the required key experts or engineer or personnels to meet the criteria? Does Gruner has key experts meeting these criterias?",
+      "created_at": 1764723351.2435958,
+      "plan_goal": null,
+      "history": []
     }
   }
 }
