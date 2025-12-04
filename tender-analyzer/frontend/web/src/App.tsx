@@ -180,6 +180,10 @@ const Dashboard = () => {
     if (!tenderId || !status) {
       return
     }
+    // NEW: ignore status from previous tender
+    if (status.id !== tenderId) {
+      return
+    }
 
     const analysisStatus = buildAnalysisStatus(status)
 
@@ -208,6 +212,10 @@ const Dashboard = () => {
     if (!tenderId || !status?.project_fields) {
       return
     }
+    // NEW: make sure fields belong to current tender
+    if (status.id !== tenderId) {
+      return
+    }
     if (Object.keys(status.project_fields).length === 0) {
       return
     }
@@ -230,6 +238,11 @@ const Dashboard = () => {
     if (!tenderId || !summary) {
       return
     }
+    // NEW: only apply summary to matching tender
+    if (summary.id !== tenderId) {
+      return
+    }
+
 
     setProjects((prev) =>
       prev.map((project) =>
@@ -258,6 +271,25 @@ const Dashboard = () => {
 
       setTenderId(response.id);
       setSelectedProjectId(response.id);
+
+      // NEW: add placeholder card with TBD fields
+      setProjects((prev) => [
+        {
+          id: response.id,
+          name, // or `Tender: ${response.id.slice(0, 6)}`
+          createdAt: new Date().toISOString(),
+          documents: files.length,
+          summaryPreview: undefined,
+          cardFields: buildProjectCardFields(null), // all "TBD"
+          analysisStatus: {
+            state: "ingesting",
+            label: "In queue", // or keep "In queue"
+            color: "orange",
+          },
+        },
+        ...prev,
+      ])
+
       setUploadComplete(true);
 
       // Optional: Navigate to projects page after upload

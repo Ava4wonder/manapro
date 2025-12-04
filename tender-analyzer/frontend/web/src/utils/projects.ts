@@ -9,8 +9,9 @@ import {
 const DEFAULT_FIELD_VALUE = "TBD"
 
 export const PROJECT_CARD_FIELD_LABELS: Record<ProjectCardFieldKey, string> = {
-  projectType: "Project Type",
-  projectScope: "Project Scope",
+  projectprocurementType: "Procurement Type",
+  ProjectRole: "Project Role",
+  ProjectType: "Project Type",
   location: "Location",
   deadline: "Deadline",
   submission_format: "Submission Format",
@@ -18,6 +19,7 @@ export const PROJECT_CARD_FIELD_LABELS: Record<ProjectCardFieldKey, string> = {
   evaluationMethod: "Evaluation Method",
   weighting: "Weighting",
 }
+
 
 export function buildProjectCardFields(source: Record<string, string> | ProjectCardFields | null): ProjectCardFields {
   return PROJECT_CARD_FIELD_KEYS.reduce((acc, key) => {

@@ -1,6 +1,7 @@
 export const PROJECT_CARD_FIELD_KEYS = [
-  "projectType",
-  "projectScope",
+  "projectprocurementType",
+  "ProjectRole",
+  "ProjectType",
   "location",
   "deadline",
   "submission_format",
