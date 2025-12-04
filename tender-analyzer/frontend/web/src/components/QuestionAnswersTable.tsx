@@ -1,5 +1,6 @@
 import { QuestionAnswer } from "../api/tenders"
-import ReactMarkdown from 'react-markdown';
+import ReactMarkdown from "react-markdown"
+import remarkGfm from "remark-gfm"
 
 
 type Props = {
@@ -17,7 +18,7 @@ const QuestionAnswersTable = ({ questions = [], emptyMessage = "No answers yet."
         {questions.map((item) => (
           <article key={item.question}>
             <h4>{item.question}</h4>
-            <ReactMarkdown>{item.answer}</ReactMarkdown>
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>{item.answer}</ReactMarkdown>
           </article>
         ))}
       </div>

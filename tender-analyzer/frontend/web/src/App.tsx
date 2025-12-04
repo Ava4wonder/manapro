@@ -8,7 +8,6 @@ import EvaluationPage from "./pages/EvaluationPage"
 import ProjectCardsPage from "./pages/ProjectCardsPage"
 import FloatingPdfViewer from "./components/FloatingPdfViewer"
 import TenderStatusIndicator from "./components/TenderStatusIndicator"
-import LoadingBar from "./components/LoadingBar"
 import LoginPanel from "./components/LoginPanel"
 import Sidebar from "./components/Sidebar"
 import { PdfViewerProvider } from "./store/pdfViewerStore"
@@ -22,6 +21,7 @@ import {
   getDetails,
   getEvaluation,
 } from "./api/tenders"
+import { listTenders, deleteTender } from "./api/tenders"
 import { useTenderStatus } from "./hooks/useTenderStatus"
 import { ProjectCardInfo } from "./types/project"
 import { buildAnalysisStatus, buildProjectCardFields, buildSummaryPreview } from "./utils/projects"
@@ -148,19 +148,47 @@ const Dashboard = () => {
       .catch(() => setEvaluation(null))
   }, [tenderId, status?.eval_ready])
 
+  // Load existing tenders into project cards on initial load
+  useEffect(() => {
+    const loadExistingProjects = async () => {
+      try {
+        const items = await listTenders()
+        setProjects(
+          items.map(
+            (status): ProjectCardInfo => ({
+              id: status.id,
+              // Show tender ID as the visible name for stored cards
+              name: `Tender: ${status.id.slice(0, 6)}`,
+              createdAt: status.created_at,
+              documents: status.documents?.length ?? 0,
+              summaryPreview: undefined,
+              cardFields: buildProjectCardFields(status.project_fields ?? null),
+              analysisStatus: buildAnalysisStatus(status),
+            }),
+          ),
+        )
+      } catch (error) {
+        console.error("Failed to load existing tenders", error)
+      }
+    }
+
+    loadExistingProjects()
+  }, [])
+
   // Existing: Update project cards when status changes
   useEffect(() => {
     if (!tenderId || !status) {
       return
     }
 
-    const analysisStatus = buildAnalysisStatus(status.summary_ready)
+    const analysisStatus = buildAnalysisStatus(status)
 
     setProjects((prev) => {
       const existing = prev.find((project) => project.id === tenderId)
       const updated: ProjectCardInfo = {
         id: tenderId,
-        name: existing?.name ?? `Project ${tenderId.slice(0, 6)}`,
+        // Prefer existing label; otherwise fall back to tender ID
+        name: existing?.name ?? tenderId,
         createdAt: existing?.createdAt ?? new Date().toISOString(),
         documents: status.documents?.length ?? existing?.documents ?? 0,
         summaryPreview: existing?.summaryPreview,
@@ -273,6 +301,29 @@ const Dashboard = () => {
     setSelectedProjectId(null)
   }
 
+  const handleDeleteProject = async (projectId: string) => {
+    const confirmed = window.confirm(
+      "Delete this project card and its tender data? This cannot be undone.",
+    )
+    if (!confirmed) return
+
+    try {
+      await deleteTender(projectId)
+
+      setProjects((prev) => prev.filter((project) => project.id !== projectId))
+
+      if (tenderId === projectId) {
+        setTenderId(null)
+        setSelectedProjectId(null)
+        setSummary(null)
+        setDetails(null)
+        setEvaluation(null)
+      }
+    } catch (error) {
+      console.error("Failed to delete tender", error)
+    }
+  }
+
   if (!isAuthenticated) {
     return <LoginPanel />
   }
@@ -297,18 +348,17 @@ const Dashboard = () => {
           </div>
         </header>
 
-        <div className="status-area">
-          <TenderStatusIndicator status={status} loading={Boolean(tenderId) && statusLoading} />
-          <LoadingBar progress={status?.progress ?? 0} />
-          <div className="page-actions">
-            {/* Keep button for manual re-runs (optional but useful) */}
-            {activeNav === "upload" && (
+        {activeNav === "upload" && (
+          <div className="status-area">
+            <TenderStatusIndicator status={status} loading={Boolean(tenderId) && statusLoading} />
+            <div className="page-actions">
+              {/* Keep button for manual re-runs (optional but useful) */}
               <button onClick={handleStartAnalysis} disabled={!isReadyForAnalysis || isStarting}>
                 {isStarting ? "Starting analysis..." : buttonLabel}
               </button>
-            )}
+            </div>
           </div>
-        </div>
+        )}
 
         <div className="page-body">
           {activeNav === "upload" && (
@@ -325,6 +375,7 @@ const Dashboard = () => {
               details={details}
               documents={documents}
               tenderId={tenderId}
+              onDeleteProject={handleDeleteProject}
             />
           )}
 

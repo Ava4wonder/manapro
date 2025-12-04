@@ -6,9 +6,10 @@ type ProjectCardProps = {
   project: ProjectCardInfo
   isActive?: boolean
   onClick: () => void
+  onDelete?: () => void
 }
 
-const ProjectCard: FC<ProjectCardProps> = ({ project, isActive = false, onClick }) => {
+const ProjectCard: FC<ProjectCardProps> = ({ project, isActive = false, onClick, onDelete }) => {
   const { name, createdAt, documents, summaryPreview, cardFields, analysisStatus } = project
   const fieldRows = PROJECT_CARD_FIELD_KEYS.map((key) => ({
     key,
@@ -34,6 +35,18 @@ const ProjectCard: FC<ProjectCardProps> = ({ project, isActive = false, onClick 
           <span>{documents} docs</span>
           <span>{formatProjectDate(createdAt)}</span>
         </div>
+        {onDelete && (
+          <button
+            type="button"
+            className="project-card__delete"
+            onClick={(e) => {
+              e.stopPropagation()
+              onDelete()
+            }}
+          >
+            Delete
+          </button>
+        )}
       </header>
 
       <div className="project-card__body">

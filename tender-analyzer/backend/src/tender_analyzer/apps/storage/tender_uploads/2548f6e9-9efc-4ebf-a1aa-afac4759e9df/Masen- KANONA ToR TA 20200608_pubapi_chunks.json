@@ -1,0 +1,1486 @@
+{
+  "chunks": [
+    {
+      "chunk_id": "6eb00687-d8ee-545f-aa27-2c9c86dd4fbd",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — ![Figure]() ![Figure]() REQUEST FOR PROPOSAL TECHNICAL ADVISORY SERVICES FOR Kanona PV Plant N° 10/2020/MASEN",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": null,
+        "heading_2_text": null,
+        "heading_3_text": null,
+        "heading_4_text": null
+      },
+      "page_number": 1,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        72,
+        518,
+        380
+      ],
+      "orig_size": [
+        528.0,
+        387.0
+      ]
+    },
+    {
+      "chunk_id": "1e6e1606-ff34-5747-bf79-eef6df34457f",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL – Table of Contents – TABLE OF CONTENTS 1\nDEFINITIONS ..................................................................................................................... 4 2\nBACKGROUND .................................................................................................................. 6 2.1 CONTEXT ................................................................................................................................... 6 2.2 Moroccan Agency of Sustainable Energy (“Masen”) .................................................................... 6 2.3 ZESCO LIMITED ........................................................................................................................... 6 3\nTERMS OF REFERENCE ...................................................................................................... 8 3.1\nPresentation of the Project ................................................................................................... 8 3.2\nMissions ............................................................................................................................... 8 3.3\nScope of work ....................................................................................................................... 8\n3.3.1\nMission A- Technical assistance to develop Kanona PV Plant under an Engineering, Procurement and\nConstruction (“EPC”) scheme. ................................................................................................................................ 8 3.4\nProcess ............................................................................................................................... 16 3.5\nIndicative timetable for the Project ..................................................................................... 18 3.6\nIndicative table of the Project visit: ..................................................................................... 19 4\nStandard terms and conditions ....................................................................................... 20 5\nInstructions to Applicants ............................................................................................... 21 5.1\nIntroduction ....................................................................................................................... 21 5.2\nProcedure and timing ......................................................................................................... 21 5.3\nIndicative timetable for the selection of Technical Advisor ................................................... 22 5.4\nGeneral evaluation principles .............................................................................................. 22 5.5\nContent of the Proposals..................................................................................................... 22\n5.5.1\nContent of the Technical Proposal .......................................................................................................... 22\n5.5.2\nEvaluation Criteria for the Technical Proposal ........................................................................................ 24\n5.5.3\nContent of the Financial Proposal ........................................................................................................... 28\n5.5.4\nEvaluation of the Financial Proposal........................................................................................................ 29 5.6\nScoring of the Proposals ...................................................................................................... 30 6\nGeneral provisions .......................................................................................................... 31",
+      "metadata": {
+        "segment_type": "toc",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": null,
+        "heading_2_text": null,
+        "heading_3_text": null,
+        "heading_4_text": null
+      },
+      "page_number": 2,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        87,
+        517,
+        734
+      ],
+      "orig_size": [
+        527.0,
+        769.0
+      ]
+    },
+    {
+      "chunk_id": "7ca5423a-6974-5399-aa29-028ffb78d985",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL – Table of Contents – 6.4\nOwnership of materials ....................................................................................................... 31 6.5\nLanguage ............................................................................................................................ 32 7\nAppendices ..................................................................................................................... 33",
+      "metadata": {
+        "segment_type": "toc",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": null,
+        "heading_2_text": null,
+        "heading_3_text": null,
+        "heading_4_text": null
+      },
+      "page_number": 3,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        117,
+        517,
+        170
+      ],
+      "orig_size": [
+        527.0,
+        172.0
+      ]
+    },
+    {
+      "chunk_id": "dfb69d67-cd8b-5ce0-915e-f609c8a1324e",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 1\nDEFINITIONS — The terms beginning with a capital letter in this request for proposals shall have the following meaning: \"Applicant (s)\" means individually each of the candidates which apply to the technical advisory services for\nKanona Project. “Bid” means the offer submitted by the Bidder. “Bidder (s)” means any individual entity or consortium submitting an offer for the engineering,\nprocurement and construction as well the Operation and Maintenance of Kanona Project. \"CAPEX\" means capital expenditures. “Client” means “Masen” on behalf of the JV before the creation of the JV and refers to the JV once created. \"Consortium\" means any group of companies or consortium acting as an Applicant. \"Contract\" means the standard terms and conditions attached to these Terms of Reference to be signed\nbetween the Technical Advisor and the Client. \"EPC\" means engineering, procurement and construction. \"Evaluation Committee\" means the advisory committee in charge of the supervision of the overall process\nof the Project. “Feasibility Study” means the feasibility study provided by Masen for Kanona Project, including (i) Site\nAssessment, (ii) the conceptual design and (iii) interconnection scheme of Kanona PV Plant. \"Financial Advisor\" means the advisor providing financial advisory services for the Project. \"International Financial Institution (s)\"or \"IFI(s)\" means (a)\nThose financial institutions established in more than one country and subject to international law,\nsuch as the European Union represented by the European Commission, the African Development\nBank, the European Investment Bank and the World Bank Group; and (b)\nThose financial institutions which undertake all types of activities, whether or not for profit, receiving\ngovernmental financial support or not, for the purpose of promoting development, through the\ngranting capital or other credit facilities, such as the Agence Française de Développement and KfW\nBankengruppe; which, in either case, could provide financing for the Project. “Joint-Venture” or ”JV” means the Joint-Venture dedicated to develop renewable energy Program in Zambia.\nThe JV will be held equally by Masen and ZESCO (50% each). “Kanona Project” or “Project”: means the development of Kanona PV plant. “Kanona PV Plant” means the PV plant that will be developed within Kanona Site. “Kanona Site” or “Site” means Kanona site. \"LCOE\" means the levelized cost of electricity.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "1\nDEFINITIONS",
+        "heading_2_text": null,
+        "heading_3_text": null,
+        "heading_4_text": null
+      },
+      "page_number": 4,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        115,
+        520,
+        732
+      ],
+      "orig_size": [
+        530.0,
+        746.0
+      ]
+    },
+    {
+      "chunk_id": "0a4339cb-da1c-5c56-bc36-56a3c19cfa9a",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 1\nDEFINITIONS — \"O&M\" means operation and maintenance. \"OPEX\" means operational expenditures. \"Partners\" means the entities that are involved in the development of the Project such as ZESCO, IFIs, etc. “Plant” means Kanona PV Plant. \"Power Purchase Agreement\" or \"PPA\" means, in relation to the Project, the power purchase agreement\nfor development, design, financing, construction, test, commissioning, ownership, operation and\nmaintenance of a power plant to be entered into between ZESCO and the project company. \"Prequalification\" or \"RFQ\" means the selection process by the project company of the entities which have\nregistered their interest to complete the Project. \"Preferred Bidder\" means the Bidder that is selected as having submitted the lowest evaluated financial\nproposal in relation to the Project and whose bid is substantially compliant with the requirements of the\nRequest for Proposals for the engineering, procurement and construction as well as the operation and\nmaintenance of the Project. “Project Agreements” means, in relation to the Project, any agreement to be entered into by the Preferred\nBidder(s) in relation to such Project.\n\n\"Request for Proposals\" or \"RFP\" means the request for proposals to select the EPC that will be in charge\nof the engineering, design, procurement, construction and operation and maintenance of the Plant. \"Technical Advisor\" or \"TA\" means the advisor providing technical advisory services for the Project. \" Technical Specifications\" or \"TS\" means the technical specifications of the RFP provided by Masen. “TA Request for Proposals\" or \"RFPTA\" means the request for proposals to select the technical advisor that\nwill have to assist the Client in the development of Kanona Project. \"Terms of Reference\" or \"ToR\" means these request for proposals related to technical advisory services for\nthe Project. “Testing Requirements” means the testing requirement of the Plant provided by Masen. \"Transaction Advisor\" means the advisor providing financial, legal, tax and as applicable accounting\nadvisory services for the Project. “ZESCO” means ZESCO LIMITED, a company organized and existing under the laws of Zambia incorporated\nunder the Companies Act, Chapter 388, having its principal office at ZESCO Limited Head Office Premises,\nStand Number 6949, Great East Road, P. O. Box 33304, 10101, Lusaka, Zambia, registered with the\ncompanies’ registry of Lusaka under number 17475.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "1\nDEFINITIONS",
+        "heading_2_text": null,
+        "heading_3_text": null,
+        "heading_4_text": null
+      },
+      "page_number": 5,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        137,
+        520,
+        713
+      ],
+      "orig_size": [
+        530.0,
+        726.0
+      ]
+    },
+    {
+      "chunk_id": "b177dee3-0723-55c3-8a25-51ae0876d64b",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 2\nBACKGROUND — 2.1 CONTEXT — On March 2018, Moroccan Agency of Sustainable Energy (“Masen”) and ZESCO signed a framework agreement\nto materialize the willingness to enter into a partnership to develop, in Zambia, solar plants, wind power plants,\nhydropower plants and geothermal plants with a total capacity target of 450 MW (“Program”). The Program includes several projects that will be: co-developed by Masen and ZESCO through a Joint-Venture (“JV”) held equally by Masen and ZESCO\n(50% each); and\ncarried out by a special purpose company expected to be fully owned by Masen and ZESCO. The first project to be developed under the Program shall be a solar Photovoltaic Project, located on Kanona\n(the “Project” or “Kanona Project”) with a capacity target around [one hundred (100)] MWAC.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "2\nBACKGROUND",
+        "heading_2_text": "2.1 CONTEXT",
+        "heading_3_text": null,
+        "heading_4_text": null
+      },
+      "page_number": 6,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        133,
+        517,
+        275
+      ],
+      "orig_size": [
+        528.0,
+        745.0
+      ]
+    },
+    {
+      "chunk_id": "c6297bec-38b5-5bd0-9852-d19e9d0f9295",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 2\nBACKGROUND — 2.2 Moroccan Agency of Sustainable Energy (“Masen”) — Masen is the State-owned entity created in 2010 to implement and manage the Kingdom of Morocco’s\nrenewable energy program, and has in such capacity led the development program of integrated renewable\nenergy projects aiming at creating an additional 3 000 MW of renewable energy power generation capacity by\n2020 and 6 000 MW by 2030. Masen’s ownership structure is split between four (04) equal shareholders’ participation: -\nGovernment of Morocco;\n-\nOffice National de l’Eau et l’Electricité (“ONEE”), the Moroccan state water and power utility;\n-\nFonds Hassan II, a fund supporting the Kingdom’s social and economic development; and\n-\nSociété d’Investissements Energétiques, a fund supporting the Kingdom’s renewable energy program. Internationally, Masen aims to be the preferred partner for any country wishing to make renewable energy a\npriority for its socioeconomic development. Masen has already signed several partnership agreements with\nAfrican countries for the development of renewable energies. Key roles of Masen include: -\nDevelopment of integrated renewable power plants with all the attendant activities: from qualifying\nsites to the design, the structuring and raising of funds, the construction of power plants and their\nrelated infrastructure as well as their operation and maintenance;\n-\nContribution to the development of expertise (industrial integration, R&D and training);\n-\nPropose any solutions to national and international partners who aim to develop Projects related to\nrenewable energy sector. Masen has created a fully-owned subsidiary, Masen Capital, to hold notably a stake as deemed appropriate in\nthe project companies in charge of the development of renewable projects.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "2\nBACKGROUND",
+        "heading_2_text": "2.2 Moroccan Agency of Sustainable Energy (“Masen”)",
+        "heading_3_text": null,
+        "heading_4_text": null
+      },
+      "page_number": 6,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        323,
+        517,
+        660
+      ],
+      "orig_size": [
+        528.0,
+        745.0
+      ]
+    },
+    {
+      "chunk_id": "503bd491-6a85-5acc-acd3-ec492071aa2f",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 2\nBACKGROUND — 2.3 ZESCO LIMITED — ZESCO LTD is a public utility wholly owned by the Government of the Republic of Zambia, and is a vertically\nintegrated company established in 1970 with the purpose of generating, transmitting, distributing and supplying\nelectricity in Zambia.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "2\nBACKGROUND",
+        "heading_2_text": "2.3 ZESCO LIMITED",
+        "heading_3_text": null,
+        "heading_4_text": null
+      },
+      "page_number": 6,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        706,
+        517,
+        744
+      ],
+      "orig_size": [
+        528.0,
+        745.0
+      ]
+    },
+    {
+      "chunk_id": "33fd2b66-7749-559f-8010-bc2d0a6667ce",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 2\nBACKGROUND — 2.3 ZESCO LIMITED — The Company has a total installed capacity 2 341 MW with 1 861 MW owned by ZESCO, while 360 MW through\nits subsidiary Kariba North Bank Power Corporation and 120 MW through the joint-venture Itezhi-Tezhi Power\nCorporation Ltd (ITPC). In 2017, the Board and Management ushered in a new vision “to be the hub of electricity trading in the region\nby 2025”, that will carry the employees across the value chain to work towards a shared vision. To that effect,\ninterconnectors to all the eight neighboring countries are now part of the power system master plan. The four\nkey focus areas of ZESCO are as follows: -\nStrengthening the core business;\n-\nDelivering value to customers by giving them an exceptional experience;\n-\nUse of Innovative Technology; and\n-\nUnlocking the value of non-core investments.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "2\nBACKGROUND",
+        "heading_2_text": "2.3 ZESCO LIMITED",
+        "heading_3_text": null,
+        "heading_4_text": null
+      },
+      "page_number": 7,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        162,
+        517,
+        351
+      ],
+      "orig_size": [
+        528.0,
+        355.0
+      ]
+    },
+    {
+      "chunk_id": "ec2500c8-cf00-5505-b3d8-84db19fa1aa8",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 3\nTERMS OF REFERENCE — ZESCO and Masen will develop in\nKanona a PV plant with a capacity of\naround [100] MWAC. ![Figure]() Kanona is located in Serenje district\nabout 1km from the junction of Great\nnorth road (T2) and D225 (Road leading\nto Lusiwasi and Msoro). The Site is 204 hectares (Ha), located at\nlatitude of-13.058425°, and a longitude\nof 30.651624°. The expected timetable of the Project is summarized below: Launch of Prequalification\nprocess Launch of request\nfor\nproposal\nprocess Selection\nof\nthe Preferred\nBidder(s) Scheduled\ncommercial operation\ndate Indicative dates\n[Q3 2020]\n[Q4 2020]\n[Q2 2021]\n[Q3 2022]",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "3\nTERMS OF REFERENCE",
+        "heading_2_text": null,
+        "heading_3_text": null,
+        "heading_4_text": null
+      },
+      "page_number": 8,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        131,
+        512,
+        425
+      ],
+      "orig_size": [
+        528.0,
+        757.0
+      ]
+    },
+    {
+      "chunk_id": "25c6908f-89a9-5a98-b484-604ce6018030",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 3\nTERMS OF REFERENCE — 3.2\nMissions — To successfully meet the above-mentioned objectives, the Client intends to appoint a qualified international\ntechnical advisor (“Technical Advisor” or “TA”) for the Project. The Technical Advisor will manage and\nsupervise the entire technical process from the due diligence of the Feasibility Study conducted by Masen\nup to the signing of the Project agreements including the request for proposals (“RFP”), the selection of the\nPreferred Bidder(s), the effectiveness of the main contracts and the financial close. The terms of reference, (\"ToR\") covers the following missions:\n-\nMission A: Technical assistance to develop Kanona PV Plant under an Engineering, Procurement and\nConstruction (“EPC”) scheme;\n-\nMission B: Technical assistance to perform specific assignments as needed and as defined by Client\n(optional).",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "3\nTERMS OF REFERENCE",
+        "heading_2_text": "3.2\nMissions",
+        "heading_3_text": null,
+        "heading_4_text": null
+      },
+      "page_number": 8,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        489,
+        518,
+        643
+      ],
+      "orig_size": [
+        528.0,
+        757.0
+      ]
+    },
+    {
+      "chunk_id": "0972a426-dd9e-5b2c-8f73-035d2a11d22a",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 3\nTERMS OF REFERENCE — 3.3\nScope of work — 3.3.1\nMission A- Technical assistance to develop Kanona PV Plant under an Engineering, Procurement\nand Construction (“EPC”) scheme. The Technical Advisor will be required to provide technical assistance to the Client considering the\ndevelopment of Kanona PV Plant under an EPC scheme.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "3\nTERMS OF REFERENCE",
+        "heading_2_text": "3.3\nScope of work",
+        "heading_3_text": null,
+        "heading_4_text": null
+      },
+      "page_number": 8,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        691,
+        518,
+        755
+      ],
+      "orig_size": [
+        528.0,
+        757.0
+      ]
+    },
+    {
+      "chunk_id": "2966a574-e062-5fc0-a798-dd59ac7333a4",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 3\nTERMS OF REFERENCE — 3.3\nScope of work — Mission A Technical assistance in relation to development of PV Plant under EPC scheme Section I Feasibility Study due diligence Section II Preparation of documents and process management of request for proposal (“RFP”) Section III Selection of the Preferred Bidder(s), awarding of contracts and negotiation of all Project Agreements It is noteworthy that the deliverables of each section will not mandatory follow the order of sections as\ndescribed above.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "3\nTERMS OF REFERENCE",
+        "heading_2_text": "3.3\nScope of work",
+        "heading_3_text": null,
+        "heading_4_text": null
+      },
+      "page_number": 9,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        109,
+        517,
+        328
+      ],
+      "orig_size": [
+        530.0,
+        761.0
+      ]
+    },
+    {
+      "chunk_id": "fe98ae34-04cf-54ab-a1a6-34dca3f39a51",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 3\nTERMS OF REFERENCE — 3.3\nScope of work — 3.3.1.1 Section I: Feasibility Study Due Diligence — The Technical Advisor shall perform a due diligence of the Feasibility Study (“Feasibility Study Due\nDiligence”) provided by Masen. The TA shall therefore update and complete where necessary the aforesaid\nstudy to provide a final feasibility report (“Final Feasability Study report”). The Feasibility Study to be provided to the TA is splitted into four sections as follow: \nSite Assessment: this section consists in the evaluation of the Site suitability for the development\nof Kanona PV Plant. It covers an assessment of the physical Site data and constraints, including but\nnot limited to meteorological data, site qualification studies (Geotechnical, seismic and\ntopographic, Hydraulic and hydrological studies), access to the grid, as well as logistical access for\nequipment supply.\n\nConceptual design: this section consists in (i) selecting technologies, components and configuration\nof the Plant (ii) analyzing the energy production, (iii) defining the Plant needs in terms of auxiliary\npower and water comsuption, (iv) and providing the Project plans and drawings.\n\nEconomic and Financial Analysis: in this section the estimation of the CAPEX and OPEX is provided.\n\nInterconnection scheme: this section consists in providing Kanona interconnection scheme as well\nas the relating grid impact study. The TA shall perform a detailed due diligence and complete the Feasability Study where dully necessary\nwith his own analysis. On this basis the TA shall identify inputs to elaborate RFP technical documents. The Technical Advisor will endorse the conclusions and recommendations of the Final Feasability Study\nreport in particular the inputs to the RFP documentation. Deliverables of Section I: The TA shall provide:",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "3\nTERMS OF REFERENCE",
+        "heading_2_text": "3.3\nScope of work",
+        "heading_3_text": null,
+        "heading_4_text": "3.3.1.1 Section I: Feasibility Study Due Diligence"
+      },
+      "page_number": 9,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        383,
+        520,
+        753
+      ],
+      "orig_size": [
+        530.0,
+        761.0
+      ]
+    },
+    {
+      "chunk_id": "ddf67ab5-d817-5654-9ec1-c34062a10c44",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 3\nTERMS OF REFERENCE — 3.3\nScope of work — 3.3.1.1 Section I: Feasibility Study Due Diligence — TA.\n- Presentation in Power Point version and synthesis in word version on the final version of the Final Feasibility Study Report.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "3\nTERMS OF REFERENCE",
+        "heading_2_text": "3.3\nScope of work",
+        "heading_3_text": null,
+        "heading_4_text": "3.3.1.1 Section I: Feasibility Study Due Diligence"
+      },
+      "page_number": 10,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        90,
+        121,
+        492,
+        161
+      ],
+      "orig_size": [
+        528.0,
+        770.0
+      ]
+    },
+    {
+      "chunk_id": "fa6679ea-4219-5a74-a80d-63ff46573e7e",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 3\nTERMS OF REFERENCE — 3.3\nScope of work — 3.3.1.2 Section II: Preparation of documents and process management of request for proposal — (“RFP”) The Technical Advisor will ensure that qualified technical experts are available during this phase. The\nTechnical Advisor will be responsible for preparing the RFP documents and managing all technical\naspects of the competition process for the development of the Project under an EPC scheme. This\nsection will include the following:",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "3\nTERMS OF REFERENCE",
+        "heading_2_text": "3.3\nScope of work",
+        "heading_3_text": null,
+        "heading_4_text": "3.3.1.2 Section II: Preparation of documents and process management of request for proposal"
+      },
+      "page_number": 10,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        73,
+        195,
+        518,
+        274
+      ],
+      "orig_size": [
+        528.0,
+        770.0
+      ]
+    },
+    {
+      "chunk_id": "83e395d3-2e82-5b31-bdcd-344e14091005",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 3\nTERMS OF REFERENCE — 3.3\nScope of work — 3.3.1.2.1 Task 1: Preparation of RFP documents and clarification process under an EPC scheme — A - Understand Client’s objectives 1. Understand Client’s objectives in terms of risk allocation, timing and tariff structure. 2. Attend to a RFP preparation workshop, that shall take place in location to be specified by the Client, with other advisors to discuss and debate different topics related to the RFP amongst others the risk\nallocation, the main evaluation criteria, the PPA payment mechanism, commissioning plan of the Plant\nincluding the relevant testing requirements. 3. Draft a memorandum of meeting (“MoM”), after this meeting, and provide the requested analysis as well as the needed documents.\n\nB - Request for Proposals (and clarifications) 4. Assist Client in defining the overall bid process. The Technical Advisor will specify and provide the key milestones to be achieved (including critical paths) and the associated deadlines, and will ensure that\nall technical aspects of the bid process are covered. The Technical Advisor will provide\nrecommendations to Client to avoid any delays during the bid process. 5. Establish the methodology and the appropriate technical bid evaluation criteria for the evaluation of the offers of the pre-qualified Bidders. 6. Prepare all technical sections of the RFP documents which shall include the following sections: -\nSection 1 : Instructions to Bidders and Information Memorandum (including details of the\nProject, bid process description, bid evaluation criteria and timetable);\n-\nSection 2 : Final Technical Specifications ;\n-\nSection 3: Final Testing Requirements;\n-\nSection 4 : Bid Forms sheets ;\n-\nSection 5: Draft version of Project agreements or head of terms. The RFP draft documents will be sent to Client and to the IFIs for approval. RFP will be considered final once\nall comments of the Client and its Partners have been satisfactorily addressed.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "3\nTERMS OF REFERENCE",
+        "heading_2_text": "3.3\nScope of work",
+        "heading_3_text": null,
+        "heading_4_text": "3.3.1.2.1 Task 1: Preparation of RFP documents and clarification process under an EPC scheme"
+      },
+      "page_number": 10,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        327,
+        518,
+        760
+      ],
+      "orig_size": [
+        528.0,
+        770.0
+      ]
+    },
+    {
+      "chunk_id": "372b3ff7-f261-51ae-9f2a-58a66ea8ee93",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 3\nTERMS OF REFERENCE — 3.3\nScope of work — 3.3.1.2.1 Task 1: Preparation of RFP documents and clarification process under an EPC scheme — 8. Provide technical information to the Transaction Advisor for use in the preparation of all draft Project agreements including PPA(s), interconnection agreement(s), interface agreement, direct agreements,\nand any other relevant contractual document for the Project. 9. Prepare the technical part of the EPC and O&M contracts to be included in the RfP. 10. Propose new technology risk sheet (including requirements to mitigate new technology critical components risks) to be included in the RFP documents. 11. Provide technical inputs for the development of tariff mechanism and payment mechanism, development of penalty regime for below standard performance, and any other necessary technical\ninputs as may be required by Bidders as part of the Project Agreements. 12. Provide any necessary technical inputs as may be required by the Client, its advisors and Partners, as part of the Project Agreements. 13. Collect, prepare and update all technical information to be provided to the pre-qualified Bidders through a specific Electronic Data Room. 14. Perform a detailed due diligence and complete the Technical Specification as necessary to provide the final Technical Specifications (“Final Technical Specifications”). The Technical Specifications define,\namong others, the overriding technical conditions, design and requirements for the Bidders’ to prepare\nand submit a defined: general Site usage arrangements and Site plans, development and construction program for the Plant, operation and maintenance program for the Plant test and commissioning program for the Plant and -\nPlant configuration, equipments, electrical interconnection scheme, etc. The TA will be required to adjust and amend the Technical Specifications and its annexes based on the\nrecommendations and the results of the Final Feasability Study, and the experience of his expert in\nsimilar projects. The TA shall update the Final Technical Specifications as necessary and as requested\nby the Client. 15. Perform a detailed due diligence and complete the Testing Requirements for the Plant as necessary to provide a final Testing Requirements (“Final Testing Requirements”). The Testing Requirements set\nforth the requirements and guidelines of tests to be carried out in relation to the Plant including but\nnot limited to factory tests, site tests, initial performance tests, and final performance tests, transfer\ntests indicating for each test the pass or fail criteria.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "3\nTERMS OF REFERENCE",
+        "heading_2_text": "3.3\nScope of work",
+        "heading_3_text": null,
+        "heading_4_text": "3.3.1.2.1 Task 1: Preparation of RFP documents and clarification process under an EPC scheme"
+      },
+      "page_number": 11,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        142,
+        518,
+        722
+      ],
+      "orig_size": [
+        528.0,
+        734.0
+      ]
+    },
+    {
+      "chunk_id": "da7da786-3a19-5c55-a6f3-6fd62a5b59ca",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 3\nTERMS OF REFERENCE — 3.3\nScope of work — 3.3.1.2.1 Task 1: Preparation of RFP documents and clarification process under an EPC scheme — 17. Assist Client in organizing Site visit for all potential Bidders: preparing technical presentation, draft minutes of meetings, etc. 18. Prepare answers to queries and requests for clarifications received from Bidders. 19. Provide indicative technical assumptions (including CAPEX and OPEX) according to a specific format to be determined by the Transaction Advisor. These assumptions will be used as inputs of the financial\nmodel to be developed by the Transaction Advisor. 20. The Technical Advisor will endorse the requirements and recommendations of the Final Technical Specifications and the Final Testing Requirements. Deliverables of Section II - task 1: The TA shall provide under task 1 the following deliverables : \nRFP workshop MoM, the requested analysis as well as the needed document. \nPlanning of the overall bid process. \nBid evaluation criteria, evaluation grid spreadsheet and methodology for the evaluation of\ntechnical offers. \nInterim due diligence report including the modifications/changes proposed to be made on the\nTechnical Specifications (“TS”). \nFinal Technical Specifications report including all changes and recommandations suggested by\nthe TA. \nInterim due diligence report including the modifications/changes proposed to be made on the\nTesting Requirements. \nFinal Testing Requirements report including all changes and recommandations suggested by the\nTA. \nPreliminary and Final Technical input on the RFP Documents and on Project Agreements\nincluding technical parts of the EPC and O&M contracts. \nIndicative technical assumptions dedicated to the financial model. The TA shall be responsible of: 1. Preparing, organizing and attending any clarification meetings with pre-qualified Bidders before bid submission; coordinating technical answers to pre-qualified Bidders’ questions. All clarification",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "3\nTERMS OF REFERENCE",
+        "heading_2_text": "3.3\nScope of work",
+        "heading_3_text": null,
+        "heading_4_text": "3.3.1.2.1 Task 1: Preparation of RFP documents and clarification process under an EPC scheme"
+      },
+      "page_number": 12,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        127,
+        518,
+        741
+      ],
+      "orig_size": [
+        528.0,
+        755.0
+      ]
+    },
+    {
+      "chunk_id": "3304477f-3418-5728-8850-800c64891d44",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 3\nTERMS OF REFERENCE — 3.3\nScope of work — 3.3.1.2.1 Task 1: Preparation of RFP documents and clarification process under an EPC scheme — 2. Participating in the opening meeting of the bids. 3. Performing the technical evaluation of the proposals submitted by Bidders, including review of proposals for compliance with RFP terms. The Technical Advisor shall assume that a maximum of five\n(5) bids would be evaluated through the RFP process. The Technical Advisor will evaluate the bids based\non an agreed evaluation process and in particular the bid evaluation criteria agreed by the Client. The\ndetailed technical review and evaluation shall include but not be limited to: -\nVerifying that the specified guaranteed capacity and commercial operation dates have\nbeen respected and are in line with Client’s objectives;\n-\nEnsuring that the technology chosen is proven and meets standard requirements;\n-\nVerifying that the proposal is technically acceptable and complies with RFP requirements\nmainly the Final Technical Specifications and the Final Testing Requirements;\n-\nReviewing the acceptability of deviations from RFP technical requirements;\n-\nVerifying compliance with the site conditions;\n-\nUndertaking controls to examine whether claimed performance is achievable, using\ntechnical and financial modeling including highly specialized software tools;\n-\nReviewing the technical conditions of the proposed EPC contract and O&M contract as well\nas all the relating appendices.\n\nBid evaluation will be performed by the Technical Advisor in a location, that will be specified by the\nClient, during at least 3 weeks (“Evaluation Period”). Only the hard copy of the Bid will be provided to\nthe TA. During this Evaluation Period, TA shall ensure the presence of at least 6 experts (civil expert,\nGrid/electrical experts, PV component expert, EPC contract expert, solar expert, environmental expert)\nin a location that will be specified by Client. The Technical Advisor shall issue a draft evaluation report to the Client and its Partners for review and\napproval after 4 weeks from the reception of the technical offers. The evaluation report will identify all\ndeviations on technical aspects of the Bidder’s proposal and will classify those deviations (as minor,\nmajor or unacceptable). The evaluation report shall be updated after reception of (i) all Bidders\nclarifications, (ii) the Client comments, and (iii) Client’s partners’ comments. The evaluation report will\nbe considered final once the comments by the Client and its Partners are being satisfactorily addressed. 4. Identifying, during the course of the detailed reviews, items of the bids that need to be clarified by the Bidders, and prepare the relating request for clarification (“Request for Clarification”) on a timely\nmanner. The Technical Advisor will analyse the clarifications provided by the Bidders and update the\nevaluation report accordingly. 5. The Technical Advisor will identify items of the bids that need to be clarified by the Preferred Bidder(s), and prepare the relating request for negotiation (“Pre-award technical items”). 6. In addition, The TA shall attend the meeting required to finalize the awarding process with one or more Preferred Bidder(s) (“Pre-Award Meeting”); the TA will organize such clarification meeting, ensuring\nthat relevant technical experts are available to participate in and assist the Client. Pre-Award Meeting",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "3\nTERMS OF REFERENCE",
+        "heading_2_text": "3.3\nScope of work",
+        "heading_3_text": null,
+        "heading_4_text": "3.3.1.2.1 Task 1: Preparation of RFP documents and clarification process under an EPC scheme"
+      },
+      "page_number": 13,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        121,
+        518,
+        749
+      ],
+      "orig_size": [
+        528.0,
+        762.0
+      ]
+    },
+    {
+      "chunk_id": "285497ef-3cfc-5bcc-80c1-0bb4aeac4c0e",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 3\nTERMS OF REFERENCE — 3.3\nScope of work — 3.3.1.2.1 Task 1: Preparation of RFP documents and clarification process under an EPC scheme — 7. Providing the Client with a duly signed cover letter of the evaluation report pursuant to which the Technical Advisor endorses the conclusion of the evaluation report in particular the recommendations\nof the candidate(s) which shall be qualified as Preferred Bidder(s) (according to a template to be\nprovided by the Client). 8. Assisting the Client in order to obtain the required approvals from the Evaluation Committee and from the IFIs (including preparation of appropriate presentations – in particular summaries of the evaluation\nreport in French for the Evaluation Committee- and participation in the meetings if needed) as the case\nmay be. 9. Preparing presentations, as needed, to the Client and Client’s Partners. The Technical Advisor will provide assistance to the Client if these documents are to be translated in French. 10. Coordinating technical answers to pre-qualified Bidders’ questions during and after the evaluation period. All correspondence with pre-qualified Bidders will be received and sent by the Client. 11. Updating the evaluation report as much as necessary, draft associated Q&A and prepare supporting documents until the documents are declared satisfactory by the Client and approved by the Evaluation\nCommittee and the IFIs. 12. Assisting the Client in order to obtain the approval of the Evaluation Committee and the no-objection of the IFIs, on key milestones of the Project (process and documents, including most of the deliverables\nof the Technical Advisor). This will include, among others, preparing presentations, attending meetings,\ndrafting the answers to questions raised by IFIs, etc. Deliverables of Section II - task 2: The TA shall provide under task 2 all the following deliverables : \nQ&A relating to the tender process and the related bids.\n\nMinutes of the opening meeting of the bids.\n\nSummary of the outcome of the clarification meetings.\n\nProvisional technical proposals evaluation report including the results of technical review,\nrecommendation, ranking of the shortlisted bids.\n\nList of items to be discussed /clarified with Bidders.\n\nMinutes of the One to One meetings.\n\nPresentations of the results of the evaluation to the Client, the Evaluation Committee and the\nIFIs as the case may be.\n\nFinal technical bid evaluation report and cover letters.\n\nNotes and memoranda on specific topics as the case may be.\n\nAnswer any questions from The Client and the Client’s Partners.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "3\nTERMS OF REFERENCE",
+        "heading_2_text": "3.3\nScope of work",
+        "heading_3_text": null,
+        "heading_4_text": "3.3.1.2.1 Task 1: Preparation of RFP documents and clarification process under an EPC scheme"
+      },
+      "page_number": 14,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        135,
+        518,
+        703
+      ],
+      "orig_size": [
+        528.0,
+        715.0
+      ]
+    },
+    {
+      "chunk_id": "6fa265cc-01ae-5d23-ad84-6e8974f4c577",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 3\nTERMS OF REFERENCE — 3.3\nScope of work — 3.3.1.3 Section III: Selection of the Preferred Bidder(s), awarding of contracts and negotiation of all — The Technical Advisor will be responsible for managing all technical aspects of the selection of the\nPreferred Bidder(s) up to Financial Close considering the development of the Plant under an EPC\nscheme. This will include the following: Selection of the Preferred Bidder(s) 1. The Technical Advisor will assist the Client and the Transaction Advisor to identify one Preferred Bidder based on a thorough analysis of the proposals. The Technical Advisor will provide a preliminary report\nto Client setting out the basis for its selection. 2. The Technical Advisor will prepare presentation of its findings to Client and will take account of Client’s comments on the evaluation process and conclusions. 3. The Technical Advisor will assist the Transaction Advisor in preparing a final report based on Client’s approval.\n\nNegotiations 4. The Technical Advisor will provide the necessary support to Client in negotiations with the first Preferred Bidder including the preparation of all issues to be negotiated. 5. The Technical Advisor will participate in all negotiations. The Technical Advisor will ensure that qualified technical experts are available to assist the Client during the negotiations. 6. The Technical Advisor will incorporate the results of the negotiations in the final Project Agreements. 7. In case of failure to conclude a contract with a Preferred Bidder, the Technical Advisor will assist Client in the negotiation process with the second Preferred Bidder and carry these negotiations until contract\nsignature and financial closure. The Technical Advisor shall provide a separate quotation for negotiation\nto award the contract with each additional firm/consortium (as indicated in Appendix 3). Contract award and preparation of all final Project Agreements 8. The Technical Advisor will provide technical assistance to Client and the Transaction Advisor during the entire tender process, discussions and negotiations with Client’s Partners. The Technical Advisor will\nensure that qualified technical experts are available to assist Client during the negotiation and\nfinalization of contractual documentation with these institutions. 9. The Technical Advisor will provide all technical inputs needed for developing final Project Agreements, including the EPC Contract, the O&M Contract and the Connection Agreement(s) and any other\nagreements required to provide a comprehensive set of Project Agreements. 10. The Technical Advisor will be requested to provide the technical inputs and assistance needed for the elaboration of the technical part of the Power Purchase Agreement, Direct Agreements with lenders,\nand any other agreements required to provide a comprehensive set of Project Agreements.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "3\nTERMS OF REFERENCE",
+        "heading_2_text": "3.3\nScope of work",
+        "heading_3_text": null,
+        "heading_4_text": "3.3.1.3 Section III: Selection of the Preferred Bidder(s), awarding of contracts and negotiation of all"
+      },
+      "page_number": 15,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        124,
+        518,
+        746
+      ],
+      "orig_size": [
+        528.0,
+        759.0
+      ]
+    },
+    {
+      "chunk_id": "31f03b45-90ec-575e-8da6-2c9d709004f2",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 3\nTERMS OF REFERENCE — 3.3\nScope of work — 3.3.1.3 Section III: Selection of the Preferred Bidder(s), awarding of contracts and negotiation of all — 12. The Technical Advisor shall prepare presentations, as needed, to the Client and the Client’s partners Deliverables for section III: \nPresentation to the Client of the selection of the Preferred Bidder(s).\n\nMinutes and summary of the negotiations with candidates, Client’s partners on technical\naspects.\n\nNotes and memoranda on specific topics as the case may be.\n\nAnswer any questions from the Client and the Client’s Partners. 3.3.2\nMission B - Technical assistance to perform specific assignments as needed and as defined by the\nClient The Technical Advisor shall provide technical assistance to the Client on technical aspects which are outside\nthe scope of work envisaged for Mission A. The Technical Advisor will dedicate a team of experienced and\nhighly qualified individuals to work on specific assignments to be defined with Client. A key objective of Client is to ensure that it receives efficient, cost effective and responsive advice from the\nTechnical Advisor. In accepting an assignment, the Technical Advisor specifically represents and warrants\nto Client to devote the requisite level of appropriately skilled and experience professionals and other\nresources to ensure that the assignment is accomplished on time and within budget. Following a request by Client to perform any of the tasks and prior to commencing any such work, the\nTechnical Adviser shall provide Client with (i) confirmation of the instruction and the work to be performed\nand (ii) the number of hours required (using effective and efficient use of time) to perform such work\n(\"Estimated Hours\"). The Technical Adviser shall not start any work until: (a)\nClient has confirmed that the Estimated Hours proposed by the Technical Adviser to be performed\nfor such work is acceptable; or (b)\nThe parties have otherwise mutually agreed to fee arrangements for such work. If at any time, the Technical Advisor believes that the number of hours required to perform a particular\npiece of work which was instructed to perform is higher than the agreed estimated hours for such work, it\nshall promptly seek Client consent prior to incurring such additional time.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "3\nTERMS OF REFERENCE",
+        "heading_2_text": "3.3\nScope of work",
+        "heading_3_text": null,
+        "heading_4_text": "3.3.1.3 Section III: Selection of the Preferred Bidder(s), awarding of contracts and negotiation of all"
+      },
+      "page_number": 16,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        141,
+        518,
+        685
+      ],
+      "orig_size": [
+        528.0,
+        765.0
+      ]
+    },
+    {
+      "chunk_id": "314f06d9-d434-558c-bf63-6549bb78e45b",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 3\nTERMS OF REFERENCE — 3.4\nProcess — 1. All documents mentioned below will be provided by the Client when needed: \nSolar resource assessment.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "3\nTERMS OF REFERENCE",
+        "heading_2_text": "3.4\nProcess",
+        "heading_3_text": null,
+        "heading_4_text": null
+      },
+      "page_number": 16,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        75,
+        739,
+        431,
+        764
+      ],
+      "orig_size": [
+        528.0,
+        765.0
+      ]
+    },
+    {
+      "chunk_id": "ef82a830-84cd-57f2-96f2-3c44948a6db6",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 3\nTERMS OF REFERENCE — 3.4\nProcess — 2. Based on the documents and data review, the TA shall prepare a detailed project work plan to be discussed during the kick-off meeting. 3. The TA will conduct a kick-off meeting after the Contract signature within a period to be defined with Client in order to: \nReview of the proposed methodology and requirements to complete the assignment;\n\nReview of timetable of activities / milestones going forward;\n\nReview of the team organization and detailed functions of the team members;\n\nDiscussion and finalization of a communication strategy whereby all stakeholders will be\nregularly involved and consulted throughout the assignment;\n\nAny specific issue requiring immediate attention of the Client. Under no circumstances will the objective be to re-define the scope of work committed in the services\nagreement. 4. Following discussions with Client and its Partners, as the case may be, the TA shall update the detailed project work plan during the kick-off meeting. The amended project work plan will become\nthe basic project management tool and will contain specific deadlines and the overall\nimplementation of the Project. 5. The TA shall organize , in agreement with the Client, a Site visit after the Contract signature. 6. The TA shall ensure that relevant technical experts are available to participate in these activities, as in all others activities described in the scope of work. 7. All the activities requested under these ToR shall be carried out by the TA and its relevant experts. 8. The TA will be responsible for drafting minutes of all meetings organized with Client and/or its Partners (including conference calls) during each section of the Contract as defined in the scope of\nwork. 9. All deliverables (documents, drawings…) shall be provided in editable and PDF format. 10. The Final Feasability Study, the Final Technical Specifications and the Final Testing Requirements provided to the Client will be the responsibility of the TA. 11. Client reserves the right to mandate the Technical Advisor to complete one or several deliverables, and one or several Sections as needed, and based on the quality of the initial tasks performed under\nthe Contract. 12. The Technical Advisor shall ensure that qualified technical experts are available during all phases of the Contract.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "3\nTERMS OF REFERENCE",
+        "heading_2_text": "3.4\nProcess",
+        "heading_3_text": null,
+        "heading_4_text": null
+      },
+      "page_number": 17,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        199,
+        520,
+        746
+      ],
+      "orig_size": [
+        530.0,
+        758.0
+      ]
+    },
+    {
+      "chunk_id": "0ffc68d4-6c11-5b14-b789-7aabdb2eaf24",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 3\nTERMS OF REFERENCE — 3.5\nIndicative timetable for the Project — The table below provides the candidates with an indicative deliverables calendar for the Project. Deliverables of Mission A\nDate Service order\nT0 Section I (Feasibility Study Due Diligence) Interim\ndue\ndiligence\nreport\nincluding\nthe\nmodifications/changes proposed to be made on the Feasibility\nStudy. T0 + 4 weeks Final Feasibility Study\nT0 + 4 weeks Section II: Preparation of documents and process management of request for proposal (“RFP”) Launch of RFP preparation\nT1 Interim\ndue\ndiligence\nreports\nincluding\nthe\nmodifications/changes proposed to be made on the Technical\nSpecifications. T1 + 4 weeks Interim\ndue\ndiligence\nreport\nincluding\nthe\nmodifications/changes proposed to be made on the Testing\nRequirements. T1 + 4 weeks Technical specifications including Final Technical Specifications\nand Final Tests requirements\nT1 + 4 weeks Technical input on the RFP Documents and on Project\nAgreements\nT1 + 4 weeks Launch of RFP\nT2 Evaluation grid spreadsheet and methodology for the\nevaluation of technical offers\nT2 + 2 weeks Answer any question from Bidders\n2 days after reception by the TA\nof the question\nReception of the technical proposals of the prequalified\nBidders by the TA\nT3 Provisional technical bid evaluation report including the\nresults of technical review, recommendation, ranking of the\nshort listed bids. T3 + 4 weeks. Minutes and summary of clarification Meetings\n1 day after the clarification\nmeeting Answer any questions from Client’s Partners\n2 days after reception by the TA\nof the question Final technical bid evaluation report\nT3 + 6 weeks. Section III: Selection of Preferred Bidder(s), awarding of contracts and negotiation of all Project\nAgreements",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "3\nTERMS OF REFERENCE",
+        "heading_2_text": "3.5\nIndicative timetable for the Project",
+        "heading_3_text": null,
+        "heading_4_text": null
+      },
+      "page_number": 18,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        171,
+        503,
+        755
+      ],
+      "orig_size": [
+        528.0,
+        768.0
+      ]
+    },
+    {
+      "chunk_id": "c2b1a86a-5a4c-593b-990b-401b84b07aa6",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 3\nTERMS OF REFERENCE — 3.5\nIndicative timetable for the Project — Applicants are made aware that these missions imply working on a very urgently basis with very short\ndeadlines and often a lack of visibility with respect to the timetable due to various constraints inherent\nto the nature of this Project. Therefore, the team devoted to this Project shall be flexible, fully dedicated,\nand significantly available and in a sufficient number to deal with the various matters as per Client’s\ninstructions, including standard holidays periods. A detailed timetable shall be provided by the Technical Advisor in compliance with the deadlines detailed\nin the scope of work.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "3\nTERMS OF REFERENCE",
+        "heading_2_text": "3.5\nIndicative timetable for the Project",
+        "heading_3_text": null,
+        "heading_4_text": null
+      },
+      "page_number": 19,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        119,
+        518,
+        228
+      ],
+      "orig_size": [
+        528.0,
+        542.0
+      ]
+    },
+    {
+      "chunk_id": "31231936-586d-5d0f-8200-8dfb0aaf9c8c",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 3\nTERMS OF REFERENCE — 3.6\nIndicative table of the Project visit: — Visit for Mission A\nEstimated days (minimum)* Kick off meeting\n2 working days Site Visit\n1 working day Presentation of the Final Feasibility Study\n1 working day RFP workshop\n3 working days RFP evaluation\n15 working days One – To – One Meeting\n5 working Days Pre-award Meeting\n3 working days Negotiation\nAs much as needed but not exceeding",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "3\nTERMS OF REFERENCE",
+        "heading_2_text": "3.6\nIndicative table of the Project visit:",
+        "heading_3_text": null,
+        "heading_4_text": null
+      },
+      "page_number": 19,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        108,
+        285,
+        470,
+        498
+      ],
+      "orig_size": [
+        528.0,
+        542.0
+      ]
+    },
+    {
+      "chunk_id": "5a0ed38d-eb38-5937-8a1e-852d01e24003",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 5 working days — *Excluding travel days",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "5 working days",
+        "heading_2_text": null,
+        "heading_3_text": null,
+        "heading_4_text": null
+      },
+      "page_number": 19,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        101,
+        531,
+        387,
+        541
+      ],
+      "orig_size": [
+        528.0,
+        542.0
+      ]
+    },
+    {
+      "chunk_id": "5cdd072a-ee24-5132-a969-8f89f1a8a253",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 4\nStandard terms and conditions — The Client will enter into a services agreement with the Technical Advisor as per the model attached to this\nRFPTA (in English) which corresponds to the standard terms and conditions of Client (the “Contract”). Applicants shall accept these terms without any modification. Client reserves the right to reject any\nApplicant which will substantially modify these terms. Applicants are made aware that (i) all deliverables of the Technical Advisor will be fully owned by Client\nwhich will be entitled to use them freely and without restrictions; and that (ii) Client (including its\nrepresentatives, employees, subsidiaries and/or shareholders) does not accept to bear any uncapped\nliability towards the Technical Advisor.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "4\nStandard terms and conditions",
+        "heading_2_text": null,
+        "heading_3_text": null,
+        "heading_4_text": null
+      },
+      "page_number": 20,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        105,
+        518,
+        239
+      ],
+      "orig_size": [
+        528.0,
+        242.0
+      ]
+    },
+    {
+      "chunk_id": "35788d5b-8972-5de8-b6be-8c45b8543730",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 5\nInstructions to Applicants — Applicants shall submit a technical proposal (“Technical Proposal”) and a financial proposal (“Financial\nProposal”) as detailed below.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "5\nInstructions to Applicants",
+        "heading_2_text": null,
+        "heading_3_text": null,
+        "heading_4_text": null
+      },
+      "page_number": 21,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        121,
+        518,
+        147
+      ],
+      "orig_size": [
+        528.0,
+        770.0
+      ]
+    },
+    {
+      "chunk_id": "6b3b1f24-cfdb-541b-b100-ddc74fbc7238",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 5\nInstructions to Applicants — 5.2\nProcedure and timing — The Technical Advisor may apply (i) individually or as part of a Consortium (ii) for Mission A and B. Applicants will obtain the Technical RFPTA in electronic format through the e-tendering solution of Masen\ndetailed below. Technical Proposals and Financial Proposals shall be submitted to the Client no later than [September\n14th,2020, 04:00 pm Moroccan time] using e-tendering solution (see MASEN_Guide_Entreprise_Vf.pdf)\nusing the following website https://masen.local-trust.com/.\n\nThe Applicants shall submit the Technical proposal together with the administrative files under the\n“Technical folder” and the Financial Proposals under the “Financial folder” in Masen e-tendering platform.\nApplicants shall acknowledge that the Technical folder shall not include any financial information. Thus,\nthe relating Technical Proposal shall be declared non-responsive.\n\nTechnical Proposals shall be opened by the Client on [September 15th,2020, 04:00 pm Moroccan time] at\nthe earliest.\n\nFinancial Proposals shall be opened by Client on [October 16th, 2020] at the earliest. In case several Financial\nProposals were submitted by an Applicant, Client will only take into consideration the last one submitted\nto Client, provided that such Proposal is submitted by no later than [September 14th,2020, 04:00 pm\nMoroccan time].\n\nApplicants may seek clarification from Client on the Technical RFPTA via the e-tendering solution.\n\nIn case of problem at the time of submission of proposals, the Applicants may call the following number:\n00 33 1 76 64 74 02 or refer to the company guide.\n\nShould Client deem it necessary to amend the Technical RFPTA as a result of a clarification, it shall do so\nfollowing the procedure described below.\n\nAt any time, before the submission of proposals and with no liability whatsoever, Client may amend the\nTechnical RFPTA by issuing an addendum by electronic means. The addendum shall be sent electronically to\nall Applicants and shall be binding to them and considered an integral part of the original Technical RFPTA.\n\nApplicants shall acknowledge receipt of all amendments. Not receiving the acknowledgement does not void\nthe amendment introduced by Client to the Technical RFPTA. To give Applicants reasonable time to take any\nsuch amendment into account in their proposals Client may, at its discretion, if the amendment is\nsubstantial, extend the deadline for the submission of proposals.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "5\nInstructions to Applicants",
+        "heading_2_text": "5.2\nProcedure and timing",
+        "heading_3_text": null,
+        "heading_4_text": null
+      },
+      "page_number": 21,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        194,
+        518,
+        757
+      ],
+      "orig_size": [
+        528.0,
+        770.0
+      ]
+    },
+    {
+      "chunk_id": "5358cac5-fcc1-557a-83b5-fc1c6a977349",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 5\nInstructions to Applicants — 5.3\nIndicative timetable for the selection of Technical Advisor — The table below provides Applicants with an indicative timeline for the selection of the Technical Advisor. [August 17th ,2020]\nLaunch of the TA Request for Proposals [September 14th,2020, 04:00\npm]\nDeadline for Technical Proposals and Financial Proposals submission [September 15th,2020, 04:00\npm]\nOpening of Technical Proposals [October 15th, 2020]\nNotification of the results of the technical evaluation to the Applicants\n[October 16th, 2020]\nOpening of the Financial Proposals and related evaluation\n[November 05th, 2020]\nFinalization of the services agreement",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "5\nInstructions to Applicants",
+        "heading_2_text": "5.3\nIndicative timetable for the selection of Technical Advisor",
+        "heading_3_text": null,
+        "heading_4_text": null
+      },
+      "page_number": 22,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        292,
+        513,
+        436
+      ],
+      "orig_size": [
+        528.0,
+        756.0
+      ]
+    },
+    {
+      "chunk_id": "77a3ca5f-6fb1-5156-b81d-a01997f7c4cd",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 5\nInstructions to Applicants — 5.4\nGeneral evaluation principles — Proposals in relation to Mission A will be evaluated. For these Missions: -\nClient will first review, analyze and evaluate the Technical Proposals in accordance with article 5.5.2\nbelow. Client shall evaluate and negotiate all comments and mark-up relating to the scope of work\nand to the Contract prior to opening the Financial Proposals.\n\n-\nThe Financial Proposal evaluation will be performed separately, once the technical evaluation is\nconcluded in accordance with article 5.5.4 below.\n\n-\nThe candidate(s) having reached the highest score will then be invited for contract signing in\naccordance with article 5.6 below.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "5\nInstructions to Applicants",
+        "heading_2_text": "5.4\nGeneral evaluation principles",
+        "heading_3_text": null,
+        "heading_4_text": null
+      },
+      "page_number": 22,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        478,
+        518,
+        638
+      ],
+      "orig_size": [
+        528.0,
+        756.0
+      ]
+    },
+    {
+      "chunk_id": "8b21a068-c56a-51dc-88f1-10fef83be550",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 5\nInstructions to Applicants — 5.5\nContent of the Proposals — 5.5.1\nContent of the Technical Proposal — Applicants are required to submit a Technical Proposal (“TP”). The TP shall contain non-compressed and\nnon-protected files that are printable and reproducible in one of these formats: (a) Microsoft Word 2013 (for written documents and specifically for Forms 2.1, 2.2 and 2.3);",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "5\nInstructions to Applicants",
+        "heading_2_text": "5.5\nContent of the Proposals",
+        "heading_3_text": "5.5.1\nContent of the Technical Proposal",
+        "heading_4_text": null
+      },
+      "page_number": 22,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        705,
+        518,
+        755
+      ],
+      "orig_size": [
+        528.0,
+        756.0
+      ]
+    },
+    {
+      "chunk_id": "1a4bbfc0-f9f7-5d2c-b8eb-53bbce983a3c",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 5\nInstructions to Applicants — 5.5\nContent of the Proposals — 5.5.1\nContent of the Technical Proposal — A. Comments on the Scope of Work.\nB. Confirmation of no conflict of interest and no inability to work with IFIs.\nC. Scope of work confirmation Letter (Form 2.1)\nD. Approach, methodology and work plan, for performing the assignment.\nE. Work plan, organization and visits for performing the assignment (Form 2.2).\nF. Curriculum Vitae (CV) for proposed staff (Form 2.3).\nG. Curriculum Vitae (CV) for proposed Project Manager (Form 2.4).\nH. Dully signed Letter by the clients to demonstrate the role of the Project Manager in the development of at least one PV plant of more than [50 MW].\nI.\nApplicant’s credentials (Form 2.5).\nJ.\nEvidences and certificates dully signed by the clients to demonstrate the Applicant’s credentials.\nK. Administrative file including the following documents in accordance with Appendix 4: i.\nTrade/commercial register;\nii.\nDuly signed statement of intent;\niii.\nDuly signed power of attorney in favor of the Applicant' representative(s) authorized to legally\nbind the Applicant with third parties;\niv.\nIf acting as a Consortium, a declaration of joint and several liability based on the model\nagreement\nv.\nA signed and initialed copy (on all pages) of the standard terms and conditions (“Contract”).\nThe Contract must not include any price information. In case the original administrative files are different language that English, certified translation shall be provided\nwithin the Technical Proposal. The TP shall provide the information indicated in the above paragraphs from (B) to (G) using forms (Forms\n2.1, 2.2, 2.3 and 2.4). The TP shall include credentials demonstrating that the Applicant has at least: -\nPrepared the feasibility study of at least two (2) grid connected PV plants with a minimum aggregate\ninstalled capacity of [100 MW (comprising PV plants of more than 10 MW) including at least one 50\nMW PV plant].\n-\nSelected a PV plant EPC through a tender including: -\nPreparation of the tender technical documentation,\n-\nEvaluation of bids and selection of the preferred bidder, and\n-\nNegotiations of the contractual documentation. The projects presented as credentials by the Applicant shall have a higher capacity than [5 MW], if not\nspecified otherwise. Only plants with more than [5 MW] will be considered in the TP evaluation.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "5\nInstructions to Applicants",
+        "heading_2_text": "5.5\nContent of the Proposals",
+        "heading_3_text": "5.5.1\nContent of the Technical Proposal",
+        "heading_4_text": null
+      },
+      "page_number": 23,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        171,
+        518,
+        727
+      ],
+      "orig_size": [
+        528.0,
+        739.0
+      ]
+    },
+    {
+      "chunk_id": "e64b09bd-c29c-56e6-a151-a5498aa6025d",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 5\nInstructions to Applicants — 5.5\nContent of the Proposals — 5.5.1\nContent of the Technical Proposal — The TP shall not include any financial information. A TP containing financial information shall be\ndeclared non-responsive.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "5\nInstructions to Applicants",
+        "heading_2_text": "5.5\nContent of the Proposals",
+        "heading_3_text": "5.5.1\nContent of the Technical Proposal",
+        "heading_4_text": null
+      },
+      "page_number": 24,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        74,
+        517,
+        100
+      ],
+      "orig_size": [
+        528.0,
+        763.0
+      ]
+    },
+    {
+      "chunk_id": "2381e53c-f6d3-55cf-a9f7-67e610403138",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 5\nInstructions to Applicants — 5.5\nContent of the Proposals — 5.5.2\nEvaluation Criteria for the Technical Proposal — Area of evaluation\nEvaluation Criteria\nMaximum Score 1. References of the Applicant\n35 Prepare the feasibility study of at least two\n(2) grid connected PV plants with a\nminimum aggregate installed capacity of\n100 MW (comprising PV plants of more\nthan 10 MW) including at least one 50 MW\nPV plant. 10***\nPass/Fail** Experience\n&\nreferences\nof\nthe\nApplicant\nThe evaluations will be\nbased on the experience\nand credentials of the\nApplicant relevant to the\nProject\nincluding\nprevious experience in\nsimilar projects mainly: Experience in the selection of an EPC for a\nPV plant including: \nPreparation\nof\nthe\ntender\ntechnical documentation,\n\nEvaluation of bids and selection\nof the preferred bidder, and\n\nNegotiations of the contractual\ndocumentation. 15***\nPass/Fail** The Applicant can present additional\ncredentials demonstrating his experience\nas: \nOwners engineers in the PV\nprojects\n\nIndependent engineer\n\nTechnical assistance to\nGovernment/IFIs/Developers in\nAfrica. 10*** 2. Proposed professional staff experience\n35  Handling technical issues relevant to the project based on previous experience\nand knowledge of PV projects.\n- feasibility study of PV grid connected Professional\nqualifications\nand\nexperience of the team power plants\n Handling bid selection process: The evaluation will be\nbased on the assigned\nstaff’s\nskills\n\nand\nexperience including: 30*** - selection of a PV plant EPC through a tender including:\n\nPreparation of the tender technical\ndocumentation,\n\nEvaluation of bids and selection of\nthe preferred bidder (under EPC\nscheme), and",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "5\nInstructions to Applicants",
+        "heading_2_text": "5.5\nContent of the Proposals",
+        "heading_3_text": "5.5.2\nEvaluation Criteria for the Technical Proposal",
+        "heading_4_text": null
+      },
+      "page_number": 24,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        64,
+        159,
+        510,
+        750
+      ],
+      "orig_size": [
+        528.0,
+        763.0
+      ]
+    },
+    {
+      "chunk_id": "48a06f5d-45fd-5d1e-9e65-8c8a73aada75",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 5\nInstructions to Applicants — 5.5\nContent of the Proposals — 5.5.2\nEvaluation Criteria for the Technical Proposal — The experts could present also an\nexperience in: \nServices as Lender’s technical\nadvisor for PV projects\n\nServices as Independent engineer\nfor PV projects.\n\nServices as owner’s engineer in\nthe PV sector. The proposed team project shall include at\nleast: \nProject Director;\n\nProject Manager;\n\nSolar resource expert;\n\nPV expert:\n\nElectrical expert:\n\nCivil and construction expert;\n\nContract (EPC) expert;\n\nEnvironmental expert.\nProject Manager with more than 12 years\nof experience having been involved as\nproject manager, for at least three years,\nin the development of PV plants under\nEPC scheme comprising at least one PV\nplant of more than 50 MW. The “development of PV plants under EPC\nscheme” refers to elaboration of feasibility\nstudy, qualification of potential EPC,\nselection of preferred EPC, management of\nRFP Process, contract negotiation and\nsignature ….. The Project Manager shall: -\nLead the TA project team.\n-\nBe\nresponsible\nof\nall\ndocumentation/reports provided\nto Client.\n-\nBe the first and main contact\nperson with Client team.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "5\nInstructions to Applicants",
+        "heading_2_text": "5.5\nContent of the Proposals",
+        "heading_3_text": "5.5.2\nEvaluation Criteria for the Technical Proposal",
+        "heading_4_text": null
+      },
+      "page_number": 25,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        179,
+        142,
+        364,
+        745
+      ],
+      "orig_size": [
+        514.0,
+        758.0
+      ]
+    },
+    {
+      "chunk_id": "998b58ad-fae7-5912-8f82-cfb78f9f2c34",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 5\nInstructions to Applicants — 5.5\nContent of the Proposals — 5.5.2\nEvaluation Criteria for the Technical Proposal — 5***\nPass/Fail**",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 1,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "5\nInstructions to Applicants",
+        "heading_2_text": "5.5\nContent of the Proposals",
+        "heading_3_text": "5.5.2\nEvaluation Criteria for the Technical Proposal",
+        "heading_4_text": null
+      },
+      "page_number": 25,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        400,
+        581,
+        511,
+        591
+      ],
+      "orig_size": [
+        514.0,
+        758.0
+      ]
+    },
+    {
+      "chunk_id": "ea5c6901-914d-5ce2-9c62-a39dd69739c7",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 5\nInstructions to Applicants — 5.5\nContent of the Proposals — 5.5.2\nEvaluation Criteria for the Technical Proposal — Evaluation of the Applicant based on the: Performance\nduring\npresentations\nand\n/\nAvailability\nand\nresponsiveness during\nthe\nclarification\nprocess. \nClarity, quality and performance of\nthe\nproposed\nstaff\nduring\npresentation to Client and its\nadvisors (as the case may be).\n\nAvailability of the proposed staff\nand responsiveness during the\nclarification phase. Pass/Fail** 3. Proposed Approach Methodology and Work Plan\n30 Evaluation of the Bidder’s understanding\nof the Project based on the following: -\nThe proposed methodology and\napproach for the Project delivery\nand its consistency with Client’s\nobjectives.\n-\nThe proposed deliverables and\ntheir alignment with the project\nobjectives\nand\nwith\nthe\nrequirements set out in the ToR.\n-\nWhether the applicant has a\nsufficient understanding of the\npotential implementation risks\nand has developed adequate plans\nto address and mitigate those\nrisks.\n-\nDemonstrated understanding of\nthe various stakeholders involved\nin the Project (including the IFIs)\nand their potential requirements. Approach\nand\nmethodology 10 Evaluation of the proposed organization\nand staffing including: \nThe\nproposed\nteam\nand\nmanagement\nstructure\nand\nwhether it is in-line with the\nproject requirements.\n\nAvailability and commitment of\nkey senior professionals (project\ndirectors/managers)\nto\nthe\nassignment.\n\nCapacity to increase the proposed\nteam in case of heavy workload. Organization\nand\nStaffing 15",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "5\nInstructions to Applicants",
+        "heading_2_text": "5.5\nContent of the Proposals",
+        "heading_3_text": "5.5.2\nEvaluation Criteria for the Technical Proposal",
+        "heading_4_text": null
+      },
+      "page_number": 26,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        63,
+        118,
+        467,
+        744
+      ],
+      "orig_size": [
+        476.0,
+        757.0
+      ]
+    },
+    {
+      "chunk_id": "ab1a2291-faa2-5e50-b44e-d9a7c7087714",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 5\nInstructions to Applicants — 5.5\nContent of the Proposals — 5.5.2\nEvaluation Criteria for the Technical Proposal — Evaluation of the proposed work plan for\nproject execution including: \nWhether the work plan clearly\noutlines the main activities of the\nassignment, their content and\nduration,\nphasing\nand\ninterrelations and milestones.\n\nWhether the proposed work plan\nis consistent with the approach\nand methodology and whether the\nproposed work plan is consistent\nwith the timetable provided by\nClient.\n\nTable of visits specifying for each\none number of days and persons. Work plan 5 4. Other pass/fail would include:\nPass/Fail** Conflict of Interest\nEvaluation of the Applicant based on\nwhether the Applicant is conflicted.\nPass/Fail** Extent of mark-up\nNo comments on the Contract are\naccepted.\nPass/Fail** Evaluation of the Applicant based on\nwhether the Applicant is eligible or not to\nwork with certain IFIs. Ineligibility\nto\nwork\nwith IFIs Pass/Fail** Completeness of the\nresponses Evaluation of the Applicant based on the\ncompleteness of the responses and on the\nquality of the outline and format. Pass/Fail** Total 100 Applicants that receive a technical score (“TSC”) of 70 or higher will be pre-qualified without prejudice to\nthe exclusion criteria referred to hereafter. During the evaluation period, Client reserves the right to\nrequest from the Applicants to provide, within a reasonable time, additional information/documents in\norder to clarify their proposals and/or complete them. An Applicant who fails to comply with such request\nwithin the reasonable period specified in Client’s request may have its bid rejected.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "5\nInstructions to Applicants",
+        "heading_2_text": "5.5\nContent of the Proposals",
+        "heading_3_text": "5.5.2\nEvaluation Criteria for the Technical Proposal",
+        "heading_4_text": null
+      },
+      "page_number": 27,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        118,
+        518,
+        740
+      ],
+      "orig_size": [
+        528.0,
+        753.0
+      ]
+    },
+    {
+      "chunk_id": "45bd27d5-445b-545b-927d-945fe93e003b",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 5\nInstructions to Applicants — 5.5\nContent of the Proposals — 5.5.2\nEvaluation Criteria for the Technical Proposal — conditions.\n- Exposure of the Applicant to any conflict of interest in relation to the Project and/or its stakeholders.\n- Ineligibility to work with IFIs.\n- Completeness of the responses. However, Client reserves the right to waive any minor deviations, omissions and/or reserves. Client will open the Financial Proposals of the pre-qualified Applicants only. The evaluation team shall evaluate the Technical Proposals on the basis of their responsiveness to the RFPTA,\napplying the evaluation criteria specified in the table above. Each responsive proposal will be given a TSC.\nA proposal shall be rejected at this stage if it does not substantially comply with the RFPTA or it fails to\nachieve the minimum TSC abovementioned.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "5\nInstructions to Applicants",
+        "heading_2_text": "5.5\nContent of the Proposals",
+        "heading_3_text": "5.5.2\nEvaluation Criteria for the Technical Proposal",
+        "heading_4_text": null
+      },
+      "page_number": 28,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        117,
+        518,
+        296
+      ],
+      "orig_size": [
+        528.0,
+        722.0
+      ]
+    },
+    {
+      "chunk_id": "01bf2da1-4dfb-5948-b488-606b6124f29e",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 5\nInstructions to Applicants — 5.5\nContent of the Proposals — 5.5.3\nContent of the Financial Proposal — Applicants are required to submit a Financial Proposal which shall be prepared using the following forms: A. Payment Milestones (Form 3.1)\nB. Financial Proposal submission form (Form 3.2)\nC. Financial Proposal Breakdown (Form 3.3).\nD. Commitment agreement (Form 3.4).\nE. If acting as a Consortium, Consortium commitment agreement (Form 3.5). The Financial Proposal shall contain non-compressed and non-protected files that are printable and\nreproducible in one of these formats: (a) Microsoft Word 2003 (for written documents and specifically for Forms 3.1, 3.2 and 3.3 (or 3.4\nif acting as Consortium));\n(b) Microsoft Excel 2003 (specifically for tables);\n(c) JPEG format for the totality of the photos and images.\n\nIn addition, the Financial Proposal shall also be supplied in non-protected printable and reproducible PDF\nformat. All activities and items described in the RFPTA and Technical Proposal must be priced separately; activities\nand items described in the Technical Proposal but not priced, shall be assumed to be included in the prices\nof other activities or items. Each Applicant is also requested to provide a separate quotation (lump sum price) for each additional offer\nreviewed during the RFP process, and for the negotiation to award the Contract with each supplemental\nfirm/consortium.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "5\nInstructions to Applicants",
+        "heading_2_text": "5.5\nContent of the Proposals",
+        "heading_3_text": "5.5.3\nContent of the Financial Proposal",
+        "heading_4_text": null
+      },
+      "page_number": 28,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        342,
+        518,
+        713
+      ],
+      "orig_size": [
+        528.0,
+        722.0
+      ]
+    },
+    {
+      "chunk_id": "c95ff17b-57af-51e2-8c8f-35b2dab1204b",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 5\nInstructions to Applicants — 5.5\nContent of the Proposals — 5.5.3\nContent of the Financial Proposal — Applicants should evaluate the applicability of taxes to their remuneration and should bid accordingly.\nClient will not provide any tax exemptions but may provide certificates for the payment of the withholding\ntaxes. Client will use the following exchange rates to convert the financial proposals in USD and/or EUR in MAD\nfor the purposes of comparing the Financial Proposals submitted: - USD/MAD exchange rate calculated as the arithmetic average of “bid and ask” rates as published by Bank Al Maghrib (www.bkam.ma) at close of business (Moroccan time) the day prior to the\ndeadline for submission of the Financial Proposals; - Euro/MAD exchange rate calculated as the arithmetic average of “bid and ask” rates as published by Bank Al Maghrib (www.bkam.ma) at close of business (Moroccan time) the day prior to the\ndeadline for submission of the Financial Proposals Financial proposals shall be binding upon the Applicants subject to the modifications resulting from\nContract negotiations, up to expiration of the validity period of the Proposal. Financial Proposals in relation\nto Mission A shall be fixed for the entire period of the advisory services. The Financial Proposal for Mission B shall be expressed on the basis of man-day rates in USD or in EUR\nexcluding VAT but including withholding taxes and any other applicable taxes (broken down by category of\npersonnel and including the detail of any applicable escalation mechanism). The Financial Proposal will be examined prior to the signing of the Contract in order to ascertain that the\nitems are correctly extended at the rates quoted. Should any arithmetical error be found, it will be corrected\nand the Financial Proposal will be amended accordingly. The Applicant will be informed of any arithmetical\nadjustment made should Client wish to further consider his Proposal and he will be required to certify his\nacceptance of such adjustment. The Financial Proposal shall not include any mark-up. A Financial Proposal containing mark-up shall\nbe declared non-responsive.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "5\nInstructions to Applicants",
+        "heading_2_text": "5.5\nContent of the Proposals",
+        "heading_3_text": "5.5.3\nContent of the Financial Proposal",
+        "heading_4_text": null
+      },
+      "page_number": 29,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        138,
+        520,
+        564
+      ],
+      "orig_size": [
+        530.0,
+        764.0
+      ]
+    },
+    {
+      "chunk_id": "72f617ac-e078-57aa-9339-6585190cd237",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 5\nInstructions to Applicants — 5.5\nContent of the Proposals — 5.5.4\nEvaluation of the Financial Proposal — For mission A, Applicants that receive a TSC of 70 points or higher will be pre-qualified. Client will open the\nFinancial Proposals of the pre-qualified Applicants. Client reserves the right to consider any clarification received after the opening of the Financial Proposal.\nNotwithstanding the latter, no further mark-up of the Contract will be accepted after opening of the\nFinancial Proposal by Client. Each Financial Proposal shall be assigned a financial score (“FSC”) of maximum 100. The FSC will be\ncalculated as follows: FSC = 100 x (FSC min / Ff )",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "5\nInstructions to Applicants",
+        "heading_2_text": "5.5\nContent of the Proposals",
+        "heading_3_text": "5.5.4\nEvaluation of the Financial Proposal",
+        "heading_4_text": null
+      },
+      "page_number": 29,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        611,
+        518,
+        760
+      ],
+      "orig_size": [
+        530.0,
+        764.0
+      ]
+    },
+    {
+      "chunk_id": "c23dee59-612d-54e8-99cc-779fad923e84",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 5\nInstructions to Applicants — 5.5\nContent of the Proposals — 5.5.4\nEvaluation of the Financial Proposal — FSC min = Lowest total Financial Proposal in relation to Mission A in MAD (converted in accordance with article 5.5.3 above); and Ff = total Financial Proposal by the Applicant under consideration in relation to Mission A in MAD (converted in accordance with article 5.5.3 above).",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "5\nInstructions to Applicants",
+        "heading_2_text": "5.5\nContent of the Proposals",
+        "heading_3_text": "5.5.4\nEvaluation of the Financial Proposal",
+        "heading_4_text": null
+      },
+      "page_number": 30,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        104,
+        518,
+        178
+      ],
+      "orig_size": [
+        528.0,
+        280.0
+      ]
+    },
+    {
+      "chunk_id": "f62110b8-ae98-5997-b8f9-3e4e51048006",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 5\nInstructions to Applicants — 5.6\nScoring of the Proposals — The overall score of the Applicant for Mission A shall be calculated as follows: Applicant SCORE= 70% * TSC + 30% * FSC (Technical Proposal will have 70% weight, while Financial Proposal will have a weight of 30%)",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "5\nInstructions to Applicants",
+        "heading_2_text": "5.6\nScoring of the Proposals",
+        "heading_3_text": null,
+        "heading_4_text": null
+      },
+      "page_number": 30,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        58,
+        216,
+        480,
+        278
+      ],
+      "orig_size": [
+        528.0,
+        280.0
+      ]
+    },
+    {
+      "chunk_id": "d97ea98a-6690-51c2-a18e-bcc31fbd1779",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 6\nGeneral provisions — The Technical Advisor proposal must remain valid 3 months after the submission date. During this period,\nthe Technical Advisor shall maintain the availability of professional staff nominated in the proposal. Client\nwill make its best effort to complete negotiations within this period.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "6\nGeneral provisions",
+        "heading_2_text": null,
+        "heading_3_text": null,
+        "heading_4_text": null
+      },
+      "page_number": 31,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        122,
+        518,
+        162
+      ],
+      "orig_size": [
+        528.0,
+        760.0
+      ]
+    },
+    {
+      "chunk_id": "2506a44d-3e44-5a16-89b6-ef7a6d7563e7",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 6\nGeneral provisions — 6.2\nExclusivity / Conflict of Interest — The Applicants have an obligation to disclose any situation of actual or potential conflict that impacts their\ncapacity to serve the best interest of Client, or that may be reasonably perceived as having this effect.\nFailure to disclose said situations may lead to the disqualification of the Applicants or the termination of\nthe Contract. Conflict of interest shall include any situation in which the Applicants, including the Technical Advisor, is\ngiven a mission, defends or holds an interest that affects, seems to reasonably affect or is likely to affect\nthe objectivity with which it must provide its services to Client. Exclusivity/Conflict of interest shall be governed by the related clause of the standard terms and conditions\nreflected in the Contract upon its signature.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "6\nGeneral provisions",
+        "heading_2_text": "6.2\nExclusivity / Conflict of Interest",
+        "heading_3_text": null,
+        "heading_4_text": null
+      },
+      "page_number": 31,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        201,
+        518,
+        349
+      ],
+      "orig_size": [
+        528.0,
+        760.0
+      ]
+    },
+    {
+      "chunk_id": "955d51f1-c073-5694-9f8e-a2436be1d5b9",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 6\nGeneral provisions — 6.3\nConfidentiality — The Applicants shall treat this RFPTA, its content and all related documents as private and confidential (save\nto the extent strictly necessary to allow them to submit their proposals to this RFPTA and in such a case,\ninformation shall be provided only to the persons directly concerned and subject to them agreeing to treat\nthem as confidential prior to such disclosure) and shall not publish or disclose them without the prior\nwritten consent of Client. All documents prepared by the Technical Advisor for the assignment or supplied to them by Client shall\nremain confidential until signature of the Contract unless Client accepts to waive their confidentiality. Confidentiality shall be governed by the related clause of the standard terms and conditions reflected in\nthe Contract upon its signature.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "6\nGeneral provisions",
+        "heading_2_text": "6.3\nConfidentiality",
+        "heading_3_text": null,
+        "heading_4_text": null
+      },
+      "page_number": 31,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        388,
+        518,
+        537
+      ],
+      "orig_size": [
+        528.0,
+        760.0
+      ]
+    },
+    {
+      "chunk_id": "03fcb258-f51b-5881-98bf-e0b541b5a0dd",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 6\nGeneral provisions — 6.4\nOwnership of materials — Applicants hereby irrevocably waive all moral rights which they have or will have in any existing or future\nrecords, reports, documents, papers, presentations, minutes of meetings, correspondence and all other\nmaterials in whatever form, including but not limited to hard copy and electronic form, prepared by the\nApplicants in response to this RFPTA, all of which are being deemed as “Work for Hire” and shall therefore\nbe the sole property of Client. The TA is made aware that (i) all deliverables of the Technical Advisor will be fully owned by Client which\nwill be entitled to use them freely and without restrictions; and that (ii) Client (including its\nrepresentatives, employees, subsidiaries and/or shareholders) does not accept to bear any uncapped\nliability towards the Technical Advisor. Ownership of materials shall be governed by the related clause of the standard terms and conditions\nreflected in the Contract upon its signature.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "6\nGeneral provisions",
+        "heading_2_text": "6.4\nOwnership of materials",
+        "heading_3_text": null,
+        "heading_4_text": null
+      },
+      "page_number": 31,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        59,
+        578,
+        518,
+        756
+      ],
+      "orig_size": [
+        528.0,
+        760.0
+      ]
+    },
+    {
+      "chunk_id": "f9535892-a0ed-599f-9f2c-82bf094367ed",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 6\nGeneral provisions — 6.5\nLanguage — Client will communicate with the candidates and to the selected Technical Advisor in English.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "6\nGeneral provisions",
+        "heading_2_text": "6.5\nLanguage",
+        "heading_3_text": null,
+        "heading_4_text": null
+      },
+      "page_number": 32,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        58,
+        133,
+        461,
+        143
+      ],
+      "orig_size": [
+        527.0,
+        144.0
+      ]
+    },
+    {
+      "chunk_id": "e941cb99-d1a5-5631-9d0b-0629dbf6ba9c",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 7 Appendices — Appendix 1: Standard Terms and Conditions Please refer to the attached document (Standard services agreement).",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "7 Appendices",
+        "heading_2_text": null,
+        "heading_3_text": null,
+        "heading_4_text": null
+      },
+      "page_number": 33,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        56,
+        122,
+        361,
+        176
+      ],
+      "orig_size": [
+        368.0,
+        178.0
+      ]
+    },
+    {
+      "chunk_id": "fac89ba3-0431-501d-8d89-ba4b4c456681",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 7 Appendices — Please refer to the attached document.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "7 Appendices",
+        "heading_2_text": null,
+        "heading_3_text": null,
+        "heading_4_text": null
+      },
+      "page_number": 34,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        53,
+        122,
+        224,
+        133
+      ],
+      "orig_size": [
+        235.0,
+        134.0
+      ]
+    },
+    {
+      "chunk_id": "5466abca-05ff-5f7b-ac2d-41082153d343",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 7 Appendices — Please refer to the attached document.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "7 Appendices",
+        "heading_2_text": null,
+        "heading_3_text": null,
+        "heading_4_text": null
+      },
+      "page_number": 35,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        53,
+        122,
+        224,
+        133
+      ],
+      "orig_size": [
+        232.0,
+        134.0
+      ]
+    },
+    {
+      "chunk_id": "3812e988-da2a-5b7e-8ace-b507b2a884c6",
+      "type": "procurement_section",
+      "text": "REQUEST FOR PROPOSAL — 7 Appendices — Please refer to the attached document.",
+      "metadata": {
+        "segment_type": "body",
+        "column_index": 0,
+        "heading_0_text": "REQUEST FOR PROPOSAL",
+        "heading_1_text": "7 Appendices",
+        "heading_2_text": null,
+        "heading_3_text": null,
+        "heading_4_text": null
+      },
+      "page_number": 36,
+      "doc_fingerprint": "17f6f66e-6264-5992-8356-4981c19b9f2c",
+      "bbox": [
+        53,
+        122,
+        224,
+        133
+      ],
+      "orig_size": [
+        228.0,
+        134.0
+      ]
+    }
+  ]
+}

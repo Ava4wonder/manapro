@@ -43,7 +43,7 @@ logger = logging.getLogger("agent")
 # OLLAMA_CHAT_MODEL_QWEN = os.getenv("OLLAMA_CHAT_MODEL", "qwen3:30b") 
 OLLAMA_CHAT_MODEL_QWEN = os.getenv("OLLAMA_CHAT_MODEL", "gpt-oss:20b")      # e.g. gpt-oss / qwen3
 OLLAMA_CHAT_MODEL_QWEN_2 = os.getenv("OLLAMA_CHAT_MODEL", "qwen3:32b") 
-OLLAMA_CHAT_MODEL_GPT = os.getenv("OLLAMA_CHAT_MODEL", "gpt-oss:120b")      # e.g. gpt-oss / qwen3
+OLLAMA_CHAT_MODEL_GPT = os.getenv("OLLAMA_CHAT_MODEL", "gpt-oss:20b")      # e.g. gpt-oss / qwen3
 OLLAMA_EMBED_MODEL = os.getenv("OLLAMA_EMBED_MODEL", "qwen3-embedding:8b")  # e.g. qwen3-embedding
 OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
 
@@ -57,7 +57,7 @@ COLL_GRUNER_STRATEGY = "brochure_qwen"
 COLL_GRUNER_PASTPROJECT = "brochure_qwen"
 
 # RAG + tools search parameters
-INITIAL_TOP_K = 5
+INITIAL_TOP_K = 12
 TOOL_BASE_TOP_K = 10       # Base top_k for tool searches
 TOP_K_BOOST = 2           # How much to increase K per retry
 MAX_TRIES = 0
@@ -69,18 +69,17 @@ TOOL_CALL_LOG_FILE = "tool_calls_log.json"
 
 # Predefined questions
 from tender_analyzer.apps.qa_analysis.prebid_questions_1113 import QUESTIONS
-
 PREDEFINED_QUESTIONS = []
+
 for key_cat, subcats in QUESTIONS.items():
     for subcat, qs in subcats.items():
         PREDEFINED_QUESTIONS.extend(qs)
 print(f"Loaded {len(PREDEFINED_QUESTIONS)} predefined questions.")
 
 # Regex used to parse inline reference tags such as "[ref_id:123]"
-# REF_ID_PATTERN = re.compile(r"\[ref_id:(\d+)\]")
-# REF_ID_PATTERN = re.compile(r"[\[\u3010]ref_id:(\d+)[\]\u3011]")
-REF_ID_PATTERN = re.compile(r"[\[\u3010\u300a]ref_id:(\d+)[\]\u3011\u300b]")
-
+REF_ID_PATTERN = re.compile(r"\[ref_id:(\d+)\]")
+# REF_ID_PATTERN = re.compile("[\[\u3010\u300a]ref_id:(\d+)[\]\u3011\u300b]")
+REF_ID_PATTERN = re.compile(r"[\[【《(]ref_id:(\d+)[\]】》)]")
 
 
 # ==========================
@@ -248,7 +247,7 @@ class OllamaProvider:
         }
         url = f"{self.base}/api/embeddings"
         logger.info(f"[EMBED] Requesting embedding: model={self.embed_model}, url={url}")
-        r = requests.post(url, json=payload, timeout=60)
+        r = requests.post(url, json=payload, timeout=1200)
         r.raise_for_status()
         data = r.json()
 
@@ -351,7 +350,7 @@ class QdrantSearchTool:
             if text:
                 enriched = f"<c> {text} [ref_id:{ref_id}] </c>"
                 stitched_texts.append(enriched)
-        print(f"[stitch] {stitched_texts}")
+        # print(f"[stitch] {stitched_texts}")
         return stitched_texts
 
     def search(
@@ -547,20 +546,6 @@ class Agent:
                 old_pattern = f"[ref_id:{ref_id}]"
                 new_text = ref_id_to_display[ref_id]
                 formatted_answer = formatted_answer.replace(old_pattern, new_text)
-
-        unique_references: List[AnswerReference] = []
-        seen_chunk_ids = set()
-
-        for ref in references:
-            cid = ref.chunk_id
-            # remove duplicates based on chunk_id
-            if cid is not None:
-                if cid in seen_chunk_ids:
-                    continue
-                seen_chunk_ids.add(cid)
-            unique_references.append(ref)
-
-        references = unique_references
 
         logger.info(f"[FORMAT] Extracted {len(references)} references from answer")
         return formatted_answer, references
@@ -879,7 +864,7 @@ class Agent:
             "3) When explaining, you MUST attach each factual statement with evidence from the CONTEXT:\n"
             "   - At the end of each explanation paragraph or sentence, append one or more evidence references in the format `[ref_id:CHUNK_ID]`.\n"
             "   - Use the `ref_id` that appears inside the `<c> ... [ref_id:CHUNK_ID] </c>` wrapper in the CONTEXT.\n"
-            "   - If a sentence is supported by multiple chunks, you may list multiple references, for example: '[ref_id:123];[ref_id:456]'.\n"
+            "   - If a sentence is supported by multiple chunks, you may list multiple references, for example: '[ref_id:1];[ref_id:4]'.\n"
             "   - Do NOT paste or quote the original evidence text itself, only the reference(s) `[ref_id:CHUNK_ID]`.\n"
             "   - Never invent or fabricate `ref_id`s that do not appear in the CONTEXT.\n\n"
 
@@ -897,8 +882,16 @@ class Agent:
             {"role": "system", "content": SYSTEM_MSG},
             {"role": "user", "content": user_prompt},
         ]
-        answer = self.llm.chat_gpt(messages, temperature=0.05)
-        formatted_answer, references = self._format_newref_answer(answer, collection_name)
+        REF_SIG = False
+        num_ref_tries = 4
+        while not REF_SIG and num_ref_tries > 0:
+            answer = self.llm.chat_gpt(messages, temperature=0.05)
+            formatted_answer, references = self._format_newref_answer(answer, collection_name)
+            if len(references) > 0:
+                REF_SIG = True
+            else:
+                num_ref_tries -= 1
+                logger.info(f"[RAG] REF_SIG not found, retrying... {num_ref_tries} tries left")
         logger.info(f"[RAG] Initial answer (first 400 chars): {formatted_answer}...")
         return {
             "answer": formatted_answer,
@@ -1238,7 +1231,7 @@ class Agent:
 # ==========================
 # main
 # ==========================
-COLL_PROJECT_KK = "tender_default-tenant_f463a9c3-0e52-498a-969e-68130515"
+COLL_PROJECT_KK = "tender_default-tenant_e7e04df2-ca13-4312-b91b-0727d49f"
 def main():
     provider = OllamaProvider()
     qdrant = QdrantClient(host=QDRANT_HOST, port=QDRANT_PORT, prefer_grpc=False)

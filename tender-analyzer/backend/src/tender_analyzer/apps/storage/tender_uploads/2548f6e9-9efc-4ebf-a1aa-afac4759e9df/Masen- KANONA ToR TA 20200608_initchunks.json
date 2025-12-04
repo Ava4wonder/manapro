@@ -1,0 +1,5631 @@
+{
+  "source_file": "C:\\Users\\YEJI\\manapro\\tender-analyzer\\backend\\src\\tender_analyzer\\apps\\storage\\tender_uploads\\2548f6e9-9efc-4ebf-a1aa-afac4759e9df\\Masen- KANONA ToR TA 20200608.pdf",
+  "total_pages": 36,
+  "pages": [
+    {
+      "page_number": 1,
+      "elements": [
+        {
+          "label": "fig",
+          "bbox": [
+            379,
+            65,
+            528,
+            134
+          ],
+          "text": "![Figure]()",
+          "reading_order": 0
+        },
+        {
+          "label": "fig",
+          "bbox": [
+            50,
+            73,
+            217,
+            130
+          ],
+          "text": "![Figure]()",
+          "reading_order": 1
+        },
+        {
+          "label": "sec",
+          "bbox": [
+            182,
+            266,
+            396,
+            286
+          ],
+          "text": "REQUEST FOR PROPOSAL",
+          "reading_order": 2
+        },
+        {
+          "label": "sec",
+          "bbox": [
+            150,
+            303,
+            427,
+            321
+          ],
+          "text": "TECHNICAL ADVISORY SERVICES FOR",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            239,
+            338,
+            338,
+            352
+          ],
+          "text": "Kanona PV Plant",
+          "reading_order": 4
+        },
+        {
+          "label": "sec",
+          "bbox": [
+            213,
+            368,
+            510,
+            386
+          ],
+          "text": "N° 10/2020/MASEN",
+          "reading_order": 5
+        }
+      ]
+    },
+    {
+      "page_number": 2,
+      "elements": [
+        {
+          "label": "sub_sub_sec",
+          "bbox": [
+            50,
+            74,
+            174,
+            88
+          ],
+          "text": "TABLE OF CONTENTS",
+          "reading_order": 0
+        },
+        {
+          "label": "sub_sub_sec",
+          "bbox": [
+            50,
+            103,
+            525,
+            115
+          ],
+          "text": "1\nDEFINITIONS ..................................................................................................................... 4",
+          "reading_order": 1
+        },
+        {
+          "label": "sub_sub_sec",
+          "bbox": [
+            50,
+            126,
+            525,
+            138
+          ],
+          "text": "2\nBACKGROUND .................................................................................................................. 6",
+          "reading_order": 2
+        },
+        {
+          "label": "sub_sub_sec",
+          "bbox": [
+            61,
+            148,
+            527,
+            159
+          ],
+          "text": "2.1 CONTEXT ................................................................................................................................... 6",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            61,
+            170,
+            527,
+            181
+          ],
+          "text": "2.2 Moroccan Agency of Sustainable Energy (“Masen”) .................................................................... 6",
+          "reading_order": 4
+        },
+        {
+          "label": "sub_sub_sec",
+          "bbox": [
+            61,
+            191,
+            527,
+            202
+          ],
+          "text": "2.3 ZESCO LIMITED ........................................................................................................................... 6",
+          "reading_order": 5
+        },
+        {
+          "label": "sub_sub_sec",
+          "bbox": [
+            50,
+            213,
+            525,
+            225
+          ],
+          "text": "3\nTERMS OF REFERENCE ...................................................................................................... 8",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            61,
+            235,
+            527,
+            246
+          ],
+          "text": "3.1\nPresentation of the Project ................................................................................................... 8",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            61,
+            257,
+            527,
+            268
+          ],
+          "text": "3.2\nMissions ............................................................................................................................... 8",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            61,
+            278,
+            527,
+            318
+          ],
+          "text": "3.3\nScope of work ....................................................................................................................... 8\n3.3.1\nMission A- Technical assistance to develop Kanona PV Plant under an Engineering, Procurement and\nConstruction (“EPC”) scheme. ................................................................................................................................ 8",
+          "reading_order": 9
+        },
+        {
+          "label": "sideinfo",
+          "bbox": [
+            72,
+            321,
+            527,
+            430
+          ],
+          "text": "3.3.1.1\nSection I: Feasibility Study Due Diligence ......................................................................................... 9\n3.3.1.2\nSection II: Preparation of documents and process management of request for proposal (“RFP”) 10\n3.3.1.2.1\nTask 1: Preparation of RFP documents and clarification process under an EPC scheme .......... 10\n3.3.1.2.2\nTask 2: RFP Process Management and Evaluation .................................................................... 12\n3.3.1.3\nSection III: Selection of the Preferred Bidder(s), awarding of contracts and negotiation of all\nProject Agreements .......................................................................................................................................... 15\n3.3.2\nMission B - Technical assistance to perform specific assignments as needed and as defined by the\nClient 16",
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "bbox": [
+            61,
+            440,
+            527,
+            451
+          ],
+          "text": "3.4\nProcess ............................................................................................................................... 16",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            61,
+            462,
+            527,
+            473
+          ],
+          "text": "3.5\nIndicative timetable for the Project ..................................................................................... 18",
+          "reading_order": 12
+        },
+        {
+          "label": "para",
+          "bbox": [
+            61,
+            483,
+            527,
+            494
+          ],
+          "text": "3.6\nIndicative table of the Project visit: ..................................................................................... 19",
+          "reading_order": 13
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            505,
+            525,
+            517
+          ],
+          "text": "4\nStandard terms and conditions ....................................................................................... 20",
+          "reading_order": 14
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            528,
+            525,
+            540
+          ],
+          "text": "5\nInstructions to Applicants ............................................................................................... 21",
+          "reading_order": 15
+        },
+        {
+          "label": "para",
+          "bbox": [
+            61,
+            550,
+            527,
+            561
+          ],
+          "text": "5.1\nIntroduction ....................................................................................................................... 21",
+          "reading_order": 16
+        },
+        {
+          "label": "para",
+          "bbox": [
+            61,
+            572,
+            527,
+            583
+          ],
+          "text": "5.2\nProcedure and timing ......................................................................................................... 21",
+          "reading_order": 17
+        },
+        {
+          "label": "para",
+          "bbox": [
+            61,
+            593,
+            527,
+            604
+          ],
+          "text": "5.3\nIndicative timetable for the selection of Technical Advisor ................................................... 22",
+          "reading_order": 18
+        },
+        {
+          "label": "para",
+          "bbox": [
+            61,
+            614,
+            527,
+            626
+          ],
+          "text": "5.4\nGeneral evaluation principles .............................................................................................. 22",
+          "reading_order": 19
+        },
+        {
+          "label": "para",
+          "bbox": [
+            61,
+            636,
+            527,
+            704
+          ],
+          "text": "5.5\nContent of the Proposals..................................................................................................... 22\n5.5.1\nContent of the Technical Proposal .......................................................................................................... 22\n5.5.2\nEvaluation Criteria for the Technical Proposal ........................................................................................ 24\n5.5.3\nContent of the Financial Proposal ........................................................................................................... 28\n5.5.4\nEvaluation of the Financial Proposal........................................................................................................ 29",
+          "reading_order": 20
+        },
+        {
+          "label": "para",
+          "bbox": [
+            61,
+            714,
+            527,
+            725
+          ],
+          "text": "5.6\nScoring of the Proposals ...................................................................................................... 30",
+          "reading_order": 21
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            735,
+            525,
+            747
+          ],
+          "text": "6\nGeneral provisions .......................................................................................................... 31",
+          "reading_order": 22
+        },
+        {
+          "label": "footer",
+          "bbox": [
+            61,
+            758,
+            527,
+            769
+          ],
+          "text": "6.1\nProposal validity ................................................................................................................. 31",
+          "reading_order": 23
+        }
+      ]
+    },
+    {
+      "page_number": 3,
+      "elements": [
+        {
+          "label": "header",
+          "bbox": [
+            61,
+            73,
+            527,
+            84
+          ],
+          "text": "6.2\nExclusivity / Conflict of Interest ........................................................................................... 31",
+          "reading_order": 0
+        },
+        {
+          "label": "header",
+          "bbox": [
+            61,
+            94,
+            527,
+            105
+          ],
+          "text": "6.3\nConfidentiality .................................................................................................................... 31",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            61,
+            116,
+            527,
+            127
+          ],
+          "text": "6.4\nOwnership of materials ....................................................................................................... 31",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            61,
+            137,
+            527,
+            148
+          ],
+          "text": "6.5\nLanguage ............................................................................................................................ 32",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            159,
+            525,
+            171
+          ],
+          "text": "7\nAppendices ..................................................................................................................... 33",
+          "reading_order": 4
+        }
+      ]
+    },
+    {
+      "page_number": 4,
+      "elements": [
+        {
+          "label": "sub_sub_sec",
+          "bbox": [
+            71,
+            71,
+            175,
+            88
+          ],
+          "text": "1\nDEFINITIONS",
+          "reading_order": 0
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            102,
+            514,
+            113
+          ],
+          "text": "The terms beginning with a capital letter in this request for proposals shall have the following meaning:",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            128,
+            527,
+            152
+          ],
+          "text": "\"Applicant (s)\" means individually each of the candidates which apply to the technical advisory services for\nKanona Project.",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            167,
+            264,
+            178
+          ],
+          "text": "“Bid” means the offer submitted by the Bidder.",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            190,
+            527,
+            215
+          ],
+          "text": "“Bidder (s)” means any individual entity or consortium submitting an offer for the engineering,\nprocurement and construction as well the Operation and Maintenance of Kanona Project.",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            227,
+            219,
+            238
+          ],
+          "text": "\"CAPEX\" means capital expenditures.",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            252,
+            530,
+            263
+          ],
+          "text": "“Client” means “Masen” on behalf of the JV before the creation of the JV and refers to the JV once created.",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            278,
+            425,
+            289
+          ],
+          "text": "\"Consortium\" means any group of companies or consortium acting as an Applicant.",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            303,
+            527,
+            328
+          ],
+          "text": "\"Contract\" means the standard terms and conditions attached to these Terms of Reference to be signed\nbetween the Technical Advisor and the Client.",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            342,
+            311,
+            353
+          ],
+          "text": "\"EPC\" means engineering, procurement and construction.",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            369,
+            527,
+            396
+          ],
+          "text": "\"Evaluation Committee\" means the advisory committee in charge of the supervision of the overall process\nof the Project.",
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            412,
+            527,
+            437
+          ],
+          "text": "“Feasibility Study” means the feasibility study provided by Masen for Kanona Project, including (i) Site\nAssessment, (ii) the conceptual design and (iii) interconnection scheme of Kanona PV Plant.",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            451,
+            456,
+            462
+          ],
+          "text": "\"Financial Advisor\" means the advisor providing financial advisory services for the Project.",
+          "reading_order": 12
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            479,
+            303,
+            490
+          ],
+          "text": "\"International Financial Institution (s)\"or \"IFI(s)\" means",
+          "reading_order": 13
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            496,
+            527,
+            536
+          ],
+          "text": "(a)\nThose financial institutions established in more than one country and subject to international law,\nsuch as the European Union represented by the European Commission, the African Development\nBank, the European Investment Bank and the World Bank Group; and",
+          "reading_order": 14
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            543,
+            527,
+            596
+          ],
+          "text": "(b)\nThose financial institutions which undertake all types of activities, whether or not for profit, receiving\ngovernmental financial support or not, for the purpose of promoting development, through the\ngranting capital or other credit facilities, such as the Agence Française de Développement and KfW\nBankengruppe;",
+          "reading_order": 15
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            604,
+            323,
+            615
+          ],
+          "text": "which, in either case, could provide financing for the Project.",
+          "reading_order": 16
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            623,
+            527,
+            647
+          ],
+          "text": "“Joint-Venture” or ”JV” means the Joint-Venture dedicated to develop renewable energy Program in Zambia.\nThe JV will be held equally by Masen and ZESCO (50% each).",
+          "reading_order": 17
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            656,
+            395,
+            667
+          ],
+          "text": "“Kanona Project” or “Project”: means the development of Kanona PV plant.",
+          "reading_order": 18
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            681,
+            418,
+            692
+          ],
+          "text": "“Kanona PV Plant” means the PV plant that will be developed within Kanona Site.",
+          "reading_order": 19
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            707,
+            250,
+            718
+          ],
+          "text": "“Kanona Site” or “Site” means Kanona site.",
+          "reading_order": 20
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            734,
+            257,
+            745
+          ],
+          "text": "\"LCOE\" means the levelized cost of electricity.",
+          "reading_order": 21
+        }
+      ]
+    },
+    {
+      "page_number": 5,
+      "elements": [
+        {
+          "label": "header",
+          "bbox": [
+            50,
+            73,
+            527,
+            111
+          ],
+          "text": "\"Masen\" a limited liability company, recorded in the Register of Companies of Rabat under number 79835,\nwith its registered office at Complexe Zénith Rabat, n° 50 Rocade Sud, Rabat-Casablanca, Immeubles A, B,\nC et D Souissi, Rabat, represented by Mr. Mustapha Bakkoury, in his capacity as President .",
+          "reading_order": 0
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            125,
+            247,
+            136
+          ],
+          "text": "\"O&M\" means operation and maintenance.",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            151,
+            236,
+            162
+          ],
+          "text": "\"OPEX\" means operational expenditures.",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            176,
+            525,
+            187
+          ],
+          "text": "\"Partners\" means the entities that are involved in the development of the Project such as ZESCO, IFIs, etc.",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            201,
+            196,
+            213
+          ],
+          "text": "“Plant” means Kanona PV Plant.",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            229,
+            527,
+            267
+          ],
+          "text": "\"Power Purchase Agreement\" or \"PPA\" means, in relation to the Project, the power purchase agreement\nfor development, design, financing, construction, test, commissioning, ownership, operation and\nmaintenance of a power plant to be entered into between ZESCO and the project company.",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            281,
+            527,
+            306
+          ],
+          "text": "\"Prequalification\" or \"RFQ\" means the selection process by the project company of the entities which have\nregistered their interest to complete the Project.",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            320,
+            527,
+            372
+          ],
+          "text": "\"Preferred Bidder\" means the Bidder that is selected as having submitted the lowest evaluated financial\nproposal in relation to the Project and whose bid is substantially compliant with the requirements of the\nRequest for Proposals for the engineering, procurement and construction as well as the operation and\nmaintenance of the Project.",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            384,
+            527,
+            451
+          ],
+          "text": "“Project Agreements” means, in relation to the Project, any agreement to be entered into by the Preferred\nBidder(s) in relation to such Project.\n\n\"Request for Proposals\" or \"RFP\" means the request for proposals to select the EPC that will be in charge\nof the engineering, design, procurement, construction and operation and maintenance of the Plant.",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            467,
+            497,
+            478
+          ],
+          "text": "\"Technical Advisor\" or \"TA\" means the advisor providing technical advisory services for the Project.",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            492,
+            501,
+            503
+          ],
+          "text": "\" Technical Specifications\" or \"TS\" means the technical specifications of the RFP provided by Masen.",
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            518,
+            527,
+            544
+          ],
+          "text": "“TA Request for Proposals\" or \"RFPTA\" means the request for proposals to select the technical advisor that\nwill have to assist the Client in the development of Kanona Project.",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            561,
+            527,
+            587
+          ],
+          "text": "\"Terms of Reference\" or \"ToR\" means these request for proposals related to technical advisory services for\nthe Project.",
+          "reading_order": 12
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            604,
+            448,
+            615
+          ],
+          "text": "“Testing Requirements” means the testing requirement of the Plant provided by Masen.",
+          "reading_order": 13
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            629,
+            530,
+            653
+          ],
+          "text": "\"Transaction Advisor\" means the advisor providing financial, legal, tax and as applicable accounting\nadvisory services for the Project.",
+          "reading_order": 14
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            668,
+            527,
+            725
+          ],
+          "text": "“ZESCO” means ZESCO LIMITED, a company organized and existing under the laws of Zambia incorporated\nunder the Companies Act, Chapter 388, having its principal office at ZESCO Limited Head Office Premises,\nStand Number 6949, Great East Road, P. O. Box 33304, 10101, Lusaka, Zambia, registered with the\ncompanies’ registry of Lusaka under number 17475.",
+          "reading_order": 15
+        }
+      ]
+    },
+    {
+      "page_number": 6,
+      "elements": [
+        {
+          "label": "sub_sub_sec",
+          "bbox": [
+            71,
+            71,
+            184,
+            88
+          ],
+          "text": "2\nBACKGROUND",
+          "reading_order": 0
+        },
+        {
+          "label": "sub_sub_sec",
+          "bbox": [
+            50,
+            102,
+            114,
+            114
+          ],
+          "text": "2.1 CONTEXT",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            130,
+            527,
+            170
+          ],
+          "text": "On March 2018, Moroccan Agency of Sustainable Energy (“Masen”) and ZESCO signed a framework agreement\nto materialize the willingness to enter into a partnership to develop, in Zambia, solar plants, wind power plants,\nhydropower plants and geothermal plants with a total capacity target of 450 MW (“Program”).",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            180,
+            267,
+            191
+          ],
+          "text": "The Program includes several projects that will be:",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            197,
+            527,
+            238
+          ],
+          "text": "-\nco-developed by Masen and ZESCO through a Joint-Venture (“JV”) held equally by Masen and ZESCO\n(50% each); and\n-\ncarried out by a special purpose company expected to be fully owned by Masen and ZESCO.",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            252,
+            527,
+            278
+          ],
+          "text": "The first project to be developed under the Program shall be a solar Photovoltaic Project, located on Kanona\n(the “Project” or “Kanona Project”) with a capacity target around [one hundred (100)] MWAC.",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            294,
+            312,
+            306
+          ],
+          "text": "2.2 Moroccan Agency of Sustainable Energy (“Masen”)",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            316,
+            527,
+            371
+          ],
+          "text": "Masen is the State-owned entity created in 2010 to implement and manage the Kingdom of Morocco’s\nrenewable energy program, and has in such capacity led the development program of integrated renewable\nenergy projects aiming at creating an additional 3 000 MW of renewable energy power generation capacity by\n2020 and 6 000 MW by 2030.",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            381,
+            434,
+            392
+          ],
+          "text": "Masen’s ownership structure is split between four (04) equal shareholders’ participation:",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            400,
+            504,
+            457
+          ],
+          "text": "-\nGovernment of Morocco;\n-\nOffice National de l’Eau et l’Electricité (“ONEE”), the Moroccan state water and power utility;\n-\nFonds Hassan II, a fund supporting the Kingdom’s social and economic development; and\n-\nSociété d’Investissements Energétiques, a fund supporting the Kingdom’s renewable energy program.",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            473,
+            527,
+            513
+          ],
+          "text": "Internationally, Masen aims to be the preferred partner for any country wishing to make renewable energy a\npriority for its socioeconomic development. Masen has already signed several partnership agreements with\nAfrican countries for the development of renewable energies.",
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            529,
+            169,
+            540
+          ],
+          "text": "Key roles of Masen include:",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            545,
+            527,
+            631
+          ],
+          "text": "-\nDevelopment of integrated renewable power plants with all the attendant activities: from qualifying\nsites to the design, the structuring and raising of funds, the construction of power plants and their\nrelated infrastructure as well as their operation and maintenance;\n-\nContribution to the development of expertise (industrial integration, R&D and training);\n-\nPropose any solutions to national and international partners who aim to develop Projects related to\nrenewable energy sector.",
+          "reading_order": 12
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            641,
+            527,
+            667
+          ],
+          "text": "Masen has created a fully-owned subsidiary, Masen Capital, to hold notably a stake as deemed appropriate in\nthe project companies in charge of the development of renewable projects.",
+          "reading_order": 13
+        },
+        {
+          "label": "sub_sub_sec",
+          "bbox": [
+            50,
+            683,
+            142,
+            695
+          ],
+          "text": "2.3 ZESCO LIMITED",
+          "reading_order": 14
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            705,
+            527,
+            745
+          ],
+          "text": "ZESCO LTD is a public utility wholly owned by the Government of the Republic of Zambia, and is a vertically\nintegrated company established in 1970 with the purpose of generating, transmitting, distributing and supplying\nelectricity in Zambia.",
+          "reading_order": 15
+        }
+      ]
+    },
+    {
+      "page_number": 7,
+      "elements": [
+        {
+          "label": "header",
+          "bbox": [
+            50,
+            73,
+            527,
+            142
+          ],
+          "text": "ZESCO is governed by the Board of Directors who are appointed by the shareholder, the Government of the\nRepublic of Zambia through the Industrial Development Corporation Limited. Corporate Governance is intended\nto support the relationship of trust between ZESCO and its stakeholders. The company’s governance system links\nwith its business strategy to help achieve business goals, creating sustainable value in the long-term for\nshareholders.",
+          "reading_order": 0
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            159,
+            527,
+            199
+          ],
+          "text": "The Company has a total installed capacity 2 341 MW with 1 861 MW owned by ZESCO, while 360 MW through\nits subsidiary Kariba North Bank Power Corporation and 120 MW through the joint-venture Itezhi-Tezhi Power\nCorporation Ltd (ITPC).",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            215,
+            527,
+            270
+          ],
+          "text": "In 2017, the Board and Management ushered in a new vision “to be the hub of electricity trading in the region\nby 2025”, that will carry the employees across the value chain to work towards a shared vision. To that effect,\ninterconnectors to all the eight neighboring countries are now part of the power system master plan. The four\nkey focus areas of ZESCO are as follows:",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            283,
+            379,
+            355
+          ],
+          "text": "-\nStrengthening the core business;\n-\nDelivering value to customers by giving them an exceptional experience;\n-\nUse of Innovative Technology; and\n-\nUnlocking the value of non-core investments.",
+          "reading_order": 3
+        }
+      ]
+    },
+    {
+      "page_number": 8,
+      "elements": [
+        {
+          "label": "header",
+          "bbox": [
+            50,
+            100,
+            213,
+            113
+          ],
+          "text": "3.1\nPresentation of the Project",
+          "reading_order": 0
+        },
+        {
+          "label": "sub_sub_sec",
+          "bbox": [
+            71,
+            71,
+            235,
+            88
+          ],
+          "text": "3\nTERMS OF REFERENCE",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            127,
+            233,
+            169
+          ],
+          "text": "ZESCO and Masen will develop in\nKanona a PV plant with a capacity of\naround [100] MWAC.",
+          "reading_order": 2
+        },
+        {
+          "label": "fig",
+          "bbox": [
+            283,
+            125,
+            512,
+            262
+          ],
+          "text": "![Figure]()",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            179,
+            233,
+            236
+          ],
+          "text": "Kanona is located in Serenje district\nabout 1km from the junction of Great\nnorth road (T2) and D225 (Road leading\nto Lusiwasi and Msoro).",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            247,
+            233,
+            289
+          ],
+          "text": "The Site is 204 hectares (Ha), located at\nlatitude of-13.058425°, and a longitude\nof 30.651624°.",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            326,
+            323,
+            337
+          ],
+          "text": "The expected timetable of the Project is summarized below:",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            56,
+            352,
+            229,
+            394
+          ],
+          "text": "Launch of Pre-\nqualification\nprocess",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            239,
+            352,
+            332,
+            394
+          ],
+          "text": "Launch of request\nfor\nproposal\nprocess",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            340,
+            352,
+            409,
+            394
+          ],
+          "text": "Selection\nof\nthe Preferred\nBidder(s)",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            417,
+            352,
+            521,
+            394
+          ],
+          "text": "Scheduled\ncommercial operation\ndate",
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "bbox": [
+            56,
+            420,
+            493,
+            431
+          ],
+          "text": "Indicative dates\n[Q3 2020]\n[Q4 2020]\n[Q2 2021]\n[Q3 2022]",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            456,
+            122,
+            469
+          ],
+          "text": "3.2\nMissions",
+          "reading_order": 12
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            486,
+            527,
+            559
+          ],
+          "text": "To successfully meet the above-mentioned objectives, the Client intends to appoint a qualified international\ntechnical advisor (“Technical Advisor” or “TA”) for the Project. The Technical Advisor will manage and\nsupervise the entire technical process from the due diligence of the Feasibility Study conducted by Masen\nup to the signing of the Project agreements including the request for proposals (“RFP”), the selection of the\nPreferred Bidder(s), the effectiveness of the main contracts and the financial close.",
+          "reading_order": 13
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            573,
+            527,
+            646
+          ],
+          "text": "The terms of reference, (\"ToR\") covers the following missions:\n-\nMission A: Technical assistance to develop Kanona PV Plant under an Engineering, Procurement and\nConstruction (“EPC”) scheme;\n-\nMission B: Technical assistance to perform specific assignments as needed and as defined by Client\n(optional).",
+          "reading_order": 14
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            662,
+            155,
+            674
+          ],
+          "text": "3.3\nScope of work",
+          "reading_order": 15
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            689,
+            527,
+            716
+          ],
+          "text": "3.3.1\nMission A- Technical assistance to develop Kanona PV Plant under an Engineering, Procurement\nand Construction (“EPC”) scheme.",
+          "reading_order": 16
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            730,
+            527,
+            756
+          ],
+          "text": "The Technical Advisor will be required to provide technical assistance to the Client considering the\ndevelopment of Kanona PV Plant under an EPC scheme.",
+          "reading_order": 17
+        }
+      ]
+    },
+    {
+      "page_number": 9,
+      "elements": [
+        {
+          "label": "header",
+          "bbox": [
+            50,
+            73,
+            244,
+            84
+          ],
+          "text": "Mission A is divided into three (3) sections:",
+          "reading_order": 0
+        },
+        {
+          "label": "para",
+          "bbox": [
+            266,
+            105,
+            313,
+            116
+          ],
+          "text": "Mission A",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            110,
+            124,
+            469,
+            135
+          ],
+          "text": "Technical assistance in relation to development of PV Plant under EPC scheme",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            269,
+            147,
+            310,
+            158
+          ],
+          "text": "Section I",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            221,
+            170,
+            358,
+            181
+          ],
+          "text": "Feasibility Study due diligence",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            268,
+            193,
+            311,
+            204
+          ],
+          "text": "Section II",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            101,
+            216,
+            479,
+            227
+          ],
+          "text": "Preparation of documents and process management of request for proposal (“RFP”)",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            267,
+            239,
+            313,
+            250
+          ],
+          "text": "Section III",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            64,
+            262,
+            518,
+            273
+          ],
+          "text": "Selection of the Preferred Bidder(s), awarding of contracts and negotiation of all Project Agreements",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            307,
+            527,
+            333
+          ],
+          "text": "It is noteworthy that the deliverables of each section will not mandatory follow the order of sections as\ndescribed above.",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            78,
+            348,
+            311,
+            362
+          ],
+          "text": "3.3.1.1 Section I: Feasibility Study Due Diligence",
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            376,
+            527,
+            418
+          ],
+          "text": "The Technical Advisor shall perform a due diligence of the Feasibility Study (“Feasibility Study Due\nDiligence”) provided by Masen. The TA shall therefore update and complete where necessary the aforesaid\nstudy to provide a final feasibility report (“Final Feasability Study report”).",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            434,
+            427,
+            445
+          ],
+          "text": "The Feasibility Study to be provided to the TA is splitted into four sections as follow:",
+          "reading_order": 12
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            457,
+            530,
+            628
+          ],
+          "text": "\nSite Assessment: this section consists in the evaluation of the Site suitability for the development\nof Kanona PV Plant. It covers an assessment of the physical Site data and constraints, including but\nnot limited to meteorological data, site qualification studies (Geotechnical, seismic and\ntopographic, Hydraulic and hydrological studies), access to the grid, as well as logistical access for\nequipment supply.\n\nConceptual design: this section consists in (i) selecting technologies, components and configuration\nof the Plant (ii) analyzing the energy production, (iii) defining the Plant needs in terms of auxiliary\npower and water comsuption, (iv) and providing the Project plans and drawings.\n\nEconomic and Financial Analysis: in this section the estimation of the CAPEX and OPEX is provided.\n\nInterconnection scheme: this section consists in providing Kanona interconnection scheme as well\nas the relating grid impact study.",
+          "reading_order": 13
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            642,
+            527,
+            668
+          ],
+          "text": "The TA shall perform a detailed due diligence and complete the Feasability Study where dully necessary\nwith his own analysis. On this basis the TA shall identify inputs to elaborate RFP technical documents.",
+          "reading_order": 14
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            683,
+            527,
+            709
+          ],
+          "text": "The Technical Advisor will endorse the conclusions and recommendations of the Final Feasability Study\nreport in particular the inputs to the RFP documentation.",
+          "reading_order": 15
+        },
+        {
+          "label": "para",
+          "bbox": [
+            61,
+            724,
+            176,
+            735
+          ],
+          "text": "Deliverables of Section I:",
+          "reading_order": 16
+        },
+        {
+          "label": "para",
+          "bbox": [
+            61,
+            749,
+            159,
+            761
+          ],
+          "text": "The TA shall provide:",
+          "reading_order": 17
+        }
+      ]
+    },
+    {
+      "page_number": 10,
+      "elements": [
+        {
+          "label": "header",
+          "bbox": [
+            82,
+            72,
+            500,
+            84
+          ],
+          "text": "- Interim due diligence report including the modifications/changes proposed to be made",
+          "reading_order": 0
+        },
+        {
+          "label": "header",
+          "bbox": [
+            82,
+            89,
+            500,
+            115
+          ],
+          "text": "on the Feasibility Study.\n- Final Feasibility Study report including all changes and recommandations suggested by the",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            82,
+            120,
+            500,
+            146
+          ],
+          "text": "TA.\n- Presentation in Power Point version and synthesis in word version on the final version of",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            100,
+            151,
+            254,
+            162
+          ],
+          "text": "the Final Feasibility Study Report.",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            78,
+            177,
+            519,
+            191
+          ],
+          "text": "3.3.1.2 Section II: Preparation of documents and process management of request for proposal",
+          "reading_order": 4
+        },
+        {
+          "label": "sub_sub_sec",
+          "bbox": [
+            121,
+            193,
+            160,
+            204
+          ],
+          "text": "(“RFP”)",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            64,
+            218,
+            527,
+            276
+          ],
+          "text": "The Technical Advisor will ensure that qualified technical experts are available during this phase. The\nTechnical Advisor will be responsible for preparing the RFP documents and managing all technical\naspects of the competition process for the development of the Project under an EPC scheme. This\nsection will include the following:",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            291,
+            488,
+            303
+          ],
+          "text": "3.3.1.2.1 Task 1: Preparation of RFP documents and clarification process under an EPC scheme",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            318,
+            206,
+            329
+          ],
+          "text": "A - Understand Client’s objectives",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            341,
+            446,
+            354
+          ],
+          "text": "1. Understand Client’s objectives in terms of risk allocation, timing and tariff structure.",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            367,
+            527,
+            379
+          ],
+          "text": "2. Attend to a RFP preparation workshop, that shall take place in location to be specified by the Client,",
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            384,
+            527,
+            426
+          ],
+          "text": "with other advisors to discuss and debate different topics related to the RFP amongst others the risk\nallocation, the main evaluation criteria, the PPA payment mechanism, commissioning plan of the Plant\nincluding the relevant testing requirements.",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            438,
+            527,
+            451
+          ],
+          "text": "3. Draft a memorandum of meeting (“MoM”), after this meeting, and provide the requested analysis as",
+          "reading_order": 12
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            456,
+            254,
+            498
+          ],
+          "text": "well as the needed documents.\n\nB - Request for Proposals (and clarifications)",
+          "reading_order": 13
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            510,
+            527,
+            523
+          ],
+          "text": "4. Assist Client in defining the overall bid process. The Technical Advisor will specify and provide the key",
+          "reading_order": 14
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            527,
+            527,
+            569
+          ],
+          "text": "milestones to be achieved (including critical paths) and the associated deadlines, and will ensure that\nall technical aspects of the bid process are covered. The Technical Advisor will provide\nrecommendations to Client to avoid any delays during the bid process.",
+          "reading_order": 15
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            584,
+            527,
+            597
+          ],
+          "text": "5. Establish the methodology and the appropriate technical bid evaluation criteria for the evaluation of",
+          "reading_order": 16
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            601,
+            244,
+            612
+          ],
+          "text": "the offers of the pre-qualified Bidders.",
+          "reading_order": 17
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            627,
+            494,
+            640
+          ],
+          "text": "6. Prepare all technical sections of the RFP documents which shall include the following sections:",
+          "reading_order": 18
+        },
+        {
+          "label": "para",
+          "bbox": [
+            104,
+            642,
+            527,
+            732
+          ],
+          "text": "-\nSection 1 : Instructions to Bidders and Information Memorandum (including details of the\nProject, bid process description, bid evaluation criteria and timetable);\n-\nSection 2 : Final Technical Specifications ;\n-\nSection 3: Final Testing Requirements;\n-\nSection 4 : Bid Forms sheets ;\n-\nSection 5: Draft version of Project agreements or head of terms.",
+          "reading_order": 19
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            743,
+            527,
+            769
+          ],
+          "text": "The RFP draft documents will be sent to Client and to the IFIs for approval. RFP will be considered final once\nall comments of the Client and its Partners have been satisfactorily addressed.",
+          "reading_order": 20
+        }
+      ]
+    },
+    {
+      "page_number": 11,
+      "elements": [
+        {
+          "label": "header",
+          "bbox": [
+            50,
+            71,
+            527,
+            84
+          ],
+          "text": "7. Define a clear and precise methodology for the evaluation of the bids. An evaluation grid/matrix shall",
+          "reading_order": 0
+        },
+        {
+          "label": "header",
+          "bbox": [
+            68,
+            88,
+            527,
+            115
+          ],
+          "text": "be developed in a Microsoft Excel spreadsheet (using standard formatting) and shall include all criteria\nfor evaluating the technical performance of the bids.",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            130,
+            527,
+            142
+          ],
+          "text": "8. Provide technical information to the Transaction Advisor for use in the preparation of all draft Project",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            147,
+            527,
+            173
+          ],
+          "text": "agreements including PPA(s), interconnection agreement(s), interface agreement, direct agreements,\nand any other relevant contractual document for the Project.",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            188,
+            440,
+            201
+          ],
+          "text": "9. Prepare the technical part of the EPC and O&M contracts to be included in the RfP.",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            213,
+            527,
+            226
+          ],
+          "text": "10. Propose new technology risk sheet (including requirements to mitigate new technology critical",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            230,
+            324,
+            241
+          ],
+          "text": "components risks) to be included in the RFP documents.",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            256,
+            527,
+            269
+          ],
+          "text": "11. Provide technical inputs for the development of tariff mechanism and payment mechanism,",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            273,
+            527,
+            300
+          ],
+          "text": "development of penalty regime for below standard performance, and any other necessary technical\ninputs as may be required by Bidders as part of the Project Agreements.",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            315,
+            527,
+            327
+          ],
+          "text": "12. Provide any necessary technical inputs as may be required by the Client, its advisors and Partners, as",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            332,
+            214,
+            343
+          ],
+          "text": "part of the Project Agreements.",
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            357,
+            527,
+            370
+          ],
+          "text": "13. Collect, prepare and update all technical information to be provided to the pre-qualified Bidders",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            375,
+            254,
+            386
+          ],
+          "text": "through a specific Electronic Data Room.",
+          "reading_order": 12
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            400,
+            527,
+            413
+          ],
+          "text": "14. Perform a detailed due diligence and complete the Technical Specification as necessary to provide the",
+          "reading_order": 13
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            417,
+            527,
+            460
+          ],
+          "text": "final Technical Specifications (“Final Technical Specifications”). The Technical Specifications define,\namong others, the overriding technical conditions, design and requirements for the Bidders’ to prepare\nand submit a defined:",
+          "reading_order": 14
+        },
+        {
+          "label": "para",
+          "bbox": [
+            86,
+            472,
+            322,
+            485
+          ],
+          "text": "-\ngeneral Site usage arrangements and Site plans,",
+          "reading_order": 15
+        },
+        {
+          "label": "para",
+          "bbox": [
+            86,
+            493,
+            348,
+            506
+          ],
+          "text": "-\ndevelopment and construction program for the Plant,",
+          "reading_order": 16
+        },
+        {
+          "label": "para",
+          "bbox": [
+            86,
+            515,
+            330,
+            528
+          ],
+          "text": "-\noperation and maintenance program for the Plant",
+          "reading_order": 17
+        },
+        {
+          "label": "para",
+          "bbox": [
+            86,
+            536,
+            333,
+            549
+          ],
+          "text": "-\ntest and commissioning program for the Plant and",
+          "reading_order": 18
+        },
+        {
+          "label": "para",
+          "bbox": [
+            86,
+            558,
+            431,
+            571
+          ],
+          "text": "-\nPlant configuration, equipments, electrical interconnection scheme, etc.",
+          "reading_order": 19
+        },
+        {
+          "label": "para",
+          "bbox": [
+            71,
+            587,
+            527,
+            644
+          ],
+          "text": "The TA will be required to adjust and amend the Technical Specifications and its annexes based on the\nrecommendations and the results of the Final Feasability Study, and the experience of his expert in\nsimilar projects. The TA shall update the Final Technical Specifications as necessary and as requested\nby the Client.",
+          "reading_order": 20
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            659,
+            527,
+            672
+          ],
+          "text": "15. Perform a detailed due diligence and complete the Testing Requirements for the Plant as necessary to",
+          "reading_order": 21
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            676,
+            527,
+            734
+          ],
+          "text": "provide a final Testing Requirements (“Final Testing Requirements”). The Testing Requirements set\nforth the requirements and guidelines of tests to be carried out in relation to the Plant including but\nnot limited to factory tests, site tests, initial performance tests, and final performance tests, transfer\ntests indicating for each test the pass or fail criteria.",
+          "reading_order": 22
+        }
+      ]
+    },
+    {
+      "page_number": 12,
+      "elements": [
+        {
+          "label": "header",
+          "bbox": [
+            50,
+            71,
+            527,
+            84
+          ],
+          "text": "16. Identify location and distance and preliminary routing to electrical interconnection point, water",
+          "reading_order": 0
+        },
+        {
+          "label": "header",
+          "bbox": [
+            68,
+            88,
+            194,
+            99
+          ],
+          "text": "connections and sanitation.",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            114,
+            527,
+            127
+          ],
+          "text": "17. Assist Client in organizing Site visit for all potential Bidders: preparing technical presentation, draft",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            131,
+            184,
+            142
+          ],
+          "text": "minutes of meetings, etc.",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            157,
+            432,
+            170
+          ],
+          "text": "18. Prepare answers to queries and requests for clarifications received from Bidders.",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            184,
+            527,
+            197
+          ],
+          "text": "19. Provide indicative technical assumptions (including CAPEX and OPEX) according to a specific format to",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            202,
+            527,
+            228
+          ],
+          "text": "be determined by the Transaction Advisor. These assumptions will be used as inputs of the financial\nmodel to be developed by the Transaction Advisor.",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            241,
+            527,
+            253
+          ],
+          "text": "20. The Technical Advisor will endorse the requirements and recommendations of the Final Technical",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            258,
+            295,
+            269
+          ],
+          "text": "Specifications and the Final Testing Requirements.",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            55,
+            296,
+            212,
+            307
+          ],
+          "text": "Deliverables of Section II - task 1:",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            55,
+            321,
+            329,
+            332
+          ],
+          "text": "The TA shall provide under task 1 the following deliverables :",
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "bbox": [
+            73,
+            345,
+            440,
+            358
+          ],
+          "text": "\nRFP workshop MoM, the requested analysis as well as the needed document.",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            73,
+            371,
+            250,
+            384
+          ],
+          "text": "\nPlanning of the overall bid process.",
+          "reading_order": 12
+        },
+        {
+          "label": "para",
+          "bbox": [
+            73,
+            396,
+            521,
+            424
+          ],
+          "text": "\nBid evaluation criteria, evaluation grid spreadsheet and methodology for the evaluation of\ntechnical offers.",
+          "reading_order": 13
+        },
+        {
+          "label": "para",
+          "bbox": [
+            73,
+            436,
+            521,
+            463
+          ],
+          "text": "\nInterim due diligence report including the modifications/changes proposed to be made on the\nTechnical Specifications (“TS”).",
+          "reading_order": 14
+        },
+        {
+          "label": "para",
+          "bbox": [
+            73,
+            475,
+            521,
+            505
+          ],
+          "text": "\nFinal Technical Specifications report including all changes and recommandations suggested by\nthe TA.",
+          "reading_order": 15
+        },
+        {
+          "label": "para",
+          "bbox": [
+            73,
+            519,
+            521,
+            546
+          ],
+          "text": "\nInterim due diligence report including the modifications/changes proposed to be made on the\nTesting Requirements.",
+          "reading_order": 16
+        },
+        {
+          "label": "para",
+          "bbox": [
+            73,
+            558,
+            521,
+            586
+          ],
+          "text": "\nFinal Testing Requirements report including all changes and recommandations suggested by the\nTA.",
+          "reading_order": 17
+        },
+        {
+          "label": "para",
+          "bbox": [
+            73,
+            598,
+            521,
+            625
+          ],
+          "text": "\nPreliminary and Final Technical input on the RFP Documents and on Project Agreements\nincluding technical parts of the EPC and O&M contracts.",
+          "reading_order": 18
+        },
+        {
+          "label": "para",
+          "bbox": [
+            73,
+            637,
+            389,
+            651
+          ],
+          "text": "\nIndicative technical assumptions dedicated to the financial model.",
+          "reading_order": 19
+        },
+        {
+          "label": "sideinfo",
+          "bbox": [
+            50,
+            676,
+            306,
+            688
+          ],
+          "text": "3.3.1.2.2\nTask 2: RFP Process Management and Evaluation",
+          "reading_order": 20
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            702,
+            191,
+            713
+          ],
+          "text": "The TA shall be responsible of:",
+          "reading_order": 21
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            726,
+            527,
+            739
+          ],
+          "text": "1. Preparing, organizing and attending any clarification meetings with pre-qualified Bidders before bid",
+          "reading_order": 22
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            743,
+            527,
+            754
+          ],
+          "text": "submission; coordinating technical answers to pre-qualified Bidders’ questions. All clarification",
+          "reading_order": 23
+        }
+      ]
+    },
+    {
+      "page_number": 13,
+      "elements": [
+        {
+          "label": "header",
+          "bbox": [
+            68,
+            73,
+            527,
+            99
+          ],
+          "text": "requests, together with the corresponding answers, will be made available to all pre-qualified Bidders.\nAll correspondence with pre-qualified Bidders will be received and sent by the Client;",
+          "reading_order": 0
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            108,
+            286,
+            121
+          ],
+          "text": "2. Participating in the opening meeting of the bids.",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            129,
+            527,
+            142
+          ],
+          "text": "3. Performing the technical evaluation of the proposals submitted by Bidders, including review of",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            147,
+            527,
+            204
+          ],
+          "text": "proposals for compliance with RFP terms. The Technical Advisor shall assume that a maximum of five\n(5) bids would be evaluated through the RFP process. The Technical Advisor will evaluate the bids based\non an agreed evaluation process and in particular the bid evaluation criteria agreed by the Client. The\ndetailed technical review and evaluation shall include but not be limited to:",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            213,
+            527,
+            442
+          ],
+          "text": "-\nVerifying that the specified guaranteed capacity and commercial operation dates have\nbeen respected and are in line with Client’s objectives;\n-\nEnsuring that the technology chosen is proven and meets standard requirements;\n-\nVerifying that the proposal is technically acceptable and complies with RFP requirements\nmainly the Final Technical Specifications and the Final Testing Requirements;\n-\nReviewing the acceptability of deviations from RFP technical requirements;\n-\nVerifying compliance with the site conditions;\n-\nUndertaking controls to examine whether claimed performance is achievable, using\ntechnical and financial modeling including highly specialized software tools;\n-\nReviewing the technical conditions of the proposed EPC contract and O&M contract as well\nas all the relating appendices.\n\nBid evaluation will be performed by the Technical Advisor in a location, that will be specified by the\nClient, during at least 3 weeks (“Evaluation Period”). Only the hard copy of the Bid will be provided to\nthe TA.",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            456,
+            527,
+            498
+          ],
+          "text": "During this Evaluation Period, TA shall ensure the presence of at least 6 experts (civil expert,\nGrid/electrical experts, PV component expert, EPC contract expert, solar expert, environmental expert)\nin a location that will be specified by Client.",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            512,
+            527,
+            601
+          ],
+          "text": "The Technical Advisor shall issue a draft evaluation report to the Client and its Partners for review and\napproval after 4 weeks from the reception of the technical offers. The evaluation report will identify all\ndeviations on technical aspects of the Bidder’s proposal and will classify those deviations (as minor,\nmajor or unacceptable). The evaluation report shall be updated after reception of (i) all Bidders\nclarifications, (ii) the Client comments, and (iii) Client’s partners’ comments. The evaluation report will\nbe considered final once the comments by the Client and its Partners are being satisfactorily addressed.",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            613,
+            527,
+            626
+          ],
+          "text": "4. Identifying, during the course of the detailed reviews, items of the bids that need to be clarified by the",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            631,
+            527,
+            672
+          ],
+          "text": "Bidders, and prepare the relating request for clarification (“Request for Clarification”) on a timely\nmanner. The Technical Advisor will analyse the clarifications provided by the Bidders and update the\nevaluation report accordingly.",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            681,
+            527,
+            694
+          ],
+          "text": "5. The Technical Advisor will identify items of the bids that need to be clarified by the Preferred Bidder(s),",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            698,
+            426,
+            709
+          ],
+          "text": "and prepare the relating request for negotiation (“Pre-award technical items”).",
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            718,
+            527,
+            731
+          ],
+          "text": "6. In addition, The TA shall attend the meeting required to finalize the awarding process with one or more",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            735,
+            527,
+            762
+          ],
+          "text": "Preferred Bidder(s) (“Pre-Award Meeting”); the TA will organize such clarification meeting, ensuring\nthat relevant technical experts are available to participate in and assist the Client. Pre-Award Meeting",
+          "reading_order": 12
+        }
+      ]
+    },
+    {
+      "page_number": 14,
+      "elements": [
+        {
+          "label": "header",
+          "bbox": [
+            68,
+            73,
+            527,
+            115
+          ],
+          "text": "will be performed by the Technical Advisor in a specific location to be determined by the Client. The\nTechnical Advisor will be responsible for drafting the minutes of such meetings and updating the\nEvaluation Report.",
+          "reading_order": 0
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            123,
+            527,
+            136
+          ],
+          "text": "7. Providing the Client with a duly signed cover letter of the evaluation report pursuant to which the",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            141,
+            527,
+            183
+          ],
+          "text": "Technical Advisor endorses the conclusion of the evaluation report in particular the recommendations\nof the candidate(s) which shall be qualified as Preferred Bidder(s) (according to a template to be\nprovided by the Client).",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            191,
+            527,
+            204
+          ],
+          "text": "8. Assisting the Client in order to obtain the required approvals from the Evaluation Committee and from",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            208,
+            527,
+            250
+          ],
+          "text": "the IFIs (including preparation of appropriate presentations – in particular summaries of the evaluation\nreport in French for the Evaluation Committee- and participation in the meetings if needed) as the case\nmay be.",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            259,
+            527,
+            272
+          ],
+          "text": "9. Preparing presentations, as needed, to the Client and Client’s Partners. The Technical Advisor will",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            276,
+            441,
+            287
+          ],
+          "text": "provide assistance to the Client if these documents are to be translated in French.",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            296,
+            527,
+            309
+          ],
+          "text": "10. Coordinating technical answers to pre-qualified Bidders’ questions during and after the evaluation",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            313,
+            487,
+            324
+          ],
+          "text": "period. All correspondence with pre-qualified Bidders will be received and sent by the Client.",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            333,
+            527,
+            346
+          ],
+          "text": "11. Updating the evaluation report as much as necessary, draft associated Q&A and prepare supporting",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            350,
+            527,
+            377
+          ],
+          "text": "documents until the documents are declared satisfactory by the Client and approved by the Evaluation\nCommittee and the IFIs.",
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            389,
+            527,
+            402
+          ],
+          "text": "12. Assisting the Client in order to obtain the approval of the Evaluation Committee and the no-objection",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            406,
+            527,
+            448
+          ],
+          "text": "of the IFIs, on key milestones of the Project (process and documents, including most of the deliverables\nof the Technical Advisor). This will include, among others, preparing presentations, attending meetings,\ndrafting the answers to questions raised by IFIs, etc.",
+          "reading_order": 12
+        },
+        {
+          "label": "para",
+          "bbox": [
+            61,
+            475,
+            217,
+            486
+          ],
+          "text": "Deliverables of Section II - task 2:",
+          "reading_order": 13
+        },
+        {
+          "label": "para",
+          "bbox": [
+            61,
+            503,
+            348,
+            514
+          ],
+          "text": "The TA shall provide under task 2 all the following deliverables :",
+          "reading_order": 14
+        },
+        {
+          "label": "para",
+          "bbox": [
+            79,
+            526,
+            522,
+            715
+          ],
+          "text": "\nQ&A relating to the tender process and the related bids.\n\nMinutes of the opening meeting of the bids.\n\nSummary of the outcome of the clarification meetings.\n\nProvisional technical proposals evaluation report including the results of technical review,\nrecommendation, ranking of the shortlisted bids.\n\nList of items to be discussed /clarified with Bidders.\n\nMinutes of the One to One meetings.\n\nPresentations of the results of the evaluation to the Client, the Evaluation Committee and the\nIFIs as the case may be.\n\nFinal technical bid evaluation report and cover letters.\n\nNotes and memoranda on specific topics as the case may be.\n\nAnswer any questions from The Client and the Client’s Partners.",
+          "reading_order": 15
+        }
+      ]
+    },
+    {
+      "page_number": 15,
+      "elements": [
+        {
+          "label": "header",
+          "bbox": [
+            78,
+            71,
+            502,
+            85
+          ],
+          "text": "3.3.1.3 Section III: Selection of the Preferred Bidder(s), awarding of contracts and negotiation of all",
+          "reading_order": 0
+        },
+        {
+          "label": "header",
+          "bbox": [
+            121,
+            87,
+            206,
+            97
+          ],
+          "text": "Project Agreements",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            64,
+            111,
+            527,
+            153
+          ],
+          "text": "The Technical Advisor will be responsible for managing all technical aspects of the selection of the\nPreferred Bidder(s) up to Financial Close considering the development of the Plant under an EPC\nscheme. This will include the following:",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            168,
+            214,
+            179
+          ],
+          "text": "Selection of the Preferred Bidder(s)",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            193,
+            527,
+            206
+          ],
+          "text": "1. The Technical Advisor will assist the Client and the Transaction Advisor to identify one Preferred Bidder",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            210,
+            527,
+            237
+          ],
+          "text": "based on a thorough analysis of the proposals. The Technical Advisor will provide a preliminary report\nto Client setting out the basis for its selection.",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            252,
+            527,
+            264
+          ],
+          "text": "2. The Technical Advisor will prepare presentation of its findings to Client and will take account of Client’s",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            269,
+            312,
+            280
+          ],
+          "text": "comments on the evaluation process and conclusions.",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            294,
+            527,
+            307
+          ],
+          "text": "3. The Technical Advisor will assist the Transaction Advisor in preparing a final report based on Client’s",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            312,
+            112,
+            354
+          ],
+          "text": "approval.\n\nNegotiations",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            368,
+            527,
+            381
+          ],
+          "text": "4. The Technical Advisor will provide the necessary support to Client in negotiations with the first",
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            385,
+            394,
+            397
+          ],
+          "text": "Preferred Bidder including the preparation of all issues to be negotiated.",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            411,
+            527,
+            424
+          ],
+          "text": "5. The Technical Advisor will participate in all negotiations. The Technical Advisor will ensure that qualified",
+          "reading_order": 12
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            428,
+            400,
+            439
+          ],
+          "text": "technical experts are available to assist the Client during the negotiations.",
+          "reading_order": 13
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            454,
+            521,
+            467
+          ],
+          "text": "6. The Technical Advisor will incorporate the results of the negotiations in the final Project Agreements.",
+          "reading_order": 14
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            481,
+            527,
+            494
+          ],
+          "text": "7. In case of failure to conclude a contract with a Preferred Bidder, the Technical Advisor will assist Client",
+          "reading_order": 15
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            499,
+            527,
+            541
+          ],
+          "text": "in the negotiation process with the second Preferred Bidder and carry these negotiations until contract\nsignature and financial closure. The Technical Advisor shall provide a separate quotation for negotiation\nto award the contract with each additional firm/consortium (as indicated in Appendix 3).",
+          "reading_order": 16
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            557,
+            340,
+            568
+          ],
+          "text": "Contract award and preparation of all final Project Agreements",
+          "reading_order": 17
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            583,
+            527,
+            596
+          ],
+          "text": "8. The Technical Advisor will provide technical assistance to Client and the Transaction Advisor during the",
+          "reading_order": 18
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            600,
+            527,
+            642
+          ],
+          "text": "entire tender process, discussions and negotiations with Client’s Partners. The Technical Advisor will\nensure that qualified technical experts are available to assist Client during the negotiation and\nfinalization of contractual documentation with these institutions.",
+          "reading_order": 19
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            656,
+            527,
+            669
+          ],
+          "text": "9. The Technical Advisor will provide all technical inputs needed for developing final Project Agreements,",
+          "reading_order": 20
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            674,
+            527,
+            700
+          ],
+          "text": "including the EPC Contract, the O&M Contract and the Connection Agreement(s) and any other\nagreements required to provide a comprehensive set of Project Agreements.",
+          "reading_order": 21
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            715,
+            527,
+            728
+          ],
+          "text": "10. The Technical Advisor will be requested to provide the technical inputs and assistance needed for the",
+          "reading_order": 22
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            732,
+            527,
+            758
+          ],
+          "text": "elaboration of the technical part of the Power Purchase Agreement, Direct Agreements with lenders,\nand any other agreements required to provide a comprehensive set of Project Agreements.",
+          "reading_order": 23
+        }
+      ]
+    },
+    {
+      "page_number": 16,
+      "elements": [
+        {
+          "label": "header",
+          "bbox": [
+            50,
+            71,
+            527,
+            84
+          ],
+          "text": "11. The Technical Advisor shall Assist the Client and the Transaction Advisor in achieving transaction closing",
+          "reading_order": 0
+        },
+        {
+          "label": "header",
+          "bbox": [
+            68,
+            88,
+            527,
+            115
+          ],
+          "text": "and in addressing any issues that may arise between the time of the selection of Preferred Bidder and\nthe financial close.",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            129,
+            516,
+            142
+          ],
+          "text": "12. The Technical Advisor shall prepare presentations, as needed, to the Client and the Client’s partners",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            61,
+            187,
+            185,
+            198
+          ],
+          "text": "Deliverables for section III:",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            79,
+            210,
+            500,
+            287
+          ],
+          "text": "\nPresentation to the Client of the selection of the Preferred Bidder(s).\n\nMinutes and summary of the negotiations with candidates, Client’s partners on technical\naspects.\n\nNotes and memoranda on specific topics as the case may be.\n\nAnswer any questions from the Client and the Client’s Partners.",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            328,
+            527,
+            354
+          ],
+          "text": "3.3.2\nMission B - Technical assistance to perform specific assignments as needed and as defined by the\nClient",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            368,
+            527,
+            410
+          ],
+          "text": "The Technical Advisor shall provide technical assistance to the Client on technical aspects which are outside\nthe scope of work envisaged for Mission A. The Technical Advisor will dedicate a team of experienced and\nhighly qualified individuals to work on specific assignments to be defined with Client.",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            425,
+            527,
+            482
+          ],
+          "text": "A key objective of Client is to ensure that it receives efficient, cost effective and responsive advice from the\nTechnical Advisor. In accepting an assignment, the Technical Advisor specifically represents and warrants\nto Client to devote the requisite level of appropriately skilled and experience professionals and other\nresources to ensure that the assignment is accomplished on time and within budget.",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            497,
+            527,
+            554
+          ],
+          "text": "Following a request by Client to perform any of the tasks and prior to commencing any such work, the\nTechnical Adviser shall provide Client with (i) confirmation of the instruction and the work to be performed\nand (ii) the number of hours required (using effective and efficient use of time) to perform such work\n(\"Estimated Hours\").",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            568,
+            282,
+            579
+          ],
+          "text": "The Technical Adviser shall not start any work until:",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            594,
+            527,
+            622
+          ],
+          "text": "(a)\nClient has confirmed that the Estimated Hours proposed by the Technical Adviser to be performed\nfor such work is acceptable; or",
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            631,
+            447,
+            644
+          ],
+          "text": "(b)\nThe parties have otherwise mutually agreed to fee arrangements for such work.",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            654,
+            527,
+            696
+          ],
+          "text": "If at any time, the Technical Advisor believes that the number of hours required to perform a particular\npiece of work which was instructed to perform is higher than the agreed estimated hours for such work, it\nshall promptly seek Client consent prior to incurring such additional time.",
+          "reading_order": 12
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            711,
+            118,
+            723
+          ],
+          "text": "3.4\nProcess",
+          "reading_order": 13
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            738,
+            438,
+            751
+          ],
+          "text": "1. All documents mentioned below will be provided by the Client when needed:",
+          "reading_order": 14
+        },
+        {
+          "label": "para",
+          "bbox": [
+            86,
+            752,
+            227,
+            764
+          ],
+          "text": "\nSolar resource assessment.",
+          "reading_order": 15
+        }
+      ]
+    },
+    {
+      "page_number": 17,
+      "elements": [
+        {
+          "label": "header",
+          "bbox": [
+            86,
+            71,
+            340,
+            178
+          ],
+          "text": "\nWeather information.\n\nGeotechnical, seismic and topographic data.\n\nHydraulic and hydrological study.\n\nESIA (Environmental and Social Impact Assessment).\n\nGrid impact study.\n\nFeasibility Study.\n\nTechnical Specifications.\n\nTesting Requirements.",
+          "reading_order": 0
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            188,
+            527,
+            201
+          ],
+          "text": "2. Based on the documents and data review, the TA shall prepare a detailed project work plan to be",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            86,
+            203,
+            260,
+            214
+          ],
+          "text": "discussed during the kick-off meeting.",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            227,
+            527,
+            241
+          ],
+          "text": "3. The TA will conduct a kick-off meeting after the Contract signature within a period to be defined",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            242,
+            189,
+            267
+          ],
+          "text": "with Client in order to:",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            104,
+            267,
+            527,
+            350
+          ],
+          "text": "\nReview of the proposed methodology and requirements to complete the assignment;\n\nReview of timetable of activities / milestones going forward;\n\nReview of the team organization and detailed functions of the team members;\n\nDiscussion and finalization of a communication strategy whereby all stakeholders will be\nregularly involved and consulted throughout the assignment;\n\nAny specific issue requiring immediate attention of the Client.",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            85,
+            358,
+            527,
+            384
+          ],
+          "text": "Under no circumstances will the objective be to re-define the scope of work committed in the services\nagreement.",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            398,
+            527,
+            411
+          ],
+          "text": "4. Following discussions with Client and its Partners, as the case may be, the TA shall update the",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            86,
+            414,
+            527,
+            451
+          ],
+          "text": "detailed project work plan during the kick-off meeting. The amended project work plan will become\nthe basic project management tool and will contain specific deadlines and the overall\nimplementation of the Project.",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            464,
+            498,
+            477
+          ],
+          "text": "5. The TA shall organize , in agreement with the Client, a Site visit after the Contract signature.",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            490,
+            527,
+            502
+          ],
+          "text": "6. The TA shall ensure that relevant technical experts are available to participate in these activities, as",
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "bbox": [
+            86,
+            505,
+            328,
+            516
+          ],
+          "text": "in all others activities described in the scope of work.",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            528,
+            529,
+            541
+          ],
+          "text": "7. All the activities requested under these ToR shall be carried out by the TA and its relevant experts.",
+          "reading_order": 12
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            554,
+            527,
+            567
+          ],
+          "text": "8. The TA will be responsible for drafting minutes of all meetings organized with Client and/or its",
+          "reading_order": 13
+        },
+        {
+          "label": "para",
+          "bbox": [
+            86,
+            569,
+            527,
+            593
+          ],
+          "text": "Partners (including conference calls) during each section of the Contract as defined in the scope of\nwork.",
+          "reading_order": 14
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            606,
+            475,
+            619
+          ],
+          "text": "9. All deliverables (documents, drawings…) shall be provided in editable and PDF format.",
+          "reading_order": 15
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            632,
+            527,
+            644
+          ],
+          "text": "10. The Final Feasability Study, the Final Technical Specifications and the Final Testing Requirements",
+          "reading_order": 16
+        },
+        {
+          "label": "para",
+          "bbox": [
+            86,
+            647,
+            343,
+            658
+          ],
+          "text": "provided to the Client will be the responsibility of the TA.",
+          "reading_order": 17
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            670,
+            527,
+            683
+          ],
+          "text": "11. Client reserves the right to mandate the Technical Advisor to complete one or several deliverables,",
+          "reading_order": 18
+        },
+        {
+          "label": "para",
+          "bbox": [
+            86,
+            688,
+            527,
+            714
+          ],
+          "text": "and one or several Sections as needed, and based on the quality of the initial tasks performed under\nthe Contract.",
+          "reading_order": 19
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            729,
+            527,
+            742
+          ],
+          "text": "12. The Technical Advisor shall ensure that qualified technical experts are available during all phases of",
+          "reading_order": 20
+        },
+        {
+          "label": "para",
+          "bbox": [
+            86,
+            746,
+            147,
+            757
+          ],
+          "text": "the Contract.",
+          "reading_order": 21
+        }
+      ]
+    },
+    {
+      "page_number": 18,
+      "elements": [
+        {
+          "label": "header",
+          "bbox": [
+            68,
+            71,
+            527,
+            84
+          ],
+          "text": "13. The TA may be requested to perform technical assistance in relation to Mission B described in",
+          "reading_order": 0
+        },
+        {
+          "label": "header",
+          "bbox": [
+            86,
+            88,
+            527,
+            115
+          ],
+          "text": "articles 3.3.2 The TA shall therefore not perform such mission without having written request from\nClient.",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            130,
+            241,
+            142
+          ],
+          "text": "3.5\nIndicative timetable for the Project",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            159,
+            482,
+            170
+          ],
+          "text": "The table below provides the candidates with an indicative deliverables calendar for the Project.",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            75,
+            192,
+            391,
+            203
+          ],
+          "text": "Deliverables of Mission A\nDate",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            75,
+            213,
+            378,
+            224
+          ],
+          "text": "Service order\nT0",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            75,
+            230,
+            266,
+            241
+          ],
+          "text": "Section I (Feasibility Study Due Diligence)",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            75,
+            246,
+            359,
+            289
+          ],
+          "text": "Interim\ndue\ndiligence\nreport\nincluding\nthe\nmodifications/changes proposed to be made on the Feasibility\nStudy.",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            367,
+            262,
+            425,
+            273
+          ],
+          "text": "T0 + 4 weeks",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            75,
+            294,
+            425,
+            305
+          ],
+          "text": "Final Feasibility Study\nT0 + 4 weeks",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            75,
+            311,
+            508,
+            322
+          ],
+          "text": "Section II: Preparation of documents and process management of request for proposal (“RFP”)",
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "bbox": [
+            75,
+            329,
+            378,
+            340
+          ],
+          "text": "Launch of RFP preparation\nT1",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            75,
+            346,
+            359,
+            388
+          ],
+          "text": "Interim\ndue\ndiligence\nreports\nincluding\nthe\nmodifications/changes proposed to be made on the Technical\nSpecifications.",
+          "reading_order": 12
+        },
+        {
+          "label": "para",
+          "bbox": [
+            367,
+            361,
+            425,
+            372
+          ],
+          "text": "T1 + 4 weeks",
+          "reading_order": 13
+        },
+        {
+          "label": "para",
+          "bbox": [
+            75,
+            393,
+            359,
+            434
+          ],
+          "text": "Interim\ndue\ndiligence\nreport\nincluding\nthe\nmodifications/changes proposed to be made on the Testing\nRequirements.",
+          "reading_order": 14
+        },
+        {
+          "label": "para",
+          "bbox": [
+            367,
+            408,
+            425,
+            419
+          ],
+          "text": "T1 + 4 weeks",
+          "reading_order": 15
+        },
+        {
+          "label": "para",
+          "bbox": [
+            75,
+            439,
+            425,
+            466
+          ],
+          "text": "Technical specifications including Final Technical Specifications\nand Final Tests requirements\nT1 + 4 weeks",
+          "reading_order": 16
+        },
+        {
+          "label": "para",
+          "bbox": [
+            75,
+            471,
+            425,
+            497
+          ],
+          "text": "Technical input on the RFP Documents and on Project\nAgreements\nT1 + 4 weeks",
+          "reading_order": 17
+        },
+        {
+          "label": "para",
+          "bbox": [
+            75,
+            503,
+            378,
+            514
+          ],
+          "text": "Launch of RFP\nT2",
+          "reading_order": 18
+        },
+        {
+          "label": "para",
+          "bbox": [
+            75,
+            520,
+            425,
+            546
+          ],
+          "text": "Evaluation grid spreadsheet and methodology for the\nevaluation of technical offers\nT2 + 2 weeks",
+          "reading_order": 19
+        },
+        {
+          "label": "para",
+          "bbox": [
+            75,
+            551,
+            512,
+            609
+          ],
+          "text": "Answer any question from Bidders\n2 days after reception by the TA\nof the question\nReception of the technical proposals of the prequalified\nBidders by the TA\nT3",
+          "reading_order": 20
+        },
+        {
+          "label": "para",
+          "bbox": [
+            75,
+            614,
+            345,
+            656
+          ],
+          "text": "Provisional technical bid evaluation report including the\nresults of technical review, recommendation, ranking of the\nshort listed bids.",
+          "reading_order": 21
+        },
+        {
+          "label": "para",
+          "bbox": [
+            367,
+            629,
+            427,
+            640
+          ],
+          "text": "T3 + 4 weeks.",
+          "reading_order": 22
+        },
+        {
+          "label": "para",
+          "bbox": [
+            75,
+            661,
+            492,
+            687
+          ],
+          "text": "Minutes and summary of clarification Meetings\n1 day after the clarification\nmeeting",
+          "reading_order": 23
+        },
+        {
+          "label": "para",
+          "bbox": [
+            75,
+            692,
+            512,
+            719
+          ],
+          "text": "Answer any questions from Client’s Partners\n2 days after reception by the TA\nof the question",
+          "reading_order": 24
+        },
+        {
+          "label": "para",
+          "bbox": [
+            75,
+            724,
+            427,
+            735
+          ],
+          "text": "Final technical bid evaluation report\nT3 + 6 weeks.",
+          "reading_order": 25
+        },
+        {
+          "label": "para",
+          "bbox": [
+            75,
+            741,
+            511,
+            767
+          ],
+          "text": "Section III: Selection of Preferred Bidder(s), awarding of contracts and negotiation of all Project\nAgreements",
+          "reading_order": 26
+        }
+      ]
+    },
+    {
+      "page_number": 19,
+      "elements": [
+        {
+          "label": "header",
+          "bbox": [
+            75,
+            74,
+            510,
+            85
+          ],
+          "text": "Minutes and summary of the negotiations with candidates, Client’s partners on technical aspects",
+          "reading_order": 0
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            116,
+            527,
+            189
+          ],
+          "text": "Applicants are made aware that these missions imply working on a very urgently basis with very short\ndeadlines and often a lack of visibility with respect to the timetable due to various constraints inherent\nto the nature of this Project. Therefore, the team devoted to this Project shall be flexible, fully dedicated,\nand significantly available and in a sufficient number to deal with the various matters as per Client’s\ninstructions, including standard holidays periods.",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            204,
+            527,
+            230
+          ],
+          "text": "A detailed timetable shall be provided by the Technical Advisor in compliance with the deadlines detailed\nin the scope of work.",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            245,
+            241,
+            258
+          ],
+          "text": "3.6\nIndicative table of the Project visit:",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            152,
+            280,
+            457,
+            291
+          ],
+          "text": "Visit for Mission A\nEstimated days (minimum)*",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            157,
+            308,
+            426,
+            319
+          ],
+          "text": "Kick off meeting\n2 working days",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            174,
+            334,
+            424,
+            345
+          ],
+          "text": "Site Visit\n1 working day",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            101,
+            360,
+            424,
+            371
+          ],
+          "text": "Presentation of the Final Feasibility Study\n1 working day",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            162,
+            387,
+            426,
+            398
+          ],
+          "text": "RFP workshop\n3 working days",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            160,
+            413,
+            429,
+            424
+          ],
+          "text": "RFP evaluation\n15 working days",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            139,
+            439,
+            427,
+            450
+          ],
+          "text": "One – To – One Meeting\n5 working Days",
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "bbox": [
+            150,
+            465,
+            426,
+            476
+          ],
+          "text": "Pre-award Meeting\n3 working days",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            167,
+            491,
+            478,
+            502
+          ],
+          "text": "Negotiation\nAs much as needed but not exceeding",
+          "reading_order": 12
+        },
+        {
+          "label": "para",
+          "bbox": [
+            357,
+            504,
+            429,
+            515
+          ],
+          "text": "5 working days",
+          "reading_order": 13
+        },
+        {
+          "label": "para",
+          "bbox": [
+            96,
+            530,
+            393,
+            541
+          ],
+          "text": "*Excluding travel days",
+          "reading_order": 14
+        }
+      ]
+    },
+    {
+      "page_number": 20,
+      "elements": [
+        {
+          "label": "para",
+          "bbox": [
+            71,
+            71,
+            273,
+            88
+          ],
+          "text": "4\nStandard terms and conditions",
+          "reading_order": 0
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            102,
+            527,
+            129
+          ],
+          "text": "The Client will enter into a services agreement with the Technical Advisor as per the model attached to this\nRFPTA (in English) which corresponds to the standard terms and conditions of Client (the “Contract”).",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            143,
+            527,
+            170
+          ],
+          "text": "Applicants shall accept these terms without any modification. Client reserves the right to reject any\nApplicant which will substantially modify these terms.",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            184,
+            527,
+            242
+          ],
+          "text": "Applicants are made aware that (i) all deliverables of the Technical Advisor will be fully owned by Client\nwhich will be entitled to use them freely and without restrictions; and that (ii) Client (including its\nrepresentatives, employees, subsidiaries and/or shareholders) does not accept to bear any uncapped\nliability towards the Technical Advisor.",
+          "reading_order": 3
+        }
+      ]
+    },
+    {
+      "page_number": 21,
+      "elements": [
+        {
+          "label": "header",
+          "bbox": [
+            50,
+            101,
+            138,
+            113
+          ],
+          "text": "5.1\nIntroduction",
+          "reading_order": 0
+        },
+        {
+          "label": "para",
+          "bbox": [
+            71,
+            71,
+            244,
+            88
+          ],
+          "text": "5\nInstructions to Applicants",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            121,
+            527,
+            147
+          ],
+          "text": "Applicants shall submit a technical proposal (“Technical Proposal”) and a financial proposal (“Financial\nProposal”) as detailed below.",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            162,
+            180,
+            175
+          ],
+          "text": "5.2\nProcedure and timing",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            182,
+            488,
+            193
+          ],
+          "text": "The Technical Advisor may apply (i) individually or as part of a Consortium (ii) for Mission A and B.",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            207,
+            527,
+            234
+          ],
+          "text": "Applicants will obtain the Technical RFPTA in electronic format through the e-tendering solution of Masen\ndetailed below.",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            248,
+            527,
+            769
+          ],
+          "text": "Technical Proposals and Financial Proposals shall be submitted to the Client no later than [September\n14th,2020, 04:00 pm Moroccan time] using e-tendering solution (see MASEN_Guide_Entreprise_Vf.pdf)\nusing the following website https://masen.local-trust.com/.\n\nThe Applicants shall submit the Technical proposal together with the administrative files under the\n“Technical folder” and the Financial Proposals under the “Financial folder” in Masen e-tendering platform.\nApplicants shall acknowledge that the Technical folder shall not include any financial information. Thus,\nthe relating Technical Proposal shall be declared non-responsive.\n\nTechnical Proposals shall be opened by the Client on [September 15th,2020, 04:00 pm Moroccan time] at\nthe earliest.\n\nFinancial Proposals shall be opened by Client on [October 16th, 2020] at the earliest. In case several Financial\nProposals were submitted by an Applicant, Client will only take into consideration the last one submitted\nto Client, provided that such Proposal is submitted by no later than [September 14th,2020, 04:00 pm\nMoroccan time].\n\nApplicants may seek clarification from Client on the Technical RFPTA via the e-tendering solution.\n\nIn case of problem at the time of submission of proposals, the Applicants may call the following number:\n00 33 1 76 64 74 02 or refer to the company guide.\n\nShould Client deem it necessary to amend the Technical RFPTA as a result of a clarification, it shall do so\nfollowing the procedure described below.\n\nAt any time, before the submission of proposals and with no liability whatsoever, Client may amend the\nTechnical RFPTA by issuing an addendum by electronic means. The addendum shall be sent electronically to\nall Applicants and shall be binding to them and considered an integral part of the original Technical RFPTA.\n\nApplicants shall acknowledge receipt of all amendments. Not receiving the acknowledgement does not void\nthe amendment introduced by Client to the Technical RFPTA. To give Applicants reasonable time to take any\nsuch amendment into account in their proposals Client may, at its discretion, if the amendment is\nsubstantial, extend the deadline for the submission of proposals.",
+          "reading_order": 6
+        }
+      ]
+    },
+    {
+      "page_number": 22,
+      "elements": [
+        {
+          "label": "header",
+          "bbox": [
+            50,
+            73,
+            527,
+            254
+          ],
+          "text": "All queries from Applicants to which Client has responded will be posted on the e-tendering solution on an\nunattributed basis. All queries must be received at least seven (7) calendar days before the deadline for\nsubmission.\n\nApplicants should familiarize themselves with applicable Zambian laws and regulations and take them into\nconsideration while preparing their proposals.\n\nApplicants shall bear all costs associated with the preparation and submission of their proposals and\ncontract negotiation. Client shall under no circumstances reimburse any Applicant for any costs associated\nwith the development of their proposals. Client is not bound to accept any proposal, and reserves the right\nto cancel the selection process at any time prior to contract award, without incurring any liability towards\nthe Applicants or any third party whatsoever.",
+          "reading_order": 0
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            269,
+            344,
+            281
+          ],
+          "text": "5.3\nIndicative timetable for the selection of Technical Advisor",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            289,
+            523,
+            300
+          ],
+          "text": "The table below provides Applicants with an indicative timeline for the selection of the Technical Advisor.",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            55,
+            317,
+            384,
+            329
+          ],
+          "text": "[August 17th ,2020]\nLaunch of the TA Request for Proposals",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            55,
+            334,
+            514,
+            361
+          ],
+          "text": "[September 14th,2020, 04:00\npm]\nDeadline for Technical Proposals and Financial Proposals submission",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            55,
+            365,
+            346,
+            392
+          ],
+          "text": "[September 15th,2020, 04:00\npm]\nOpening of Technical Proposals",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            55,
+            395,
+            521,
+            439
+          ],
+          "text": "[October 15th, 2020]\nNotification of the results of the technical evaluation to the Applicants\n[October 16th, 2020]\nOpening of the Financial Proposals and related evaluation\n[November 05th, 2020]\nFinalization of the services agreement",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            455,
+            215,
+            467
+          ],
+          "text": "5.4\nGeneral evaluation principles",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            475,
+            386,
+            503
+          ],
+          "text": "Proposals in relation to Mission A will be evaluated. For these Missions:",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            505,
+            527,
+            642
+          ],
+          "text": "-\nClient will first review, analyze and evaluate the Technical Proposals in accordance with article 5.5.2\nbelow. Client shall evaluate and negotiate all comments and mark-up relating to the scope of work\nand to the Contract prior to opening the Financial Proposals.\n\n-\nThe Financial Proposal evaluation will be performed separately, once the technical evaluation is\nconcluded in accordance with article 5.5.4 below.\n\n-\nThe candidate(s) having reached the highest score will then be invited for contract signing in\naccordance with article 5.6 below.",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            656,
+            194,
+            669
+          ],
+          "text": "5.5\nContent of the Proposals",
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            684,
+            242,
+            697
+          ],
+          "text": "5.5.1\nContent of the Technical Proposal",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            704,
+            527,
+            731
+          ],
+          "text": "Applicants are required to submit a Technical Proposal (“TP”). The TP shall contain non-compressed and\nnon-protected files that are printable and reproducible in one of these formats:",
+          "reading_order": 12
+        },
+        {
+          "label": "para",
+          "bbox": [
+            64,
+            745,
+            479,
+            756
+          ],
+          "text": "(a) Microsoft Word 2013 (for written documents and specifically for Forms 2.1, 2.2 and 2.3);",
+          "reading_order": 13
+        }
+      ]
+    },
+    {
+      "page_number": 23,
+      "elements": [
+        {
+          "label": "header",
+          "bbox": [
+            50,
+            73,
+            527,
+            147
+          ],
+          "text": "(b) Microsoft Excel 2013 (specifically for tables);\n(c) JPEG format for the totality of the photos and images.\n\nIn addition, the TP shall be supplied in non-protected printable and reproducible PDF format. The TP shall\nbe organized into the following clearly demarcated sections for the purpose of evaluation:",
+          "reading_order": 0
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            160,
+            526,
+            281
+          ],
+          "text": "A. Comments on the Scope of Work.\nB. Confirmation of no conflict of interest and no inability to work with IFIs.\nC. Scope of work confirmation Letter (Form 2.1)\nD. Approach, methodology and work plan, for performing the assignment.\nE. Work plan, organization and visits for performing the assignment (Form 2.2).\nF. Curriculum Vitae (CV) for proposed staff (Form 2.3).\nG. Curriculum Vitae (CV) for proposed Project Manager (Form 2.4).\nH. Dully signed Letter by the clients to demonstrate the role of the Project Manager in the development",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            285,
+            503,
+            342
+          ],
+          "text": "of at least one PV plant of more than [50 MW].\nI.\nApplicant’s credentials (Form 2.5).\nJ.\nEvidences and certificates dully signed by the clients to demonstrate the Applicant’s credentials.\nK. Administrative file including the following documents in accordance with Appendix 4:",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            94,
+            345,
+            526,
+            466
+          ],
+          "text": "i.\nTrade/commercial register;\nii.\nDuly signed statement of intent;\niii.\nDuly signed power of attorney in favor of the Applicant' representative(s) authorized to legally\nbind the Applicant with third parties;\niv.\nIf acting as a Consortium, a declaration of joint and several liability based on the model\nagreement\nv.\nA signed and initialed copy (on all pages) of the standard terms and conditions (“Contract”).\nThe Contract must not include any price information.",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            482,
+            527,
+            509
+          ],
+          "text": "In case the original administrative files are different language that English, certified translation shall be provided\nwithin the Technical Proposal.",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            525,
+            527,
+            552
+          ],
+          "text": "The TP shall provide the information indicated in the above paragraphs from (B) to (G) using forms (Forms\n2.1, 2.2, 2.3 and 2.4).",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            566,
+            400,
+            577
+          ],
+          "text": "The TP shall include credentials demonstrating that the Applicant has at least:",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            60,
+            590,
+            527,
+            649
+          ],
+          "text": "-\nPrepared the feasibility study of at least two (2) grid connected PV plants with a minimum aggregate\ninstalled capacity of [100 MW (comprising PV plants of more than 10 MW) including at least one 50\nMW PV plant].\n-\nSelected a PV plant EPC through a tender including:",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            104,
+            652,
+            394,
+            696
+          ],
+          "text": "-\nPreparation of the tender technical documentation,\n-\nEvaluation of bids and selection of the preferred bidder, and\n-\nNegotiations of the contractual documentation.",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            710,
+            527,
+            738
+          ],
+          "text": "The projects presented as credentials by the Applicant shall have a higher capacity than [5 MW], if not\nspecified otherwise. Only plants with more than [5 MW] will be considered in the TP evaluation.",
+          "reading_order": 9
+        }
+      ]
+    },
+    {
+      "page_number": 24,
+      "elements": [
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            73,
+            527,
+            101
+          ],
+          "text": "The TP shall not include any financial information. A TP containing financial information shall be\ndeclared non-responsive.",
+          "reading_order": 0
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            115,
+            294,
+            128
+          ],
+          "text": "5.5.2\nEvaluation Criteria for the Technical Proposal",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            65,
+            147,
+            489,
+            158
+          ],
+          "text": "Area of evaluation\nEvaluation Criteria\nMaximum Score",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            73,
+            172,
+            455,
+            185
+          ],
+          "text": "1. References of the Applicant\n35",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            175,
+            191,
+            367,
+            279
+          ],
+          "text": "Prepare the feasibility study of at least two\n(2) grid connected PV plants with a\nminimum aggregate installed capacity of\n100 MW (comprising PV plants of more\nthan 10 MW) including at least one 50 MW\nPV plant.",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            398,
+            229,
+            516,
+            240
+          ],
+          "text": "10***\nPass/Fail**",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            55,
+            284,
+            167,
+            449
+          ],
+          "text": "Experience\n&\nreferences\nof\nthe\nApplicant\nThe evaluations will be\nbased on the experience\nand credentials of the\nApplicant relevant to the\nProject\nincluding\nprevious experience in\nsimilar projects mainly:",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            175,
+            284,
+            367,
+            311
+          ],
+          "text": "Experience in the selection of an EPC for a\nPV plant including:",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            197,
+            323,
+            367,
+            413
+          ],
+          "text": "\nPreparation\nof\nthe\ntender\ntechnical documentation,\n\nEvaluation of bids and selection\nof the preferred bidder, and\n\nNegotiations of the contractual\ndocumentation.",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            398,
+            343,
+            519,
+            354
+          ],
+          "text": "15***\nPass/Fail**",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            175,
+            418,
+            367,
+            460
+          ],
+          "text": "The Applicant can present additional\ncredentials demonstrating his experience\nas:",
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "bbox": [
+            193,
+            462,
+            357,
+            544
+          ],
+          "text": "\nOwners engineers in the PV\nprojects\n\nIndependent engineer\n\nTechnical assistance to\nGovernment/IFIs/Developers in\nAfrica.",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            433,
+            476,
+            463,
+            487
+          ],
+          "text": "10***",
+          "reading_order": 12
+        },
+        {
+          "label": "para",
+          "bbox": [
+            73,
+            547,
+            455,
+            561
+          ],
+          "text": "2. Proposed professional staff experience\n35",
+          "reading_order": 13
+        },
+        {
+          "label": "para",
+          "bbox": [
+            174,
+            563,
+            367,
+            576
+          ],
+          "text": " Handling technical issues relevant to the",
+          "reading_order": 14
+        },
+        {
+          "label": "para",
+          "bbox": [
+            182,
+            581,
+            367,
+            623
+          ],
+          "text": "project based on previous experience\nand knowledge of PV projects.\n- feasibility study of PV grid connected",
+          "reading_order": 15
+        },
+        {
+          "label": "para",
+          "bbox": [
+            55,
+            588,
+            166,
+            630
+          ],
+          "text": "Professional\nqualifications\nand\nexperience of the team",
+          "reading_order": 16
+        },
+        {
+          "label": "para",
+          "bbox": [
+            174,
+            627,
+            323,
+            654
+          ],
+          "text": "power plants\n Handling bid selection process:",
+          "reading_order": 17
+        },
+        {
+          "label": "para",
+          "bbox": [
+            55,
+            646,
+            167,
+            704
+          ],
+          "text": "The evaluation will be\nbased on the assigned\nstaff’s\nskills\n\nand\nexperience including:",
+          "reading_order": 18
+        },
+        {
+          "label": "para",
+          "bbox": [
+            433,
+            653,
+            463,
+            664
+          ],
+          "text": "30***",
+          "reading_order": 19
+        },
+        {
+          "label": "para",
+          "bbox": [
+            182,
+            657,
+            367,
+            670
+          ],
+          "text": "- selection of a PV plant EPC through a",
+          "reading_order": 20
+        },
+        {
+          "label": "para",
+          "bbox": [
+            192,
+            674,
+            367,
+            762
+          ],
+          "text": "tender including:\n\nPreparation of the tender technical\ndocumentation,\n\nEvaluation of bids and selection of\nthe preferred bidder (under EPC\nscheme), and",
+          "reading_order": 21
+        }
+      ]
+    },
+    {
+      "page_number": 25,
+      "elements": [
+        {
+          "label": "header",
+          "bbox": [
+            192,
+            72,
+            367,
+            115
+          ],
+          "text": "\nNegotiations of the contractual\ndocumentation\n(EPC\ncontract,\nO&M Contract…).",
+          "reading_order": 0
+        },
+        {
+          "label": "para",
+          "bbox": [
+            175,
+            130,
+            328,
+            154
+          ],
+          "text": "The experts could present also an\nexperience in:",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            193,
+            157,
+            364,
+            239
+          ],
+          "text": "\nServices as Lender’s technical\nadvisor for PV projects\n\nServices as Independent engineer\nfor PV projects.\n\nServices as owner’s engineer in\nthe PV sector.",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            175,
+            254,
+            367,
+            280
+          ],
+          "text": "The proposed team project shall include at\nleast:",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            175,
+            282,
+            364,
+            503
+          ],
+          "text": "\nProject Director;\n\nProject Manager;\n\nSolar resource expert;\n\nPV expert:\n\nElectrical expert:\n\nCivil and construction expert;\n\nContract (EPC) expert;\n\nEnvironmental expert.\nProject Manager with more than 12 years\nof experience having been involved as\nproject manager, for at least three years,\nin the development of PV plants under\nEPC scheme comprising at least one PV\nplant of more than 50 MW.",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            175,
+            525,
+            367,
+            613
+          ],
+          "text": "The “development of PV plants under EPC\nscheme” refers to elaboration of feasibility\nstudy, qualification of potential EPC,\nselection of preferred EPC, management of\nRFP Process, contract negotiation and\nsignature …..",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            175,
+            636,
+            297,
+            647
+          ],
+          "text": "The Project Manager shall:",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            193,
+            667,
+            367,
+            757
+          ],
+          "text": "-\nLead the TA project team.\n-\nBe\nresponsible\nof\nall\ndocumentation/reports provided\nto Client.\n-\nBe the first and main contact\nperson with Client team.",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            398,
+            580,
+            514,
+            591
+          ],
+          "text": "5***\nPass/Fail**",
+          "reading_order": 8
+        }
+      ]
+    },
+    {
+      "page_number": 26,
+      "elements": [
+        {
+          "label": "header",
+          "bbox": [
+            193,
+            72,
+            367,
+            100
+          ],
+          "text": "-\nBe implicated in the whole process\nof the Project.",
+          "reading_order": 0
+        },
+        {
+          "label": "para",
+          "bbox": [
+            175,
+            105,
+            362,
+            116
+          ],
+          "text": "Evaluation of the Applicant based on the:",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            55,
+            120,
+            167,
+            209
+          ],
+          "text": "Performance\nduring\npresentations\nand\n/\nAvailability\nand\nresponsiveness during\nthe\nclarification\nprocess.",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            193,
+            129,
+            367,
+            234
+          ],
+          "text": "\nClarity, quality and performance of\nthe\nproposed\nstaff\nduring\npresentation to Client and its\nadvisors (as the case may be).\n\nAvailability of the proposed staff\nand responsiveness during the\nclarification phase.",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            421,
+            159,
+            476,
+            170
+          ],
+          "text": "Pass/Fail**",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            73,
+            238,
+            455,
+            251
+          ],
+          "text": "3. Proposed Approach Methodology and Work Plan\n30",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            175,
+            256,
+            367,
+            283
+          ],
+          "text": "Evaluation of the Bidder’s understanding\nof the Project based on the following:",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            193,
+            296,
+            367,
+            571
+          ],
+          "text": "-\nThe proposed methodology and\napproach for the Project delivery\nand its consistency with Client’s\nobjectives.\n-\nThe proposed deliverables and\ntheir alignment with the project\nobjectives\nand\nwith\nthe\nrequirements set out in the ToR.\n-\nWhether the applicant has a\nsufficient understanding of the\npotential implementation risks\nand has developed adequate plans\nto address and mitigate those\nrisks.\n-\nDemonstrated understanding of\nthe various stakeholders involved\nin the Project (including the IFIs)\nand their potential requirements.",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            55,
+            395,
+            167,
+            422
+          ],
+          "text": "Approach\nand\nmethodology",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            442,
+            408,
+            455,
+            419
+          ],
+          "text": "10",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            175,
+            576,
+            367,
+            602
+          ],
+          "text": "Evaluation of the proposed organization\nand staffing including:",
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "bbox": [
+            193,
+            605,
+            367,
+            757
+          ],
+          "text": "\nThe\nproposed\nteam\nand\nmanagement\nstructure\nand\nwhether it is in-line with the\nproject requirements.\n\nAvailability and commitment of\nkey senior professionals (project\ndirectors/managers)\nto\nthe\nassignment.\n\nCapacity to increase the proposed\nteam in case of heavy workload.",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            55,
+            648,
+            167,
+            674
+          ],
+          "text": "Organization\nand\nStaffing",
+          "reading_order": 12
+        },
+        {
+          "label": "para",
+          "bbox": [
+            442,
+            656,
+            455,
+            667
+          ],
+          "text": "15",
+          "reading_order": 13
+        }
+      ]
+    },
+    {
+      "page_number": 27,
+      "elements": [
+        {
+          "label": "header",
+          "bbox": [
+            193,
+            72,
+            367,
+            100
+          ],
+          "text": "\nLocation of the various members\nof the proposed staff.",
+          "reading_order": 0
+        },
+        {
+          "label": "para",
+          "bbox": [
+            175,
+            105,
+            367,
+            131
+          ],
+          "text": "Evaluation of the proposed work plan for\nproject execution including:",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            193,
+            134,
+            367,
+            332
+          ],
+          "text": "\nWhether the work plan clearly\noutlines the main activities of the\nassignment, their content and\nduration,\nphasing\nand\ninterrelations and milestones.\n\nWhether the proposed work plan\nis consistent with the approach\nand methodology and whether the\nproposed work plan is consistent\nwith the timetable provided by\nClient.\n\nTable of visits specifying for each\none number of days and persons.",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            55,
+            208,
+            107,
+            219
+          ],
+          "text": "Work plan",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            444,
+            208,
+            452,
+            219
+          ],
+          "text": "5",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            73,
+            335,
+            476,
+            348
+          ],
+          "text": "4. Other pass/fail would include:\nPass/Fail**",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            55,
+            353,
+            475,
+            379
+          ],
+          "text": "Conflict of Interest\nEvaluation of the Applicant based on\nwhether the Applicant is conflicted.\nPass/Fail**",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            55,
+            384,
+            475,
+            411
+          ],
+          "text": "Extent of mark-up\nNo comments on the Contract are\naccepted.\nPass/Fail**",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            175,
+            416,
+            367,
+            458
+          ],
+          "text": "Evaluation of the Applicant based on\nwhether the Applicant is eligible or not to\nwork with certain IFIs.",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            55,
+            423,
+            166,
+            450
+          ],
+          "text": "Ineligibility\nto\nwork\nwith IFIs",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            422,
+            431,
+            475,
+            442
+          ],
+          "text": "Pass/Fail**",
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "bbox": [
+            55,
+            463,
+            166,
+            489
+          ],
+          "text": "Completeness of the\nresponses",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            175,
+            463,
+            367,
+            504
+          ],
+          "text": "Evaluation of the Applicant based on the\ncompleteness of the responses and on the\nquality of the outline and format.",
+          "reading_order": 12
+        },
+        {
+          "label": "para",
+          "bbox": [
+            422,
+            478,
+            475,
+            489
+          ],
+          "text": "Pass/Fail**",
+          "reading_order": 13
+        },
+        {
+          "label": "para",
+          "bbox": [
+            55,
+            521,
+            80,
+            533
+          ],
+          "text": "Total",
+          "reading_order": 14
+        },
+        {
+          "label": "para",
+          "bbox": [
+            439,
+            521,
+            458,
+            533
+          ],
+          "text": "100",
+          "reading_order": 15
+        },
+        {
+          "label": "sideinfo",
+          "bbox": [
+            55,
+            559,
+            520,
+            597
+          ],
+          "text": "**Pass/Fail: if the Evaluation Criteria is not respected, the technical proposal will not be accepted and the Applicant\nwill be discarded. Otherwise, the technical proposal will be evaluated based on the Evaluation Criteria set in the\ntable above.",
+          "reading_order": 16
+        },
+        {
+          "label": "sideinfo",
+          "bbox": [
+            55,
+            613,
+            521,
+            666
+          ],
+          "text": "*** The maximum score will be attributed to the Applicant providing the highest number of compliant references[\nqualification and/or experience for the proposed staff] presented in Form 2.5 [Form 2.3 for proposed professional\nstaff experience and Form 2.4 for the Project Manager experience]. The score for the other Applicants will be\ncalculated proportionally to the aforesaid number of references.",
+          "reading_order": 17
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            680,
+            527,
+            752
+          ],
+          "text": "Applicants that receive a technical score (“TSC”) of 70 or higher will be pre-qualified without prejudice to\nthe exclusion criteria referred to hereafter. During the evaluation period, Client reserves the right to\nrequest from the Applicants to provide, within a reasonable time, additional information/documents in\norder to clarify their proposals and/or complete them. An Applicant who fails to comply with such request\nwithin the reasonable period specified in Client’s request may have its bid rejected.",
+          "reading_order": 18
+        }
+      ]
+    },
+    {
+      "page_number": 28,
+      "elements": [
+        {
+          "label": "header",
+          "bbox": [
+            50,
+            73,
+            427,
+            84
+          ],
+          "text": "Client reserves the right to disqualify any Applicant for any of the following reasons:",
+          "reading_order": 0
+        },
+        {
+          "label": "header",
+          "bbox": [
+            68,
+            97,
+            527,
+            109
+          ],
+          "text": "- A substantial changes (major deviation, omission or reserve) to the proposed standard terms and",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            114,
+            527,
+            140
+          ],
+          "text": "conditions.\n- Exposure of the Applicant to any conflict of interest in relation to the Project and/or its",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            145,
+            527,
+            187
+          ],
+          "text": "stakeholders.\n- Ineligibility to work with IFIs.\n- Completeness of the responses. However, Client reserves the right to waive any minor deviations,",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            86,
+            191,
+            208,
+            202
+          ],
+          "text": "omissions and/or reserves.",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            217,
+            389,
+            228
+          ],
+          "text": "Client will open the Financial Proposals of the pre-qualified Applicants only.",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            242,
+            527,
+            299
+          ],
+          "text": "The evaluation team shall evaluate the Technical Proposals on the basis of their responsiveness to the RFPTA,\napplying the evaluation criteria specified in the table above. Each responsive proposal will be given a TSC.\nA proposal shall be rejected at this stage if it does not substantially comply with the RFPTA or it fails to\nachieve the minimum TSC abovementioned.",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            314,
+            240,
+            327
+          ],
+          "text": "5.5.3\nContent of the Financial Proposal",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            334,
+            522,
+            345
+          ],
+          "text": "Applicants are required to submit a Financial Proposal which shall be prepared using the following forms:",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            358,
+            409,
+            433
+          ],
+          "text": "A. Payment Milestones (Form 3.1)\nB. Financial Proposal submission form (Form 3.2)\nC. Financial Proposal Breakdown (Form 3.3).\nD. Commitment agreement (Form 3.4).\nE. If acting as a Consortium, Consortium commitment agreement (Form 3.5).",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            447,
+            527,
+            489
+          ],
+          "text": "The Financial Proposal shall contain non-compressed and non-protected files that are printable and\nreproducible in one of these formats:",
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            503,
+            527,
+            608
+          ],
+          "text": "(a) Microsoft Word 2003 (for written documents and specifically for Forms 3.1, 3.2 and 3.3 (or 3.4\nif acting as Consortium));\n(b) Microsoft Excel 2003 (specifically for tables);\n(c) JPEG format for the totality of the photos and images.\n\nIn addition, the Financial Proposal shall also be supplied in non-protected printable and reproducible PDF\nformat.",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            623,
+            527,
+            665
+          ],
+          "text": "All activities and items described in the RFPTA and Technical Proposal must be priced separately; activities\nand items described in the Technical Proposal but not priced, shall be assumed to be included in the prices\nof other activities or items.",
+          "reading_order": 12
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            679,
+            527,
+            721
+          ],
+          "text": "Each Applicant is also requested to provide a separate quotation (lump sum price) for each additional offer\nreviewed during the RFP process, and for the negotiation to award the Contract with each supplemental\nfirm/consortium.",
+          "reading_order": 13
+        }
+      ]
+    },
+    {
+      "page_number": 29,
+      "elements": [
+        {
+          "label": "header",
+          "bbox": [
+            50,
+            73,
+            527,
+            115
+          ],
+          "text": "The Financial Proposal shall be expressed in US Dollars (“USD”) or in Euros (“EUR”) excluding VAT but\nincluding withholding taxes and any other applicable taxes. There shall be no variations as result of\nexchange rate fluctuation.",
+          "reading_order": 0
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            129,
+            529,
+            171
+          ],
+          "text": "Applicants should evaluate the applicability of taxes to their remuneration and should bid accordingly.\nClient will not provide any tax exemptions but may provide certificates for the payment of the withholding\ntaxes.",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            186,
+            527,
+            212
+          ],
+          "text": "Client will use the following exchange rates to convert the financial proposals in USD and/or EUR in MAD\nfor the purposes of comparing the Financial Proposals submitted:",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            227,
+            527,
+            240
+          ],
+          "text": "- USD/MAD exchange rate calculated as the arithmetic average of “bid and ask” rates as published",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            86,
+            244,
+            527,
+            270
+          ],
+          "text": "by Bank Al Maghrib (www.bkam.ma) at close of business (Moroccan time) the day prior to the\ndeadline for submission of the Financial Proposals;",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            68,
+            285,
+            527,
+            298
+          ],
+          "text": "- Euro/MAD exchange rate calculated as the arithmetic average of “bid and ask” rates as published",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            86,
+            302,
+            527,
+            329
+          ],
+          "text": "by Bank Al Maghrib (www.bkam.ma) at close of business (Moroccan time) the day prior to the\ndeadline for submission of the Financial Proposals",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            345,
+            527,
+            387
+          ],
+          "text": "Financial proposals shall be binding upon the Applicants subject to the modifications resulting from\nContract negotiations, up to expiration of the validity period of the Proposal. Financial Proposals in relation\nto Mission A shall be fixed for the entire period of the advisory services.",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            401,
+            527,
+            443
+          ],
+          "text": "The Financial Proposal for Mission B shall be expressed on the basis of man-day rates in USD or in EUR\nexcluding VAT but including withholding taxes and any other applicable taxes (broken down by category of\npersonnel and including the detail of any applicable escalation mechanism).",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            458,
+            527,
+            531
+          ],
+          "text": "The Financial Proposal will be examined prior to the signing of the Contract in order to ascertain that the\nitems are correctly extended at the rates quoted. Should any arithmetical error be found, it will be corrected\nand the Financial Proposal will be amended accordingly. The Applicant will be informed of any arithmetical\nadjustment made should Client wish to further consider his Proposal and he will be required to certify his\nacceptance of such adjustment.",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            545,
+            527,
+            573
+          ],
+          "text": "The Financial Proposal shall not include any mark-up. A Financial Proposal containing mark-up shall\nbe declared non-responsive.",
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            588,
+            252,
+            600
+          ],
+          "text": "5.5.4\nEvaluation of the Financial Proposal",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            608,
+            527,
+            634
+          ],
+          "text": "For mission A, Applicants that receive a TSC of 70 points or higher will be pre-qualified. Client will open the\nFinancial Proposals of the pre-qualified Applicants.",
+          "reading_order": 12
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            649,
+            527,
+            691
+          ],
+          "text": "Client reserves the right to consider any clarification received after the opening of the Financial Proposal.\nNotwithstanding the latter, no further mark-up of the Contract will be accepted after opening of the\nFinancial Proposal by Client.",
+          "reading_order": 13
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            705,
+            527,
+            732
+          ],
+          "text": "Each Financial Proposal shall be assigned a financial score (“FSC”) of maximum 100. The FSC will be\ncalculated as follows:",
+          "reading_order": 14
+        },
+        {
+          "label": "para",
+          "bbox": [
+            228,
+            750,
+            348,
+            763
+          ],
+          "text": "FSC = 100 x (FSC min / Ff )",
+          "reading_order": 15
+        }
+      ]
+    },
+    {
+      "page_number": 30,
+      "elements": [
+        {
+          "label": "header",
+          "bbox": [
+            50,
+            73,
+            89,
+            84
+          ],
+          "text": "Where:",
+          "reading_order": 0
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            102,
+            527,
+            116
+          ],
+          "text": "FSC min = Lowest total Financial Proposal in relation to Mission A in MAD (converted in accordance with",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            121,
+            160,
+            132
+          ],
+          "text": "article 5.5.3 above); and",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            150,
+            527,
+            164
+          ],
+          "text": "Ff = total Financial Proposal by the Applicant under consideration in relation to Mission A in MAD (converted",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            169,
+            228,
+            180
+          ],
+          "text": "in accordance with article 5.5.3 above).",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            195,
+            191,
+            207
+          ],
+          "text": "5.6\nScoring of the Proposals",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            215,
+            398,
+            226
+          ],
+          "text": "The overall score of the Applicant for Mission A shall be calculated as follows:",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            194,
+            240,
+            382,
+            251
+          ],
+          "text": "Applicant SCORE= 70% * TSC + 30% * FSC",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            268,
+            489,
+            279
+          ],
+          "text": "(Technical Proposal will have 70% weight, while Financial Proposal will have a weight of 30%)",
+          "reading_order": 8
+        }
+      ]
+    },
+    {
+      "page_number": 31,
+      "elements": [
+        {
+          "label": "header",
+          "bbox": [
+            50,
+            101,
+            157,
+            113
+          ],
+          "text": "6.1\nProposal validity",
+          "reading_order": 0
+        },
+        {
+          "label": "para",
+          "bbox": [
+            71,
+            71,
+            205,
+            88
+          ],
+          "text": "6\nGeneral provisions",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            121,
+            527,
+            163
+          ],
+          "text": "The Technical Advisor proposal must remain valid 3 months after the submission date. During this period,\nthe Technical Advisor shall maintain the availability of professional staff nominated in the proposal. Client\nwill make its best effort to complete negotiations within this period.",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            177,
+            223,
+            190
+          ],
+          "text": "6.2\nExclusivity / Conflict of Interest",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            198,
+            527,
+            255
+          ],
+          "text": "The Applicants have an obligation to disclose any situation of actual or potential conflict that impacts their\ncapacity to serve the best interest of Client, or that may be reasonably perceived as having this effect.\nFailure to disclose said situations may lead to the disqualification of the Applicants or the termination of\nthe Contract.",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            269,
+            527,
+            311
+          ],
+          "text": "Conflict of interest shall include any situation in which the Applicants, including the Technical Advisor, is\ngiven a mission, defends or holds an interest that affects, seems to reasonably affect or is likely to affect\nthe objectivity with which it must provide its services to Client.",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            326,
+            527,
+            352
+          ],
+          "text": "Exclusivity/Conflict of interest shall be governed by the related clause of the standard terms and conditions\nreflected in the Contract upon its signature.",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            365,
+            149,
+            378
+          ],
+          "text": "6.3\nConfidentiality",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            385,
+            527,
+            458
+          ],
+          "text": "The Applicants shall treat this RFPTA, its content and all related documents as private and confidential (save\nto the extent strictly necessary to allow them to submit their proposals to this RFPTA and in such a case,\ninformation shall be provided only to the persons directly concerned and subject to them agreeing to treat\nthem as confidential prior to such disclosure) and shall not publish or disclose them without the prior\nwritten consent of Client.",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            472,
+            527,
+            499
+          ],
+          "text": "All documents prepared by the Technical Advisor for the assignment or supplied to them by Client shall\nremain confidential until signature of the Contract unless Client accepts to waive their confidentiality.",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            513,
+            527,
+            540
+          ],
+          "text": "Confidentiality shall be governed by the related clause of the standard terms and conditions reflected in\nthe Contract upon its signature.",
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            554,
+            188,
+            567
+          ],
+          "text": "6.4\nOwnership of materials",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            574,
+            527,
+            647
+          ],
+          "text": "Applicants hereby irrevocably waive all moral rights which they have or will have in any existing or future\nrecords, reports, documents, papers, presentations, minutes of meetings, correspondence and all other\nmaterials in whatever form, including but not limited to hard copy and electronic form, prepared by the\nApplicants in response to this RFPTA, all of which are being deemed as “Work for Hire” and shall therefore\nbe the sole property of Client.",
+          "reading_order": 12
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            662,
+            519,
+            719
+          ],
+          "text": "The TA is made aware that (i) all deliverables of the Technical Advisor will be fully owned by Client which\nwill be entitled to use them freely and without restrictions; and that (ii) Client (including its\nrepresentatives, employees, subsidiaries and/or shareholders) does not accept to bear any uncapped\nliability towards the Technical Advisor.",
+          "reading_order": 13
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            733,
+            527,
+            760
+          ],
+          "text": "Ownership of materials shall be governed by the related clause of the standard terms and conditions\nreflected in the Contract upon its signature.",
+          "reading_order": 14
+        }
+      ]
+    },
+    {
+      "page_number": 32,
+      "elements": [
+        {
+          "label": "header",
+          "bbox": [
+            50,
+            71,
+            124,
+            84
+          ],
+          "text": "6.5\nLanguage",
+          "reading_order": 0
+        },
+        {
+          "label": "header",
+          "bbox": [
+            50,
+            91,
+            527,
+            118
+          ],
+          "text": "The ruling language of this Agreement is the English language. All reports, minutes, correspondence, etc.\nshall be in the English language.",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            132,
+            470,
+            143
+          ],
+          "text": "Client will communicate with the candidates and to the selected Technical Advisor in English.",
+          "reading_order": 2
+        }
+      ]
+    },
+    {
+      "page_number": 33,
+      "elements": [
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            71,
+            163,
+            103
+          ],
+          "text": "7 Appendices",
+          "reading_order": 0
+        },
+        {
+          "label": "para",
+          "bbox": [
+            55,
+            121,
+            261,
+            132
+          ],
+          "text": "Appendix 1: Standard Terms and Conditions",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            166,
+            367,
+            177
+          ],
+          "text": "Please refer to the attached document (Standard services agreement).",
+          "reading_order": 2
+        }
+      ]
+    },
+    {
+      "page_number": 34,
+      "elements": [
+        {
+          "label": "header",
+          "bbox": [
+            55,
+            77,
+            234,
+            88
+          ],
+          "text": "Appendix 2: Technical Proposal forms",
+          "reading_order": 0
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            122,
+            228,
+            133
+          ],
+          "text": "Please refer to the attached document.",
+          "reading_order": 1
+        }
+      ]
+    },
+    {
+      "page_number": 35,
+      "elements": [
+        {
+          "label": "header",
+          "bbox": [
+            55,
+            77,
+            232,
+            88
+          ],
+          "text": "Appendix 3: Financial Proposal forms",
+          "reading_order": 0
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            122,
+            228,
+            133
+          ],
+          "text": "Please refer to the attached document.",
+          "reading_order": 1
+        }
+      ]
+    },
+    {
+      "page_number": 36,
+      "elements": [
+        {
+          "label": "header",
+          "bbox": [
+            55,
+            77,
+            209,
+            88
+          ],
+          "text": "Appendix 4: Administrative files",
+          "reading_order": 0
+        },
+        {
+          "label": "para",
+          "bbox": [
+            50,
+            122,
+            228,
+            133
+          ],
+          "text": "Please refer to the attached document.",
+          "reading_order": 1
+        }
+      ]
+    }
+  ]
+}

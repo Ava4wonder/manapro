@@ -1,4 +1,4 @@
-import { SummaryResponse } from "../api/tenders"
+import { SummaryResponse, TenderStatusResponse } from "../api/tenders"
 import {
   ProjectCardAnalysisStatus,
   ProjectCardFields,
@@ -29,14 +29,54 @@ export function buildProjectCardFields(source: Record<string, string> | ProjectC
 }
 
 export function buildAnalysisStatus(
-  summary?: SummaryResponse | null | boolean,
+  source?: SummaryResponse | TenderStatusResponse | null | boolean,
 ): ProjectCardAnalysisStatus {
-  const completed = typeof summary === "boolean" ? summary : Boolean(summary?.ready)
-  return {
-    state: completed ? "completed" : "in-process",
-    label: completed ? "Completed" : "In process",
-    color: completed ? "green" : "orange",
+  // Boolean / summary-only fallback (e.g. existing callers)
+  if (typeof source === "boolean" || (source && !("state" in source))) {
+    const completed =
+      typeof source === "boolean" ? source : Boolean((source as SummaryResponse | null | undefined)?.ready)
+
+    return completed
+      ? { state: "completed", label: "Completed", color: "green" }
+      : { state: "summarizing", label: "Summarizing", color: "purple" }
   }
+
+  const status = source as TenderStatusResponse | undefined
+  const rawState = status?.state?.toUpperCase?.() ?? ""
+
+  // Map backend state machine -> UI states
+  if (
+    rawState === "PENDING" ||
+    rawState === "INGESTING" ||
+    rawState === "UPLOADING" ||
+    rawState === "PARSING" ||
+    rawState === "QUEUED"
+  ) {
+    return { state: "ingesting", label: "In queue", color: "orange" }
+  }
+
+  if (rawState === "INGESTED") {
+    return { state: "ingested", label: "Ingested", color: "blue" }
+  }
+
+  if (rawState === "SUMMARIZING") {
+    return { state: "summarizing", label: "Summarizing", color: "purple" }
+  }
+
+  // Treat ready / done-like states as completed
+  const isCompleted =
+    rawState === "READY" ||
+    rawState === "DONE" ||
+    status?.summary_ready ||
+    status?.full_ready ||
+    status?.eval_ready
+
+  if (isCompleted) {
+    return { state: "completed", label: "Completed", color: "green" }
+  }
+
+  // Fallback: still in ingesting / processing
+  return { state: "ingesting", label: "Ingesting", color: "orange" }
 }
 
 export function buildSummaryPreview(summary: SummaryResponse | null): string {

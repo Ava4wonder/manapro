@@ -4,6 +4,7 @@ import { ProjectCardInfo } from "../types/project"
 import { SummaryResponse, DetailsResponse, QuestionAnswerReference } from "../api/tenders"
 import ProjectCard from "../components/ProjectCard"
 import ReactMarkdown, { defaultUrlTransform } from "react-markdown"
+import remarkGfm from "remark-gfm"
 import { usePdfViewerStore } from "../store/pdfViewerStore"
 
 const CHUNKREF_PREFIX = "chunkref://"
@@ -18,6 +19,7 @@ type ProjectCardsPageProps = {
   details: DetailsResponse | null
   documents: string[]
   tenderId: string | null
+  onDeleteProject?: (projectId: string) => void
 }
 
 type DetailTab = "summary" | "details"
@@ -31,6 +33,7 @@ const ProjectCardsPage: FC<ProjectCardsPageProps> = ({
   details,
   documents,
   tenderId,
+  onDeleteProject,
 }) => {
   const [activeTab, setActiveTab] = useState<DetailTab>("summary")
   const { show, clearActiveReference } = usePdfViewerStore()
@@ -76,6 +79,7 @@ const ProjectCardsPage: FC<ProjectCardsPageProps> = ({
               project={project}
               isActive={project.id === selectedProjectId}
               onClick={() => handleCardClick(project.id)}
+              onDelete={onDeleteProject ? () => onDeleteProject(project.id) : undefined}
             />
           ))}
         </div>
@@ -137,6 +141,7 @@ const ProjectCardsPage: FC<ProjectCardsPageProps> = ({
                             <h4>{item.question}</h4>
                             <div className="markdown-answer">
                               <ReactMarkdown
+                                remarkPlugins={[remarkGfm]}
                                 urlTransform={(url) => {
                                   // 对我们自定义的协议，直接放行，不做安全裁剪
                                   if (url.startsWith(CHUNKREF_PREFIX)) {

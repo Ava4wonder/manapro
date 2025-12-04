@@ -5,6 +5,7 @@ from tender_analyzer.common.state.enums import TenderState
 
 class TenderStateMachine:
     transitions: Mapping[TenderState, tuple[TenderState, ...]] = {
+        TenderState.PENDING: (TenderState.INGESTING, TenderState.FAILED),
         TenderState.INGESTING: (TenderState.INGESTED, TenderState.FAILED),
         TenderState.INGESTED: (TenderState.SUMMARY_RUNNING, TenderState.FAILED),
         TenderState.SUMMARY_RUNNING: (TenderState.SUMMARY_READY, TenderState.FAILED),

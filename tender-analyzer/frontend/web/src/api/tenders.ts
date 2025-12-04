@@ -26,6 +26,7 @@ export interface QuestionAnswer {
 
 export interface TenderStatusResponse {
   id: string
+  name: string
   state: string
   progress: number
   summary_ready: boolean
@@ -54,6 +55,10 @@ export interface EvaluationResponse {
   id: string
   ready: boolean
   evaluation: EvaluationRecord | null
+}
+
+export function listTenders() {
+  return apiRequest<TenderStatusResponse[]>("/tenders")
 }
 
 export async function uploadTender(name: string, files: File[]) {
@@ -87,4 +92,10 @@ export function getDetails(tenderId: string) {
 
 export function getEvaluation(tenderId: string) {
   return apiRequest<EvaluationResponse>(`/tenders/${tenderId}/evaluation`)
+}
+
+export function deleteTender(tenderId: string) {
+  return apiRequest<void>(`/tenders/${tenderId}`, {
+    method: "DELETE",
+  })
 }

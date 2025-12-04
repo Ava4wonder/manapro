@@ -608,6 +608,398 @@
       "created_at": 1764723351.2435958,
       "plan_goal": null,
       "history": []
+    },
+    "8f62d4d2-8e6b-408f-abd3-61d2fea823ad": {
+      "goal_id": "8f62d4d2-8e6b-408f-abd3-61d2fea823ad",
+      "question": "What are the required key experts or engineer or personnels to meet the criteria? Does Gruner has key experts meeting these criterias?",
+      "created_at": 1764754942.6081977,
+      "plan_goal": null,
+      "history": []
+    },
+    "c726f254-5949-41fb-af98-6905547d6d5b": {
+      "goal_id": "c726f254-5949-41fb-af98-6905547d6d5b",
+      "question": "What is the submission deadline? And which administrative documents must be submitted? (e.g., valid business licenses, up-to-date tax registration or clearance certificates, audited financial statements, company registration records, organizational structure, relevant certifications or accreditations, etc.)",
+      "created_at": 1764760972.415398,
+      "plan_goal": null,
+      "history": []
+    },
+    "f681f6ae-5098-4f77-bb26-0115eaa97469": {
+      "goal_id": "f681f6ae-5098-4f77-bb26-0115eaa97469",
+      "question": "What are the required key experts or engineer or personnels to meet the criteria? Is there any language skills requirements of key personnel? (e.g., minimum proficiency levels, required certifications, or project-specific communication capabilities)? Any nationality restrictions? Does Gruner has key experts meeting these criterias?",
+      "created_at": 1764761142.3449097,
+      "plan_goal": null,
+      "history": []
+    },
+    "a05ded4a-a130-4f0a-aeaf-24dffbb07269": {
+      "goal_id": "a05ded4a-a130-4f0a-aeaf-24dffbb07269",
+      "question": "Are there any mandatory partnerships (e.g., local firms) required?",
+      "created_at": 1764761256.3743348,
+      "plan_goal": null,
+      "history": []
+    },
+    "fdfde039-c849-4e3f-a89a-c01039e36977": {
+      "goal_id": "fdfde039-c849-4e3f-a89a-c01039e36977",
+      "question": "Are there specific financial stability criteria (e.g., turnover, bank guarantees)?",
+      "created_at": 1764761363.58677,
+      "plan_goal": null,
+      "history": []
+    },
+    "61aad2ce-7ecf-4f6b-b6ad-67489b4b14ff": {
+      "goal_id": "61aad2ce-7ecf-4f6b-b6ad-67489b4b14ff",
+      "question": "Are there page or word limits for key sections of the bid?",
+      "created_at": 1764761449.4258223,
+      "plan_goal": null,
+      "history": []
+    },
+    "c6b414db-718d-4ced-bac2-69c19e41ecc5": {
+      "goal_id": "c6b414db-718d-4ced-bac2-69c19e41ecc5",
+      "question": "How many copies of the bid need to be submitted?",
+      "created_at": 1764761549.3528397,
+      "plan_goal": null,
+      "history": []
+    },
+    "bae7421d-1c67-40cd-b9aa-026e9a907717": {
+      "goal_id": "bae7421d-1c67-40cd-b9aa-026e9a907717",
+      "question": "Are there any pre-bid meetings, and is attendance mandatory?",
+      "created_at": 1764761645.6325366,
+      "plan_goal": null,
+      "history": []
+    },
+    "737b2511-ce70-447d-ab8b-f4e76fcf9d6f": {
+      "goal_id": "737b2511-ce70-447d-ab8b-f4e76fcf9d6f",
+      "question": "Is there a clear timeline for the evaluation and award process? And who are the key decision-makers in the evaluation process?",
+      "created_at": 1764761748.0193746,
+      "plan_goal": null,
+      "history": []
+    },
+    "cca6f028-8ac0-4a71-af74-d559d5e62656": {
+      "goal_id": "cca6f028-8ac0-4a71-af74-d559d5e62656",
+      "question": "Is there an appeal process if we are not selected? And will we receive feedback?",
+      "created_at": 1764761860.6551306,
+      "plan_goal": null,
+      "history": []
+    },
+    "ecb436ea-87ac-4c5e-bd1b-cb61f84a362c": {
+      "goal_id": "ecb436ea-87ac-4c5e-bd1b-cb61f84a362c",
+      "question": "Are there specific anti-corruption or ethical compliance requirements?",
+      "created_at": 1764761954.7851944,
+      "plan_goal": null,
+      "history": []
+    },
+    "beba10a1-f6f4-4aa8-b454-4c9e84c0f1d6": {
+      "goal_id": "beba10a1-f6f4-4aa8-b454-4c9e84c0f1d6",
+      "question": "What are the project objectives and deliverables? Write a brief summary (indicate: the location of the project and its specialness and potential difficulties, Does the project require innovative solutions? Does the scope require interdisciplinary expertise? Should the tenderer provide software, tools, or proprietary methodologies?).",
+      "created_at": 1764762032.640028,
+      "plan_goal": null,
+      "history": []
+    },
+    "4d49f6a6-ba76-4d50-94b9-5519da455a27": {
+      "goal_id": "4d49f6a6-ba76-4d50-94b9-5519da455a27",
+      "question": "Does the project require full-time commitment from key experts?",
+      "created_at": 1764762266.7563944,
+      "plan_goal": null,
+      "history": []
+    },
+    "a42609aa-3f61-4e99-8920-32494c4afb1c": {
+      "goal_id": "a42609aa-3f61-4e99-8920-32494c4afb1c",
+      "question": "Will our proposed team require security clearances or special certifications?",
+      "created_at": 1764762373.9639354,
+      "plan_goal": null,
+      "history": []
+    },
+    "026de938-462b-4e75-b108-1f70b7e4ff8e": {
+      "goal_id": "026de938-462b-4e75-b108-1f70b7e4ff8e",
+      "question": "Is the tenderer required to provide local staff? Or establish a local presence (office, legal entity)?",
+      "created_at": 1764762483.9788558,
+      "plan_goal": null,
+      "history": []
+    },
+    "73797466-d221-4d97-ba23-db2bb2ed338d": {
+      "goal_id": "73797466-d221-4d97-ba23-db2bb2ed338d",
+      "question": "Summary the payment terms (indicate: payment currency, is there any advance payments required, milestones and acceptance criteria, Does the contract allow for price adjustments if costs increase, any penalties for late delivery, is there any required local banking partner)?",
+      "created_at": 1764762609.4159596,
+      "plan_goal": null,
+      "history": []
+    },
+    "47a30d16-51d0-435e-a1f5-c56b02a8edc2": {
+      "goal_id": "47a30d16-51d0-435e-a1f5-c56b02a8edc2",
+      "question": "Summary the tax obligations and tax terms (indicate: who is responsible for local taxes?)",
+      "created_at": 1764762697.7446012,
+      "plan_goal": null,
+      "history": []
+    },
+    "cd8d3d5c-8409-48d8-8539-5bee6f016f8e": {
+      "goal_id": "cd8d3d5c-8409-48d8-8539-5bee6f016f8e",
+      "question": "What are the criterias in terms of administrative, financial and technical? Are there documents required to be submitted before submission deadline?",
+      "created_at": 1764771126.550655,
+      "plan_goal": null,
+      "history": []
+    },
+    "4ac1dc35-3dde-483b-a36c-aee3794a4d54": {
+      "goal_id": "4ac1dc35-3dde-483b-a36c-aee3794a4d54",
+      "question": "What are the required key experts or engineer or personnels to meet the criteria? Is there any language skills requirements of key personnel? (e.g., minimum proficiency levels, required certifications, or project-specific communication capabilities)? Any nationality restrictions? Does Gruner has key experts meeting these criterias?",
+      "created_at": 1764771358.7483256,
+      "plan_goal": null,
+      "history": []
+    },
+    "ccc7ed9a-84a7-4401-a43f-388995c3c36b": {
+      "goal_id": "ccc7ed9a-84a7-4401-a43f-388995c3c36b",
+      "question": "Are there any mandatory partnerships (e.g., local firms) required?",
+      "created_at": 1764771512.2842932,
+      "plan_goal": null,
+      "history": []
+    },
+    "570de8b1-25b9-45dd-9392-d15895e075c2": {
+      "goal_id": "570de8b1-25b9-45dd-9392-d15895e075c2",
+      "question": "Are there specific financial stability criteria (e.g., turnover, bank guarantees)?",
+      "created_at": 1764771629.3647277,
+      "plan_goal": null,
+      "history": []
+    },
+    "9a71c916-da6a-4c79-aae0-9a4825cbd69b": {
+      "goal_id": "9a71c916-da6a-4c79-aae0-9a4825cbd69b",
+      "question": "Are there page or word limits for key sections of the bid?",
+      "created_at": 1764771719.733204,
+      "plan_goal": null,
+      "history": []
+    },
+    "418d0a32-5fc2-49d7-a26c-056a5361c76d": {
+      "goal_id": "418d0a32-5fc2-49d7-a26c-056a5361c76d",
+      "question": "How many copies of the bid need to be submitted?",
+      "created_at": 1764771842.0771787,
+      "plan_goal": null,
+      "history": []
+    },
+    "5130efb8-15f1-4e5b-abe1-fa4dbcf44276": {
+      "goal_id": "5130efb8-15f1-4e5b-abe1-fa4dbcf44276",
+      "question": "Are there any pre-bid meetings, and is attendance mandatory?",
+      "created_at": 1764771944.1730413,
+      "plan_goal": null,
+      "history": []
+    },
+    "b4975bea-eb61-426f-9844-97ca30d9088b": {
+      "goal_id": "b4975bea-eb61-426f-9844-97ca30d9088b",
+      "question": "Is there a clear timeline for the evaluation and award process? And who are the key decision-makers in the evaluation process?",
+      "created_at": 1764772044.3087943,
+      "plan_goal": null,
+      "history": []
+    },
+    "b061e834-8645-4e31-b6a2-5a3ffbf88acf": {
+      "goal_id": "b061e834-8645-4e31-b6a2-5a3ffbf88acf",
+      "question": "Is there an appeal process if we are not selected? And will we receive feedback?",
+      "created_at": 1764772191.6781254,
+      "plan_goal": null,
+      "history": []
+    },
+    "ec2b9279-2458-4a0e-ae60-a76d4e1768e6": {
+      "goal_id": "ec2b9279-2458-4a0e-ae60-a76d4e1768e6",
+      "question": "Are there specific anti-corruption or ethical compliance requirements?",
+      "created_at": 1764772281.6483512,
+      "plan_goal": null,
+      "history": []
+    },
+    "bd596409-ceb5-4813-b9f8-d69f66501ce2": {
+      "goal_id": "bd596409-ceb5-4813-b9f8-d69f66501ce2",
+      "question": "What are the project objectives and deliverables? Write a brief summary (indicate: the location of the project and its specialness and potential difficulties, Does the project require innovative solutions? Does the scope require interdisciplinary expertise? Should the tenderer provide software, tools, or proprietary methodologies?).",
+      "created_at": 1764772360.616148,
+      "plan_goal": null,
+      "history": []
+    },
+    "fb4904cb-82f1-49cb-8b2d-615ab950bdd5": {
+      "goal_id": "fb4904cb-82f1-49cb-8b2d-615ab950bdd5",
+      "question": "Does the project require full-time commitment from key experts?",
+      "created_at": 1764772578.6679804,
+      "plan_goal": null,
+      "history": []
+    },
+    "043a813e-4f84-4a73-b3c8-ecb025ee3b38": {
+      "goal_id": "043a813e-4f84-4a73-b3c8-ecb025ee3b38",
+      "question": "Will our proposed team require security clearances or special certifications?",
+      "created_at": 1764772684.6836078,
+      "plan_goal": null,
+      "history": []
+    },
+    "f4dba028-2ad2-42e5-96b8-c8b9fd904e9f": {
+      "goal_id": "f4dba028-2ad2-42e5-96b8-c8b9fd904e9f",
+      "question": "Is the tenderer required to provide local staff? Or establish a local presence (office, legal entity)?",
+      "created_at": 1764772789.209779,
+      "plan_goal": null,
+      "history": []
+    },
+    "cfa38bc1-3220-4692-b738-4764a112d4f9": {
+      "goal_id": "cfa38bc1-3220-4692-b738-4764a112d4f9",
+      "question": "Summary the payment terms (indicate: payment currency, is there any advance payments required, milestones and acceptance criteria, Does the contract allow for price adjustments if costs increase, any penalties for late delivery, is there any required local banking partner)?",
+      "created_at": 1764772974.6404183,
+      "plan_goal": null,
+      "history": []
+    },
+    "a31e81a6-f3b1-423a-8745-462aa2dd9ab5": {
+      "goal_id": "a31e81a6-f3b1-423a-8745-462aa2dd9ab5",
+      "question": "Summary the tax obligations and tax terms (indicate: who is responsible for local taxes?)",
+      "created_at": 1764773065.8388925,
+      "plan_goal": null,
+      "history": []
+    },
+    "2947308d-cd60-48e4-bff9-30a95efb816a": {
+      "goal_id": "2947308d-cd60-48e4-bff9-30a95efb816a",
+      "question": "What are the criterias in terms of administrative, financial and technical? Are there documents required to be submitted before submission deadline?",
+      "created_at": 1764773134.687371,
+      "plan_goal": null,
+      "history": []
+    },
+    "c9a150c6-dd3f-4009-9cd2-666b8bf2cdae": {
+      "goal_id": "c9a150c6-dd3f-4009-9cd2-666b8bf2cdae",
+      "question": "What are the required key experts or engineer or personnels to meet the criteria? Is there any language skills requirements of key personnel? (e.g., minimum proficiency levels, required certifications, or project-specific communication capabilities)? Any nationality restrictions? Does Gruner has key experts meeting these criterias?",
+      "created_at": 1764773336.3110454,
+      "plan_goal": null,
+      "history": []
+    },
+    "35f63af6-f490-415b-8ce8-f3e553f643d5": {
+      "goal_id": "35f63af6-f490-415b-8ce8-f3e553f643d5",
+      "question": "Are there any mandatory partnerships (e.g., local firms) required?",
+      "created_at": 1764773443.965987,
+      "plan_goal": null,
+      "history": []
+    },
+    "0ba9a85c-cc2b-4498-a211-4bd8620bf8f8": {
+      "goal_id": "0ba9a85c-cc2b-4498-a211-4bd8620bf8f8",
+      "question": "Are there specific financial stability criteria (e.g., turnover, bank guarantees)?",
+      "created_at": 1764773560.6428518,
+      "plan_goal": null,
+      "history": []
+    },
+    "ac0919d5-6558-46a5-a125-331559983061": {
+      "goal_id": "ac0919d5-6558-46a5-a125-331559983061",
+      "question": "Are there page or word limits for key sections of the bid?",
+      "created_at": 1764773668.02363,
+      "plan_goal": null,
+      "history": []
+    },
+    "86959baa-8a17-4647-a643-fb2662e3566a": {
+      "goal_id": "86959baa-8a17-4647-a643-fb2662e3566a",
+      "question": "How many copies of the bid need to be submitted?",
+      "created_at": 1764773756.38665,
+      "plan_goal": null,
+      "history": []
+    },
+    "4e3418f5-5874-4e4f-9107-dcc0968e17b0": {
+      "goal_id": "4e3418f5-5874-4e4f-9107-dcc0968e17b0",
+      "question": "Are there any pre-bid meetings, and is attendance mandatory?",
+      "created_at": 1764773848.1547725,
+      "plan_goal": null,
+      "history": []
+    },
+    "f5b9ad42-7854-4aaf-9c51-18a7b2035328": {
+      "goal_id": "f5b9ad42-7854-4aaf-9c51-18a7b2035328",
+      "question": "Is there a clear timeline for the evaluation and award process? And who are the key decision-makers in the evaluation process?",
+      "created_at": 1764773949.9829843,
+      "plan_goal": null,
+      "history": []
+    },
+    "e00d4d5a-a86e-4cde-a63d-7f3cf49adb68": {
+      "goal_id": "e00d4d5a-a86e-4cde-a63d-7f3cf49adb68",
+      "question": "Is there an appeal process if we are not selected? And will we receive feedback?",
+      "created_at": 1764774083.6868708,
+      "plan_goal": null,
+      "history": []
+    },
+    "a9b6a83b-84f5-4fea-8c40-9db990949057": {
+      "goal_id": "a9b6a83b-84f5-4fea-8c40-9db990949057",
+      "question": "Are there specific anti-corruption or ethical compliance requirements?",
+      "created_at": 1764774226.552604,
+      "plan_goal": null,
+      "history": []
+    },
+    "75f33289-f758-4c05-90b1-5af46a456478": {
+      "goal_id": "75f33289-f758-4c05-90b1-5af46a456478",
+      "question": "What are the project objectives and deliverables? Write a brief summary (indicate: the location of the project and its specialness and potential difficulties, Does the project require innovative solutions? Does the scope require interdisciplinary expertise? Should the tenderer provide software, tools, or proprietary methodologies?).",
+      "created_at": 1764774357.3008695,
+      "plan_goal": null,
+      "history": []
+    },
+    "339f7780-a956-4732-a21c-a2f28c9e35bd": {
+      "goal_id": "339f7780-a956-4732-a21c-a2f28c9e35bd",
+      "question": "Does the project require full-time commitment from key experts?",
+      "created_at": 1764774609.9385834,
+      "plan_goal": null,
+      "history": []
+    },
+    "2398ff7f-c517-471d-bbd9-bbfe356b17b9": {
+      "goal_id": "2398ff7f-c517-471d-bbd9-bbfe356b17b9",
+      "question": "Will our proposed team require security clearances or special certifications?",
+      "created_at": 1764774748.0145802,
+      "plan_goal": null,
+      "history": []
+    },
+    "5b369c2e-7cee-4bc1-93e6-661eda7dfb1e": {
+      "goal_id": "5b369c2e-7cee-4bc1-93e6-661eda7dfb1e",
+      "question": "Is the tenderer required to provide local staff? Or establish a local presence (office, legal entity)?",
+      "created_at": 1764774875.6638603,
+      "plan_goal": null,
+      "history": []
+    },
+    "ea414daf-d29b-4ac8-a1b3-42fbaa1f31da": {
+      "goal_id": "ea414daf-d29b-4ac8-a1b3-42fbaa1f31da",
+      "question": "Summary the payment terms (indicate: payment currency, is there any advance payments required, milestones and acceptance criteria, Does the contract allow for price adjustments if costs increase, any penalties for late delivery, is there any required local banking partner)?",
+      "created_at": 1764774992.0266907,
+      "plan_goal": null,
+      "history": []
+    },
+    "55551f3c-47a5-4f73-bd90-cd7a9c36fa83": {
+      "goal_id": "55551f3c-47a5-4f73-bd90-cd7a9c36fa83",
+      "question": "Summary the tax obligations and tax terms (indicate: who is responsible for local taxes?)",
+      "created_at": 1764775108.1420534,
+      "plan_goal": null,
+      "history": []
+    },
+    "fe2b4c4f-b43b-4ec5-b3b0-c935a5b67759": {
+      "goal_id": "fe2b4c4f-b43b-4ec5-b3b0-c935a5b67759",
+      "question": "What are the documents required to be submitted before submission deadline? List all of them and indicate how to prepare these docs.",
+      "created_at": 1764790893.1649399,
+      "plan_goal": null,
+      "history": []
+    },
+    "dd5bce88-2d82-4a39-a634-707ea078ae32": {
+      "goal_id": "dd5bce88-2d82-4a39-a634-707ea078ae32",
+      "question": "What are the documents required to be submitted before submission deadline? List all of them and indicate how to prepare these docs.",
+      "created_at": 1764791745.8966846,
+      "plan_goal": null,
+      "history": []
+    },
+    "7e929f1b-b04e-4f8d-8391-a49476a1a80d": {
+      "goal_id": "7e929f1b-b04e-4f8d-8391-a49476a1a80d",
+      "question": "What are the documents required to be submitted before submission deadline? List all of them and indicate how to prepare these docs.",
+      "created_at": 1764807526.487066,
+      "plan_goal": null,
+      "history": []
+    },
+    "eb3fd74e-d6df-445c-8398-cb8682dbd4b6": {
+      "goal_id": "eb3fd74e-d6df-445c-8398-cb8682dbd4b6",
+      "question": "What are the documents required to be submitted before submission deadline? List all of them and indicate how to prepare these docs.",
+      "created_at": 1764807663.013969,
+      "plan_goal": null,
+      "history": []
+    },
+    "32e946ce-ddf5-457d-bf65-c5d60a6b816b": {
+      "goal_id": "32e946ce-ddf5-457d-bf65-c5d60a6b816b",
+      "question": "What are the documents required to be submitted before submission deadline? List all of them and indicate how to prepare these docs.",
+      "created_at": 1764807776.7792778,
+      "plan_goal": null,
+      "history": []
+    },
+    "a5c8305c-0720-49a7-aea0-e6127621378f": {
+      "goal_id": "a5c8305c-0720-49a7-aea0-e6127621378f",
+      "question": "What are the documents required to be submitted before submission deadline? List all of them and indicate how to prepare these docs.",
+      "created_at": 1764839081.2223604,
+      "plan_goal": null,
+      "history": []
+    },
+    "865c4463-99e2-4d58-9007-30d03f402bff": {
+      "goal_id": "865c4463-99e2-4d58-9007-30d03f402bff",
+      "question": "What are the documents required to be submitted before submission deadline? List all of them and indicate how to prepare these docs.",
+      "created_at": 1764854395.5915353,
+      "plan_goal": null,
+      "history": []
     }
   }
 }

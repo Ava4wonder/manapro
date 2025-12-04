@@ -270,12 +270,37 @@ body {
   border: 1px solid #34d399;
 }
 
+.project-card__status-pill--blue {
+  color: #1d4ed8;
+  background: #eff6ff;
+  border: 1px solid #60a5fa;
+}
+
+.project-card__status-pill--purple {
+  color: #6b21a8;
+  background: #f5f3ff;
+  border: 1px solid #a855f7;
+}
+
 .project-card__status-dot {
   width: 8px;
   height: 8px;
   border-radius: 999px;
   background: currentColor;
   display: inline-block;
+}
+
+.project-card__delete {
+  border: none;
+  background: transparent;
+  color: #b3261e;
+  font-size: 0.75rem;
+  cursor: pointer;
+  padding: 0.125rem 0.25rem;
+}
+
+.project-card__delete:hover {
+  text-decoration: underline;
 }
 
 .project-card__dates {
@@ -303,6 +328,9 @@ body {
   align-items: center;
   gap: 0.75rem;
   color: #1f2937;
+  font-size: 0.8rem;    /* adjust this to whatever size you like */
+  font-weight: 400;     /* or: font-weight: normal; */
+  font-style: normal;   /* ensures it's not italic */
 }
 
 .project-card__label {

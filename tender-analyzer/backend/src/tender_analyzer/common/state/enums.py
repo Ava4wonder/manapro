@@ -2,6 +2,7 @@ from enum import Enum
 
 
 class TenderState(str, Enum):
+    PENDING = "PENDING"
     INGESTING = "INGESTING"
     INGESTED = "INGESTED"
     SUMMARY_RUNNING = "SUMMARY_RUNNING"

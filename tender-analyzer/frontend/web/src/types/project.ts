@@ -14,9 +14,9 @@ export type ProjectCardFieldKey = typeof PROJECT_CARD_FIELD_KEYS[number]
 export type ProjectCardFields = Record<ProjectCardFieldKey, string>
 
 export type ProjectCardAnalysisStatus = {
-  state: "in-process" | "completed"
+  state: "ingesting" | "ingested" | "summarizing" | "completed"
   label: string
-  color: "orange" | "green"
+  color: "orange" | "blue" | "purple" | "green"
 }
 
 export type ProjectCardInfo = {
@@ -27,4 +27,10 @@ export type ProjectCardInfo = {
   summaryPreview?: string
   cardFields: ProjectCardFields
   analysisStatus: ProjectCardAnalysisStatus
+}
+
+// Optional: per-project workflow status from backend state machine
+export type ProjectWorkflowStatus = {
+  state: string
+  progress: number
 }

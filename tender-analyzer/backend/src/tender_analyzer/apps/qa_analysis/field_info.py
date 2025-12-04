@@ -6,7 +6,7 @@ from qdrant_client.models import Filter, FieldCondition, MatchValue
 
 # --- Configuration ---
 OLLAMA_BASE_URL = "http://localhost:11434"
-OLLAMA_CHAT_MODEL = "qwen3:32b"
+OLLAMA_CHAT_MODEL = "qwen3:30b"
 OLLAMA_EMBED_MODEL = "qwen3-embedding:8b"
 QDRANT_URL = os.getenv("QDRANT_URL", "http://localhost:6333")
 QDRANT_API_KEY = os.getenv("QDRANT_API_KEY")
@@ -16,11 +16,12 @@ HIGHLIGHT_QUESTIONS_BY_FIELD = {
     "projectprocurementType": "What is the phase of the procurement (Prospect, EOI, Offer, Contract, or Addendum)?",
     "ProjectRole": "What role is being requested (e.g., Owner's engineer, EPC designer, Lender's engineer)?",
     "ProjectType": "What type of project is this (e.g., new construction, rehabilitation, study, supervision)?",
-    "projectScope": "What is the phase and scope of the project (e.g., feasibility study, detailed design, construction supervision)?",
+    "Project Scope": "What is the phase and scope of the project? (e.g., preliminary planning and feasibility study; conceptual and schematic design; detailed design and engineering; value engineering; tender and bid preparation; construction supervision and contract administration)",
     "location": "Where is the project located (continent, jurisdiction entity:The overarching legal entity under whose laws the region (and thus the project location) primarily falls, the sovereign state it belongs to, region name, city name)?",
     "deadline": "the date of the submission deadline?",
     "submission_format": "What is the required submission format (physical, electronic, or both)?",
-    "budgetRange": "Is there an indication of the budget range, and does it match our expectations?",
+    "budgetRange": "Is there an indication of the budget range? If so, what is it?",
+    "bid bond": "Is there a mandatory bid bond? If so, what is the amount or percentage required?",
     "evaluationMethod": "How will the proposals be evaluated (e.g., lowest price, quality-based, mixed)?",
     "weighting": "Is there a weighting system for price vs. quality?",
 }
@@ -118,8 +119,8 @@ def extract_field_value(
     #     "Answer ONLY with the requested value and short key word ONLY without format styles. If the information is not present, respond exactly with 'N/A'."
     # )
     system_prompt = (
-        "You are an expert at extracting precise information from project documents. "
-        " Respond ONLY with the requested value in short keywords, with no explanations or formatting. If the information is missing, reply exactly: N/A."
+        "You are an expert in extracting precise information from project documents. "
+        "Answer ONLY with the requested value and short key word ONLY without format styles. If the information is not present, respond exactly with 'N/A'."
     )
     # print('field_nanem', field_name, '<<<', context)
     user_message = f"Context:\n{context}\n\nQuestion: {question}"
