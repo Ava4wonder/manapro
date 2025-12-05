@@ -2,6 +2,9 @@ import { FC } from "react"
 import { ProjectCardInfo, PROJECT_CARD_FIELD_KEYS } from "../types/project"
 import { formatProjectDate, PROJECT_CARD_FIELD_LABELS } from "../utils/projects"
 
+// Trashcan icon
+// import { FaTrashCan } from 'react-icons/fa';
+
 type ProjectCardProps = {
   project: ProjectCardInfo
   isActive?: boolean
@@ -44,7 +47,11 @@ const ProjectCard: FC<ProjectCardProps> = ({ project, isActive = false, onClick,
               onDelete()
             }}
           >
-            Delete
+            {/* 直接嵌入SVG */}
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#598580" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <polyline points="3 6 5 6 21 6"></polyline>
+              <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+            </svg>
           </button>
         )}
       </header>
