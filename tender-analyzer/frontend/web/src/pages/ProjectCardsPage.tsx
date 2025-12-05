@@ -210,9 +210,9 @@ const ProjectCardsPage: FC<ProjectCardsPageProps> = ({
                                 {item.answer}
                               </ReactMarkdown>
                             </div>
-                            {item.references && item.references.length > 0 && (
+                            {filteredReferences.length > 0 && (
                               <div className="reference-links">
-                                {item.references.map((reference, referenceIdx) => (
+                                {filteredReferences.map((reference, referenceIdx) => (
                                   <button
                                     key={`${item.question}-${reference.chunk_id ?? referenceIdx}`}
                                     type="button"

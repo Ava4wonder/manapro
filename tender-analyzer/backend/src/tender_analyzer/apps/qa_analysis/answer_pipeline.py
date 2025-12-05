@@ -150,7 +150,7 @@ def run_summary_analysis(tender_id: str = "", tenant_id: str = "default-tenant")
                         continue
                     
                 references_serialized: List[Dict[str, Any]] = []
-                for ref in references_raw:
+                for ref in filtered_raw:
                     if ref is None:
                         continue
                     if hasattr(ref, "as_dict"):

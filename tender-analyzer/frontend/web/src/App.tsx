@@ -323,10 +323,14 @@ const Dashboard = () => {
 
   // Existing: Project selection logic
   const handleProjectSelect = (projectId: string) => {
-    setSelectedProjectId(projectId)
-    setTenderId(projectId)
-    setActiveNav("projects")
-  }
+    setSelectedProjectId(projectId);
+    setTenderId(projectId);
+    setActiveNav("projects");
+    // 新增：切换项目时重置相关状态
+    setSummary(null);
+    setDetails(null);
+    setEvaluation(null);
+  };
 
   // Existing: Clear project selection
   const handleProjectClear = () => {
