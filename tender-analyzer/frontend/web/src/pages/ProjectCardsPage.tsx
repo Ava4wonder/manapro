@@ -129,8 +129,29 @@ const ProjectCardsPage: FC<ProjectCardsPageProps> = ({
                     </p>
                     <div className="question-grid">
                       {summary.questions.map((item, idx) => {
+                        const filteredReferences =
+                          item.references?.filter((reference) => {
+                            // keep if tenderId not set on ref (old data)
+                            // or matches current tenderId
+                            if (!reference.tender_id || !tenderId) return true
+                            return reference.tender_id === tenderId
+                          }) ?? []
+
+                        console.log("[ProjectCardsPage] question", item.question, {
+                            tenderId,
+                            rawRefs: item.references?.map((r) => ({
+                              file_name: r.file_name,
+                              page: r.page,
+                              tender_id: r.tender_id,
+                            })),
+                            filteredRefs: filteredReferences.map((r) => ({
+                              file_name: r.file_name,
+                              page: r.page,
+                              tender_id: r.tender_id,
+                            })),
+                          })
                         const referenceMap = new Map<string, QuestionAnswerReference>()
-                        item.references?.forEach((reference) => {
+                        filteredReferences.forEach((reference) => {
                           if (reference.chunk_id) {
                             referenceMap.set(String(reference.chunk_id), reference)
                           }

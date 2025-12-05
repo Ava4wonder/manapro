@@ -133,6 +133,22 @@ def run_summary_analysis(tender_id: str = "", tenant_id: str = "default-tenant")
                         answer_text = str(answer_result)
                     references_raw = getattr(answer_result, "references", []) or []
 
+                # references_raw is a list of AnswerReference / dicts
+                filtered_raw = []
+                for ref in references_raw:
+                    try:
+                        ref_tid = None
+                        if hasattr(ref, "tender_id"):
+                            ref_tid = getattr(ref, "tender_id", None)
+                        elif isinstance(ref, dict):
+                            ref_tid = ref.get("tender_id")
+                        # keep if tender_id matches or is missing (older data)
+                        if ref_tid is None or str(ref_tid) == str(tender_id):
+                            filtered_raw.append(ref)
+                    except Exception:
+                        # on any weird object, drop it rather than contaminate
+                        continue
+                    
                 references_serialized: List[Dict[str, Any]] = []
                 for ref in references_raw:
                     if ref is None:

@@ -83,7 +83,19 @@ export function getStatus(tenderId: string) {
 }
 
 export function getSummary(tenderId: string) {
-  return apiRequest<SummaryResponse>(`/tenders/${tenderId}/summary`)
+  return apiRequest<SummaryResponse>(`/tenders/${tenderId}/summary`).then((res) => {
+    const first = res.questions[0]
+    console.log("[getSummary] tenderId:", tenderId, {
+      questions: res.questions.length,
+      firstQuestion: first?.question,
+      firstRefs: first?.references?.map((r) => ({
+        file_name: r.file_name,
+        page: r.page,
+        tender_id: r.tender_id,
+      })),
+    })
+    return res
+  })
 }
 
 export function getDetails(tenderId: string) {

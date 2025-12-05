@@ -89,6 +89,7 @@ class ReferenceChunk(BaseModel):
     source_collection: Optional[str] = None
     source_tool: Optional[str] = None
     orig_size: Optional[List[float]] = Field([527.0, 814.0], description="[width, height]")
+    tender_id: Optional[str] = None  # <-- add this
 
 
 class QuestionAnswer(BaseModel):

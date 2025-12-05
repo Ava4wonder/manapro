@@ -256,8 +256,8 @@ def _build_question_answer_dto(record: Any) -> Optional[QuestionAnswerDTO]:
         payload = record
     else:
         return None
-
-    return QuestionAnswerDTO(
+    
+    dto = QuestionAnswerDTO(
         question=str(payload.get("question") or ""),
         answer=str(payload.get("answer") or ""),
         category=payload.get("category"),
@@ -267,6 +267,18 @@ def _build_question_answer_dto(record: Any) -> Optional[QuestionAnswerDTO]:
         error_message=payload.get("error_message"),
         references=payload.get("references") or [],
     )
+
+    # DEBUG: sample refs
+    try:
+        from logging import getLogger
+        LOG = getLogger(__name__)
+        first_refs = dto.references[:3] if dto.references else []
+        LOG.debug("Built QuestionAnswerDTO with %d references; sample=%s",
+                  len(dto.references), first_refs)
+    except Exception:
+        pass
+
+    return dto
 
 
 def _parse_highlight_answers(value: Any) -> List[QuestionAnswerDTO]:
